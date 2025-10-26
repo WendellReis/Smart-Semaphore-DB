@@ -9,7 +9,7 @@ from models.device import EdgeGateway, TrafficLight, TrafficSensor, Camera
 LOG_PATH = 'log'
 SEED = 1234
 LOCATIONS = 10
-READINGS_PER_DEVICE = 10
+READINGS_PER_DEVICE = 50
 CAMERA_PROB = 0.2
 TRAFFIC_SENSOR_PROB = 0.6
 
@@ -345,6 +345,9 @@ if __name__ == "__main__":
     saveData('locations',locations)
     saveData('devices',devices)
     saveData('readings',readings)
+
+    with open(f'{LOG_PATH}/count.txt', 'w', encoding='utf-8') as f:
+        json.dump(f'Total Documents: {len(locations)+len(devices)+len(readings)}',f)
 
     #print(locations)
     #print(devices)
