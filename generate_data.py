@@ -8,7 +8,9 @@ from models.device import EdgeGateway, TrafficLight, TrafficSensor, Camera
 
 SEED = 1234
 LOCATIONS = 10
-READINGS = 4000
+READINGS = 1000
+CAMERA_PROB = 0.2
+TRAFFIC_SENSOR_PROB = 0.6
 
 INTERSECTION_REFERENCE_DATA = [
     {
@@ -40,6 +42,111 @@ INTERSECTION_REFERENCE_DATA = [
 
 TRAFFIC_REFERENCE_LEVELS = ['low','medium','high']
 
+MODEL_SPECS = {
+    "edge_gateway": ["SmartCTL X1", "EdgeBox Pro", "Gateway IoT-500"],
+    "traffic_light": ["PhaseController M1", "Actuator 2000", "LED Light Hub"],
+    "traffic_sensor": ["Loop Detector v3", "Radar 4D", "IR Sensor E1"],
+    "camera": ["Cam-Traffic G18", "Vision Sensor V2", "SONY G95 PRO"]
+}
+
+STATUS = ["online","offline","maintenance"]
+TRAFFIC_PHASES = ["P1", "P2", "P3", "P4", "P5"]
+
+DIRECTIONS = ["Sentido Norte", "Sentido Sul", "Sentido Leste", "Sentido Oeste"]
+LANE_TYPES = ["Fluxo Principal", "Faixa de Giro à Esquerda", "Faixa de Ônibus", "Acesso"]
+
+RESOLUTION = ["480p","720p","1080p","1440p","4K"]
+FRAMERATE = [24,30,45,50,60]
+
+ML_MODELS_GATEWAY = [
+    "AdaptiveFlow_Predictor_v3.1.2",
+    "TimeSeries_TrafficOptimizer_v2.0.5",
+    "QLearning_PhaseScheduler_v1.9.0",
+    "DynamicCycle_Allocator_v4.0.1",
+    "Reinforcement_TrafficLogic_v4.5.0"
+]
+
+
+VIEW_ANGLE_DEGREES = [30,45,60,75,90,120,150,180,240,360]
+IMAGE_STORAGE_POLICY = ["cloud_only","local_cache"]
+
+SAMPLING_RATE_S = [5,10,15,20,25,30,35,40,45,50,55,60]
+DETECTION_METHOD = ["radar","camera_based"]
+VELOCITY_THRESHOLD = [30,40,50,60,80,90,100,110,120]
+
+
+END_DATE = datetime.now(timezone.utc)
+START_DATE = END_DATE - timedelta(days=7)
+
+def generateVelocityThresholdKph():
+    return random.choice(VELOCITY_THRESHOLD)
+
+def generateDetectionMethod():
+    return random.choice(DETECTION_METHOD)
+
+def generateSamplingRate():
+    return random.choice(SAMPLING_RATE_S)
+
+def generateImageStoragePolicy():
+    return random.choice(IMAGE_STORAGE_POLICY)
+
+def generateViewAngleDegrees():
+    return random.choice(VIEW_ANGLE_DEGREES)
+
+def generateMlModel(device_type):
+    if device_type == "edge_gateway":
+        return random.choice(ML_MODELS_GATEWAY)
+    return "Unknown Model"
+
+def generateSeconds():
+    return random.randint(5,90)
+
+def generateResolution():
+    return random.choice(RESOLUTION)
+
+def generateFramerate():
+    return random.choice(FRAMERATE)
+
+def generateModel(device_type):
+    if device_type in MODEL_SPECS:
+        return random.choice(MODEL_SPECS[device_type])
+    return "Unknown Model"
+
+def generateFirmwareVersion():
+    major = random.randint(1, 4)
+    minor = random.randint(0, 9)
+    patch = random.randint(1, 20)
+    
+    return f"{major}.{minor}.{patch}"
+
+def generateLaneDescription():
+    fake = Faker('pt_BR')
+    street = random.choice(fake.street_address())
+    direction = random.choice(DIRECTIONS)
+    lane_type = random.choice(LANE_TYPES)
+    
+    return f"{street} - {direction} ({lane_type})"
+
+def generateRandomTimestamp(start_date, end_date):
+    time_between_dates = end_date - start_date
+    seconds_between_dates = int(time_between_dates.total_seconds())
+    
+    random_seconds = random.randrange(seconds_between_dates)
+    
+    random_datetime = start_date + timedelta(seconds=random_seconds)
+    
+    return random_datetime.astimezone(timezone.utc)
+
+def generateStatus():
+    return random.choice(STATUS)
+
+def generateTrafficPhase():
+    return random.choice(TRAFFIC_PHASES)
+
+def generateBool(prob):
+    chance = random.random()
+    return chance <= prob
+
 def generateLocations(size):
     fake = Faker('pt_BR')
 
@@ -49,9 +156,9 @@ def generateLocations(size):
     state = 'Minas Gerais'
 
     for i in range(size):
-        if i < 10:
+        if i+1 < 10:
             location_id = prefx + '00' + str(i+1)
-        elif i < 100:
+        elif i+1 < 100:
             location_id = prefx + '0' + str(i+1)
         else:
             location_id = prefx + str(i+1)
@@ -80,11 +187,88 @@ def generateLocations(size):
         )
     
     return locations
+
+def generateDevices(locations):
+    devices = []
+
+    for l in locations:
+        # Gera semáforos do cruzamento
+        for t in INTERSECTION_REFERENCE_DATA:
+            if t['intersection_type'] == l['intersection_type']:
+                quant = t['num_traffic_lights']
+                break
+        
+        cam_count = 1
+        sensor_count = 1
+
+        for i in range(1,quant+1):
+            lane = generateLaneDescription
+            devices.append(
+                TrafficLight(
+                    device_id=f'SEM-{l['location_id'].replace("LOC-","")}-0{i}',
+                    location_ref=l['location_id'],
+                    model=generateModel('traffic_light'),
+                    firmware_version=generateFirmwareVersion(),
+                    status=generateStatus(),
+                    last_check_in=generateRandomTimestamp(START_DATE, END_DATE),
+                    phase_id=generateTrafficPhase(),
+                    lane_description=lane,
+                    default_green_s=generateSeconds(),
+                    yellow_duration_s=generateSeconds(),
+                    min_red_s=generateSeconds(),
+                    pedestrian_button_active=generateBool(0.5)
+                ).to_mongo_document()
+            )
+
+            if generateBool(CAMERA_PROB):
+                devices.append(
+                    Camera(
+                        device_id=f'CAM-{l['location_id'].replace("LOC-","")}-0{cam_count}',
+                        location_ref=l['location_id'],
+                        model=generateModel("camera"),
+                        firmware_version=generateFirmwareVersion(),
+                        status=generateStatus(),
+                        last_check_in=generateRandomTimestamp(START_DATE,END_DATE),
+                        resolution=generateResolution(),
+                        framerate=generateFramerate(),
+                        view_angle_degrees=generateViewAngleDegrees(),
+                        ml_detection_enabled=generateBool(0.5),
+                        image_storage_policy=generateImageStoragePolicy(),
+                        lane_description=lane # Mesma lane do semáforo
+                    ).to_mongo_document()
+                )
+                cam_count+=1
+            
+
+            if generateBool(TRAFFIC_SENSOR_PROB):
+                devices.append(
+                    TrafficSensor(
+                        device_id=f'TRS-{l['location_id'].replace("LOC-","")}-0{sensor_count}',
+                        location_ref=l['location_id'],
+                        model=generateModel("traffic_sensor"),
+                        firmware_version=generateFirmwareVersion(),
+                        status=generateStatus(),
+                        last_check_in=generateRandomTimestamp(START_DATE,END_DATE),
+                        sampling_rate_s=generateSamplingRate(),
+                        lane_description=lane, # Mesma lane do semáforo
+                        detection_method=generateDetectionMethod(),
+                        velocity_threshold_kph=generateVelocityThresholdKph()
+                    ).to_mongo_document()
+                )
+                sensor_count+=1
+    
+    return devices
+
+
+def generateEdgeGateway():
+    fake = Faker('pt_BR')
         
 if __name__ == "__main__":
     Faker.seed(SEED)
+    random.seed(SEED)
 
     locations = generateLocations(LOCATIONS)
-
-    print(locations)
+    devices = generateDevices(locations)
+    #print(locations)
+    #print(devices)
     pass

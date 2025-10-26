@@ -87,14 +87,16 @@ class Camera(Device):
                  framerate,
                  view_angle_degrees,
                  ml_detection_enabled,
-                 image_storage_policy):
+                 image_storage_policy,
+                 lane_description):
         
         config_data = {
             "resolution": resolution,
             "framerate": framerate,
             "view_angle_degrees": view_angle_degrees,
             "ml_detection_enabled": ml_detection_enabled,
-            "image_storage_policy": image_storage_policy
+            "image_storage_policy": image_storage_policy,
+            "lane_description":lane_description
         }
         
         super().__init__(
