@@ -8,7 +8,7 @@ from models.device import EdgeGateway, TrafficLight, TrafficSensor, Camera
 
 SEED = 1234
 LOCATIONS = 10
-READINGS = 1000
+READINGS_PER_DEVICE = 10
 CAMERA_PROB = 0.2
 TRAFFIC_SENSOR_PROB = 0.6
 
@@ -75,8 +75,13 @@ SAMPLING_RATE_S = [5,10,15,20,25,30,35,40,45,50,55,60]
 DETECTION_METHOD = ["radar","camera_based"]
 VELOCITY_THRESHOLD = [30,40,50,60,80,90,100,110,120]
 
+INCIDENTS_TYPES = ['accident','traffic_jam','congestion']
+
 END_DATE = datetime.now(timezone.utc)
 START_DATE = END_DATE - timedelta(days=7)
+
+def generateIncident():
+    return random.choice(INCIDENTS_TYPES)
 
 def generateControlMode():
     return random.choice(CONTROL_MODES)
@@ -145,6 +150,9 @@ def generateStatus():
 
 def generateTrafficPhase():
     return random.choice(TRAFFIC_PHASES)
+
+def generateColor():
+    return random.choice(['green','red','yellow'])
 
 def generateBool(prob):
     chance = random.random()
@@ -279,11 +287,51 @@ def generateDevices(locations):
     
     return devices
         
+def generateReadings(devices):
+    readings = []
+
+    for d in devices:
+        incident_count = {}
+        for i in range(1,READINGS_PER_DEVICE+1):
+            if d['location_ref'] not in incident_count:
+                incident_count[d['location_ref']] = 0
+
+            reading = {}
+            metadata = {
+                'device_id': d['device_id'],
+                'location_ref': d['location_ref']
+            }
+
+            type = d['device_type']
+            if type == 'traffic_light':
+                metadata['reading_type'] = 'status_change'
+                reading['current_state'] = generateColor()
+                reading['phase_duration'] = generateSeconds()
+            elif type == 'traffic_sensor':
+                metadata['reading_type'] = 'traffic_count'
+                reading['count'] = random.randint(0,50)
+                if reading['count'] == 0:
+                    reading['avg_speed_kph'] = 0
+                else:
+                    reading['avg_speed_kph'] = random.randint(1,140)
+            elif type == 'camera':
+                reading['incident_type'] = generateIncident()
+                reading['status'] = random.choice(['open','resolved'])
+                reading['image_url'] = f's://incidents/INC-{d['location_ref'].replace('LOC-','')}-{incident_count[d['location_ref']]+1}.{random.choice(['png,mp4'])}'
+                incident_count[d['location_ref']]+=1
+            
+            reading['metadata'] = metadata
+            readings.append(reading)
+
+    return readings
+
 if __name__ == "__main__":
     Faker.seed(SEED)
     random.seed(SEED)
 
     locations = generateLocations(LOCATIONS)
     devices = generateDevices(locations)
+    readings = generateReadings(devices)
     #print(locations)
     #print(devices)
+    #print(readings)
