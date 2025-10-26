@@ -6,7 +6,7 @@
         "model": "Gateway IoT-500",
         "firmware_version": "2.7.17",
         "status": "online",
-        "last_check_in": "2025-10-26T16:44:38.998142+00:00",
+        "last_check_in": "2025-10-26T16:53:49.757923+00:00",
         "config": {
             "control_mode": "adaptative",
             "min_green_time_s": 70,
@@ -21,7 +21,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.2.2",
         "status": "online",
-        "last_check_in": "2025-10-25T17:23:01.979143+00:00",
+        "last_check_in": "2025-10-25T17:32:12.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "a - Sentido Sul (Acesso)",
@@ -38,7 +38,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.6.9",
         "status": "maintenance",
-        "last_check_in": "2025-10-20T04:27:15.979143+00:00",
+        "last_check_in": "2025-10-20T04:36:26.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "t - Sentido Sul (Faixa de Ônibus)",
@@ -55,7 +55,7 @@
         "model": "Vision Sensor V2",
         "firmware_version": "1.9.13",
         "status": "offline",
-        "last_check_in": "2025-10-25T17:10:21.979143+00:00",
+        "last_check_in": "2025-10-25T17:19:32.740501+00:00",
         "config": {
             "resolution": "1080p",
             "framerate": 60,
@@ -72,7 +72,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.4.9",
         "status": "online",
-        "last_check_in": "2025-10-21T22:48:36.979143+00:00",
+        "last_check_in": "2025-10-21T22:57:47.740501+00:00",
         "config": {
             "phase_id": "P4",
             "lane_description": "6 - Sentido Sul (Acesso)",
@@ -89,7 +89,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.3.12",
         "status": "online",
-        "last_check_in": "2025-10-21T14:31:22.979143+00:00",
+        "last_check_in": "2025-10-21T14:40:33.740501+00:00",
         "config": {
             "sampling_rate_s": 50,
             "lane_description": "6 - Sentido Sul (Acesso)",
@@ -104,7 +104,7 @@
         "model": "PhaseController M1",
         "firmware_version": "4.3.2",
         "status": "offline",
-        "last_check_in": "2025-10-20T03:48:38.979143+00:00",
+        "last_check_in": "2025-10-20T03:57:49.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "M - Sentido Oeste (Fluxo Principal)",
@@ -121,7 +121,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "4.3.4",
         "status": "offline",
-        "last_check_in": "2025-10-22T01:25:33.979143+00:00",
+        "last_check_in": "2025-10-22T01:34:44.740501+00:00",
         "config": {
             "sampling_rate_s": 60,
             "lane_description": "M - Sentido Oeste (Fluxo Principal)",
@@ -136,7 +136,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.2.19",
         "status": "online",
-        "last_check_in": "2025-10-23T08:38:34.979143+00:00",
+        "last_check_in": "2025-10-23T08:47:45.740501+00:00",
         "config": {
             "phase_id": "P1",
             "lane_description": "d - Sentido Leste (Faixa de Giro à Esquerda)",
@@ -153,7 +153,7 @@
         "model": "Radar 4D",
         "firmware_version": "2.2.2",
         "status": "maintenance",
-        "last_check_in": "2025-10-21T16:49:36.979143+00:00",
+        "last_check_in": "2025-10-21T16:58:47.740501+00:00",
         "config": {
             "sampling_rate_s": 15,
             "lane_description": "d - Sentido Leste (Faixa de Giro à Esquerda)",
@@ -168,7 +168,7 @@
         "model": "LED Light Hub",
         "firmware_version": "1.2.7",
         "status": "online",
-        "last_check_in": "2025-10-24T22:47:52.979143+00:00",
+        "last_check_in": "2025-10-24T22:57:03.740501+00:00",
         "config": {
             "phase_id": "P4",
             "lane_description": "t - Sentido Norte (Fluxo Principal)",
@@ -185,7 +185,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.6.11",
         "status": "maintenance",
-        "last_check_in": "2025-10-21T12:50:50.979143+00:00",
+        "last_check_in": "2025-10-21T13:00:01.740501+00:00",
         "config": {
             "sampling_rate_s": 45,
             "lane_description": "t - Sentido Norte (Fluxo Principal)",
@@ -200,7 +200,7 @@
         "model": "LED Light Hub",
         "firmware_version": "3.8.4",
         "status": "maintenance",
-        "last_check_in": "2025-10-24T06:04:19.979143+00:00",
+        "last_check_in": "2025-10-24T06:13:30.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "e - Sentido Oeste (Acesso)",
@@ -217,7 +217,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.0.3",
         "status": "offline",
-        "last_check_in": "2025-10-24T11:47:35.979143+00:00",
+        "last_check_in": "2025-10-24T11:56:46.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "a - Sentido Oeste (Faixa de Giro à Esquerda)",
@@ -234,7 +234,7 @@
         "model": "Radar 4D",
         "firmware_version": "3.3.6",
         "status": "maintenance",
-        "last_check_in": "2025-10-26T14:11:34.979143+00:00",
+        "last_check_in": "2025-10-26T14:20:45.740501+00:00",
         "config": {
             "sampling_rate_s": 40,
             "lane_description": "a - Sentido Oeste (Faixa de Giro à Esquerda)",
@@ -249,7 +249,7 @@
         "model": "Actuator 2000",
         "firmware_version": "4.1.5",
         "status": "maintenance",
-        "last_check_in": "2025-10-23T17:22:53.979143+00:00",
+        "last_check_in": "2025-10-23T17:32:04.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "a - Sentido Norte (Fluxo Principal)",
@@ -266,7 +266,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "3.1.18",
         "status": "maintenance",
-        "last_check_in": "2025-10-22T04:09:48.979143+00:00",
+        "last_check_in": "2025-10-22T04:18:59.740501+00:00",
         "config": {
             "sampling_rate_s": 30,
             "lane_description": "a - Sentido Norte (Fluxo Principal)",
@@ -281,7 +281,7 @@
         "model": "LED Light Hub",
         "firmware_version": "1.3.9",
         "status": "offline",
-        "last_check_in": "2025-10-21T08:40:20.979143+00:00",
+        "last_check_in": "2025-10-21T08:49:31.740501+00:00",
         "config": {
             "phase_id": "P1",
             "lane_description": ", - Sentido Leste (Fluxo Principal)",
@@ -298,7 +298,7 @@
         "model": "LED Light Hub",
         "firmware_version": "1.4.9",
         "status": "maintenance",
-        "last_check_in": "2025-10-25T14:10:34.979143+00:00",
+        "last_check_in": "2025-10-25T14:19:45.740501+00:00",
         "config": {
             "phase_id": "P5",
             "lane_description": "D - Sentido Leste (Acesso)",
@@ -315,7 +315,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.9.8",
         "status": "online",
-        "last_check_in": "2025-10-25T11:57:57.979143+00:00",
+        "last_check_in": "2025-10-25T12:07:08.740501+00:00",
         "config": {
             "sampling_rate_s": 40,
             "lane_description": "D - Sentido Leste (Acesso)",
@@ -330,7 +330,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.2.17",
         "status": "maintenance",
-        "last_check_in": "2025-10-24T11:15:29.979143+00:00",
+        "last_check_in": "2025-10-24T11:24:40.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": ", - Sentido Norte (Faixa de Giro à Esquerda)",
@@ -347,7 +347,7 @@
         "model": "Radar 4D",
         "firmware_version": "1.5.14",
         "status": "online",
-        "last_check_in": "2025-10-20T13:23:44.979143+00:00",
+        "last_check_in": "2025-10-20T13:32:55.740501+00:00",
         "config": {
             "sampling_rate_s": 30,
             "lane_description": ", - Sentido Norte (Faixa de Giro à Esquerda)",
@@ -362,7 +362,7 @@
         "model": "PhaseController M1",
         "firmware_version": "1.7.3",
         "status": "offline",
-        "last_check_in": "2025-10-24T20:56:27.979143+00:00",
+        "last_check_in": "2025-10-24T21:05:38.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "o - Sentido Oeste (Acesso)",
@@ -379,7 +379,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.9.12",
         "status": "offline",
-        "last_check_in": "2025-10-21T19:26:22.979143+00:00",
+        "last_check_in": "2025-10-21T19:35:33.740501+00:00",
         "config": {
             "sampling_rate_s": 10,
             "lane_description": "o - Sentido Oeste (Acesso)",
@@ -394,7 +394,7 @@
         "model": "LED Light Hub",
         "firmware_version": "3.0.20",
         "status": "offline",
-        "last_check_in": "2025-10-24T02:03:10.979143+00:00",
+        "last_check_in": "2025-10-24T02:12:21.740501+00:00",
         "config": {
             "phase_id": "P5",
             "lane_description": "d - Sentido Sul (Faixa de Giro à Esquerda)",
@@ -411,7 +411,7 @@
         "model": "Radar 4D",
         "firmware_version": "3.1.18",
         "status": "maintenance",
-        "last_check_in": "2025-10-20T03:03:24.979143+00:00",
+        "last_check_in": "2025-10-20T03:12:35.740501+00:00",
         "config": {
             "sampling_rate_s": 20,
             "lane_description": "d - Sentido Sul (Faixa de Giro à Esquerda)",
@@ -426,7 +426,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.2.15",
         "status": "online",
-        "last_check_in": "2025-10-19T17:41:04.979143+00:00",
+        "last_check_in": "2025-10-19T17:50:15.740501+00:00",
         "config": {
             "phase_id": "P5",
             "lane_description": "  - Sentido Leste (Faixa de Ônibus)",
@@ -443,7 +443,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.7.17",
         "status": "offline",
-        "last_check_in": "2025-10-24T05:23:47.979143+00:00",
+        "last_check_in": "2025-10-24T05:32:58.740501+00:00",
         "config": {
             "phase_id": "P5",
             "lane_description": "a - Sentido Oeste (Acesso)",
@@ -460,7 +460,7 @@
         "model": "Vision Sensor V2",
         "firmware_version": "4.1.18",
         "status": "maintenance",
-        "last_check_in": "2025-10-21T07:08:40.979143+00:00",
+        "last_check_in": "2025-10-21T07:17:51.740501+00:00",
         "config": {
             "resolution": "1080p",
             "framerate": 30,
@@ -477,7 +477,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.7.11",
         "status": "offline",
-        "last_check_in": "2025-10-26T01:37:24.979143+00:00",
+        "last_check_in": "2025-10-26T01:46:35.740501+00:00",
         "config": {
             "phase_id": "P1",
             "lane_description": "l - Sentido Oeste (Faixa de Giro à Esquerda)",
@@ -494,7 +494,7 @@
         "model": "Vision Sensor V2",
         "firmware_version": "2.6.9",
         "status": "maintenance",
-        "last_check_in": "2025-10-22T02:52:48.979143+00:00",
+        "last_check_in": "2025-10-22T03:01:59.740501+00:00",
         "config": {
             "resolution": "1080p",
             "framerate": 24,
@@ -511,7 +511,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.5.10",
         "status": "maintenance",
-        "last_check_in": "2025-10-24T23:04:45.979143+00:00",
+        "last_check_in": "2025-10-24T23:13:56.740501+00:00",
         "config": {
             "phase_id": "P5",
             "lane_description": "a - Sentido Norte (Faixa de Ônibus)",
@@ -528,7 +528,7 @@
         "model": "PhaseController M1",
         "firmware_version": "4.9.15",
         "status": "offline",
-        "last_check_in": "2025-10-25T18:54:57.979143+00:00",
+        "last_check_in": "2025-10-25T19:04:08.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "d - Sentido Sul (Faixa de Giro à Esquerda)",
@@ -545,7 +545,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "3.2.6",
         "status": "offline",
-        "last_check_in": "2025-10-21T14:39:24.979143+00:00",
+        "last_check_in": "2025-10-21T14:48:35.740501+00:00",
         "config": {
             "sampling_rate_s": 5,
             "lane_description": "d - Sentido Sul (Faixa de Giro à Esquerda)",
@@ -560,7 +560,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.8.13",
         "status": "online",
-        "last_check_in": "2025-10-20T11:07:05.979143+00:00",
+        "last_check_in": "2025-10-20T11:16:16.740501+00:00",
         "config": {
             "phase_id": "P1",
             "lane_description": "  - Sentido Sul (Acesso)",
@@ -577,7 +577,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.1.10",
         "status": "online",
-        "last_check_in": "2025-10-25T18:41:22.979143+00:00",
+        "last_check_in": "2025-10-25T18:50:33.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "l - Sentido Leste (Faixa de Ônibus)",
@@ -594,7 +594,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.4.14",
         "status": "maintenance",
-        "last_check_in": "2025-10-25T10:13:27.979143+00:00",
+        "last_check_in": "2025-10-25T10:22:38.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "o - Sentido Oeste (Faixa de Ônibus)",
@@ -611,7 +611,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "3.2.18",
         "status": "offline",
-        "last_check_in": "2025-10-21T10:56:26.979143+00:00",
+        "last_check_in": "2025-10-21T11:05:37.740501+00:00",
         "config": {
             "sampling_rate_s": 35,
             "lane_description": "o - Sentido Oeste (Faixa de Ônibus)",
@@ -626,7 +626,7 @@
         "model": "Actuator 2000",
         "firmware_version": "4.0.17",
         "status": "offline",
-        "last_check_in": "2025-10-22T00:27:59.979143+00:00",
+        "last_check_in": "2025-10-22T00:37:10.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "a - Sentido Sul (Faixa de Giro à Esquerda)",
@@ -643,7 +643,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "4.6.16",
         "status": "offline",
-        "last_check_in": "2025-10-23T17:20:38.979143+00:00",
+        "last_check_in": "2025-10-23T17:29:49.740501+00:00",
         "config": {
             "sampling_rate_s": 55,
             "lane_description": "a - Sentido Sul (Faixa de Giro à Esquerda)",
@@ -658,7 +658,7 @@
         "model": "PhaseController M1",
         "firmware_version": "3.9.4",
         "status": "offline",
-        "last_check_in": "2025-10-26T15:20:43.979143+00:00",
+        "last_check_in": "2025-10-26T15:29:54.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "  - Sentido Oeste (Fluxo Principal)",
@@ -675,7 +675,7 @@
         "model": "LED Light Hub",
         "firmware_version": "3.2.8",
         "status": "online",
-        "last_check_in": "2025-10-25T22:03:47.979143+00:00",
+        "last_check_in": "2025-10-25T22:12:58.740501+00:00",
         "config": {
             "phase_id": "P4",
             "lane_description": "t - Sentido Sul (Fluxo Principal)",
@@ -692,7 +692,7 @@
         "model": "SONY G95 PRO",
         "firmware_version": "1.4.17",
         "status": "online",
-        "last_check_in": "2025-10-20T05:54:16.979143+00:00",
+        "last_check_in": "2025-10-20T06:03:27.740501+00:00",
         "config": {
             "resolution": "1440p",
             "framerate": 50,
@@ -709,7 +709,7 @@
         "model": "Actuator 2000",
         "firmware_version": "2.7.15",
         "status": "online",
-        "last_check_in": "2025-10-22T21:26:58.979143+00:00",
+        "last_check_in": "2025-10-22T21:36:09.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "d - Sentido Oeste (Fluxo Principal)",
@@ -726,7 +726,7 @@
         "model": "Vision Sensor V2",
         "firmware_version": "3.9.7",
         "status": "online",
-        "last_check_in": "2025-10-20T02:12:42.979143+00:00",
+        "last_check_in": "2025-10-20T02:21:53.740501+00:00",
         "config": {
             "resolution": "1080p",
             "framerate": 60,
@@ -743,7 +743,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.9.10",
         "status": "online",
-        "last_check_in": "2025-10-20T16:02:12.979143+00:00",
+        "last_check_in": "2025-10-20T16:11:23.740501+00:00",
         "config": {
             "sampling_rate_s": 50,
             "lane_description": "d - Sentido Oeste (Fluxo Principal)",
@@ -758,7 +758,7 @@
         "model": "Actuator 2000",
         "firmware_version": "2.6.4",
         "status": "maintenance",
-        "last_check_in": "2025-10-25T23:29:35.979143+00:00",
+        "last_check_in": "2025-10-25T23:38:46.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "8 - Sentido Norte (Acesso)",
@@ -775,7 +775,7 @@
         "model": "SONY G95 PRO",
         "firmware_version": "1.6.3",
         "status": "offline",
-        "last_check_in": "2025-10-25T22:07:42.979143+00:00",
+        "last_check_in": "2025-10-25T22:16:53.740501+00:00",
         "config": {
             "resolution": "720p",
             "framerate": 24,
@@ -792,7 +792,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.9.15",
         "status": "maintenance",
-        "last_check_in": "2025-10-19T19:48:19.979143+00:00",
+        "last_check_in": "2025-10-19T19:57:30.740501+00:00",
         "config": {
             "sampling_rate_s": 30,
             "lane_description": "8 - Sentido Norte (Acesso)",
@@ -807,7 +807,7 @@
         "model": "LED Light Hub",
         "firmware_version": "1.4.17",
         "status": "maintenance",
-        "last_check_in": "2025-10-24T13:16:09.979143+00:00",
+        "last_check_in": "2025-10-24T13:25:20.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "m - Sentido Oeste (Faixa de Giro à Esquerda)",
@@ -824,7 +824,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.1.10",
         "status": "online",
-        "last_check_in": "2025-10-20T12:38:20.979143+00:00",
+        "last_check_in": "2025-10-20T12:47:31.740501+00:00",
         "config": {
             "phase_id": "P1",
             "lane_description": "d - Sentido Sul (Fluxo Principal)",
@@ -841,7 +841,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.3.3",
         "status": "offline",
-        "last_check_in": "2025-10-23T18:13:41.979143+00:00",
+        "last_check_in": "2025-10-23T18:22:52.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": ", - Sentido Norte (Acesso)",
@@ -858,7 +858,7 @@
         "model": "Vision Sensor V2",
         "firmware_version": "2.1.2",
         "status": "offline",
-        "last_check_in": "2025-10-26T14:23:08.979143+00:00",
+        "last_check_in": "2025-10-26T14:32:19.740501+00:00",
         "config": {
             "resolution": "720p",
             "framerate": 24,
@@ -875,7 +875,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "4.5.1",
         "status": "offline",
-        "last_check_in": "2025-10-23T12:27:25.979143+00:00",
+        "last_check_in": "2025-10-23T12:36:36.740501+00:00",
         "config": {
             "sampling_rate_s": 20,
             "lane_description": ", - Sentido Norte (Acesso)",
@@ -890,7 +890,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.7.5",
         "status": "offline",
-        "last_check_in": "2025-10-25T18:38:09.979143+00:00",
+        "last_check_in": "2025-10-25T18:47:20.740501+00:00",
         "config": {
             "phase_id": "P4",
             "lane_description": "5 - Sentido Oeste (Faixa de Giro à Esquerda)",
@@ -907,7 +907,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.9.10",
         "status": "online",
-        "last_check_in": "2025-10-23T06:45:10.979143+00:00",
+        "last_check_in": "2025-10-23T06:54:21.740501+00:00",
         "config": {
             "sampling_rate_s": 15,
             "lane_description": "5 - Sentido Oeste (Faixa de Giro à Esquerda)",
@@ -922,7 +922,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.5.1",
         "status": "maintenance",
-        "last_check_in": "2025-10-20T03:39:04.979143+00:00",
+        "last_check_in": "2025-10-20T03:48:15.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "R - Sentido Leste (Acesso)",
@@ -939,7 +939,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.5.18",
         "status": "offline",
-        "last_check_in": "2025-10-24T17:48:47.979143+00:00",
+        "last_check_in": "2025-10-24T17:57:58.740501+00:00",
         "config": {
             "sampling_rate_s": 25,
             "lane_description": "R - Sentido Leste (Acesso)",
@@ -954,7 +954,7 @@
         "model": "PhaseController M1",
         "firmware_version": "3.1.13",
         "status": "maintenance",
-        "last_check_in": "2025-10-24T03:05:06.979143+00:00",
+        "last_check_in": "2025-10-24T03:14:17.740501+00:00",
         "config": {
             "phase_id": "P3",
             "lane_description": "o - Sentido Leste (Faixa de Ônibus)",
@@ -971,7 +971,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.7.19",
         "status": "offline",
-        "last_check_in": "2025-10-22T03:15:43.979143+00:00",
+        "last_check_in": "2025-10-22T03:24:54.740501+00:00",
         "config": {
             "sampling_rate_s": 45,
             "lane_description": "o - Sentido Leste (Faixa de Ônibus)",
@@ -986,7 +986,7 @@
         "model": "PhaseController M1",
         "firmware_version": "4.4.12",
         "status": "offline",
-        "last_check_in": "2025-10-22T18:45:03.979143+00:00",
+        "last_check_in": "2025-10-22T18:54:14.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "D - Sentido Oeste (Faixa de Giro à Esquerda)",
@@ -1003,7 +1003,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.8.9",
         "status": "online",
-        "last_check_in": "2025-10-24T14:32:12.979143+00:00",
+        "last_check_in": "2025-10-24T14:41:23.740501+00:00",
         "config": {
             "sampling_rate_s": 40,
             "lane_description": "D - Sentido Oeste (Faixa de Giro à Esquerda)",
@@ -1018,7 +1018,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.7.2",
         "status": "online",
-        "last_check_in": "2025-10-23T08:24:33.979143+00:00",
+        "last_check_in": "2025-10-23T08:33:44.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "i - Sentido Norte (Faixa de Giro à Esquerda)",
@@ -1035,7 +1035,7 @@
         "model": "Radar 4D",
         "firmware_version": "3.4.6",
         "status": "maintenance",
-        "last_check_in": "2025-10-26T05:37:42.979143+00:00",
+        "last_check_in": "2025-10-26T05:46:53.740501+00:00",
         "config": {
             "sampling_rate_s": 35,
             "lane_description": "i - Sentido Norte (Faixa de Giro à Esquerda)",
@@ -1050,7 +1050,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.9.2",
         "status": "online",
-        "last_check_in": "2025-10-20T21:07:48.979143+00:00",
+        "last_check_in": "2025-10-20T21:16:59.740501+00:00",
         "config": {
             "phase_id": "P2",
             "lane_description": "  - Sentido Oeste (Acesso)",
@@ -1067,7 +1067,7 @@
         "model": "SONY G95 PRO",
         "firmware_version": "1.1.7",
         "status": "online",
-        "last_check_in": "2025-10-23T12:05:15.979143+00:00",
+        "last_check_in": "2025-10-23T12:14:26.740501+00:00",
         "config": {
             "resolution": "1440p",
             "framerate": 45,
@@ -1084,7 +1084,7 @@
         "model": "PhaseController M1",
         "firmware_version": "1.5.2",
         "status": "online",
-        "last_check_in": "2025-10-23T08:19:36.979143+00:00",
+        "last_check_in": "2025-10-23T08:28:47.740501+00:00",
         "config": {
             "phase_id": "P4",
             "lane_description": "e - Sentido Leste (Acesso)",
@@ -1101,7 +1101,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.2.11",
         "status": "maintenance",
-        "last_check_in": "2025-10-19T22:49:08.979143+00:00",
+        "last_check_in": "2025-10-19T22:58:19.740501+00:00",
         "config": {
             "sampling_rate_s": 5,
             "lane_description": "e - Sentido Leste (Acesso)",
@@ -1116,7 +1116,7 @@
         "model": "PhaseController M1",
         "firmware_version": "4.1.10",
         "status": "maintenance",
-        "last_check_in": "2025-10-24T18:19:52.979143+00:00",
+        "last_check_in": "2025-10-24T18:29:03.740501+00:00",
         "config": {
             "phase_id": "P5",
             "lane_description": "e - Sentido Leste (Acesso)",
@@ -1133,7 +1133,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.8.19",
         "status": "maintenance",
-        "last_check_in": "2025-10-20T11:14:08.979143+00:00",
+        "last_check_in": "2025-10-20T11:23:19.740501+00:00",
         "config": {
             "phase_id": "P5",
             "lane_description": "a - Sentido Norte (Acesso)",
@@ -1150,7 +1150,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.0.20",
         "status": "maintenance",
-        "last_check_in": "2025-10-22T08:51:39.979143+00:00",
+        "last_check_in": "2025-10-22T09:00:50.740501+00:00",
         "config": {
             "sampling_rate_s": 50,
             "lane_description": "a - Sentido Norte (Acesso)",

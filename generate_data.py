@@ -310,7 +310,7 @@ def generateReadings(devices):
                 metadata['reading_type'] = 'status_change'
                 reading['current_state'] = generateColor()
                 reading['phase_duration'] = generateSeconds()
-            elif type == 'traffic_sensor':
+            elif type == 'traffic_sensor' or (type == 'traffic_sensor' and generateBool(0.4)):
                 metadata['reading_type'] = 'traffic_count'
                 reading['count'] = random.randint(0,50)
                 if reading['count'] == 0:
