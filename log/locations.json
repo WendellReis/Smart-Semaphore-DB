@@ -1,0 +1,132 @@
+[
+    {
+        "location_id": "LOC-001",
+        "description": "Condomínio Anthony Gabriel Borges, 201",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            83.96163642458498,
+            -21.336264296873026
+        ],
+        "intersection_type": "T-junction",
+        "num_lanes": 4,
+        "traffic_volume_category": "low"
+    },
+    {
+        "location_id": "LOC-002",
+        "description": "Feira Arthur Gabriel Alves, 6",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            73.97567324084235,
+            158.13683905095502
+        ],
+        "intersection_type": "pedestrian_priority",
+        "num_lanes": 4,
+        "traffic_volume_category": "low"
+    },
+    {
+        "location_id": "LOC-003",
+        "description": "Recanto de Pimenta, 22",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            30.881426667837317,
+            -149.78223833864976
+        ],
+        "intersection_type": "rotary_with_signal",
+        "num_lanes": 5,
+        "traffic_volume_category": "low"
+    },
+    {
+        "location_id": "LOC-004",
+        "description": "Condomínio de Albuquerque, 273",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            -86.86295132676868,
+            175.20776632397008
+        ],
+        "intersection_type": "T-junction",
+        "num_lanes": 4,
+        "traffic_volume_category": "medium"
+    },
+    {
+        "location_id": "LOC-005",
+        "description": "Quadra de Azevedo, 118",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            26.696885467996182,
+            -5.671470301645655
+        ],
+        "intersection_type": "y_junction",
+        "num_lanes": 3,
+        "traffic_volume_category": "low"
+    },
+    {
+        "location_id": "LOC-006",
+        "description": "Campo de Ramos, 67",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            -73.56830184939268,
+            76.82764233044287
+        ],
+        "intersection_type": "T-junction",
+        "num_lanes": 4,
+        "traffic_volume_category": "high"
+    },
+    {
+        "location_id": "LOC-007",
+        "description": "Via Costa, 18",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            -2.3847226911434944,
+            167.36456192983763
+        ],
+        "intersection_type": "T-junction",
+        "num_lanes": 4,
+        "traffic_volume_category": "high"
+    },
+    {
+        "location_id": "LOC-008",
+        "description": "Aeroporto Farias, 77",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            7.395873399203452,
+            -12.276518757008546
+        ],
+        "intersection_type": "pedestrian_priority",
+        "num_lanes": 4,
+        "traffic_volume_category": "high"
+    },
+    {
+        "location_id": "LOC-009",
+        "description": "Campo Pastor, 22",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            -73.99281060168079,
+            28.440967027451933
+        ],
+        "intersection_type": "rotary_with_signal",
+        "num_lanes": 5,
+        "traffic_volume_category": "high"
+    },
+    {
+        "location_id": "LOC-010",
+        "description": "Distrito Alves, 91",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            -78.64601659749327,
+            -71.12554063519022
+        ],
+        "intersection_type": "rotary_with_signal",
+        "num_lanes": 5,
+        "traffic_volume_category": "medium"
+    }
+]

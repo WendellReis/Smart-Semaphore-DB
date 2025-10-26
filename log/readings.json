@@ -1,0 +1,6302 @@
+[
+    {
+        "current_state": "red",
+        "phase_duration": 69,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 34,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 43,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 86,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 14,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 83,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 47,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 48,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 65,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 9,
+        "metadata": {
+            "device_id": "SEM-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 58,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 46,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 32,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 30,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 6,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 57,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 87,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 64,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 39,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 6,
+        "metadata": {
+            "device_id": "SEM-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.mp4",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.png",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.png",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.mp4",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.mp4",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.png",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.png",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.png",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.mp4",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-001-1.mp4",
+        "metadata": {
+            "device_id": "CAM-001-01",
+            "location_ref": "LOC-001"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 55,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 47,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 80,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 12,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 58,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 57,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 61,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 62,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 51,
+        "metadata": {
+            "device_id": "SEM-001-03",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 32,
+        "avg_speed_kph": 84,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 44,
+        "avg_speed_kph": 74,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 31,
+        "avg_speed_kph": 29,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 32,
+        "avg_speed_kph": 69,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 31,
+        "avg_speed_kph": 93,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 29,
+        "avg_speed_kph": 84,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 38,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 11,
+        "avg_speed_kph": 28,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 17,
+        "avg_speed_kph": 106,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 18,
+        "avg_speed_kph": 117,
+        "metadata": {
+            "device_id": "TRS-001-01",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 79,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 39,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 16,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 79,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 46,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 74,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 36,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 31,
+        "metadata": {
+            "device_id": "SEM-001-04",
+            "location_ref": "LOC-001",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 5,
+        "avg_speed_kph": 25,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 25,
+        "avg_speed_kph": 102,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 49,
+        "avg_speed_kph": 94,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 45,
+        "avg_speed_kph": 85,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 70,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 45,
+        "avg_speed_kph": 51,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 38,
+        "avg_speed_kph": 140,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 8,
+        "avg_speed_kph": 90,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 23,
+        "avg_speed_kph": 72,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 32,
+        "avg_speed_kph": 124,
+        "metadata": {
+            "device_id": "TRS-001-02",
+            "location_ref": "LOC-001",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 8,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 19,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 43,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 38,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 59,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 25,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 69,
+        "metadata": {
+            "device_id": "SEM-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 4,
+        "avg_speed_kph": 51,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 21,
+        "avg_speed_kph": 117,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 119,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 29,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 31,
+        "avg_speed_kph": 128,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 25,
+        "avg_speed_kph": 73,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 18,
+        "avg_speed_kph": 19,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 26,
+        "avg_speed_kph": 58,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 2,
+        "avg_speed_kph": 133,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 33,
+        "avg_speed_kph": 131,
+        "metadata": {
+            "device_id": "TRS-002-01",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 87,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 35,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 62,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 74,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 56,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 15,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 30,
+        "metadata": {
+            "device_id": "SEM-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 3,
+        "avg_speed_kph": 100,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 19,
+        "avg_speed_kph": 63,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 25,
+        "avg_speed_kph": 48,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 46,
+        "avg_speed_kph": 49,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 12,
+        "avg_speed_kph": 35,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 15,
+        "avg_speed_kph": 32,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 44,
+        "avg_speed_kph": 4,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 48,
+        "avg_speed_kph": 78,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 17,
+        "avg_speed_kph": 134,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 13,
+        "avg_speed_kph": 34,
+        "metadata": {
+            "device_id": "TRS-002-02",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 77,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 42,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 45,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 62,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 35,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 23,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 60,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 22,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 45,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 22,
+        "metadata": {
+            "device_id": "SEM-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 62,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 49,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 34,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 19,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 66,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 41,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 83,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 55,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 51,
+        "metadata": {
+            "device_id": "SEM-002-04",
+            "location_ref": "LOC-002",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 25,
+        "avg_speed_kph": 102,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 24,
+        "avg_speed_kph": 58,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 12,
+        "avg_speed_kph": 92,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 16,
+        "avg_speed_kph": 43,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 8,
+        "avg_speed_kph": 36,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 27,
+        "avg_speed_kph": 65,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 34,
+        "avg_speed_kph": 117,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 17,
+        "avg_speed_kph": 112,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 15,
+        "avg_speed_kph": 101,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 25,
+        "avg_speed_kph": 21,
+        "metadata": {
+            "device_id": "TRS-002-03",
+            "location_ref": "LOC-002",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 45,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 82,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 11,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 17,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 66,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 38,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 37,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 17,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 84,
+        "metadata": {
+            "device_id": "SEM-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 4,
+        "avg_speed_kph": 29,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 48,
+        "avg_speed_kph": 88,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 8,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 23,
+        "avg_speed_kph": 78,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 8,
+        "avg_speed_kph": 120,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 28,
+        "avg_speed_kph": 26,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 49,
+        "avg_speed_kph": 109,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 28,
+        "avg_speed_kph": 29,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 30,
+        "avg_speed_kph": 43,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 28,
+        "avg_speed_kph": 133,
+        "metadata": {
+            "device_id": "TRS-003-01",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 22,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 71,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 69,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 83,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 21,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 50,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 5,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 32,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 44,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 86,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 51,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 37,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 85,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 54,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 15,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 36,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 73,
+        "metadata": {
+            "device_id": "SEM-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 2,
+        "avg_speed_kph": 39,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 110,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 49,
+        "avg_speed_kph": 120,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 33,
+        "avg_speed_kph": 91,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 86,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 36,
+        "avg_speed_kph": 102,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 13,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 27,
+        "avg_speed_kph": 78,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 20,
+        "avg_speed_kph": 46,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 5,
+        "avg_speed_kph": 92,
+        "metadata": {
+            "device_id": "TRS-003-02",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 62,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 41,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 59,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 82,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 36,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 20,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 32,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 62,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 38,
+        "metadata": {
+            "device_id": "SEM-003-04",
+            "location_ref": "LOC-003",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 7,
+        "avg_speed_kph": 78,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 26,
+        "avg_speed_kph": 96,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 65,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 29,
+        "avg_speed_kph": 96,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 19,
+        "avg_speed_kph": 25,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 28,
+        "avg_speed_kph": 30,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 39,
+        "avg_speed_kph": 74,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 38,
+        "avg_speed_kph": 92,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 31,
+        "avg_speed_kph": 44,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 48,
+        "avg_speed_kph": 49,
+        "metadata": {
+            "device_id": "TRS-003-03",
+            "location_ref": "LOC-003",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 76,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 53,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 50,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 79,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 40,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 64,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 63,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 9,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 18,
+        "metadata": {
+            "device_id": "SEM-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 82,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 7,
+        "avg_speed_kph": 55,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 16,
+        "avg_speed_kph": 89,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 35,
+        "avg_speed_kph": 110,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 12,
+        "avg_speed_kph": 9,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 44,
+        "avg_speed_kph": 139,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 19,
+        "avg_speed_kph": 65,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 23,
+        "avg_speed_kph": 134,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 25,
+        "avg_speed_kph": 115,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 20,
+        "avg_speed_kph": 62,
+        "metadata": {
+            "device_id": "TRS-004-01",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 58,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 39,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 41,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 44,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 79,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 69,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 40,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 51,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 56,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 43,
+        "metadata": {
+            "device_id": "SEM-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 136,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 10,
+        "avg_speed_kph": 26,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 8,
+        "avg_speed_kph": 7,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 49,
+        "avg_speed_kph": 18,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 21,
+        "avg_speed_kph": 81,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 133,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 33,
+        "avg_speed_kph": 8,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 76,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 39,
+        "avg_speed_kph": 127,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 34,
+        "avg_speed_kph": 85,
+        "metadata": {
+            "device_id": "TRS-004-02",
+            "location_ref": "LOC-004",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 59,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 12,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 57,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 74,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 38,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 82,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 59,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 56,
+        "metadata": {
+            "device_id": "SEM-004-03",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 75,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 66,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 40,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 86,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 11,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 87,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 53,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 88,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-004-04",
+            "location_ref": "LOC-004",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-004-1.png",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-004-1.mp4",
+        "metadata": {
+            "device_id": "CAM-004-01",
+            "location_ref": "LOC-004"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 88,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 79,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 60,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 8,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 31,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 30,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 90,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 35,
+        "metadata": {
+            "device_id": "SEM-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-005-1.mp4",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-005-1.png",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-005-1.png",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-005-1.mp4",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-005-1.png",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-005-1.mp4",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-005-1.png",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-005-1.mp4",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-005-1.mp4",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-005-1.png",
+        "metadata": {
+            "device_id": "CAM-005-01",
+            "location_ref": "LOC-005"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 64,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 61,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 12,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 76,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 84,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 66,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 40,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 75,
+        "metadata": {
+            "device_id": "SEM-005-02",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 70,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 82,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 16,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 45,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 53,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 49,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 37,
+        "metadata": {
+            "device_id": "SEM-005-03",
+            "location_ref": "LOC-005",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 13,
+        "avg_speed_kph": 135,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 49,
+        "avg_speed_kph": 100,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 34,
+        "avg_speed_kph": 16,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 31,
+        "avg_speed_kph": 93,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 34,
+        "avg_speed_kph": 130,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 33,
+        "avg_speed_kph": 31,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 10,
+        "avg_speed_kph": 108,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 21,
+        "avg_speed_kph": 36,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 4,
+        "avg_speed_kph": 19,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 116,
+        "metadata": {
+            "device_id": "TRS-005-01",
+            "location_ref": "LOC-005",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 73,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 6,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 38,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 25,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 22,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 70,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 75,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 60,
+        "metadata": {
+            "device_id": "SEM-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 36,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 37,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 57,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 71,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 50,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 70,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 38,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 24,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 59,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 42,
+        "metadata": {
+            "device_id": "SEM-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 73,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 71,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 23,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 59,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 43,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 23,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 18,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 84,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-006-03",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 7,
+        "avg_speed_kph": 108,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 72,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 36,
+        "avg_speed_kph": 35,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 7,
+        "avg_speed_kph": 36,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 50,
+        "avg_speed_kph": 129,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 49,
+        "avg_speed_kph": 136,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 16,
+        "avg_speed_kph": 100,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 42,
+        "avg_speed_kph": 86,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 32,
+        "avg_speed_kph": 51,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 24,
+        "avg_speed_kph": 9,
+        "metadata": {
+            "device_id": "TRS-006-01",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 16,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 54,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 40,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 39,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 43,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 25,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 44,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 36,
+        "metadata": {
+            "device_id": "SEM-006-04",
+            "location_ref": "LOC-006",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 39,
+        "avg_speed_kph": 88,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 29,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 36,
+        "avg_speed_kph": 65,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 29,
+        "avg_speed_kph": 84,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 25,
+        "avg_speed_kph": 79,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 27,
+        "avg_speed_kph": 14,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 50,
+        "avg_speed_kph": 87,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 18,
+        "avg_speed_kph": 68,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 9,
+        "avg_speed_kph": 47,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 49,
+        "avg_speed_kph": 11,
+        "metadata": {
+            "device_id": "TRS-006-02",
+            "location_ref": "LOC-006",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 86,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 80,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 49,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 28,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 50,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 17,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 9,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 90,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 46,
+        "metadata": {
+            "device_id": "SEM-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 60,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 82,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 32,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 22,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 60,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 5,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 80,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 31,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 88,
+        "metadata": {
+            "device_id": "SEM-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-01",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 67,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 31,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 45,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 24,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 12,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 17,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 34,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 40,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 26,
+        "metadata": {
+            "device_id": "SEM-007-03",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-02",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "count": 9,
+        "avg_speed_kph": 77,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 36,
+        "avg_speed_kph": 73,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 41,
+        "avg_speed_kph": 106,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 12,
+        "avg_speed_kph": 64,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 26,
+        "avg_speed_kph": 55,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 17,
+        "avg_speed_kph": 135,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 21,
+        "avg_speed_kph": 95,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 43,
+        "avg_speed_kph": 61,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 9,
+        "avg_speed_kph": 87,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 17,
+        "avg_speed_kph": 51,
+        "metadata": {
+            "device_id": "TRS-007-01",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 30,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 78,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 84,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 67,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 14,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 36,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 45,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 22,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 73,
+        "metadata": {
+            "device_id": "SEM-007-04",
+            "location_ref": "LOC-007",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.mp4",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-007-1.png",
+        "metadata": {
+            "device_id": "CAM-007-03",
+            "location_ref": "LOC-007"
+        }
+    },
+    {
+        "count": 17,
+        "avg_speed_kph": 115,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 17,
+        "avg_speed_kph": 130,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 40,
+        "avg_speed_kph": 76,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 46,
+        "avg_speed_kph": 3,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 12,
+        "avg_speed_kph": 94,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 23,
+        "avg_speed_kph": 27,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 34,
+        "avg_speed_kph": 101,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 24,
+        "avg_speed_kph": 14,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 15,
+        "avg_speed_kph": 114,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 32,
+        "avg_speed_kph": 1,
+        "metadata": {
+            "device_id": "TRS-007-02",
+            "location_ref": "LOC-007",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 30,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 54,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 58,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 15,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 18,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 44,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 11,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 74,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 58,
+        "metadata": {
+            "device_id": "SEM-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 27,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 18,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 35,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 24,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 75,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 24,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 77,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 35,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 33,
+        "metadata": {
+            "device_id": "SEM-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 5,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 77,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 76,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 63,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 44,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 42,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 79,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 34,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 45,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 5,
+        "metadata": {
+            "device_id": "SEM-008-03",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.mp4",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.png",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.png",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.png",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.mp4",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.mp4",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-008-1.mp4",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.png",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.mp4",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-008-1.mp4",
+        "metadata": {
+            "device_id": "CAM-008-01",
+            "location_ref": "LOC-008"
+        }
+    },
+    {
+        "count": 41,
+        "avg_speed_kph": 122,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 20,
+        "avg_speed_kph": 47,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 29,
+        "avg_speed_kph": 63,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 25,
+        "avg_speed_kph": 130,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 12,
+        "avg_speed_kph": 3,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 9,
+        "avg_speed_kph": 90,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 29,
+        "avg_speed_kph": 21,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 46,
+        "avg_speed_kph": 106,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 41,
+        "avg_speed_kph": 140,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 8,
+        "avg_speed_kph": 99,
+        "metadata": {
+            "device_id": "TRS-008-01",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 16,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 30,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 28,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 86,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 60,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 26,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 36,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 16,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-008-04",
+            "location_ref": "LOC-008",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 23,
+        "avg_speed_kph": 59,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 47,
+        "avg_speed_kph": 137,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 97,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 8,
+        "avg_speed_kph": 81,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 125,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 44,
+        "avg_speed_kph": 54,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 43,
+        "avg_speed_kph": 80,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 34,
+        "avg_speed_kph": 90,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 40,
+        "avg_speed_kph": 45,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 12,
+        "metadata": {
+            "device_id": "TRS-008-02",
+            "location_ref": "LOC-008",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 87,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 18,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 27,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 33,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 51,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 76,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 14,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 75,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 47,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 21,
+        "metadata": {
+            "device_id": "SEM-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 44,
+        "avg_speed_kph": 79,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 3,
+        "avg_speed_kph": 119,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 33,
+        "avg_speed_kph": 83,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 23,
+        "avg_speed_kph": 6,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 16,
+        "avg_speed_kph": 105,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 49,
+        "avg_speed_kph": 12,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 17,
+        "avg_speed_kph": 78,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 35,
+        "avg_speed_kph": 33,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 37,
+        "avg_speed_kph": 121,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 8,
+        "avg_speed_kph": 5,
+        "metadata": {
+            "device_id": "TRS-009-01",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 80,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 19,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 38,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 58,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 76,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 86,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 31,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 21,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 60,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 88,
+        "metadata": {
+            "device_id": "SEM-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 19,
+        "avg_speed_kph": 11,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 33,
+        "avg_speed_kph": 53,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 26,
+        "avg_speed_kph": 40,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 4,
+        "avg_speed_kph": 24,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 8,
+        "avg_speed_kph": 10,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 24,
+        "avg_speed_kph": 104,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 27,
+        "avg_speed_kph": 110,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 15,
+        "avg_speed_kph": 106,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 35,
+        "avg_speed_kph": 114,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 36,
+        "avg_speed_kph": 34,
+        "metadata": {
+            "device_id": "TRS-009-02",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 31,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 41,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 17,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 8,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 11,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 24,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 38,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 39,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 43,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 31,
+        "metadata": {
+            "device_id": "SEM-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 40,
+        "avg_speed_kph": 3,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 46,
+        "avg_speed_kph": 133,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 57,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 5,
+        "avg_speed_kph": 16,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 28,
+        "avg_speed_kph": 99,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 42,
+        "avg_speed_kph": 15,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 2,
+        "avg_speed_kph": 85,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 38,
+        "avg_speed_kph": 20,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 10,
+        "avg_speed_kph": 85,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 7,
+        "avg_speed_kph": 101,
+        "metadata": {
+            "device_id": "TRS-009-03",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 82,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 30,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 32,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 7,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 30,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 88,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 6,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 80,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 31,
+        "avg_speed_kph": 97,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 3,
+        "avg_speed_kph": 62,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 32,
+        "avg_speed_kph": 95,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 23,
+        "avg_speed_kph": 66,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 7,
+        "avg_speed_kph": 114,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 18,
+        "avg_speed_kph": 129,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 5,
+        "avg_speed_kph": 110,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 15,
+        "avg_speed_kph": 110,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 11,
+        "avg_speed_kph": 78,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 22,
+        "avg_speed_kph": 122,
+        "metadata": {
+            "device_id": "TRS-009-04",
+            "location_ref": "LOC-009",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 82,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 20,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 89,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 46,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 41,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 13,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 41,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 87,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 26,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 74,
+        "metadata": {
+            "device_id": "SEM-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-010-1.png",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-010-1.mp4",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "open",
+        "image_url": "s://incidents/INC-010-1.png",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-010-1.png",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-010-1.png",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-010-1.png",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "accident",
+        "status": "open",
+        "image_url": "s://incidents/INC-010-1.png",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "open",
+        "image_url": "s://incidents/INC-010-1.mp4",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "congestion",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-010-1.png",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "incident_type": "traffic_jam",
+        "status": "resolved",
+        "image_url": "s://incidents/INC-010-1.mp4",
+        "metadata": {
+            "device_id": "CAM-010-01",
+            "location_ref": "LOC-010"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 80,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 72,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 22,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 69,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 14,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 64,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 9,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 24,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 84,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 44,
+        "metadata": {
+            "device_id": "SEM-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 26,
+        "avg_speed_kph": 120,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 20,
+        "avg_speed_kph": 64,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 131,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 34,
+        "avg_speed_kph": 108,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 50,
+        "avg_speed_kph": 100,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 16,
+        "avg_speed_kph": 82,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 28,
+        "avg_speed_kph": 16,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 15,
+        "avg_speed_kph": 89,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 43,
+        "avg_speed_kph": 124,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 3,
+        "avg_speed_kph": 83,
+        "metadata": {
+            "device_id": "TRS-010-01",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 11,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 23,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 71,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 27,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 12,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 55,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 61,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 78,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 62,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 6,
+        "metadata": {
+            "device_id": "SEM-010-03",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 10,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 24,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 85,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 28,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 24,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 68,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 60,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "green",
+        "phase_duration": 18,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "red",
+        "phase_duration": 78,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "current_state": "yellow",
+        "phase_duration": 32,
+        "metadata": {
+            "device_id": "SEM-010-04",
+            "location_ref": "LOC-010",
+            "reading_type": "status_change"
+        }
+    },
+    {
+        "count": 6,
+        "avg_speed_kph": 56,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 2,
+        "avg_speed_kph": 80,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 26,
+        "avg_speed_kph": 45,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 19,
+        "avg_speed_kph": 92,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 42,
+        "avg_speed_kph": 46,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 2,
+        "avg_speed_kph": 99,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 16,
+        "avg_speed_kph": 55,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 12,
+        "avg_speed_kph": 93,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 36,
+        "avg_speed_kph": 98,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    },
+    {
+        "count": 23,
+        "avg_speed_kph": 33,
+        "metadata": {
+            "device_id": "TRS-010-02",
+            "location_ref": "LOC-010",
+            "reading_type": "traffic_count"
+        }
+    }
+]

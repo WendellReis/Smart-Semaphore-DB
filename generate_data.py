@@ -6,6 +6,7 @@ import random
 from models.location import Location
 from models.device import EdgeGateway, TrafficLight, TrafficSensor, Camera
 
+LOG_PATH = 'log'
 SEED = 1234
 LOCATIONS = 10
 READINGS_PER_DEVICE = 10
@@ -142,8 +143,8 @@ def generateRandomTimestamp(start_date, end_date):
     random_seconds = random.randrange(seconds_between_dates)
     
     random_datetime = start_date + timedelta(seconds=random_seconds)
-    
-    return random_datetime.astimezone(timezone.utc)
+
+    return random_datetime.astimezone(timezone.utc).isoformat()
 
 def generateStatus():
     return random.choice(STATUS)
@@ -210,7 +211,7 @@ def generateDevices(locations):
             model=generateModel("edge_gateway"),
             firmware_version=generateFirmwareVersion(),
             status="online",
-            last_check_in=datetime.now(timezone.utc), # Última comunicação foi agora
+            last_check_in=datetime.now(timezone.utc).isoformat(), # Última comunicação foi agora
             control_mode=generateControlMode(),
             min_green_time_s=generateSeconds(),
             max_cycle_time_s=generateSeconds(),
@@ -230,7 +231,7 @@ def generateDevices(locations):
         sensor_count = 1
 
         for i in range(1,quant+1):
-            lane = generateLaneDescription
+            lane = generateLaneDescription()
             devices.append(
                 TrafficLight(
                     device_id=f'SEM-{l['location_id'].replace("LOC-","")}-0{i}',
@@ -303,6 +304,8 @@ def generateReadings(devices):
             }
 
             type = d['device_type']
+            if type == 'edge_gateway':
+                continue
             if type == 'traffic_light':
                 metadata['reading_type'] = 'status_change'
                 reading['current_state'] = generateColor()
@@ -317,13 +320,19 @@ def generateReadings(devices):
             elif type == 'camera':
                 reading['incident_type'] = generateIncident()
                 reading['status'] = random.choice(['open','resolved'])
-                reading['image_url'] = f's://incidents/INC-{d['location_ref'].replace('LOC-','')}-{incident_count[d['location_ref']]+1}.{random.choice(['png,mp4'])}'
-                incident_count[d['location_ref']]+=1
+                reading['image_url'] = (
+                    f"s://incidents/INC-{d['location_ref'].replace('LOC-', '')}-"
+                    f"{incident_count[d['location_ref']] + 1}.{random.choice(['png', 'mp4'])}"
+                )
             
             reading['metadata'] = metadata
             readings.append(reading)
 
     return readings
+
+def saveData(filename,data):
+    with open(f'{LOG_PATH}/{filename}.json', 'w', encoding='utf-8') as f:
+        json.dump(data,f,indent=4,ensure_ascii=False)
 
 if __name__ == "__main__":
     Faker.seed(SEED)
@@ -332,6 +341,11 @@ if __name__ == "__main__":
     locations = generateLocations(LOCATIONS)
     devices = generateDevices(locations)
     readings = generateReadings(devices)
+
+    saveData('locations',locations)
+    saveData('devices',devices)
+    saveData('readings',readings)
+
     #print(locations)
     #print(devices)
     #print(readings)
