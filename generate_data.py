@@ -66,6 +66,7 @@ ML_MODELS_GATEWAY = [
     "Reinforcement_TrafficLogic_v4.5.0"
 ]
 
+CONTROL_MODES = ["adaptative","fixed"]
 
 VIEW_ANGLE_DEGREES = [30,45,60,75,90,120,150,180,240,360]
 IMAGE_STORAGE_POLICY = ["cloud_only","local_cache"]
@@ -74,9 +75,11 @@ SAMPLING_RATE_S = [5,10,15,20,25,30,35,40,45,50,55,60]
 DETECTION_METHOD = ["radar","camera_based"]
 VELOCITY_THRESHOLD = [30,40,50,60,80,90,100,110,120]
 
-
 END_DATE = datetime.now(timezone.utc)
 START_DATE = END_DATE - timedelta(days=7)
+
+def generateControlMode():
+    return random.choice(CONTROL_MODES)
 
 def generateVelocityThresholdKph():
     return random.choice(VELOCITY_THRESHOLD)
@@ -191,6 +194,23 @@ def generateLocations(size):
 def generateDevices(locations):
     devices = []
 
+    # Gera o Edge Gateway
+    devices.append(
+        EdgeGateway(
+            device_id='EGT-1',
+            location_ref=random.choice(locations)['location_id'], # Localização aleatória
+            model=generateModel("edge_gateway"),
+            firmware_version=generateFirmwareVersion(),
+            status="online",
+            last_check_in=datetime.now(timezone.utc), # Última comunicação foi agora
+            control_mode=generateControlMode(),
+            min_green_time_s=generateSeconds(),
+            max_cycle_time_s=generateSeconds(),
+            ml_model_version=generateMlModel("edge_gateway")
+
+        ).to_mongo_document()
+    )
+
     for l in locations:
         # Gera semáforos do cruzamento
         for t in INTERSECTION_REFERENCE_DATA:
@@ -258,10 +278,6 @@ def generateDevices(locations):
                 sensor_count+=1
     
     return devices
-
-
-def generateEdgeGateway():
-    fake = Faker('pt_BR')
         
 if __name__ == "__main__":
     Faker.seed(SEED)
@@ -271,4 +287,3 @@ if __name__ == "__main__":
     devices = generateDevices(locations)
     #print(locations)
     #print(devices)
-    pass
