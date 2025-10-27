@@ -347,8 +347,7 @@ if __name__ == "__main__":
     saveData('devices',devices)
     saveData('readings',readings)
 
-    with open(f'{LOG_PATH}/count.txt', 'w', encoding='utf-8') as f:
-        json.dump(f'Total Documents: {len(locations)+len(devices)+len(readings)}',f)
+    print(f'💾 Total Documentos Gerados: {len(locations)+len(devices)+len(readings)}')
 
     #print(locations)
     #print(devices)
