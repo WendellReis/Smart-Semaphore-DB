@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+from pymongo import MongoClient, DESCENDING
 from datetime import datetime
 from bson.objectid import ObjectId
 import os
@@ -34,7 +34,7 @@ def insert_many(db,collection,data):
     inicio = time.time()
     db[collection].insert_many(data)
     tempo_execucao = time.time() - inicio
-    print(f"💾  Inseridos {len(data)} documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
+    print(f"💾 Inseridos {len(data)} documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
     return tempo_execucao
 
 def insert_one(db,collection,data):
@@ -53,5 +53,18 @@ def delete_one(db,collection,filter):
 def find(db,collection,filter):
     inicio = time.time()
     db[collection].find(filter)
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao
+
+def update_many(db,collection,filter,update):
+    inicio = time.time()
+    db[collection].update_many(filter,update)
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao
+
+def findReadings(db,device_id):
+    filtro = {"metadata.device_id": device_id}
+    inicio = time.time()
+    db['readings'].find(filtro).sort("timestamp",DESCENDING)
     tempo_execucao = time.time() - inicio
     return tempo_execucao

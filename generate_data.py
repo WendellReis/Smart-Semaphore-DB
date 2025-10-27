@@ -11,7 +11,7 @@ SEED = 1234
 LOCATIONS = 15
 READINGS_PER_DEVICE = 50
 CAMERA_PROB = 0.2
-TRAFFIC_SENSOR_PROB = 0.6
+TRAFFIC_SENSOR_PROB = 1
 
 INTERSECTION_REFERENCE_DATA = [
     {
@@ -302,6 +302,7 @@ def generateReadings(devices):
                 incident_count[d['location_ref']] = 0
 
             reading = {}
+            reading["timestamp"] = generateRandomTimestamp(START_DATE,END_DATE)
             metadata = {
                 'device_id': d['device_id'],
                 'location_ref': d['location_ref']

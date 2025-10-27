@@ -58,10 +58,9 @@ def eval():
     # Extraindo dados dos arquivos json
     locations = load_data('log/locations.json')
     devices = load_data('log/devices.json')
-    readings = load_data('log/readings.json')
+    readings = load_data('log/readings.json')        
 
-    times = {}
-
+    '''
     # Limpa as collections antes de povoar o banco
     #clear_database(db)
 
@@ -72,26 +71,36 @@ def eval():
     #print_time("T-POV",temp)
 
     # Tempo médio de inserção
-    sample = random.sample(readings,100)
+    samples = random.sample(readings,100)
     temp = 0
-    for s in sample:
+    for s in samples:
         temp += mongo_connector.insert_one(db,"readings",s)
 
     print_time("T-INSERT-READING",temp/100)
 
     # Tempo médio para deleção de leitura
     temp = 0
-    for s in sample:
+    for s in samples:
         temp += mongo_connector.delete_one(db,"readings",s)
     print_time("T-DELETE-READING",temp/100)
     
     # Tempo médio para consultar leituras
-    sample = random.sample(devices,100)
+    samples = random.sample(devices,100)
     temp = 0
-    for s in sample:
-        filtro = {"metadata.device_id":s["device_id"]}
-        temp += mongo_connector.find(db,"readings",filtro)
+    for s in samples:
+        temp += mongo_connector.findReadings(db,s["device_id"])
     print_time("T-FIND-READINGS",temp/100)
+
+    # Atualização de fase
+    temp = 0
+    for l in locations:
+        filtro = {"location_ref": l['location_id'],"device_type":"traffic_light"}
+        update = {"$set": {"phase_id": "PHASE_TEST"}}
+        temp += mongo_connector.update_many(db,"location",filtro,update)
+    
+    print_time("T-UPDATE-PHASE",temp/len(locations))
+
+    '''
 
 if __name__ == "__main__":
     eval()
