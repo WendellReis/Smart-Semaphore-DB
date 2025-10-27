@@ -39,16 +39,19 @@ def insert_many(db,collection,data):
 
 def insert_one(db,collection,data):
     data["_id"] = ObjectId()
-    
     inicio = time.time()
     db[collection].insert_one(data)
     tempo_execucao = time.time() - inicio
     return tempo_execucao
 
 def delete_one(db,collection,filter):
-    
     inicio = time.time()
     db[collection].delete_one(filter)
     tempo_execucao = time.time() - inicio
     return tempo_execucao
 
+def find(db,collection,filter):
+    inicio = time.time()
+    db[collection].find(filter)
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao

@@ -65,10 +65,10 @@ def eval():
     # Limpa as collections antes de povoar o banco
     #clear_database(db)
 
-
-    print("\n⚙️  Testes de tempo:")
     # Popula o banco de dados
     #temp = populate_database(db,locations,devices,readings)
+
+    print("\n⚙️  Testes de tempo:")
     #print_time("T-POV",temp)
 
     # Tempo médio de inserção
@@ -85,6 +85,13 @@ def eval():
         temp += mongo_connector.delete_one(db,"readings",s)
     print_time("T-DELETE-READING",temp/100)
     
+    # Tempo médio para consultar leituras
+    sample = random.sample(devices,100)
+    temp = 0
+    for s in sample:
+        filtro = {"metadata.device_id":s["device_id"]}
+        temp += mongo_connector.find(db,"readings",filtro)
+    print_time("T-FIND-READINGS",temp/100)
 
 if __name__ == "__main__":
     eval()

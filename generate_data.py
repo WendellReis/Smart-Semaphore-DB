@@ -9,7 +9,7 @@ from models.device import EdgeGateway, TrafficLight, TrafficSensor, Camera
 LOG_PATH = 'log'
 SEED = 1234
 LOCATIONS = 15
-READINGS_PER_DEVICE = 1000
+READINGS_PER_DEVICE = 50
 CAMERA_PROB = 0.2
 TRAFFIC_SENSOR_PROB = 0.6
 
