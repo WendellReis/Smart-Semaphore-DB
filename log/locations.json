@@ -128,5 +128,70 @@
         "intersection_type": "rotary_with_signal",
         "num_lanes": 5,
         "traffic_volume_category": "medium"
+    },
+    {
+        "location_id": "LOC-011",
+        "description": "Lagoa de Marques, 7",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            -45.15261815498238,
+            156.0655792952448
+        ],
+        "intersection_type": "y_junction",
+        "num_lanes": 3,
+        "traffic_volume_category": "high"
+    },
+    {
+        "location_id": "LOC-012",
+        "description": "Área de Cavalcanti, 52",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            29.774078454627983,
+            158.9311985888831
+        ],
+        "intersection_type": "T-junction",
+        "num_lanes": 4,
+        "traffic_volume_category": "low"
+    },
+    {
+        "location_id": "LOC-013",
+        "description": "Quadra Aparecida, 865",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            -29.968185679031052,
+            75.60479469759531
+        ],
+        "intersection_type": "y_junction",
+        "num_lanes": 3,
+        "traffic_volume_category": "low"
+    },
+    {
+        "location_id": "LOC-014",
+        "description": "Quadra de Melo, 8",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            -80.24846424369429,
+            31.510262927184982
+        ],
+        "intersection_type": "four_way_perpendicular",
+        "num_lanes": 6,
+        "traffic_volume_category": "low"
+    },
+    {
+        "location_id": "LOC-015",
+        "description": "Esplanada de Macedo, 574",
+        "city": "Leopoldina",
+        "state": "Minas Gerais",
+        "coordinates": [
+            10.319442739464264,
+            -128.071540223313
+        ],
+        "intersection_type": "rotary_with_signal",
+        "num_lanes": 5,
+        "traffic_volume_category": "low"
     }
 ]

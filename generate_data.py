@@ -8,8 +8,8 @@ from models.device import EdgeGateway, TrafficLight, TrafficSensor, Camera
 
 LOG_PATH = 'log'
 SEED = 1234
-LOCATIONS = 10
-READINGS_PER_DEVICE = 50
+LOCATIONS = 15
+READINGS_PER_DEVICE = 1000
 CAMERA_PROB = 0.2
 TRAFFIC_SENSOR_PROB = 0.6
 
@@ -213,7 +213,6 @@ def generateDevices(locations):
             status="online",
             last_check_in=datetime.now(timezone.utc).isoformat(), # Última comunicação foi agora
             control_mode=generateControlMode(),
-            min_green_time_s=generateSeconds(),
             max_cycle_time_s=generateSeconds(),
             ml_model_version=generateMlModel("edge_gateway")
 
@@ -243,7 +242,9 @@ def generateDevices(locations):
                     phase_id=generateTrafficPhase(),
                     lane_description=lane,
                     default_green_s=generateSeconds(),
-                    yellow_duration_s=generateSeconds(),
+                    default_yellow_s=generateSeconds(),
+                    default_red_s=generateSeconds(),
+                    min_green_s=generateSeconds(),
                     min_red_s=generateSeconds(),
                     pedestrian_button_active=generateBool(0.5)
                 ).to_mongo_document()
@@ -310,7 +311,7 @@ def generateReadings(devices):
                 metadata['reading_type'] = 'status_change'
                 reading['current_state'] = generateColor()
                 reading['phase_duration'] = generateSeconds()
-            elif type == 'traffic_sensor' or (type == 'traffic_sensor' and generateBool(0.4)):
+            elif type == 'traffic_sensor':
                 metadata['reading_type'] = 'traffic_count'
                 reading['count'] = random.randint(0,50)
                 if reading['count'] == 0:

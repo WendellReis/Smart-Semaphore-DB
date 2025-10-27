@@ -47,13 +47,11 @@ class EdgeGateway(Device):
                  status,
                  last_check_in,
                  control_mode,
-                 min_green_time_s,
                  max_cycle_time_s,
                  ml_model_version):
         
         config_data = {
             "control_mode": control_mode,
-            "min_green_time_s": min_green_time_s,
             "max_cycle_time_s": max_cycle_time_s,
             "ml_model_version": ml_model_version
         }
@@ -127,8 +125,10 @@ class TrafficLight(Device):
                  phase_id,
                  lane_description,
                  default_green_s,
-                 yellow_duration_s,
+                 default_yellow_s,
+                 default_red_s,
                  min_red_s,
+                 min_green_s,
                  pedestrian_button_active):
         
 
@@ -136,7 +136,9 @@ class TrafficLight(Device):
             "phase_id": phase_id,
             "lane_description": lane_description,
             "default_green_s": default_green_s,
-            "yellow_duration_s": yellow_duration_s,
+            "fefault_yellow_s": default_yellow_s,
+            "fefault_red_s": default_red_s,
+            "min_green_s": min_green_s,
             "min_red_s": min_red_s,
             "pedestrian_button_active": pedestrian_button_active
         }
