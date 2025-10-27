@@ -178,7 +178,6 @@ def generateLocations(size):
         description = fake.street_address()
         latitude = random.uniform(-90.0, 90.0)
         longitude = random.uniform(-180.0, 180.0)
-        coordinates = [latitude,longitude]
 
         intersection = random.choice(INTERSECTION_REFERENCE_DATA)
         intersection_type = intersection['intersection_type']
@@ -191,7 +190,8 @@ def generateLocations(size):
                 description=description,
                 city=city,
                 state=state,
-                coordinates=coordinates,
+                longitude=longitude,
+                latitude=latitude,
                 intersection_type=intersection_type,
                 num_lanes=num_lanes,
                 traffic_volume_category=traffic_volume_category
@@ -201,13 +201,14 @@ def generateLocations(size):
     return locations
 
 def generateDevices(locations):
+    fake = Faker('pt_BR')
     devices = []
 
     # Gera o Edge Gateway
     devices.append(
         EdgeGateway(
             device_id='EGT-1',
-            location_ref=random.choice(locations)['location_id'], # Localização aleatória
+            location=fake.address(), # Localização do gateway, não fica em um cruzamento
             model=generateModel("edge_gateway"),
             firmware_version=generateFirmwareVersion(),
             status="online",
@@ -228,7 +229,7 @@ def generateDevices(locations):
         
         cam_count = 1
         sensor_count = 1
-
+        phase = generateTrafficPhase() # Todos os semáforos de um mesmo cruzamento estão na mesma fase
         for i in range(1,quant+1):
             lane = generateLaneDescription()
             devices.append(
@@ -239,7 +240,7 @@ def generateDevices(locations):
                     firmware_version=generateFirmwareVersion(),
                     status=generateStatus(),
                     last_check_in=generateRandomTimestamp(START_DATE, END_DATE),
-                    phase_id=generateTrafficPhase(),
+                    phase_id=phase,
                     lane_description=lane,
                     default_green_s=generateSeconds(),
                     default_yellow_s=generateSeconds(),
@@ -295,6 +296,8 @@ def generateReadings(devices):
     for d in devices:
         incident_count = {}
         for i in range(1,READINGS_PER_DEVICE+1):
+            if d['device_type'] == "edge_gateway":
+                continue
             if d['location_ref'] not in incident_count:
                 incident_count[d['location_ref']] = 0
 
@@ -347,6 +350,9 @@ if __name__ == "__main__":
     saveData('devices',devices)
     saveData('readings',readings)
 
+    print(f'📥 Locations Gerados: {len(locations)}.')
+    print(f'📥 Devices Gerados: {len(devices)}.')
+    print(f'📥 Readings Gerados: {len(readings)}.')
     print(f'💾 Total Documentos Gerados: {len(locations)+len(devices)+len(readings)}')
 
     #print(locations)

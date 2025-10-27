@@ -4,10 +4,10 @@
         "description": "Condomínio Anthony Gabriel Borges, 201",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            83.96163642458498,
-            -21.336264296873026
-        ],
+        "coordinates": {
+            "longitude": -21.336264296873026,
+            "latitude": 83.96163642458498
+        },
         "intersection_type": "T-junction",
         "num_lanes": 4,
         "traffic_volume_category": "low"
@@ -17,10 +17,10 @@
         "description": "Feira Arthur Gabriel Alves, 6",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            73.97567324084235,
-            158.13683905095502
-        ],
+        "coordinates": {
+            "longitude": 158.13683905095502,
+            "latitude": 73.97567324084235
+        },
         "intersection_type": "pedestrian_priority",
         "num_lanes": 4,
         "traffic_volume_category": "low"
@@ -30,10 +30,10 @@
         "description": "Recanto de Pimenta, 22",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            30.881426667837317,
-            -149.78223833864976
-        ],
+        "coordinates": {
+            "longitude": -149.78223833864976,
+            "latitude": 30.881426667837317
+        },
         "intersection_type": "rotary_with_signal",
         "num_lanes": 5,
         "traffic_volume_category": "low"
@@ -43,10 +43,10 @@
         "description": "Condomínio de Albuquerque, 273",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            -86.86295132676868,
-            175.20776632397008
-        ],
+        "coordinates": {
+            "longitude": 175.20776632397008,
+            "latitude": -86.86295132676868
+        },
         "intersection_type": "T-junction",
         "num_lanes": 4,
         "traffic_volume_category": "medium"
@@ -56,10 +56,10 @@
         "description": "Quadra de Azevedo, 118",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            26.696885467996182,
-            -5.671470301645655
-        ],
+        "coordinates": {
+            "longitude": -5.671470301645655,
+            "latitude": 26.696885467996182
+        },
         "intersection_type": "y_junction",
         "num_lanes": 3,
         "traffic_volume_category": "low"
@@ -69,10 +69,10 @@
         "description": "Campo de Ramos, 67",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            -73.56830184939268,
-            76.82764233044287
-        ],
+        "coordinates": {
+            "longitude": 76.82764233044287,
+            "latitude": -73.56830184939268
+        },
         "intersection_type": "T-junction",
         "num_lanes": 4,
         "traffic_volume_category": "high"
@@ -82,10 +82,10 @@
         "description": "Via Costa, 18",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            -2.3847226911434944,
-            167.36456192983763
-        ],
+        "coordinates": {
+            "longitude": 167.36456192983763,
+            "latitude": -2.3847226911434944
+        },
         "intersection_type": "T-junction",
         "num_lanes": 4,
         "traffic_volume_category": "high"
@@ -95,10 +95,10 @@
         "description": "Aeroporto Farias, 77",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            7.395873399203452,
-            -12.276518757008546
-        ],
+        "coordinates": {
+            "longitude": -12.276518757008546,
+            "latitude": 7.395873399203452
+        },
         "intersection_type": "pedestrian_priority",
         "num_lanes": 4,
         "traffic_volume_category": "high"
@@ -108,10 +108,10 @@
         "description": "Campo Pastor, 22",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            -73.99281060168079,
-            28.440967027451933
-        ],
+        "coordinates": {
+            "longitude": 28.440967027451933,
+            "latitude": -73.99281060168079
+        },
         "intersection_type": "rotary_with_signal",
         "num_lanes": 5,
         "traffic_volume_category": "high"
@@ -121,10 +121,10 @@
         "description": "Distrito Alves, 91",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            -78.64601659749327,
-            -71.12554063519022
-        ],
+        "coordinates": {
+            "longitude": -71.12554063519022,
+            "latitude": -78.64601659749327
+        },
         "intersection_type": "rotary_with_signal",
         "num_lanes": 5,
         "traffic_volume_category": "medium"
@@ -134,10 +134,10 @@
         "description": "Lagoa de Marques, 7",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            -45.15261815498238,
-            156.0655792952448
-        ],
+        "coordinates": {
+            "longitude": 156.0655792952448,
+            "latitude": -45.15261815498238
+        },
         "intersection_type": "y_junction",
         "num_lanes": 3,
         "traffic_volume_category": "high"
@@ -147,10 +147,10 @@
         "description": "Área de Cavalcanti, 52",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            29.774078454627983,
-            158.9311985888831
-        ],
+        "coordinates": {
+            "longitude": 158.9311985888831,
+            "latitude": 29.774078454627983
+        },
         "intersection_type": "T-junction",
         "num_lanes": 4,
         "traffic_volume_category": "low"
@@ -160,10 +160,10 @@
         "description": "Quadra Aparecida, 865",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            -29.968185679031052,
-            75.60479469759531
-        ],
+        "coordinates": {
+            "longitude": 75.60479469759531,
+            "latitude": -29.968185679031052
+        },
         "intersection_type": "y_junction",
         "num_lanes": 3,
         "traffic_volume_category": "low"
@@ -173,10 +173,10 @@
         "description": "Quadra de Melo, 8",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            -80.24846424369429,
-            31.510262927184982
-        ],
+        "coordinates": {
+            "longitude": 31.510262927184982,
+            "latitude": -80.24846424369429
+        },
         "intersection_type": "four_way_perpendicular",
         "num_lanes": 6,
         "traffic_volume_category": "low"
@@ -186,10 +186,10 @@
         "description": "Esplanada de Macedo, 574",
         "city": "Leopoldina",
         "state": "Minas Gerais",
-        "coordinates": [
-            10.319442739464264,
-            -128.071540223313
-        ],
+        "coordinates": {
+            "longitude": -128.071540223313,
+            "latitude": 10.319442739464264
+        },
         "intersection_type": "rotary_with_signal",
         "num_lanes": 5,
         "traffic_volume_category": "low"

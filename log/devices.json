@@ -1,1822 +1,1830 @@
 [
     {
+        "location": "Pátio Lopes, 9\nCalafate\n64351-294 Silveira / MT",
         "device_id": "EGT-1",
-        "location_ref": "LOC-009",
         "device_type": "edge_gateway",
-        "model": "SmartCTL X1",
-        "firmware_version": "3.7.2",
+        "model": "Gateway IoT-500",
+        "firmware_version": "2.4.15",
         "status": "online",
-        "last_check_in": "2025-10-27T13:40:10.667287+00:00",
+        "last_check_in": "2025-10-27T17:55:56.699263+00:00",
         "config": {
-            "control_mode": "fixed",
-            "max_cycle_time_s": 40,
-            "ml_model_version": "AdaptiveFlow_Predictor_v3.1.2"
+            "control_mode": "adaptative",
+            "max_cycle_time_s": 58,
+            "ml_model_version": "QLearning_PhaseScheduler_v1.9.0"
         }
     },
     {
-        "device_id": "SEM-001-01",
         "location_ref": "LOC-001",
+        "phase_id": "P1",
+        "device_id": "SEM-001-01",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
         "firmware_version": "2.7.2",
         "status": "maintenance",
-        "last_check_in": "2025-10-25T06:09:12.657241+00:00",
+        "last_check_in": "2025-10-25T10:24:58.680722+00:00",
         "config": {
-            "phase_id": "P3",
-            "lane_description": "t - Sentido Leste (Faixa de Giro à Esquerda)",
-            "default_green_s": 68,
-            "fefault_yellow_s": 48,
-            "fefault_red_s": 79,
-            "min_green_s": 64,
-            "min_red_s": 65,
+            "lane_description": "  - Sentido Leste (Faixa de Giro à Esquerda)",
+            "default_green_s": 49,
+            "default_yellow_s": 68,
+            "default_red_s": 48,
+            "min_green_s": 79,
+            "min_red_s": 64,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "SEM-001-02",
         "location_ref": "LOC-001",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.1.6",
-        "status": "offline",
-        "last_check_in": "2025-10-25T20:40:51.657241+00:00",
-        "config": {
-            "phase_id": "P1",
-            "lane_description": "a - Sentido Oeste (Acesso)",
-            "default_green_s": 72,
-            "fefault_yellow_s": 18,
-            "fefault_red_s": 67,
-            "min_green_s": 53,
-            "min_red_s": 89,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "CAM-001-01",
-        "location_ref": "LOC-001",
-        "device_type": "camera",
-        "model": "Cam-Traffic G18",
-        "firmware_version": "2.9.9",
-        "status": "online",
-        "last_check_in": "2025-10-24T11:53:33.657241+00:00",
-        "config": {
-            "resolution": "1440p",
-            "framerate": 24,
-            "view_angle_degrees": 45,
-            "ml_detection_enabled": true,
-            "image_storage_policy": "cloud_only",
-            "lane_description": "a - Sentido Oeste (Acesso)"
-        }
-    },
-    {
-        "device_id": "SEM-001-03",
-        "location_ref": "LOC-001",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "3.4.15",
-        "status": "online",
-        "last_check_in": "2025-10-23T16:39:03.657241+00:00",
-        "config": {
-            "phase_id": "P1",
-            "lane_description": "o - Sentido Sul (Fluxo Principal)",
-            "default_green_s": 59,
-            "fefault_yellow_s": 30,
-            "fefault_red_s": 17,
-            "min_green_s": 55,
-            "min_red_s": 29,
-            "pedestrian_button_active": false
-        }
-    },
-    {
         "device_id": "TRS-001-01",
-        "location_ref": "LOC-001",
         "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "2.8.14",
-        "status": "online",
-        "last_check_in": "2025-10-23T00:52:23.657241+00:00",
+        "model": "IR Sensor E1",
+        "firmware_version": "2.7.17",
+        "status": "offline",
+        "last_check_in": "2025-10-24T08:03:17.680722+00:00",
         "config": {
             "sampling_rate_s": 25,
-            "lane_description": "o - Sentido Sul (Fluxo Principal)",
+            "lane_description": "  - Sentido Leste (Faixa de Giro à Esquerda)",
             "detection_method": "radar",
-            "velocity_threshold_kph": 90
+            "velocity_threshold_kph": 50
         }
     },
     {
-        "device_id": "SEM-001-04",
         "location_ref": "LOC-001",
+        "phase_id": "P1",
+        "device_id": "SEM-001-02",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
-        "firmware_version": "4.5.5",
-        "status": "online",
-        "last_check_in": "2025-10-21T03:40:17.657241+00:00",
+        "firmware_version": "1.7.13",
+        "status": "maintenance",
+        "last_check_in": "2025-10-23T20:20:40.680722+00:00",
         "config": {
-            "phase_id": "P5",
-            "lane_description": "2 - Sentido Sul (Acesso)",
-            "default_green_s": 26,
-            "fefault_yellow_s": 23,
-            "fefault_red_s": 74,
-            "min_green_s": 13,
-            "min_red_s": 46,
-            "pedestrian_button_active": true
+            "lane_description": "n - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 87,
+            "default_yellow_s": 29,
+            "default_red_s": 49,
+            "min_green_s": 18,
+            "min_red_s": 25,
+            "pedestrian_button_active": false
         }
     },
     {
-        "device_id": "TRS-001-02",
         "location_ref": "LOC-001",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "2.3.2",
-        "status": "offline",
-        "last_check_in": "2025-10-25T07:41:05.657241+00:00",
-        "config": {
-            "sampling_rate_s": 60,
-            "lane_description": "2 - Sentido Sul (Acesso)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 60
-        }
-    },
-    {
-        "device_id": "SEM-002-01",
-        "location_ref": "LOC-002",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.9.5",
-        "status": "maintenance",
-        "last_check_in": "2025-10-21T16:43:10.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "a - Sentido Leste (Faixa de Ônibus)",
-            "default_green_s": 40,
-            "fefault_yellow_s": 57,
-            "fefault_red_s": 56,
-            "min_green_s": 77,
-            "min_red_s": 40,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "TRS-002-01",
-        "location_ref": "LOC-002",
-        "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "4.0.12",
-        "status": "offline",
-        "last_check_in": "2025-10-23T09:23:20.657241+00:00",
-        "config": {
-            "sampling_rate_s": 40,
-            "lane_description": "a - Sentido Leste (Faixa de Ônibus)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 100
-        }
-    },
-    {
-        "device_id": "SEM-002-02",
-        "location_ref": "LOC-002",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "4.4.14",
-        "status": "maintenance",
-        "last_check_in": "2025-10-26T09:21:34.657241+00:00",
-        "config": {
-            "phase_id": "P2",
-            "lane_description": "  - Sentido Norte (Fluxo Principal)",
-            "default_green_s": 56,
-            "fefault_yellow_s": 85,
-            "fefault_red_s": 66,
-            "min_green_s": 25,
-            "min_red_s": 41,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "TRS-002-02",
-        "location_ref": "LOC-002",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "4.7.1",
-        "status": "maintenance",
-        "last_check_in": "2025-10-26T05:57:10.657241+00:00",
-        "config": {
-            "sampling_rate_s": 55,
-            "lane_description": "  - Sentido Norte (Fluxo Principal)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 30
-        }
-    },
-    {
-        "device_id": "SEM-002-03",
-        "location_ref": "LOC-002",
+        "phase_id": "P1",
+        "device_id": "SEM-001-03",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "3.5.10",
+        "firmware_version": "4.3.2",
         "status": "offline",
-        "last_check_in": "2025-10-24T13:57:35.657241+00:00",
+        "last_check_in": "2025-10-21T04:59:56.680722+00:00",
         "config": {
-            "phase_id": "P5",
-            "lane_description": "i - Sentido Oeste (Fluxo Principal)",
-            "default_green_s": 42,
-            "fefault_yellow_s": 77,
-            "fefault_red_s": 29,
-            "min_green_s": 70,
-            "min_red_s": 40,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-002-03",
-        "location_ref": "LOC-002",
-        "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "3.5.15",
-        "status": "offline",
-        "last_check_in": "2025-10-21T14:24:53.657241+00:00",
-        "config": {
-            "sampling_rate_s": 45,
-            "lane_description": "i - Sentido Oeste (Fluxo Principal)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 60
-        }
-    },
-    {
-        "device_id": "SEM-002-04",
-        "location_ref": "LOC-002",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "4.0.2",
-        "status": "online",
-        "last_check_in": "2025-10-22T10:45:39.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "e - Sentido Leste (Faixa de Giro à Esquerda)",
-            "default_green_s": 71,
-            "fefault_yellow_s": 50,
-            "fefault_red_s": 60,
-            "min_green_s": 70,
-            "min_red_s": 13,
+            "lane_description": "  - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 33,
+            "default_yellow_s": 69,
+            "default_red_s": 16,
+            "min_green_s": 45,
+            "min_red_s": 44,
             "pedestrian_button_active": false
         }
     },
     {
-        "device_id": "TRS-002-04",
-        "location_ref": "LOC-002",
-        "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "2.5.17",
-        "status": "online",
-        "last_check_in": "2025-10-20T18:57:29.657241+00:00",
-        "config": {
-            "sampling_rate_s": 55,
-            "lane_description": "e - Sentido Leste (Faixa de Giro à Esquerda)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 60
-        }
-    },
-    {
-        "device_id": "SEM-003-01",
-        "location_ref": "LOC-003",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "2.8.20",
-        "status": "maintenance",
-        "last_check_in": "2025-10-21T09:32:38.657241+00:00",
-        "config": {
-            "phase_id": "P2",
-            "lane_description": "  - Sentido Oeste (Acesso)",
-            "default_green_s": 73,
-            "fefault_yellow_s": 36,
-            "fefault_red_s": 26,
-            "min_green_s": 69,
-            "min_red_s": 69,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "SEM-003-02",
-        "location_ref": "LOC-003",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.5.14",
-        "status": "online",
-        "last_check_in": "2025-10-21T10:19:16.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "r - Sentido Oeste (Fluxo Principal)",
-            "default_green_s": 34,
-            "fefault_yellow_s": 84,
-            "fefault_red_s": 30,
-            "min_green_s": 49,
-            "min_red_s": 71,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "TRS-003-01",
-        "location_ref": "LOC-003",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.7.3",
-        "status": "offline",
-        "last_check_in": "2025-10-25T17:51:59.657241+00:00",
-        "config": {
-            "sampling_rate_s": 30,
-            "lane_description": "r - Sentido Oeste (Fluxo Principal)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 110
-        }
-    },
-    {
-        "device_id": "SEM-003-03",
-        "location_ref": "LOC-003",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "3.6.6",
-        "status": "online",
-        "last_check_in": "2025-10-20T18:51:23.657241+00:00",
-        "config": {
-            "phase_id": "P2",
-            "lane_description": "v - Sentido Norte (Faixa de Ônibus)",
-            "default_green_s": 30,
-            "fefault_yellow_s": 82,
-            "fefault_red_s": 84,
-            "min_green_s": 75,
-            "min_red_s": 23,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "CAM-003-01",
-        "location_ref": "LOC-003",
+        "location_ref": "LOC-001",
+        "device_id": "CAM-001-01",
         "device_type": "camera",
         "model": "Vision Sensor V2",
-        "firmware_version": "1.9.15",
-        "status": "offline",
-        "last_check_in": "2025-10-25T01:57:42.657241+00:00",
+        "firmware_version": "1.6.7",
+        "status": "online",
+        "last_check_in": "2025-10-25T13:27:50.680722+00:00",
         "config": {
-            "resolution": "1080p",
+            "resolution": "720p",
             "framerate": 50,
-            "view_angle_degrees": 150,
+            "view_angle_degrees": 240,
+            "ml_detection_enabled": true,
+            "image_storage_policy": "local_cache",
+            "lane_description": "  - Sentido Oeste (Fluxo Principal)"
+        }
+    },
+    {
+        "location_ref": "LOC-001",
+        "phase_id": "P1",
+        "device_id": "SEM-001-04",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "2.4.2",
+        "status": "offline",
+        "last_check_in": "2025-10-27T05:34:12.680722+00:00",
+        "config": {
+            "lane_description": "  - Sentido Oeste (Faixa de Giro à Esquerda)",
+            "default_green_s": 24,
+            "default_yellow_s": 68,
+            "default_red_s": 75,
+            "min_green_s": 65,
+            "min_red_s": 47,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-001",
+        "device_id": "CAM-001-02",
+        "device_type": "camera",
+        "model": "Cam-Traffic G18",
+        "firmware_version": "2.8.3",
+        "status": "maintenance",
+        "last_check_in": "2025-10-24T16:40:42.680722+00:00",
+        "config": {
+            "resolution": "720p",
+            "framerate": 24,
+            "view_angle_degrees": 30,
             "ml_detection_enabled": false,
             "image_storage_policy": "cloud_only",
-            "lane_description": "v - Sentido Norte (Faixa de Ônibus)"
+            "lane_description": "  - Sentido Oeste (Faixa de Giro à Esquerda)"
         }
     },
     {
-        "device_id": "TRS-003-02",
-        "location_ref": "LOC-003",
-        "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "3.1.18",
+        "location_ref": "LOC-002",
+        "phase_id": "P1",
+        "device_id": "SEM-002-01",
+        "device_type": "traffic_light",
+        "model": "PhaseController M1",
+        "firmware_version": "4.4.18",
         "status": "maintenance",
-        "last_check_in": "2025-10-20T23:58:56.657241+00:00",
+        "last_check_in": "2025-10-24T10:38:03.680722+00:00",
         "config": {
-            "sampling_rate_s": 20,
-            "lane_description": "v - Sentido Norte (Faixa de Ônibus)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 120
+            "lane_description": "l - Sentido Oeste (Faixa de Ônibus)",
+            "default_green_s": 59,
+            "default_yellow_s": 45,
+            "default_red_s": 78,
+            "min_green_s": 24,
+            "min_red_s": 73,
+            "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "SEM-003-04",
-        "location_ref": "LOC-003",
+        "location_ref": "LOC-002",
+        "device_id": "TRS-002-01",
+        "device_type": "traffic_sensor",
+        "model": "IR Sensor E1",
+        "firmware_version": "3.8.4",
+        "status": "maintenance",
+        "last_check_in": "2025-10-25T07:15:37.680722+00:00",
+        "config": {
+            "sampling_rate_s": 25,
+            "lane_description": "l - Sentido Oeste (Faixa de Ônibus)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 80
+        }
+    },
+    {
+        "location_ref": "LOC-002",
+        "phase_id": "P1",
+        "device_id": "SEM-002-02",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
-        "firmware_version": "3.2.15",
+        "firmware_version": "4.3.16",
         "status": "online",
-        "last_check_in": "2025-10-20T14:36:36.657241+00:00",
+        "last_check_in": "2025-10-25T08:46:22.680722+00:00",
         "config": {
-            "phase_id": "P5",
-            "lane_description": "n - Sentido Leste (Faixa de Ônibus)",
-            "default_green_s": 57,
-            "fefault_yellow_s": 35,
-            "fefault_red_s": 29,
-            "min_green_s": 61,
-            "min_red_s": 39,
+            "lane_description": ", - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 44,
+            "default_yellow_s": 5,
+            "default_red_s": 14,
+            "min_green_s": 66,
+            "min_red_s": 55,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-002",
+        "phase_id": "P1",
+        "device_id": "SEM-002-03",
+        "device_type": "traffic_light",
+        "model": "PhaseController M1",
+        "firmware_version": "3.9.12",
+        "status": "maintenance",
+        "last_check_in": "2025-10-24T22:51:08.680722+00:00",
+        "config": {
+            "lane_description": "C - Sentido Oeste (Acesso)",
+            "default_green_s": 31,
+            "default_yellow_s": 26,
+            "default_red_s": 71,
+            "min_green_s": 77,
+            "min_red_s": 63,
             "pedestrian_button_active": false
         }
     },
     {
-        "device_id": "TRS-003-03",
-        "location_ref": "LOC-003",
+        "location_ref": "LOC-002",
+        "device_id": "TRS-002-02",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "4.8.16",
-        "status": "maintenance",
-        "last_check_in": "2025-10-26T09:48:06.657241+00:00",
+        "firmware_version": "4.1.1",
+        "status": "offline",
+        "last_check_in": "2025-10-26T12:31:24.680722+00:00",
         "config": {
-            "sampling_rate_s": 40,
-            "lane_description": "n - Sentido Leste (Faixa de Ônibus)",
-            "detection_method": "camera_based",
+            "sampling_rate_s": 10,
+            "lane_description": "C - Sentido Oeste (Acesso)",
+            "detection_method": "radar",
             "velocity_threshold_kph": 90
         }
     },
     {
-        "device_id": "SEM-004-01",
-        "location_ref": "LOC-004",
+        "location_ref": "LOC-002",
+        "phase_id": "P1",
+        "device_id": "SEM-002-04",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
-        "firmware_version": "2.1.16",
-        "status": "offline",
-        "last_check_in": "2025-10-21T17:51:11.657241+00:00",
+        "firmware_version": "3.9.10",
+        "status": "maintenance",
+        "last_check_in": "2025-10-23T02:36:13.680722+00:00",
         "config": {
-            "phase_id": "P5",
-            "lane_description": "6 - Sentido Norte (Acesso)",
-            "default_green_s": 76,
-            "fefault_yellow_s": 21,
-            "fefault_red_s": 37,
-            "min_green_s": 35,
-            "min_red_s": 14,
+            "lane_description": "l - Sentido Leste (Faixa de Ônibus)",
+            "default_green_s": 70,
+            "default_yellow_s": 40,
+            "default_red_s": 14,
+            "min_green_s": 73,
+            "min_red_s": 82,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "SEM-004-02",
-        "location_ref": "LOC-004",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "4.7.11",
-        "status": "offline",
-        "last_check_in": "2025-10-26T22:32:56.657241+00:00",
-        "config": {
-            "phase_id": "P1",
-            "lane_description": "a - Sentido Oeste (Faixa de Giro à Esquerda)",
-            "default_green_s": 74,
-            "fefault_yellow_s": 64,
-            "fefault_red_s": 15,
-            "min_green_s": 14,
-            "min_red_s": 30,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-004-01",
-        "location_ref": "LOC-004",
-        "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "2.4.1",
-        "status": "online",
-        "last_check_in": "2025-10-24T09:43:18.657241+00:00",
-        "config": {
-            "sampling_rate_s": 50,
-            "lane_description": "a - Sentido Oeste (Faixa de Giro à Esquerda)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 30
-        }
-    },
-    {
-        "device_id": "SEM-004-03",
-        "location_ref": "LOC-004",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.4.19",
-        "status": "offline",
-        "last_check_in": "2025-10-27T13:39:28.657241+00:00",
-        "config": {
-            "phase_id": "P2",
-            "lane_description": "i - Sentido Leste (Acesso)",
-            "default_green_s": 53,
-            "fefault_yellow_s": 55,
-            "fefault_red_s": 6,
-            "min_green_s": 42,
-            "min_red_s": 81,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "SEM-004-04",
-        "location_ref": "LOC-004",
+        "location_ref": "LOC-003",
+        "phase_id": "P4",
+        "device_id": "SEM-003-01",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "4.9.15",
-        "status": "offline",
-        "last_check_in": "2025-10-26T15:50:29.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "Y - Sentido Sul (Faixa de Giro à Esquerda)",
-            "default_green_s": 71,
-            "fefault_yellow_s": 39,
-            "fefault_red_s": 60,
-            "min_green_s": 55,
-            "min_red_s": 38,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "TRS-004-02",
-        "location_ref": "LOC-004",
-        "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "2.2.14",
+        "firmware_version": "3.5.5",
         "status": "online",
-        "last_check_in": "2025-10-20T23:42:05.657241+00:00",
+        "last_check_in": "2025-10-25T12:51:02.680722+00:00",
         "config": {
-            "sampling_rate_s": 20,
-            "lane_description": "Y - Sentido Sul (Faixa de Giro à Esquerda)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 120
-        }
-    },
-    {
-        "device_id": "SEM-005-01",
-        "location_ref": "LOC-005",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "4.1.3",
-        "status": "online",
-        "last_check_in": "2025-10-23T12:51:21.657241+00:00",
-        "config": {
-            "phase_id": "P4",
-            "lane_description": "S - Sentido Oeste (Acesso)",
-            "default_green_s": 67,
-            "fefault_yellow_s": 53,
-            "fefault_red_s": 35,
-            "min_green_s": 43,
-            "min_red_s": 70,
+            "lane_description": "p - Sentido Norte (Fluxo Principal)",
+            "default_green_s": 9,
+            "default_yellow_s": 90,
+            "default_red_s": 10,
+            "min_green_s": 31,
+            "min_red_s": 90,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "TRS-005-01",
-        "location_ref": "LOC-005",
+        "location_ref": "LOC-003",
+        "device_id": "TRS-003-01",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "1.4.1",
+        "firmware_version": "1.4.9",
         "status": "maintenance",
-        "last_check_in": "2025-10-22T18:16:09.657241+00:00",
-        "config": {
-            "sampling_rate_s": 15,
-            "lane_description": "S - Sentido Oeste (Acesso)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 100
-        }
-    },
-    {
-        "device_id": "SEM-005-02",
-        "location_ref": "LOC-005",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.7.18",
-        "status": "offline",
-        "last_check_in": "2025-10-22T04:34:13.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "n - Sentido Sul (Faixa de Giro à Esquerda)",
-            "default_green_s": 60,
-            "fefault_yellow_s": 65,
-            "fefault_red_s": 40,
-            "min_green_s": 45,
-            "min_red_s": 26,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-005-02",
-        "location_ref": "LOC-005",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "3.2.18",
-        "status": "offline",
-        "last_check_in": "2025-10-22T07:51:58.657241+00:00",
-        "config": {
-            "sampling_rate_s": 35,
-            "lane_description": "n - Sentido Sul (Faixa de Giro à Esquerda)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 60
-        }
-    },
-    {
-        "device_id": "SEM-005-03",
-        "location_ref": "LOC-005",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "4.0.17",
-        "status": "offline",
-        "last_check_in": "2025-10-22T21:23:31.657241+00:00",
-        "config": {
-            "phase_id": "P2",
-            "lane_description": "í - Sentido Sul (Faixa de Giro à Esquerda)",
-            "default_green_s": 75,
-            "fefault_yellow_s": 7,
-            "fefault_red_s": 7,
-            "min_green_s": 51,
-            "min_red_s": 61,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-005-03",
-        "location_ref": "LOC-005",
-        "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "4.5.19",
-        "status": "maintenance",
-        "last_check_in": "2025-10-23T14:17:12.657241+00:00",
+        "last_check_in": "2025-10-26T15:21:52.680722+00:00",
         "config": {
             "sampling_rate_s": 50,
-            "lane_description": "í - Sentido Sul (Faixa de Giro à Esquerda)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 80
-        }
-    },
-    {
-        "device_id": "SEM-006-01",
-        "location_ref": "LOC-006",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.7.19",
-        "status": "online",
-        "last_check_in": "2025-10-25T08:47:12.657241+00:00",
-        "config": {
-            "phase_id": "P4",
-            "lane_description": "n - Sentido Norte (Fluxo Principal)",
-            "default_green_s": 31,
-            "fefault_yellow_s": 10,
-            "fefault_red_s": 60,
-            "min_green_s": 55,
-            "min_red_s": 19,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "CAM-006-01",
-        "location_ref": "LOC-006",
-        "device_type": "camera",
-        "model": "Cam-Traffic G18",
-        "firmware_version": "1.5.6",
-        "status": "maintenance",
-        "last_check_in": "2025-10-23T08:32:08.657241+00:00",
-        "config": {
-            "resolution": "480p",
-            "framerate": 60,
-            "view_angle_degrees": 150,
-            "ml_detection_enabled": true,
-            "image_storage_policy": "local_cache",
-            "lane_description": "n - Sentido Norte (Fluxo Principal)"
-        }
-    },
-    {
-        "device_id": "SEM-006-02",
-        "location_ref": "LOC-006",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.0.14",
-        "status": "offline",
-        "last_check_in": "2025-10-20T22:31:48.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "N - Sentido Leste (Fluxo Principal)",
-            "default_green_s": 28,
-            "fefault_yellow_s": 34,
-            "fefault_red_s": 84,
-            "min_green_s": 67,
-            "min_red_s": 78,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-006-01",
-        "location_ref": "LOC-006",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "3.2.14",
-        "status": "maintenance",
-        "last_check_in": "2025-10-24T08:27:50.657241+00:00",
-        "config": {
-            "sampling_rate_s": 45,
-            "lane_description": "N - Sentido Leste (Fluxo Principal)",
+            "lane_description": "p - Sentido Norte (Fluxo Principal)",
             "detection_method": "radar",
-            "velocity_threshold_kph": 80
+            "velocity_threshold_kph": 90
         }
     },
     {
-        "device_id": "SEM-006-03",
-        "location_ref": "LOC-006",
+        "location_ref": "LOC-003",
+        "phase_id": "P4",
+        "device_id": "SEM-003-02",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
-        "firmware_version": "1.4.20",
-        "status": "offline",
-        "last_check_in": "2025-10-20T18:55:36.657241+00:00",
+        "firmware_version": "3.9.8",
+        "status": "online",
+        "last_check_in": "2025-10-26T13:09:15.680722+00:00",
         "config": {
-            "phase_id": "P4",
-            "lane_description": "R - Sentido Sul (Faixa de Giro à Esquerda)",
-            "default_green_s": 25,
-            "fefault_yellow_s": 60,
-            "fefault_red_s": 87,
-            "min_green_s": 48,
+            "lane_description": "a - Sentido Norte (Fluxo Principal)",
+            "default_green_s": 68,
+            "default_yellow_s": 22,
+            "default_red_s": 73,
+            "min_green_s": 84,
             "min_red_s": 84,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "CAM-006-02",
-        "location_ref": "LOC-006",
+        "location_ref": "LOC-003",
+        "phase_id": "P4",
+        "device_id": "SEM-003-03",
+        "device_type": "traffic_light",
+        "model": "Actuator 2000",
+        "firmware_version": "2.8.19",
+        "status": "maintenance",
+        "last_check_in": "2025-10-26T03:56:15.680722+00:00",
+        "config": {
+            "lane_description": ", - Sentido Sul (Acesso)",
+            "default_green_s": 10,
+            "default_yellow_s": 52,
+            "default_red_s": 13,
+            "min_green_s": 52,
+            "min_red_s": 57,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-003",
+        "device_id": "TRS-003-02",
+        "device_type": "traffic_sensor",
+        "model": "Loop Detector v3",
+        "firmware_version": "2.5.17",
+        "status": "maintenance",
+        "last_check_in": "2025-10-25T08:33:11.680722+00:00",
+        "config": {
+            "sampling_rate_s": 50,
+            "lane_description": ", - Sentido Sul (Acesso)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 30
+        }
+    },
+    {
+        "location_ref": "LOC-003",
+        "phase_id": "P4",
+        "device_id": "SEM-003-04",
+        "device_type": "traffic_light",
+        "model": "Actuator 2000",
+        "firmware_version": "4.5.5",
+        "status": "offline",
+        "last_check_in": "2025-10-23T16:25:41.680722+00:00",
+        "config": {
+            "lane_description": "P - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 8,
+            "default_yellow_s": 50,
+            "default_red_s": 80,
+            "min_green_s": 52,
+            "min_red_s": 58,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-003",
+        "device_id": "TRS-003-03",
+        "device_type": "traffic_sensor",
+        "model": "Loop Detector v3",
+        "firmware_version": "2.8.5",
+        "status": "maintenance",
+        "last_check_in": "2025-10-23T20:07:38.680722+00:00",
+        "config": {
+            "sampling_rate_s": 55,
+            "lane_description": "P - Sentido Oeste (Fluxo Principal)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 110
+        }
+    },
+    {
+        "location_ref": "LOC-004",
+        "phase_id": "P3",
+        "device_id": "SEM-004-01",
+        "device_type": "traffic_light",
+        "model": "Actuator 2000",
+        "firmware_version": "3.3.10",
+        "status": "online",
+        "last_check_in": "2025-10-24T13:01:37.680722+00:00",
+        "config": {
+            "lane_description": ", - Sentido Leste (Acesso)",
+            "default_green_s": 79,
+            "default_yellow_s": 39,
+            "default_red_s": 20,
+            "min_green_s": 74,
+            "min_red_s": 81,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-004",
+        "device_id": "TRS-004-01",
+        "device_type": "traffic_sensor",
+        "model": "Radar 4D",
+        "firmware_version": "2.5.10",
+        "status": "offline",
+        "last_check_in": "2025-10-24T01:25:10.680722+00:00",
+        "config": {
+            "sampling_rate_s": 60,
+            "lane_description": ", - Sentido Leste (Acesso)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 110
+        }
+    },
+    {
+        "location_ref": "LOC-004",
+        "phase_id": "P3",
+        "device_id": "SEM-004-02",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "4.3.7",
+        "status": "offline",
+        "last_check_in": "2025-10-24T01:34:00.680722+00:00",
+        "config": {
+            "lane_description": "4 - Sentido Sul (Fluxo Principal)",
+            "default_green_s": 27,
+            "default_yellow_s": 50,
+            "default_red_s": 80,
+            "min_green_s": 57,
+            "min_red_s": 72,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-004",
+        "device_id": "TRS-004-02",
+        "device_type": "traffic_sensor",
+        "model": "Radar 4D",
+        "firmware_version": "4.5.20",
+        "status": "online",
+        "last_check_in": "2025-10-27T04:02:12.680722+00:00",
+        "config": {
+            "sampling_rate_s": 35,
+            "lane_description": "4 - Sentido Sul (Fluxo Principal)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 40
+        }
+    },
+    {
+        "location_ref": "LOC-004",
+        "phase_id": "P3",
+        "device_id": "SEM-004-03",
+        "device_type": "traffic_light",
+        "model": "PhaseController M1",
+        "firmware_version": "2.4.8",
+        "status": "maintenance",
+        "last_check_in": "2025-10-21T14:34:20.680722+00:00",
+        "config": {
+            "lane_description": "a - Sentido Oeste (Acesso)",
+            "default_green_s": 47,
+            "default_yellow_s": 55,
+            "default_red_s": 42,
+            "min_green_s": 71,
+            "min_red_s": 50,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-004",
+        "phase_id": "P3",
+        "device_id": "SEM-004-04",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "1.8.15",
+        "status": "online",
+        "last_check_in": "2025-10-21T16:05:07.680722+00:00",
+        "config": {
+            "lane_description": "i - Sentido Leste (Acesso)",
+            "default_green_s": 30,
+            "default_yellow_s": 27,
+            "default_red_s": 82,
+            "min_green_s": 47,
+            "min_red_s": 27,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-004",
+        "device_id": "TRS-004-03",
+        "device_type": "traffic_sensor",
+        "model": "Loop Detector v3",
+        "firmware_version": "2.5.20",
+        "status": "online",
+        "last_check_in": "2025-10-21T07:06:37.680722+00:00",
+        "config": {
+            "sampling_rate_s": 5,
+            "lane_description": "i - Sentido Leste (Acesso)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 100
+        }
+    },
+    {
+        "location_ref": "LOC-005",
+        "phase_id": "P3",
+        "device_id": "SEM-005-01",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "2.6.13",
+        "status": "online",
+        "last_check_in": "2025-10-24T06:08:12.680722+00:00",
+        "config": {
+            "lane_description": "R - Sentido Leste (Acesso)",
+            "default_green_s": 81,
+            "default_yellow_s": 81,
+            "default_red_s": 41,
+            "min_green_s": 45,
+            "min_red_s": 83,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-005",
+        "phase_id": "P3",
+        "device_id": "SEM-005-02",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "3.8.9",
+        "status": "offline",
+        "last_check_in": "2025-10-25T12:02:44.680722+00:00",
+        "config": {
+            "lane_description": ", - Sentido Oeste (Acesso)",
+            "default_green_s": 38,
+            "default_yellow_s": 78,
+            "default_red_s": 68,
+            "min_green_s": 45,
+            "min_red_s": 36,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-005",
+        "device_id": "CAM-005-01",
         "device_type": "camera",
         "model": "Cam-Traffic G18",
+        "firmware_version": "4.2.2",
+        "status": "online",
+        "last_check_in": "2025-10-27T17:47:36.680722+00:00",
+        "config": {
+            "resolution": "4K",
+            "framerate": 45,
+            "view_angle_degrees": 240,
+            "ml_detection_enabled": true,
+            "image_storage_policy": "local_cache",
+            "lane_description": ", - Sentido Oeste (Acesso)"
+        }
+    },
+    {
+        "location_ref": "LOC-005",
+        "device_id": "TRS-005-01",
+        "device_type": "traffic_sensor",
+        "model": "Radar 4D",
+        "firmware_version": "1.1.3",
+        "status": "online",
+        "last_check_in": "2025-10-25T08:56:40.680722+00:00",
+        "config": {
+            "sampling_rate_s": 60,
+            "lane_description": ", - Sentido Oeste (Acesso)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 100
+        }
+    },
+    {
+        "location_ref": "LOC-005",
+        "phase_id": "P3",
+        "device_id": "SEM-005-03",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "4.1.10",
+        "status": "online",
+        "last_check_in": "2025-10-26T19:52:40.680722+00:00",
+        "config": {
+            "lane_description": "  - Sentido Leste (Faixa de Ônibus)",
+            "default_green_s": 28,
+            "default_yellow_s": 23,
+            "default_red_s": 23,
+            "min_green_s": 53,
+            "min_red_s": 59,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-005",
+        "device_id": "CAM-005-02",
+        "device_type": "camera",
+        "model": "Vision Sensor V2",
+        "firmware_version": "1.7.18",
+        "status": "offline",
+        "last_check_in": "2025-10-22T08:49:59.680722+00:00",
+        "config": {
+            "resolution": "1080p",
+            "framerate": 50,
+            "view_angle_degrees": 180,
+            "ml_detection_enabled": true,
+            "image_storage_policy": "local_cache",
+            "lane_description": "  - Sentido Leste (Faixa de Ônibus)"
+        }
+    },
+    {
+        "location_ref": "LOC-005",
+        "device_id": "TRS-005-02",
+        "device_type": "traffic_sensor",
+        "model": "Radar 4D",
+        "firmware_version": "2.7.8",
+        "status": "online",
+        "last_check_in": "2025-10-23T23:35:58.680722+00:00",
+        "config": {
+            "sampling_rate_s": 15,
+            "lane_description": "  - Sentido Leste (Faixa de Ônibus)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 50
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "phase_id": "P4",
+        "device_id": "SEM-006-01",
+        "device_type": "traffic_light",
+        "model": "PhaseController M1",
+        "firmware_version": "3.9.14",
+        "status": "maintenance",
+        "last_check_in": "2025-10-20T18:28:16.680722+00:00",
+        "config": {
+            "lane_description": "A - Sentido Sul (Faixa de Giro à Esquerda)",
+            "default_green_s": 71,
+            "default_yellow_s": 49,
+            "default_red_s": 29,
+            "min_green_s": 87,
+            "min_red_s": 33,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "device_id": "CAM-006-01",
+        "device_type": "camera",
+        "model": "Vision Sensor V2",
+        "firmware_version": "4.3.1",
+        "status": "offline",
+        "last_check_in": "2025-10-25T20:57:01.680722+00:00",
+        "config": {
+            "resolution": "1440p",
+            "framerate": 50,
+            "view_angle_degrees": 120,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "cloud_only",
+            "lane_description": "A - Sentido Sul (Faixa de Giro à Esquerda)"
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "phase_id": "P4",
+        "device_id": "SEM-006-02",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "1.0.10",
+        "status": "maintenance",
+        "last_check_in": "2025-10-27T15:01:05.680722+00:00",
+        "config": {
+            "lane_description": "9 - Sentido Leste (Acesso)",
+            "default_green_s": 20,
+            "default_yellow_s": 62,
+            "default_red_s": 78,
+            "min_green_s": 36,
+            "min_red_s": 55,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "device_id": "CAM-006-02",
+        "device_type": "camera",
+        "model": "Vision Sensor V2",
+        "firmware_version": "1.6.6",
+        "status": "online",
+        "last_check_in": "2025-10-21T15:00:26.680722+00:00",
+        "config": {
+            "resolution": "1080p",
+            "framerate": 30,
+            "view_angle_degrees": 75,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "local_cache",
+            "lane_description": "9 - Sentido Leste (Acesso)"
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "device_id": "TRS-006-01",
+        "device_type": "traffic_sensor",
+        "model": "Radar 4D",
+        "firmware_version": "1.5.17",
+        "status": "online",
+        "last_check_in": "2025-10-24T01:56:07.680722+00:00",
+        "config": {
+            "sampling_rate_s": 60,
+            "lane_description": "9 - Sentido Leste (Acesso)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 30
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "phase_id": "P4",
+        "device_id": "SEM-006-03",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "3.2.8",
+        "status": "maintenance",
+        "last_check_in": "2025-10-26T16:38:53.680722+00:00",
+        "config": {
+            "lane_description": "n - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 78,
+            "default_yellow_s": 12,
+            "default_red_s": 42,
+            "min_green_s": 36,
+            "min_red_s": 62,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "device_id": "TRS-006-02",
+        "device_type": "traffic_sensor",
+        "model": "IR Sensor E1",
+        "firmware_version": "3.8.1",
+        "status": "offline",
+        "last_check_in": "2025-10-24T16:54:27.680722+00:00",
+        "config": {
+            "sampling_rate_s": 55,
+            "lane_description": "n - Sentido Oeste (Fluxo Principal)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 50
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "phase_id": "P4",
+        "device_id": "SEM-006-04",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "4.0.14",
+        "status": "online",
+        "last_check_in": "2025-10-26T00:33:46.680722+00:00",
+        "config": {
+            "lane_description": "  - Sentido Norte (Faixa de Ônibus)",
+            "default_green_s": 87,
+            "default_yellow_s": 48,
+            "default_red_s": 84,
+            "min_green_s": 41,
+            "min_red_s": 17,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-006",
+        "device_id": "CAM-006-03",
+        "device_type": "camera",
+        "model": "SONY G95 PRO",
         "firmware_version": "4.9.11",
         "status": "maintenance",
-        "last_check_in": "2025-10-21T00:44:28.657241+00:00",
+        "last_check_in": "2025-10-21T05:00:14.680722+00:00",
         "config": {
             "resolution": "1440p",
             "framerate": 50,
             "view_angle_degrees": 240,
             "ml_detection_enabled": true,
             "image_storage_policy": "cloud_only",
-            "lane_description": "R - Sentido Sul (Faixa de Giro à Esquerda)"
+            "lane_description": "  - Sentido Norte (Faixa de Ônibus)"
         }
     },
     {
-        "device_id": "TRS-006-02",
         "location_ref": "LOC-006",
+        "device_id": "TRS-006-03",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
         "firmware_version": "3.9.17",
         "status": "maintenance",
-        "last_check_in": "2025-10-22T21:02:43.657241+00:00",
+        "last_check_in": "2025-10-23T01:18:29.680722+00:00",
         "config": {
             "sampling_rate_s": 55,
-            "lane_description": "R - Sentido Sul (Faixa de Giro à Esquerda)",
+            "lane_description": "  - Sentido Norte (Faixa de Ônibus)",
             "detection_method": "radar",
             "velocity_threshold_kph": 100
         }
     },
     {
-        "device_id": "SEM-006-04",
-        "location_ref": "LOC-006",
+        "location_ref": "LOC-007",
+        "phase_id": "P1",
+        "device_id": "SEM-007-01",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
-        "firmware_version": "1.5.20",
+        "firmware_version": "3.9.16",
         "status": "offline",
-        "last_check_in": "2025-10-23T18:00:22.657241+00:00",
+        "last_check_in": "2025-10-21T16:10:11.680722+00:00",
         "config": {
-            "phase_id": "P1",
-            "lane_description": "a - Sentido Leste (Faixa de Giro à Esquerda)",
+            "lane_description": "e - Sentido Sul (Fluxo Principal)",
             "default_green_s": 13,
-            "fefault_yellow_s": 82,
-            "fefault_red_s": 62,
+            "default_yellow_s": 82,
+            "default_red_s": 62,
             "min_green_s": 83,
             "min_red_s": 6,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "TRS-006-03",
-        "location_ref": "LOC-006",
+        "location_ref": "LOC-007",
+        "device_id": "TRS-007-01",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
         "firmware_version": "4.8.6",
         "status": "maintenance",
-        "last_check_in": "2025-10-21T01:45:21.657241+00:00",
+        "last_check_in": "2025-10-21T06:01:07.680722+00:00",
         "config": {
             "sampling_rate_s": 25,
-            "lane_description": "a - Sentido Leste (Faixa de Giro à Esquerda)",
+            "lane_description": "e - Sentido Sul (Fluxo Principal)",
             "detection_method": "camera_based",
             "velocity_threshold_kph": 80
         }
     },
     {
-        "device_id": "SEM-007-01",
         "location_ref": "LOC-007",
+        "phase_id": "P1",
+        "device_id": "SEM-007-02",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
         "firmware_version": "3.3.3",
         "status": "maintenance",
-        "last_check_in": "2025-10-23T12:40:44.657241+00:00",
+        "last_check_in": "2025-10-23T16:56:30.680722+00:00",
         "config": {
-            "phase_id": "P1",
-            "lane_description": "s - Sentido Norte (Faixa de Ônibus)",
-            "default_green_s": 43,
-            "fefault_yellow_s": 7,
-            "fefault_red_s": 13,
-            "min_green_s": 15,
-            "min_red_s": 8,
-            "pedestrian_button_active": false
+            "lane_description": "9 - Sentido Norte (Faixa de Ônibus)",
+            "default_green_s": 17,
+            "default_yellow_s": 43,
+            "default_red_s": 7,
+            "min_green_s": 13,
+            "min_red_s": 15,
+            "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "TRS-007-01",
         "location_ref": "LOC-007",
-        "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "4.9.1",
-        "status": "offline",
-        "last_check_in": "2025-10-26T02:24:19.657241+00:00",
-        "config": {
-            "sampling_rate_s": 10,
-            "lane_description": "s - Sentido Norte (Faixa de Ônibus)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 40
-        }
-    },
-    {
-        "device_id": "SEM-007-02",
-        "location_ref": "LOC-007",
+        "phase_id": "P1",
+        "device_id": "SEM-007-03",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
-        "firmware_version": "3.1.1",
+        "firmware_version": "4.1.7",
         "status": "online",
-        "last_check_in": "2025-10-22T04:35:53.657241+00:00",
+        "last_check_in": "2025-10-24T23:25:09.680722+00:00",
         "config": {
-            "phase_id": "P4",
-            "lane_description": "z - Sentido Leste (Faixa de Ônibus)",
-            "default_green_s": 50,
-            "fefault_yellow_s": 21,
-            "fefault_red_s": 17,
-            "min_green_s": 12,
-            "min_red_s": 39,
+            "lane_description": "a - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 87,
+            "default_yellow_s": 47,
+            "default_red_s": 50,
+            "min_green_s": 54,
+            "min_red_s": 50,
             "pedestrian_button_active": false
         }
     },
     {
-        "device_id": "CAM-007-01",
         "location_ref": "LOC-007",
+        "device_id": "CAM-007-01",
         "device_type": "camera",
-        "model": "Vision Sensor V2",
-        "firmware_version": "4.9.3",
-        "status": "maintenance",
-        "last_check_in": "2025-10-25T20:29:13.657241+00:00",
+        "model": "Cam-Traffic G18",
+        "firmware_version": "4.5.5",
+        "status": "online",
+        "last_check_in": "2025-10-21T11:54:34.680722+00:00",
         "config": {
             "resolution": "1080p",
-            "framerate": 24,
-            "view_angle_degrees": 150,
-            "ml_detection_enabled": false,
-            "image_storage_policy": "cloud_only",
-            "lane_description": "z - Sentido Leste (Faixa de Ônibus)"
+            "framerate": 60,
+            "view_angle_degrees": 60,
+            "ml_detection_enabled": true,
+            "image_storage_policy": "local_cache",
+            "lane_description": "a - Sentido Oeste (Fluxo Principal)"
         }
     },
     {
+        "location_ref": "LOC-007",
         "device_id": "TRS-007-02",
-        "location_ref": "LOC-007",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "2.6.6",
+        "model": "Radar 4D",
+        "firmware_version": "1.8.14",
         "status": "maintenance",
-        "last_check_in": "2025-10-25T19:39:18.657241+00:00",
+        "last_check_in": "2025-10-25T02:48:38.680722+00:00",
         "config": {
-            "sampling_rate_s": 60,
-            "lane_description": "z - Sentido Leste (Faixa de Ônibus)",
+            "sampling_rate_s": 5,
+            "lane_description": "a - Sentido Oeste (Fluxo Principal)",
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 50
+            "velocity_threshold_kph": 90
         }
     },
     {
-        "device_id": "SEM-007-03",
         "location_ref": "LOC-007",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.4.5",
-        "status": "offline",
-        "last_check_in": "2025-10-22T03:57:14.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "r - Sentido Oeste (Acesso)",
-            "default_green_s": 83,
-            "fefault_yellow_s": 44,
-            "fefault_red_s": 36,
-            "min_green_s": 42,
-            "min_red_s": 26,
-            "pedestrian_button_active": true
-        }
-    },
-    {
+        "phase_id": "P1",
         "device_id": "SEM-007-04",
-        "location_ref": "LOC-007",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.0.12",
+        "model": "LED Light Hub",
+        "firmware_version": "4.2.14",
         "status": "maintenance",
-        "last_check_in": "2025-10-20T16:13:28.657241+00:00",
+        "last_check_in": "2025-10-26T19:26:16.680722+00:00",
         "config": {
-            "phase_id": "P5",
-            "lane_description": "t - Sentido Norte (Faixa de Ônibus)",
-            "default_green_s": 9,
-            "fefault_yellow_s": 30,
-            "fefault_red_s": 83,
-            "min_green_s": 44,
-            "min_red_s": 29,
+            "lane_description": "a - Sentido Sul (Faixa de Giro à Esquerda)",
+            "default_green_s": 88,
+            "default_yellow_s": 22,
+            "default_red_s": 53,
+            "min_green_s": 69,
+            "min_red_s": 90,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "TRS-007-03",
         "location_ref": "LOC-007",
+        "device_id": "TRS-007-03",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "3.5.18",
-        "status": "offline",
-        "last_check_in": "2025-10-25T14:44:19.657241+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "3.2.12",
+        "status": "online",
+        "last_check_in": "2025-10-23T22:01:12.680722+00:00",
         "config": {
-            "sampling_rate_s": 25,
-            "lane_description": "t - Sentido Norte (Faixa de Ônibus)",
+            "sampling_rate_s": 50,
+            "lane_description": "a - Sentido Sul (Faixa de Giro à Esquerda)",
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 120
+            "velocity_threshold_kph": 60
         }
     },
     {
-        "device_id": "SEM-008-01",
         "location_ref": "LOC-008",
+        "phase_id": "P3",
+        "device_id": "SEM-008-01",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "3.1.13",
-        "status": "maintenance",
-        "last_check_in": "2025-10-25T00:00:38.657241+00:00",
+        "firmware_version": "3.6.12",
+        "status": "online",
+        "last_check_in": "2025-10-24T23:13:56.680722+00:00",
         "config": {
-            "phase_id": "P3",
-            "lane_description": "o - Sentido Leste (Faixa de Ônibus)",
+            "lane_description": "d - Sentido Sul (Acesso)",
+            "default_green_s": 86,
+            "default_yellow_s": 6,
+            "default_red_s": 69,
+            "min_green_s": 9,
+            "min_red_s": 30,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-008",
+        "device_id": "CAM-008-01",
+        "device_type": "camera",
+        "model": "SONY G95 PRO",
+        "firmware_version": "4.4.11",
+        "status": "maintenance",
+        "last_check_in": "2025-10-25T09:54:38.680722+00:00",
+        "config": {
+            "resolution": "1440p",
+            "framerate": 45,
+            "view_angle_degrees": 180,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "cloud_only",
+            "lane_description": "d - Sentido Sul (Acesso)"
+        }
+    },
+    {
+        "location_ref": "LOC-008",
+        "phase_id": "P3",
+        "device_id": "SEM-008-02",
+        "device_type": "traffic_light",
+        "model": "Actuator 2000",
+        "firmware_version": "1.6.20",
+        "status": "offline",
+        "last_check_in": "2025-10-25T04:07:49.680722+00:00",
+        "config": {
+            "lane_description": "e - Sentido Leste (Faixa de Giro à Esquerda)",
             "default_green_s": 59,
-            "fefault_yellow_s": 42,
-            "fefault_red_s": 54,
+            "default_yellow_s": 42,
+            "default_red_s": 54,
             "min_green_s": 57,
             "min_red_s": 41,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "SEM-008-02",
         "location_ref": "LOC-008",
+        "phase_id": "P3",
+        "device_id": "SEM-008-03",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
         "firmware_version": "2.0.13",
         "status": "maintenance",
-        "last_check_in": "2025-10-26T01:58:26.657241+00:00",
+        "last_check_in": "2025-10-26T06:14:12.680722+00:00",
         "config": {
-            "phase_id": "P5",
-            "lane_description": "a - Sentido Leste (Faixa de Giro à Esquerda)",
-            "default_green_s": 85,
-            "fefault_yellow_s": 21,
-            "fefault_red_s": 35,
-            "min_green_s": 53,
-            "min_red_s": 43,
-            "pedestrian_button_active": false
+            "lane_description": "  - Sentido Leste (Faixa de Giro à Esquerda)",
+            "default_green_s": 79,
+            "default_yellow_s": 85,
+            "default_red_s": 21,
+            "min_green_s": 35,
+            "min_red_s": 53,
+            "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "SEM-008-03",
         "location_ref": "LOC-008",
+        "phase_id": "P3",
+        "device_id": "SEM-008-04",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
         "firmware_version": "4.5.4",
         "status": "maintenance",
-        "last_check_in": "2025-10-22T13:57:41.657241+00:00",
+        "last_check_in": "2025-10-22T18:13:27.680722+00:00",
         "config": {
-            "phase_id": "P5",
-            "lane_description": "a - Sentido Sul (Faixa de Ônibus)",
-            "default_green_s": 37,
-            "fefault_yellow_s": 27,
-            "fefault_red_s": 56,
-            "min_green_s": 62,
-            "min_red_s": 38,
-            "pedestrian_button_active": false
+            "lane_description": "  - Sentido Sul (Faixa de Ônibus)",
+            "default_green_s": 76,
+            "default_yellow_s": 37,
+            "default_red_s": 27,
+            "min_green_s": 56,
+            "min_red_s": 62,
+            "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "TRS-008-01",
         "location_ref": "LOC-008",
+        "device_id": "TRS-008-01",
         "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "4.0.2",
-        "status": "maintenance",
-        "last_check_in": "2025-10-24T05:20:05.657241+00:00",
+        "model": "IR Sensor E1",
+        "firmware_version": "4.7.2",
+        "status": "online",
+        "last_check_in": "2025-10-24T09:35:51.680722+00:00",
         "config": {
             "sampling_rate_s": 20,
-            "lane_description": "a - Sentido Sul (Faixa de Ônibus)",
+            "lane_description": "  - Sentido Sul (Faixa de Ônibus)",
             "detection_method": "camera_based",
             "velocity_threshold_kph": 50
         }
     },
     {
-        "device_id": "SEM-008-04",
-        "location_ref": "LOC-008",
+        "location_ref": "LOC-009",
+        "phase_id": "P4",
+        "device_id": "SEM-009-01",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
         "firmware_version": "3.5.10",
         "status": "online",
-        "last_check_in": "2025-10-27T02:33:14.657241+00:00",
+        "last_check_in": "2025-10-27T06:49:00.680722+00:00",
         "config": {
-            "phase_id": "P4",
-            "lane_description": "R - Sentido Norte (Faixa de Giro à Esquerda)",
-            "default_green_s": 65,
-            "fefault_yellow_s": 11,
-            "fefault_red_s": 35,
-            "min_green_s": 78,
-            "min_red_s": 79,
+            "lane_description": "0 - Sentido Norte (Faixa de Giro à Esquerda)",
+            "default_green_s": 60,
+            "default_yellow_s": 65,
+            "default_red_s": 11,
+            "min_green_s": 35,
+            "min_red_s": 78,
             "pedestrian_button_active": false
         }
     },
     {
-        "device_id": "TRS-008-02",
-        "location_ref": "LOC-008",
+        "location_ref": "LOC-009",
+        "device_id": "TRS-009-01",
         "device_type": "traffic_sensor",
         "model": "Loop Detector v3",
         "firmware_version": "1.1.4",
         "status": "online",
-        "last_check_in": "2025-10-22T03:26:06.657241+00:00",
+        "last_check_in": "2025-10-22T07:41:52.680722+00:00",
         "config": {
             "sampling_rate_s": 10,
-            "lane_description": "R - Sentido Norte (Faixa de Giro à Esquerda)",
+            "lane_description": "0 - Sentido Norte (Faixa de Giro à Esquerda)",
             "detection_method": "camera_based",
             "velocity_threshold_kph": 90
         }
     },
     {
-        "device_id": "SEM-009-01",
         "location_ref": "LOC-009",
+        "phase_id": "P4",
+        "device_id": "SEM-009-02",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "2.5.13",
+        "firmware_version": "2.2.11",
         "status": "offline",
-        "last_check_in": "2025-10-25T17:06:27.657241+00:00",
+        "last_check_in": "2025-10-23T20:36:30.680722+00:00",
         "config": {
-            "phase_id": "P3",
-            "lane_description": "e - Sentido Norte (Fluxo Principal)",
-            "default_green_s": 86,
-            "fefault_yellow_s": 51,
-            "fefault_red_s": 62,
-            "min_green_s": 34,
-            "min_red_s": 13,
+            "lane_description": "8 - Sentido Norte (Fluxo Principal)",
+            "default_green_s": 83,
+            "default_yellow_s": 59,
+            "default_red_s": 42,
+            "min_green_s": 86,
+            "min_red_s": 51,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "TRS-009-01",
         "location_ref": "LOC-009",
+        "device_id": "CAM-009-01",
+        "device_type": "camera",
+        "model": "Cam-Traffic G18",
+        "firmware_version": "2.4.13",
+        "status": "maintenance",
+        "last_check_in": "2025-10-25T07:08:30.680722+00:00",
+        "config": {
+            "resolution": "4K",
+            "framerate": 50,
+            "view_angle_degrees": 90,
+            "ml_detection_enabled": true,
+            "image_storage_policy": "cloud_only",
+            "lane_description": "8 - Sentido Norte (Fluxo Principal)"
+        }
+    },
+    {
+        "location_ref": "LOC-009",
+        "device_id": "TRS-009-02",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "4.8.12",
-        "status": "maintenance",
-        "last_check_in": "2025-10-26T22:47:31.657241+00:00",
-        "config": {
-            "sampling_rate_s": 40,
-            "lane_description": "e - Sentido Norte (Fluxo Principal)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 80
-        }
-    },
-    {
-        "device_id": "SEM-009-02",
-        "location_ref": "LOC-009",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
         "firmware_version": "1.0.11",
         "status": "maintenance",
-        "last_check_in": "2025-10-24T13:22:34.657241+00:00",
+        "last_check_in": "2025-10-24T17:38:20.680722+00:00",
         "config": {
-            "phase_id": "P5",
-            "lane_description": "d - Sentido Sul (Faixa de Ônibus)",
-            "default_green_s": 51,
-            "fefault_yellow_s": 63,
-            "fefault_red_s": 20,
-            "min_green_s": 60,
-            "min_red_s": 15,
-            "pedestrian_button_active": false
+            "sampling_rate_s": 50,
+            "lane_description": "8 - Sentido Norte (Fluxo Principal)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 110
         }
     },
     {
-        "device_id": "TRS-009-02",
         "location_ref": "LOC-009",
+        "phase_id": "P4",
+        "device_id": "SEM-009-03",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "3.6.17",
+        "status": "online",
+        "last_check_in": "2025-10-24T16:12:45.680722+00:00",
+        "config": {
+            "lane_description": "n - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 22,
+            "default_yellow_s": 55,
+            "default_red_s": 39,
+            "min_green_s": 66,
+            "min_red_s": 10,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-009",
+        "device_id": "TRS-009-03",
         "device_type": "traffic_sensor",
         "model": "Loop Detector v3",
-        "firmware_version": "3.2.13",
-        "status": "offline",
-        "last_check_in": "2025-10-26T10:01:36.657241+00:00",
+        "firmware_version": "1.9.3",
+        "status": "maintenance",
+        "last_check_in": "2025-10-25T06:23:13.680722+00:00",
         "config": {
-            "sampling_rate_s": 5,
-            "lane_description": "d - Sentido Sul (Faixa de Ônibus)",
+            "sampling_rate_s": 30,
+            "lane_description": "n - Sentido Oeste (Fluxo Principal)",
             "detection_method": "camera_based",
             "velocity_threshold_kph": 30
         }
     },
     {
-        "device_id": "SEM-009-03",
         "location_ref": "LOC-009",
+        "phase_id": "P4",
+        "device_id": "SEM-009-04",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
-        "firmware_version": "1.9.3",
-        "status": "maintenance",
-        "last_check_in": "2025-10-25T02:07:27.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "a - Sentido Norte (Faixa de Giro à Esquerda)",
-            "default_green_s": 67,
-            "fefault_yellow_s": 10,
-            "fefault_red_s": 88,
-            "min_green_s": 12,
-            "min_red_s": 5,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "CAM-009-01",
-        "location_ref": "LOC-009",
-        "device_type": "camera",
-        "model": "SONY G95 PRO",
         "firmware_version": "2.9.4",
         "status": "offline",
-        "last_check_in": "2025-10-23T22:36:37.657241+00:00",
+        "last_check_in": "2025-10-24T02:52:23.680722+00:00",
         "config": {
-            "resolution": "4K",
-            "framerate": 60,
-            "view_angle_degrees": 75,
-            "ml_detection_enabled": true,
-            "image_storage_policy": "local_cache",
-            "lane_description": "a - Sentido Norte (Faixa de Giro à Esquerda)"
-        }
-    },
-    {
-        "device_id": "SEM-009-04",
-        "location_ref": "LOC-009",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "3.5.11",
-        "status": "offline",
-        "last_check_in": "2025-10-26T08:04:20.657241+00:00",
-        "config": {
-            "phase_id": "P1",
             "lane_description": "t - Sentido Norte (Fluxo Principal)",
-            "default_green_s": 63,
-            "fefault_yellow_s": 58,
-            "fefault_red_s": 74,
-            "min_green_s": 46,
-            "min_red_s": 32,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "CAM-009-02",
-        "location_ref": "LOC-009",
-        "device_type": "camera",
-        "model": "Vision Sensor V2",
-        "firmware_version": "1.6.17",
-        "status": "maintenance",
-        "last_check_in": "2025-10-20T22:34:28.657241+00:00",
-        "config": {
-            "resolution": "1440p",
-            "framerate": 24,
-            "view_angle_degrees": 90,
-            "ml_detection_enabled": true,
-            "image_storage_policy": "cloud_only",
-            "lane_description": "t - Sentido Norte (Fluxo Principal)"
-        }
-    },
-    {
-        "device_id": "SEM-010-01",
-        "location_ref": "LOC-010",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "2.1.15",
-        "status": "online",
-        "last_check_in": "2025-10-21T00:58:19.657241+00:00",
-        "config": {
-            "phase_id": "P2",
-            "lane_description": "0 - Sentido Norte (Acesso)",
-            "default_green_s": 85,
-            "fefault_yellow_s": 17,
-            "fefault_red_s": 38,
-            "min_green_s": 6,
-            "min_red_s": 31,
+            "default_green_s": 69,
+            "default_yellow_s": 76,
+            "default_red_s": 34,
+            "min_green_s": 37,
+            "min_red_s": 43,
             "pedestrian_button_active": false
         }
     },
     {
-        "device_id": "TRS-010-01",
-        "location_ref": "LOC-010",
+        "location_ref": "LOC-009",
+        "device_id": "TRS-009-04",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "1.3.5",
-        "status": "maintenance",
-        "last_check_in": "2025-10-21T17:56:26.657241+00:00",
+        "firmware_version": "3.5.11",
+        "status": "offline",
+        "last_check_in": "2025-10-26T12:20:06.680722+00:00",
         "config": {
-            "sampling_rate_s": 30,
-            "lane_description": "0 - Sentido Norte (Acesso)",
+            "sampling_rate_s": 55,
+            "lane_description": "t - Sentido Norte (Fluxo Principal)",
             "detection_method": "radar",
-            "velocity_threshold_kph": 120
+            "velocity_threshold_kph": 110
         }
     },
     {
-        "device_id": "SEM-010-02",
         "location_ref": "LOC-010",
+        "phase_id": "P4",
+        "device_id": "SEM-010-01",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "4.0.7",
-        "status": "offline",
-        "last_check_in": "2025-10-25T09:19:33.657241+00:00",
+        "firmware_version": "2.4.1",
+        "status": "maintenance",
+        "last_check_in": "2025-10-25T17:44:58.680722+00:00",
         "config": {
-            "phase_id": "P2",
-            "lane_description": "8 - Sentido Norte (Fluxo Principal)",
-            "default_green_s": 47,
-            "fefault_yellow_s": 89,
-            "fefault_red_s": 80,
-            "min_green_s": 48,
-            "min_red_s": 12,
+            "lane_description": "d - Sentido Leste (Faixa de Giro à Esquerda)",
+            "default_green_s": 72,
+            "default_yellow_s": 87,
+            "default_red_s": 8,
+            "min_green_s": 64,
+            "min_red_s": 5,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "TRS-010-02",
         "location_ref": "LOC-010",
-        "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "2.7.19",
+        "phase_id": "P4",
+        "device_id": "SEM-010-02",
+        "device_type": "traffic_light",
+        "model": "PhaseController M1",
+        "firmware_version": "1.7.8",
         "status": "maintenance",
-        "last_check_in": "2025-10-26T01:22:00.657241+00:00",
+        "last_check_in": "2025-10-21T05:14:05.680722+00:00",
         "config": {
-            "sampling_rate_s": 45,
-            "lane_description": "8 - Sentido Norte (Fluxo Principal)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 120
+            "lane_description": "r - Sentido Oeste (Acesso)",
+            "default_green_s": 34,
+            "default_yellow_s": 85,
+            "default_red_s": 17,
+            "min_green_s": 38,
+            "min_red_s": 6,
+            "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "SEM-010-03",
         "location_ref": "LOC-010",
+        "phase_id": "P4",
+        "device_id": "SEM-010-03",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "2.1.11",
+        "status": "online",
+        "last_check_in": "2025-10-27T05:47:13.680722+00:00",
+        "config": {
+            "lane_description": "o - Sentido Norte (Faixa de Giro à Esquerda)",
+            "default_green_s": 15,
+            "default_yellow_s": 16,
+            "default_red_s": 19,
+            "min_green_s": 62,
+            "min_red_s": 9,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-010",
+        "phase_id": "P4",
+        "device_id": "SEM-010-04",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "3.0.2",
+        "status": "offline",
+        "last_check_in": "2025-10-27T08:23:33.680722+00:00",
+        "config": {
+            "lane_description": "o - Sentido Sul (Faixa de Ônibus)",
+            "default_green_s": 57,
+            "default_yellow_s": 61,
+            "default_red_s": 89,
+            "min_green_s": 33,
+            "min_red_s": 61,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-010",
+        "device_id": "TRS-010-01",
+        "device_type": "traffic_sensor",
+        "model": "IR Sensor E1",
+        "firmware_version": "3.8.19",
+        "status": "maintenance",
+        "last_check_in": "2025-10-24T17:08:30.680722+00:00",
+        "config": {
+            "sampling_rate_s": 60,
+            "lane_description": "o - Sentido Sul (Faixa de Ônibus)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 110
+        }
+    },
+    {
+        "location_ref": "LOC-011",
+        "phase_id": "P1",
+        "device_id": "SEM-011-01",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
-        "firmware_version": "1.8.9",
-        "status": "offline",
-        "last_check_in": "2025-10-24T22:22:13.657241+00:00",
+        "firmware_version": "4.5.4",
+        "status": "online",
+        "last_check_in": "2025-10-22T23:57:20.680722+00:00",
         "config": {
-            "phase_id": "P4",
-            "lane_description": "o - Sentido Leste (Faixa de Ônibus)",
-            "default_green_s": 46,
-            "fefault_yellow_s": 18,
-            "fefault_red_s": 23,
-            "min_green_s": 28,
+            "lane_description": "4 - Sentido Leste (Acesso)",
+            "default_green_s": 18,
+            "default_yellow_s": 40,
+            "default_red_s": 57,
+            "min_green_s": 42,
+            "min_red_s": 63,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-011",
+        "device_id": "TRS-011-01",
+        "device_type": "traffic_sensor",
+        "model": "IR Sensor E1",
+        "firmware_version": "1.7.11",
+        "status": "offline",
+        "last_check_in": "2025-10-27T04:33:01.680722+00:00",
+        "config": {
+            "sampling_rate_s": 10,
+            "lane_description": "4 - Sentido Leste (Acesso)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 60
+        }
+    },
+    {
+        "location_ref": "LOC-011",
+        "phase_id": "P1",
+        "device_id": "SEM-011-02",
+        "device_type": "traffic_light",
+        "model": "PhaseController M1",
+        "firmware_version": "4.6.12",
+        "status": "maintenance",
+        "last_check_in": "2025-10-24T18:10:37.680722+00:00",
+        "config": {
+            "lane_description": "r - Sentido Sul (Fluxo Principal)",
+            "default_green_s": 17,
+            "default_yellow_s": 39,
+            "default_red_s": 30,
+            "min_green_s": 81,
+            "min_red_s": 74,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-011",
+        "phase_id": "P1",
+        "device_id": "SEM-011-03",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "4.0.17",
+        "status": "offline",
+        "last_check_in": "2025-10-21T05:57:40.680722+00:00",
+        "config": {
+            "lane_description": "u - Sentido Leste (Faixa de Ônibus)",
+            "default_green_s": 59,
+            "default_yellow_s": 8,
+            "default_red_s": 30,
+            "min_green_s": 19,
+            "min_red_s": 88,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-011",
+        "device_id": "CAM-011-01",
+        "device_type": "camera",
+        "model": "SONY G95 PRO",
+        "firmware_version": "4.9.6",
+        "status": "offline",
+        "last_check_in": "2025-10-26T17:26:02.680722+00:00",
+        "config": {
+            "resolution": "480p",
+            "framerate": 60,
+            "view_angle_degrees": 45,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "local_cache",
+            "lane_description": "u - Sentido Leste (Faixa de Ônibus)"
+        }
+    },
+    {
+        "location_ref": "LOC-011",
+        "device_id": "TRS-011-02",
+        "device_type": "traffic_sensor",
+        "model": "Radar 4D",
+        "firmware_version": "1.7.16",
+        "status": "offline",
+        "last_check_in": "2025-10-24T03:52:23.680722+00:00",
+        "config": {
+            "sampling_rate_s": 25,
+            "lane_description": "u - Sentido Leste (Faixa de Ônibus)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 100
+        }
+    },
+    {
+        "location_ref": "LOC-012",
+        "phase_id": "P2",
+        "device_id": "SEM-012-01",
+        "device_type": "traffic_light",
+        "model": "Actuator 2000",
+        "firmware_version": "3.7.17",
+        "status": "offline",
+        "last_check_in": "2025-10-23T16:27:17.680722+00:00",
+        "config": {
+            "lane_description": "e - Sentido Leste (Faixa de Giro à Esquerda)",
+            "default_green_s": 36,
+            "default_yellow_s": 62,
+            "default_red_s": 72,
+            "min_green_s": 74,
             "min_red_s": 18,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "SEM-010-04",
-        "location_ref": "LOC-010",
+        "location_ref": "LOC-012",
+        "device_id": "CAM-012-01",
+        "device_type": "camera",
+        "model": "SONY G95 PRO",
+        "firmware_version": "2.0.19",
+        "status": "maintenance",
+        "last_check_in": "2025-10-25T10:46:02.680722+00:00",
+        "config": {
+            "resolution": "1080p",
+            "framerate": 30,
+            "view_angle_degrees": 150,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "cloud_only",
+            "lane_description": "e - Sentido Leste (Faixa de Giro à Esquerda)"
+        }
+    },
+    {
+        "location_ref": "LOC-012",
+        "phase_id": "P2",
+        "device_id": "SEM-012-02",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "1.7.11",
+        "firmware_version": "1.0.10",
         "status": "offline",
-        "last_check_in": "2025-10-27T00:17:15.657241+00:00",
+        "last_check_in": "2025-10-27T02:08:34.680722+00:00",
         "config": {
-            "phase_id": "P1",
-            "lane_description": "  - Sentido Leste (Faixa de Ônibus)",
-            "default_green_s": 74,
-            "fefault_yellow_s": 12,
-            "fefault_red_s": 36,
-            "min_green_s": 9,
-            "min_red_s": 31,
+            "lane_description": "d - Sentido Sul (Faixa de Giro à Esquerda)",
+            "default_green_s": 31,
+            "default_yellow_s": 21,
+            "default_red_s": 12,
+            "min_green_s": 77,
+            "min_red_s": 84,
             "pedestrian_button_active": true
         }
     },
     {
-        "device_id": "TRS-010-03",
-        "location_ref": "LOC-010",
+        "location_ref": "LOC-012",
+        "device_id": "TRS-012-01",
+        "device_type": "traffic_sensor",
+        "model": "Loop Detector v3",
+        "firmware_version": "2.2.18",
+        "status": "offline",
+        "last_check_in": "2025-10-26T17:37:39.680722+00:00",
+        "config": {
+            "sampling_rate_s": 15,
+            "lane_description": "d - Sentido Sul (Faixa de Giro à Esquerda)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 50
+        }
+    },
+    {
+        "location_ref": "LOC-012",
+        "phase_id": "P2",
+        "device_id": "SEM-012-03",
+        "device_type": "traffic_light",
+        "model": "Actuator 2000",
+        "firmware_version": "3.2.8",
+        "status": "online",
+        "last_check_in": "2025-10-22T02:27:23.680722+00:00",
+        "config": {
+            "lane_description": "v - Sentido Oeste (Acesso)",
+            "default_green_s": 38,
+            "default_yellow_s": 72,
+            "default_red_s": 51,
+            "min_green_s": 66,
+            "min_red_s": 86,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-012",
+        "phase_id": "P2",
+        "device_id": "SEM-012-04",
+        "device_type": "traffic_light",
+        "model": "Actuator 2000",
+        "firmware_version": "4.6.8",
+        "status": "online",
+        "last_check_in": "2025-10-25T02:25:04.680722+00:00",
+        "config": {
+            "lane_description": "a - Sentido Norte (Faixa de Ônibus)",
+            "default_green_s": 37,
+            "default_yellow_s": 26,
+            "default_red_s": 22,
+            "min_green_s": 79,
+            "min_red_s": 22,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-012",
+        "device_id": "TRS-012-02",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "3.1.9",
-        "status": "maintenance",
-        "last_check_in": "2025-10-22T22:58:21.657241+00:00",
+        "firmware_version": "4.3.13",
+        "status": "offline",
+        "last_check_in": "2025-10-21T16:43:35.680722+00:00",
         "config": {
-            "sampling_rate_s": 50,
-            "lane_description": "  - Sentido Leste (Faixa de Ônibus)",
-            "detection_method": "radar",
+            "sampling_rate_s": 10,
+            "lane_description": "a - Sentido Norte (Faixa de Ônibus)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 80
+        }
+    },
+    {
+        "location_ref": "LOC-013",
+        "phase_id": "P5",
+        "device_id": "SEM-013-01",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "1.1.16",
+        "status": "maintenance",
+        "last_check_in": "2025-10-23T21:23:16.680722+00:00",
+        "config": {
+            "lane_description": "e - Sentido Norte (Fluxo Principal)",
+            "default_green_s": 34,
+            "default_yellow_s": 37,
+            "default_red_s": 28,
+            "min_green_s": 17,
+            "min_red_s": 84,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-013",
+        "phase_id": "P5",
+        "device_id": "SEM-013-02",
+        "device_type": "traffic_light",
+        "model": "Actuator 2000",
+        "firmware_version": "2.7.15",
+        "status": "maintenance",
+        "last_check_in": "2025-10-21T22:35:58.680722+00:00",
+        "config": {
+            "lane_description": "e - Sentido Norte (Faixa de Ônibus)",
+            "default_green_s": 59,
+            "default_yellow_s": 61,
+            "default_red_s": 19,
+            "min_green_s": 66,
+            "min_red_s": 26,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-013",
+        "device_id": "TRS-013-01",
+        "device_type": "traffic_sensor",
+        "model": "IR Sensor E1",
+        "firmware_version": "1.3.17",
+        "status": "online",
+        "last_check_in": "2025-10-21T01:13:20.680722+00:00",
+        "config": {
+            "sampling_rate_s": 15,
+            "lane_description": "e - Sentido Norte (Faixa de Ônibus)",
+            "detection_method": "camera_based",
             "velocity_threshold_kph": 90
         }
     },
     {
-        "device_id": "SEM-011-01",
-        "location_ref": "LOC-011",
+        "location_ref": "LOC-013",
+        "phase_id": "P5",
+        "device_id": "SEM-013-03",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "4.0.14",
-        "status": "online",
-        "last_check_in": "2025-10-22T22:46:01.657241+00:00",
+        "firmware_version": "2.3.3",
+        "status": "offline",
+        "last_check_in": "2025-10-24T20:27:31.680722+00:00",
         "config": {
-            "phase_id": "P1",
-            "lane_description": "F - Sentido Leste (Acesso)",
-            "default_green_s": 88,
-            "fefault_yellow_s": 43,
-            "fefault_red_s": 28,
-            "min_green_s": 38,
+            "lane_description": "d - Sentido Norte (Faixa de Giro à Esquerda)",
+            "default_green_s": 86,
+            "default_yellow_s": 55,
+            "default_red_s": 51,
+            "min_green_s": 13,
+            "min_red_s": 37,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-014",
+        "phase_id": "P4",
+        "device_id": "SEM-014-01",
+        "device_type": "traffic_light",
+        "model": "PhaseController M1",
+        "firmware_version": "2.8.2",
+        "status": "maintenance",
+        "last_check_in": "2025-10-22T14:16:28.680722+00:00",
+        "config": {
+            "lane_description": "n - Sentido Norte (Fluxo Principal)",
+            "default_green_s": 17,
+            "default_yellow_s": 59,
+            "default_red_s": 87,
+            "min_green_s": 64,
             "min_red_s": 71,
             "pedestrian_button_active": false
         }
     },
     {
-        "device_id": "SEM-011-02",
-        "location_ref": "LOC-011",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "1.3.11",
-        "status": "offline",
-        "last_check_in": "2025-10-21T17:39:48.657241+00:00",
-        "config": {
-            "phase_id": "P4",
-            "lane_description": "  - Sentido Leste (Acesso)",
-            "default_green_s": 80,
-            "fefault_yellow_s": 19,
-            "fefault_red_s": 67,
-            "min_green_s": 90,
-            "min_red_s": 68,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-011-01",
-        "location_ref": "LOC-011",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "4.3.2",
-        "status": "maintenance",
-        "last_check_in": "2025-10-26T22:10:53.657241+00:00",
-        "config": {
-            "sampling_rate_s": 45,
-            "lane_description": "  - Sentido Leste (Acesso)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 50
-        }
-    },
-    {
-        "device_id": "SEM-011-03",
-        "location_ref": "LOC-011",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "3.3.8",
-        "status": "offline",
-        "last_check_in": "2025-10-26T23:48:23.657241+00:00",
-        "config": {
-            "phase_id": "P5",
-            "lane_description": "r - Sentido Leste (Acesso)",
-            "default_green_s": 18,
-            "fefault_yellow_s": 56,
-            "fefault_red_s": 20,
-            "min_green_s": 15,
-            "min_red_s": 30,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-011-02",
-        "location_ref": "LOC-011",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "4.2.7",
-        "status": "online",
-        "last_check_in": "2025-10-22T04:58:35.657241+00:00",
-        "config": {
-            "sampling_rate_s": 20,
-            "lane_description": "r - Sentido Leste (Acesso)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 30
-        }
-    },
-    {
-        "device_id": "SEM-012-01",
-        "location_ref": "LOC-012",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "2.2.2",
-        "status": "maintenance",
-        "last_check_in": "2025-10-24T03:47:40.657241+00:00",
-        "config": {
-            "phase_id": "P4",
-            "lane_description": "o - Sentido Leste (Faixa de Ônibus)",
-            "default_green_s": 45,
-            "fefault_yellow_s": 62,
-            "fefault_red_s": 85,
-            "min_green_s": 35,
-            "min_red_s": 26,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "TRS-012-01",
-        "location_ref": "LOC-012",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "3.2.5",
-        "status": "offline",
-        "last_check_in": "2025-10-26T01:25:16.657241+00:00",
-        "config": {
-            "sampling_rate_s": 30,
-            "lane_description": "o - Sentido Leste (Faixa de Ônibus)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 50
-        }
-    },
-    {
-        "device_id": "SEM-012-02",
-        "location_ref": "LOC-012",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.7.10",
-        "status": "online",
-        "last_check_in": "2025-10-27T01:10:16.657241+00:00",
-        "config": {
-            "phase_id": "P4",
-            "lane_description": "n - Sentido Sul (Fluxo Principal)",
-            "default_green_s": 15,
-            "fefault_yellow_s": 51,
-            "fefault_red_s": 55,
-            "min_green_s": 89,
-            "min_red_s": 55,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "CAM-012-01",
-        "location_ref": "LOC-012",
-        "device_type": "camera",
-        "model": "Vision Sensor V2",
-        "firmware_version": "3.2.5",
-        "status": "maintenance",
-        "last_check_in": "2025-10-22T05:30:30.657241+00:00",
-        "config": {
-            "resolution": "1440p",
-            "framerate": 45,
-            "view_angle_degrees": 240,
-            "ml_detection_enabled": true,
-            "image_storage_policy": "local_cache",
-            "lane_description": "n - Sentido Sul (Fluxo Principal)"
-        }
-    },
-    {
-        "device_id": "TRS-012-02",
-        "location_ref": "LOC-012",
-        "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "1.1.11",
-        "status": "offline",
-        "last_check_in": "2025-10-21T05:34:46.657241+00:00",
-        "config": {
-            "sampling_rate_s": 5,
-            "lane_description": "n - Sentido Sul (Fluxo Principal)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 30
-        }
-    },
-    {
-        "device_id": "SEM-012-03",
-        "location_ref": "LOC-012",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "3.2.4",
-        "status": "maintenance",
-        "last_check_in": "2025-10-21T11:57:37.657241+00:00",
-        "config": {
-            "phase_id": "P1",
-            "lane_description": "e - Sentido Oeste (Faixa de Ônibus)",
-            "default_green_s": 48,
-            "fefault_yellow_s": 79,
-            "fefault_red_s": 8,
-            "min_green_s": 51,
-            "min_red_s": 43,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-012-03",
-        "location_ref": "LOC-012",
-        "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "4.1.16",
-        "status": "online",
-        "last_check_in": "2025-10-25T23:46:56.657241+00:00",
-        "config": {
-            "sampling_rate_s": 60,
-            "lane_description": "e - Sentido Oeste (Faixa de Ônibus)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 90
-        }
-    },
-    {
-        "device_id": "SEM-012-04",
-        "location_ref": "LOC-012",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "2.9.1",
-        "status": "online",
-        "last_check_in": "2025-10-24T18:24:11.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "o - Sentido Norte (Faixa de Giro à Esquerda)",
-            "default_green_s": 25,
-            "fefault_yellow_s": 5,
-            "fefault_red_s": 35,
-            "min_green_s": 10,
-            "min_red_s": 24,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "SEM-013-01",
-        "location_ref": "LOC-013",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "4.5.3",
-        "status": "offline",
-        "last_check_in": "2025-10-23T21:38:30.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "M - Sentido Norte (Faixa de Ônibus)",
-            "default_green_s": 54,
-            "fefault_yellow_s": 21,
-            "fefault_red_s": 15,
-            "min_green_s": 9,
-            "min_red_s": 36,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "TRS-013-01",
-        "location_ref": "LOC-013",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.6.15",
-        "status": "maintenance",
-        "last_check_in": "2025-10-24T21:00:49.657241+00:00",
-        "config": {
-            "sampling_rate_s": 50,
-            "lane_description": "M - Sentido Norte (Faixa de Ônibus)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 100
-        }
-    },
-    {
-        "device_id": "SEM-013-02",
-        "location_ref": "LOC-013",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "2.1.18",
-        "status": "maintenance",
-        "last_check_in": "2025-10-24T21:56:47.657241+00:00",
-        "config": {
-            "phase_id": "P5",
-            "lane_description": "á - Sentido Oeste (Faixa de Ônibus)",
-            "default_green_s": 62,
-            "fefault_yellow_s": 16,
-            "fefault_red_s": 41,
-            "min_green_s": 72,
-            "min_red_s": 59,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "SEM-013-03",
-        "location_ref": "LOC-013",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "4.9.9",
-        "status": "offline",
-        "last_check_in": "2025-10-21T22:21:01.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "  - Sentido Norte (Faixa de Giro à Esquerda)",
-            "default_green_s": 57,
-            "fefault_yellow_s": 52,
-            "fefault_red_s": 17,
-            "min_green_s": 37,
-            "min_red_s": 63,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "SEM-014-01",
         "location_ref": "LOC-014",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "3.7.6",
-        "status": "online",
-        "last_check_in": "2025-10-27T07:54:44.657241+00:00",
-        "config": {
-            "phase_id": "P1",
-            "lane_description": "  - Sentido Norte (Faixa de Ônibus)",
-            "default_green_s": 53,
-            "fefault_yellow_s": 50,
-            "fefault_red_s": 48,
-            "min_green_s": 10,
-            "min_red_s": 50,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "SEM-014-02",
-        "location_ref": "LOC-014",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "1.7.4",
-        "status": "maintenance",
-        "last_check_in": "2025-10-24T10:56:52.657241+00:00",
-        "config": {
-            "phase_id": "P1",
-            "lane_description": "4 - Sentido Sul (Acesso)",
-            "default_green_s": 32,
-            "fefault_yellow_s": 38,
-            "fefault_red_s": 49,
-            "min_green_s": 76,
-            "min_red_s": 59,
-            "pedestrian_button_active": true
-        }
-    },
-    {
         "device_id": "TRS-014-01",
-        "location_ref": "LOC-014",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "3.5.17",
+        "firmware_version": "4.9.2",
         "status": "offline",
-        "last_check_in": "2025-10-25T23:55:04.657241+00:00",
+        "last_check_in": "2025-10-24T09:40:07.680722+00:00",
         "config": {
             "sampling_rate_s": 30,
-            "lane_description": "4 - Sentido Sul (Acesso)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 50
-        }
-    },
-    {
-        "device_id": "SEM-014-03",
-        "location_ref": "LOC-014",
-        "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.8.10",
-        "status": "maintenance",
-        "last_check_in": "2025-10-24T17:23:43.657241+00:00",
-        "config": {
-            "phase_id": "P5",
-            "lane_description": "n - Sentido Norte (Faixa de Ônibus)",
-            "default_green_s": 88,
-            "fefault_yellow_s": 40,
-            "fefault_red_s": 74,
-            "min_green_s": 51,
-            "min_red_s": 69,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "CAM-014-01",
-        "location_ref": "LOC-014",
-        "device_type": "camera",
-        "model": "Vision Sensor V2",
-        "firmware_version": "2.1.5",
-        "status": "online",
-        "last_check_in": "2025-10-21T09:57:58.657241+00:00",
-        "config": {
-            "resolution": "1080p",
-            "framerate": 45,
-            "view_angle_degrees": 360,
-            "ml_detection_enabled": false,
-            "image_storage_policy": "cloud_only",
-            "lane_description": "n - Sentido Norte (Faixa de Ônibus)"
-        }
-    },
-    {
-        "device_id": "TRS-014-02",
-        "location_ref": "LOC-014",
-        "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "4.8.11",
-        "status": "offline",
-        "last_check_in": "2025-10-25T17:20:15.657241+00:00",
-        "config": {
-            "sampling_rate_s": 20,
-            "lane_description": "n - Sentido Norte (Faixa de Ônibus)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 50
-        }
-    },
-    {
-        "device_id": "SEM-014-04",
-        "location_ref": "LOC-014",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "3.9.11",
-        "status": "maintenance",
-        "last_check_in": "2025-10-21T22:11:26.657241+00:00",
-        "config": {
-            "phase_id": "P4",
-            "lane_description": "r - Sentido Oeste (Acesso)",
-            "default_green_s": 28,
-            "fefault_yellow_s": 7,
-            "fefault_red_s": 41,
-            "min_green_s": 56,
-            "min_red_s": 6,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "SEM-015-01",
-        "location_ref": "LOC-015",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "4.4.6",
-        "status": "online",
-        "last_check_in": "2025-10-25T04:39:09.657241+00:00",
-        "config": {
-            "phase_id": "P4",
-            "lane_description": "e - Sentido Norte (Faixa de Ônibus)",
-            "default_green_s": 88,
-            "fefault_yellow_s": 12,
-            "fefault_red_s": 10,
-            "min_green_s": 86,
-            "min_red_s": 48,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "TRS-015-01",
-        "location_ref": "LOC-015",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "4.9.17",
-        "status": "maintenance",
-        "last_check_in": "2025-10-22T06:39:51.657241+00:00",
-        "config": {
-            "sampling_rate_s": 50,
-            "lane_description": "e - Sentido Norte (Faixa de Ônibus)",
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 60
-        }
-    },
-    {
-        "device_id": "SEM-015-02",
-        "location_ref": "LOC-015",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "4.7.19",
-        "status": "online",
-        "last_check_in": "2025-10-20T23:36:31.657241+00:00",
-        "config": {
-            "phase_id": "P4",
-            "lane_description": "  - Sentido Oeste (Faixa de Ônibus)",
-            "default_green_s": 14,
-            "fefault_yellow_s": 61,
-            "fefault_red_s": 23,
-            "min_green_s": 14,
-            "min_red_s": 89,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "device_id": "SEM-015-03",
-        "location_ref": "LOC-015",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "2.2.7",
-        "status": "offline",
-        "last_check_in": "2025-10-27T00:23:40.657241+00:00",
-        "config": {
-            "phase_id": "P3",
-            "lane_description": "A - Sentido Oeste (Faixa de Ônibus)",
-            "default_green_s": 90,
-            "fefault_yellow_s": 49,
-            "fefault_red_s": 89,
-            "min_green_s": 52,
-            "min_red_s": 35,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "device_id": "TRS-015-02",
-        "location_ref": "LOC-015",
-        "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "3.0.19",
-        "status": "offline",
-        "last_check_in": "2025-10-21T18:14:44.657241+00:00",
-        "config": {
-            "sampling_rate_s": 25,
-            "lane_description": "A - Sentido Oeste (Faixa de Ônibus)",
+            "lane_description": "n - Sentido Norte (Fluxo Principal)",
             "detection_method": "radar",
             "velocity_threshold_kph": 40
         }
     },
     {
-        "device_id": "SEM-015-04",
-        "location_ref": "LOC-015",
+        "location_ref": "LOC-014",
+        "phase_id": "P4",
+        "device_id": "SEM-014-02",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "2.0.1",
-        "status": "offline",
-        "last_check_in": "2025-10-26T12:41:18.657241+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "4.7.20",
+        "status": "maintenance",
+        "last_check_in": "2025-10-23T18:05:29.680722+00:00",
         "config": {
-            "phase_id": "P3",
-            "lane_description": "V - Sentido Norte (Faixa de Ônibus)",
-            "default_green_s": 88,
-            "fefault_yellow_s": 49,
-            "fefault_red_s": 24,
-            "min_green_s": 68,
-            "min_red_s": 24,
+            "lane_description": "s - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 20,
+            "default_yellow_s": 72,
+            "default_red_s": 32,
+            "min_green_s": 55,
+            "min_red_s": 62,
             "pedestrian_button_active": false
         }
     },
     {
-        "device_id": "TRS-015-03",
+        "location_ref": "LOC-014",
+        "device_id": "TRS-014-02",
+        "device_type": "traffic_sensor",
+        "model": "Loop Detector v3",
+        "firmware_version": "3.6.12",
+        "status": "online",
+        "last_check_in": "2025-10-23T19:35:51.680722+00:00",
+        "config": {
+            "sampling_rate_s": 40,
+            "lane_description": "s - Sentido Oeste (Fluxo Principal)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 80
+        }
+    },
+    {
+        "location_ref": "LOC-014",
+        "phase_id": "P4",
+        "device_id": "SEM-014-03",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "3.9.20",
+        "status": "offline",
+        "last_check_in": "2025-10-26T19:27:35.680722+00:00",
+        "config": {
+            "lane_description": "d - Sentido Oeste (Fluxo Principal)",
+            "default_green_s": 26,
+            "default_yellow_s": 29,
+            "default_red_s": 81,
+            "min_green_s": 76,
+            "min_red_s": 11,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-014",
+        "device_id": "TRS-014-03",
+        "device_type": "traffic_sensor",
+        "model": "Loop Detector v3",
+        "firmware_version": "3.9.9",
+        "status": "maintenance",
+        "last_check_in": "2025-10-26T08:45:21.680722+00:00",
+        "config": {
+            "sampling_rate_s": 20,
+            "lane_description": "d - Sentido Oeste (Fluxo Principal)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 30
+        }
+    },
+    {
+        "location_ref": "LOC-014",
+        "phase_id": "P4",
+        "device_id": "SEM-014-04",
+        "device_type": "traffic_light",
+        "model": "PhaseController M1",
+        "firmware_version": "3.1.7",
+        "status": "offline",
+        "last_check_in": "2025-10-24T22:11:11.680722+00:00",
+        "config": {
+            "lane_description": "z - Sentido Norte (Acesso)",
+            "default_green_s": 76,
+            "default_yellow_s": 59,
+            "default_red_s": 29,
+            "min_green_s": 9,
+            "min_red_s": 74,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-014",
+        "device_id": "TRS-014-04",
+        "device_type": "traffic_sensor",
+        "model": "IR Sensor E1",
+        "firmware_version": "4.7.11",
+        "status": "online",
+        "last_check_in": "2025-10-22T22:56:21.680722+00:00",
+        "config": {
+            "sampling_rate_s": 35,
+            "lane_description": "z - Sentido Norte (Acesso)",
+            "detection_method": "radar",
+            "velocity_threshold_kph": 80
+        }
+    },
+    {
         "location_ref": "LOC-015",
+        "phase_id": "P4",
+        "device_id": "SEM-015-01",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "3.8.12",
+        "status": "maintenance",
+        "last_check_in": "2025-10-25T16:10:31.680722+00:00",
+        "config": {
+            "lane_description": "o - Sentido Leste (Faixa de Ônibus)",
+            "default_green_s": 28,
+            "default_yellow_s": 43,
+            "default_red_s": 80,
+            "min_green_s": 72,
+            "min_red_s": 25,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-015",
+        "device_id": "CAM-015-01",
+        "device_type": "camera",
+        "model": "Cam-Traffic G18",
+        "firmware_version": "1.1.11",
+        "status": "offline",
+        "last_check_in": "2025-10-27T00:51:30.680722+00:00",
+        "config": {
+            "resolution": "4K",
+            "framerate": 24,
+            "view_angle_degrees": 45,
+            "ml_detection_enabled": true,
+            "image_storage_policy": "local_cache",
+            "lane_description": "o - Sentido Leste (Faixa de Ônibus)"
+        }
+    },
+    {
+        "location_ref": "LOC-015",
+        "device_id": "TRS-015-01",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "3.1.15",
-        "status": "maintenance",
-        "last_check_in": "2025-10-23T19:19:04.657241+00:00",
+        "firmware_version": "4.6.8",
+        "status": "online",
+        "last_check_in": "2025-10-22T07:17:17.680722+00:00",
         "config": {
-            "sampling_rate_s": 5,
-            "lane_description": "V - Sentido Norte (Faixa de Ônibus)",
-            "detection_method": "radar",
-            "velocity_threshold_kph": 110
+            "sampling_rate_s": 35,
+            "lane_description": "o - Sentido Leste (Faixa de Ônibus)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 120
+        }
+    },
+    {
+        "location_ref": "LOC-015",
+        "phase_id": "P4",
+        "device_id": "SEM-015-02",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "1.6.6",
+        "status": "online",
+        "last_check_in": "2025-10-24T05:25:43.680722+00:00",
+        "config": {
+            "lane_description": "n - Sentido Leste (Faixa de Ônibus)",
+            "default_green_s": 56,
+            "default_yellow_s": 6,
+            "default_red_s": 75,
+            "min_green_s": 84,
+            "min_red_s": 66,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-015",
+        "phase_id": "P4",
+        "device_id": "SEM-015-03",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "2.0.13",
+        "status": "offline",
+        "last_check_in": "2025-10-21T11:59:18.680722+00:00",
+        "config": {
+            "lane_description": "M - Sentido Oeste (Faixa de Ônibus)",
+            "default_green_s": 10,
+            "default_yellow_s": 86,
+            "default_red_s": 48,
+            "min_green_s": 45,
+            "min_red_s": 11,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-015",
+        "device_id": "TRS-015-02",
+        "device_type": "traffic_sensor",
+        "model": "IR Sensor E1",
+        "firmware_version": "2.9.14",
+        "status": "maintenance",
+        "last_check_in": "2025-10-23T03:27:38.680722+00:00",
+        "config": {
+            "sampling_rate_s": 35,
+            "lane_description": "M - Sentido Oeste (Faixa de Ônibus)",
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 80
+        }
+    },
+    {
+        "location_ref": "LOC-015",
+        "phase_id": "P4",
+        "device_id": "SEM-015-04",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "2.0.13",
+        "status": "online",
+        "last_check_in": "2025-10-26T02:18:34.680722+00:00",
+        "config": {
+            "lane_description": "u - Sentido Oeste (Acesso)",
+            "default_green_s": 23,
+            "default_yellow_s": 14,
+            "default_red_s": 89,
+            "min_green_s": 37,
+            "min_red_s": 33,
+            "pedestrian_button_active": false
         }
     }
 ]

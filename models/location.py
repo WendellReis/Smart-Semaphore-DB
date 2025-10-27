@@ -7,7 +7,8 @@ class Location:
                  description,
                  city,
                  state,
-                 coordinates,
+                 longitude,
+                 latitude,
                  intersection_type,
                  num_lanes,
                  traffic_volume_category):
@@ -25,7 +26,10 @@ class Location:
         self.description = description
         self.city = city
         self.state = state
-        self.coordinates = coordinates
+        self.coordinates = {
+            "longitude":longitude,
+            "latitude": latitude
+        }
         self.intersection_type = intersection_type
         self.num_lanes = num_lanes
         self.traffic_volume_category = traffic_volume_category
