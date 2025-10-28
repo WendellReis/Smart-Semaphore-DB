@@ -9,7 +9,7 @@ from models.device import EdgeGateway, TrafficLight, TrafficSensor, Camera
 LOG_PATH = 'log'
 SEED = 1234
 LOCATIONS = 15
-READINGS_PER_DEVICE = 50
+READINGS_PER_DEVICE = 1000
 CAMERA_PROB = 0.2
 TRAFFIC_SENSOR_PROB = 1
 
@@ -130,7 +130,7 @@ def generateFirmwareVersion():
 
 def generateLaneDescription():
     fake = Faker('pt_BR')
-    street = random.choice(fake.street_address())
+    street = fake.street_address()
     direction = random.choice(DIRECTIONS)
     lane_type = random.choice(LANE_TYPES)
     
@@ -304,7 +304,7 @@ def generateReadings(devices):
             reading = {}
             reading["timestamp"] = generateRandomTimestamp(START_DATE,END_DATE)
             metadata = {
-                'device_id': d['device_id'],
+                'device_ref': d['device_id'],
                 'location_ref': d['location_ref']
             }
 
@@ -312,23 +312,25 @@ def generateReadings(devices):
             if type == 'edge_gateway':
                 continue
             if type == 'traffic_light':
-                metadata['reading_type'] = 'status_change'
+                reading['reading_type'] = 'status_change'
                 reading['current_state'] = generateColor()
                 reading['phase_duration'] = generateSeconds()
             elif type == 'traffic_sensor':
-                metadata['reading_type'] = 'traffic_count'
+                reading['reading_type'] = 'traffic_count'
                 reading['count'] = random.randint(0,50)
                 if reading['count'] == 0:
                     reading['avg_speed_kph'] = 0
                 else:
                     reading['avg_speed_kph'] = random.randint(1,140)
             elif type == 'camera':
+                reading['reading_type'] = 'incident_report'
                 reading['incident_type'] = generateIncident()
                 reading['status'] = random.choice(['open','resolved'])
                 reading['image_url'] = (
                     f"s://incidents/INC-{d['location_ref'].replace('LOC-', '')}-"
                     f"{incident_count[d['location_ref']] + 1}.{random.choice(['png', 'mp4'])}"
                 )
+                incident_count[d['location_ref']]+=1
             
             reading['metadata'] = metadata
             readings.append(reading)

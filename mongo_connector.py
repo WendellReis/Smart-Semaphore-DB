@@ -68,3 +68,319 @@ def findReadings(db,device_id):
     db['readings'].find(filtro).sort("timestamp",DESCENDING)
     tempo_execucao = time.time() - inicio
     return tempo_execucao
+
+def historico(db):
+    inicio = time.time()
+    cursor = db['readings'].aggregate([
+    {
+        '$match': {
+            'reading_type': 'traffic_count'
+        }
+    }, {
+        '$lookup': {
+            'from': 'devices', 
+            'localField': 'metadata.device_ref', 
+            'foreignField': 'device_id', 
+            'as': 'device_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$device_info'
+        }
+    }, {
+        '$lookup': {
+            'from': 'locations', 
+            'localField': 'metadata.location_ref', 
+            'foreignField': 'location_id', 
+            'as': 'location_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$location_info'
+        }
+    }, {
+        '$project': {
+            '_id': 0, 
+            'timestamp': '$timestamp', 
+            'local_description': '$location_info.description', 
+            'lane': '$device_info.lane_description', 
+            'count': '$count', 
+            'device_id': '$device_info.device_id', 
+            'avg_speed_kph_limit': '$device_info.config.velocity_threshold_kph', 
+            'avg_speed_kph_reported': '$avg_speed_kph'
+        }
+    }
+])
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao
+
+def acidentes_abertos(db):
+    inicio = time.time()
+    cursor = db['readings'].aggregate([
+    {
+        '$match': {
+            'incident_type': 'accident'
+        }
+    }, {
+        '$lookup': {
+            'from': 'devices', 
+            'localField': 'metadata.device_ref', 
+            'foreignField': 'device_id', 
+            'as': 'device_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$device_info'
+        }
+    }, {
+        '$lookup': {
+            'from': 'locations', 
+            'localField': 'device_info.location_ref', 
+            'foreignField': 'location_id', 
+            'as': 'location_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$location_info'
+        }
+    }, {
+        '$group': {
+            '_id': '$metadata.location_ref', 
+            'count': {
+                '$sum': 1
+            }
+        }
+    }, {
+        '$sort': {
+            'count': -1
+        }
+    }, {
+        '$limit': 1
+    }, {
+        '$lookup': {
+            'from': 'locations', 
+            'localField': '_id', 
+            'foreignField': 'location_id', 
+            'as': 'location_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$location_info'
+        }
+    }, {
+        '$project': {
+            '_id': 0, 
+            'location_id': '$_id', 
+            'accident_count': '$count', 
+            'description': '$location_info.description', 
+            'city': '$location_info.city', 
+            'state': '$location_info.state', 
+            'num_lanes': '$location_info.num_lanes', 
+            'intersection_type': '$location_info.intersection_type', 
+            'traffic_volume_category': '$location_info.traffic_volume_category'
+        }
+    }
+])
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao
+
+def ultimas_leituras(db):
+    inicio = time.time()
+    cursor = db['readings'].aggregate([
+    {
+        '$match': {
+            'reading_type': 'traffic_count', 
+            'count': {
+                '$ne': 0
+            }
+        }
+    }, {
+        '$sort': {
+            'metadata.device_ref': 1, 
+            'timestamp': -1
+        }
+    }, {
+        '$lookup': {
+            'from': 'devices', 
+            'localField': 'metadata.device_ref', 
+            'foreignField': 'device_id', 
+            'as': 'device_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$device_info'
+        }
+    }, {
+        '$group': {
+            '_id': '$device_info.device_id', 
+            'reading': {
+                '$first': '$$ROOT'
+            }
+        }
+    }, {
+        '$lookup': {
+            'from': 'locations', 
+            'localField': 'reading.device_info.location_ref', 
+            'foreignField': 'location_id', 
+            'as': 'location'
+        }
+    }, {
+        '$unwind': {
+            'path': '$location'
+        }
+    }, {
+        '$project': {
+            '_id': 0, 
+            'device_id': '$_id', 
+            'timestamp': '$reading.timestamp', 
+            'local_description': '$location.description', 
+            'lane': '$reading.device_info.lane_description', 
+            'sampling_rate_s': '$reading.device_info.config.sampling_rate_s', 
+            'avg_speed_kph_limit': '$reading.device_info.config.velocity_threshold_kph', 
+            'avg_speed_kph_reported': '$reading.avg_speed_kph', 
+            'count': '$reading.count'
+        }
+    }
+])
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao
+
+def local_mais_acidentes(db):
+    inicio = time.time()
+    cursor = db['readings'].aggregate([
+    {
+        '$match': {
+            'incident_type': 'accident'
+        }
+    }, {
+        '$lookup': {
+            'from': 'devices', 
+            'localField': 'metadata.device_ref', 
+            'foreignField': 'device_id', 
+            'as': 'device_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$device_info'
+        }
+    }, {
+        '$lookup': {
+            'from': 'locations', 
+            'localField': 'device_info.location_ref', 
+            'foreignField': 'location_id', 
+            'as': 'location_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$location_info'
+        }
+    }, {
+        '$group': {
+            '_id': '$metadata.location_ref', 
+            'count': {
+                '$sum': 1
+            }
+        }
+    }, {
+        '$sort': {
+            'count': -1
+        }
+    }, {
+        '$limit': 1
+    }, {
+        '$lookup': {
+            'from': 'locations', 
+            'localField': '_id', 
+            'foreignField': 'location_id', 
+            'as': 'location_info'
+        }
+    }, {
+        '$unwind': {
+            'path': '$location_info'
+        }
+    }, {
+        '$project': {
+            '_id': 0, 
+            'location_id': '$_id', 
+            'accident_count': '$count', 
+            'description': '$location_info.description', 
+            'city': '$location_info.city', 
+            'state': '$location_info.state', 
+            'num_lanes': '$location_info.num_lanes', 
+            'intersection_type': '$location_info.intersection_type', 
+            'traffic_volume_category': '$location_info.traffic_volume_category'
+        }
+    }
+])
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao
+
+
+def fluxo(db):
+    inicio = time.time()
+    cursor = db['devices'].aggregate([
+    {
+        '$match': {
+            'device_id': 'SEM-001-01'
+        }
+    }, {
+        '$lookup': {
+            'from': 'devices', 
+            'let': {
+                'semaforoLane': '$lane_description'
+            }, 
+            'pipeline': [
+                {
+                    '$match': {
+                        '$expr': {
+                            '$and': [
+                                {
+                                    '$eq': [
+                                        '$device_type', 'traffic_sensor'
+                                    ]
+                                }, {
+                                    '$eq': [
+                                        '$lane_description', '$$semaforoLane'
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ], 
+            'as': 'traffic_sensor'
+        }
+    }, {
+        '$unwind': {
+            'path': '$traffic_sensor'
+        }
+    }, {
+        '$project': {
+            'traffic_sensor_id': '$traffic_sensor.device_id', 
+            '_id': 0
+        }
+    }, {
+        '$lookup': {
+            'from': 'readings', 
+            'localField': 'traffic_sensor_id', 
+            'foreignField': 'metadata.device_ref', 
+            'as': 'reading'
+        }
+    }, {
+        '$unwind': {
+            'path': '$reading'
+        }
+    }, {
+        '$project': {
+            'timestamp': '$reading.timestamp', 
+            'count': '$reading.count', 
+            'avg_speed_kph': '$reading.avg_speed_kph'
+        }
+    }, {
+        '$sort': {
+            'timestamp': -1
+        }
+    }
+])
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao

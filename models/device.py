@@ -80,13 +80,13 @@ class Camera(Device):
         
         self.document = {}
         self.document["location_ref"] =  location_ref
+        self.document["lane_description"] = lane_description
         config_data = {
             "resolution": resolution,
             "framerate": framerate,
             "view_angle_degrees": view_angle_degrees,
             "ml_detection_enabled": ml_detection_enabled,
             "image_storage_policy": image_storage_policy,
-            "lane_description":lane_description
         }
         
         super().__init__(
@@ -125,8 +125,8 @@ class TrafficLight(Device):
         self.document = {}
         self.document["location_ref"] =  location_ref
         self.document["phase_id"] = phase_id
+        self.document["lane_description"] = lane_description
         config_data = {
-            "lane_description": lane_description,
             "default_green_s": default_green_s,
             "default_yellow_s": default_yellow_s,
             "default_red_s": default_red_s,
@@ -150,7 +150,7 @@ class TrafficLight(Device):
         
 class TrafficSensor(Device):
     """
-    Representa o Sensor de Tráfego (Ex: loop indutivo), responsável pela medição de fluxo.
+    Representa o Sensor de Tráfego, responsável pela medição de fluxo.
     """
     def __init__(self,
                  device_id,
@@ -166,9 +166,9 @@ class TrafficSensor(Device):
         
         self.document = {}
         self.document["location_ref"] = location_ref
+        self.document["lane_description"] = lane_description
         config_data = {
             "sampling_rate_s": sampling_rate_s,
-            "lane_description": lane_description,
             "detection_method": detection_method,
             "velocity_threshold_kph": velocity_threshold_kph
         }

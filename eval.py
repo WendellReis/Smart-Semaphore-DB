@@ -58,18 +58,18 @@ def eval():
     # Extraindo dados dos arquivos json
     locations = load_data('log/locations.json')
     devices = load_data('log/devices.json')
-    readings = load_data('log/readings.json')        
+    readings = load_data('log/readings.json')
 
-    '''
+
     # Limpa as collections antes de povoar o banco
-    #clear_database(db)
+    clear_database(db)
 
     # Popula o banco de dados
-    #temp = populate_database(db,locations,devices,readings)
+    temp = populate_database(db,locations,devices,readings)
 
     print("\n⚙️  Testes de tempo:")
-    #print_time("T-POV",temp)
-
+    print_time("T-POV",temp)
+    
     # Tempo médio de inserção
     samples = random.sample(readings,100)
     temp = 0
@@ -100,7 +100,11 @@ def eval():
     
     print_time("T-UPDATE-PHASE",temp/len(locations))
 
-    '''
+    print_time("Tempo para obter fluxo de semaforo",mongo_connector.fluxo(db))
+    print_time("Tempo para obter local mais perigoso",mongo_connector.local_mais_acidentes(db))
+    print_time("Tempo para obter acidentes em aberto",mongo_connector.acidentes_abertos(db))
+    print_time("Tempo para obter leituras de congestionamentos",mongo_connector.ultimas_leituras(db))
+    print_time("Tempo para obter historico de excesso de velocidade",mongo_connector.historico(db))
 
 if __name__ == "__main__":
     eval()
