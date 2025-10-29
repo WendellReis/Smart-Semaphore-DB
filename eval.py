@@ -42,13 +42,14 @@ def print_time(text,value):
 def eval():
     # Conectando ao banco de dados
     random.seed(SEED)
-    user = os.environ['mongodb_user']
-    password = os.environ['mongodb_password']
+    #user = os.environ['mongodb_user']
+    #password = os.environ['mongodb_password']
 
-    uri = f"mongodb+srv://{user}:{password}@cluster0.drkxjcd.mongodb.net/?appName=Cluster0"
+    local_uri = "mongodb://localhost:27017/"
+    #uri = f"mongodb+srv://{user}:{password}@cluster0.drkxjcd.mongodb.net/?appName=Cluster0"
 
     print('⚙️  Conecntando com banco de dados...')
-    db = mongo_connector.connect_to_mongodb(uri)
+    db = mongo_connector.connect_to_mongodb(local_uri)
     if db is None:
         return
     
@@ -59,7 +60,6 @@ def eval():
     locations = load_data('log/locations.json')
     devices = load_data('log/devices.json')
     readings = load_data('log/readings.json')
-
 
     # Limpa as collections antes de povoar o banco
     clear_database(db)
@@ -100,12 +100,12 @@ def eval():
     
     print_time("T-UPDATE-PHASE",temp/len(locations))
 
-    print_time("Tempo para obter fluxo de semaforo",mongo_connector.fluxo(db))
-    print_time("Tempo para obter local mais perigoso",mongo_connector.local_mais_acidentes(db))
-    print_time("Tempo para obter acidentes em aberto",mongo_connector.acidentes_abertos(db))
-    print_time("Tempo para obter leituras de congestionamentos",mongo_connector.ultimas_leituras(db))
-    print_time("Tempo para obter historico de excesso de velocidade",mongo_connector.historico(db))
-
+    print_time("TQ1 - Tempo para obter fluxo de semaforo",mongo_connector.fluxo(db))
+    print_time("TQ2 - Tempo para obter historico de excesso de velocidade",mongo_connector.historico(db))
+    print_time("TQ3 - Tempo para obter leituras de congestionamentos",mongo_connector.ultimas_leituras(db))
+    print_time("TQ4 - Tempo para obter acidentes em aberto",mongo_connector.acidentes_abertos(db))
+    print_time("TQ5 - Tempo para obter local mais perigoso",mongo_connector.local_mais_acidentes(db))
+    
 if __name__ == "__main__":
     eval()
 

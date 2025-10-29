@@ -63,9 +63,9 @@ def update_many(db,collection,filter,update):
     return tempo_execucao
 
 def findReadings(db,device_id):
-    filtro = {"metadata.device_id": device_id}
+    filtro = {"metadata.device_ref": device_id}
     inicio = time.time()
-    db['readings'].find(filtro).sort("timestamp",DESCENDING)
+    db['readings'].find(filtro)
     tempo_execucao = time.time() - inicio
     return tempo_execucao
 
