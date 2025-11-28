@@ -78,20 +78,17 @@ def eval():
 
     print_time("T-INSERT-READING",temp/100)
 
-    # Tempo médio para deleção de leitura
     temp = 0
     for s in samples:
         temp += mongo_connector.delete_one(db,"readings",s)
     print_time("T-DELETE-READING",temp/100)
     
-    # Tempo médio para consultar leituras
     samples = random.sample(devices,100)
     temp = 0
     for s in samples:
         temp += mongo_connector.findReadings(db,s["device_id"])
     print_time("T-FIND-READINGS",temp/100)
 
-    # Atualização de fase
     temp = 0
     for l in locations:
         filtro = {"location_ref": l['location_id'],"device_type":"traffic_light"}

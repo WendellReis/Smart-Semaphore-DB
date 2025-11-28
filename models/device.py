@@ -23,42 +23,6 @@ class Device:
 
     def to_mongo_document(self):
         return self.document
-        
-class EdgeGateway(Device):
-    """
-    Representa o Controlador de Tráfego Local (CTL).
-    """
-    def __init__(self,
-                 device_id,
-                 location,
-                 model,
-                 firmware_version,
-                 status,
-                 last_check_in,
-                 control_mode,
-                 max_cycle_time_s,
-                 ml_model_version):
-        
-        self.document = {}
-        self.document["location"] = location
-        config_data = {
-            "control_mode": control_mode,
-            "max_cycle_time_s": max_cycle_time_s,
-            "ml_model_version": ml_model_version
-        }
-        
-        super().__init__(
-            device_id=device_id,
-            device_type="edge_gateway",
-            model=model,
-            firmware_version=firmware_version,
-            status=status,
-            last_check_in=last_check_in,
-            config=config_data
-        )
-
-    def to_mongo_document(self):
-        return super().to_mongo_document()
 
 class Camera(Device):
     """
@@ -76,11 +40,11 @@ class Camera(Device):
                  view_angle_degrees,
                  ml_detection_enabled,
                  image_storage_policy,
-                 lane_description):
+                 lane_ref):
         
         self.document = {}
         self.document["location_ref"] =  location_ref
-        self.document["lane_description"] = lane_description
+        self.document["lane_ref"] = lane_ref
         config_data = {
             "resolution": resolution,
             "framerate": framerate,
@@ -114,7 +78,7 @@ class TrafficLight(Device):
                  status,
                  last_check_in,
                  phase_id,
-                 lane_description,
+                 lane_ref,
                  default_green_s,
                  default_yellow_s,
                  default_red_s,
@@ -125,7 +89,7 @@ class TrafficLight(Device):
         self.document = {}
         self.document["location_ref"] =  location_ref
         self.document["phase_id"] = phase_id
-        self.document["lane_description"] = lane_description
+        self.document["lane_ref"] = lane_ref
         config_data = {
             "default_green_s": default_green_s,
             "default_yellow_s": default_yellow_s,
@@ -160,13 +124,13 @@ class TrafficSensor(Device):
                  status,
                  last_check_in,
                  sampling_rate_s,
-                 lane_description,
+                 lane_ref,
                  detection_method,
                  velocity_threshold_kph):
         
         self.document = {}
         self.document["location_ref"] = location_ref
-        self.document["lane_description"] = lane_description
+        self.document["lane_ref"] = lane_ref
         config_data = {
             "sampling_rate_s": sampling_rate_s,
             "detection_method": detection_method,

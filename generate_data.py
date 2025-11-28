@@ -4,7 +4,8 @@ import json
 import random
 
 from models.location import Location
-from models.device import EdgeGateway, TrafficLight, TrafficSensor, Camera
+from models.lane import Lane
+from models.device import TrafficLight, TrafficSensor, Camera
 
 LOG_PATH = 'log'
 SEED = 1234
@@ -21,7 +22,7 @@ INTERSECTION_REFERENCE_DATA = [
     },
     {
         "intersection_type": "four_way_perpendicular",
-        "num_lanes": 6,
+        "num_lanes": 4,
         "num_traffic_lights": 4
     },
     {
@@ -128,14 +129,6 @@ def generateFirmwareVersion():
     
     return f"{major}.{minor}.{patch}"
 
-def generateLaneDescription():
-    fake = Faker('pt_BR')
-    street = fake.street_address()
-    direction = random.choice(DIRECTIONS)
-    lane_type = random.choice(LANE_TYPES)
-    
-    return f"{street} - {direction} ({lane_type})"
-
 def generateRandomTimestamp(start_date, end_date):
     time_between_dates = end_date - start_date
     seconds_between_dates = int(time_between_dates.total_seconds())
@@ -200,25 +193,10 @@ def generateLocations(size):
     
     return locations
 
-def generateDevices(locations):
+def generateDevicesAndLanes(locations):
     fake = Faker('pt_BR')
     devices = []
-
-    # Gera o Edge Gateway
-    devices.append(
-        EdgeGateway(
-            device_id='EGT-1',
-            location=fake.address(), # Localização do gateway, não fica em um cruzamento
-            model=generateModel("edge_gateway"),
-            firmware_version=generateFirmwareVersion(),
-            status="online",
-            last_check_in=datetime.now(timezone.utc).isoformat(), # Última comunicação foi agora
-            control_mode=generateControlMode(),
-            max_cycle_time_s=generateSeconds(),
-            ml_model_version=generateMlModel("edge_gateway")
-
-        ).to_mongo_document()
-    )
+    lanes = []
 
     for l in locations:
         # Gera semáforos do cruzamento
@@ -231,7 +209,18 @@ def generateDevices(locations):
         sensor_count = 1
         phase = generateTrafficPhase() # Todos os semáforos de um mesmo cruzamento estão na mesma fase
         for i in range(1,quant+1):
-            lane = generateLaneDescription()
+            lane_id = f'LNE-{l['location_id'].replace("LOC-","")}-0{i}'
+            lanes.append(
+                Lane(
+                    lane_id=lane_id,
+                    direction=random.choice(DIRECTIONS),
+                    lane_type=random.choice(LANE_TYPES),
+                    description=fake.street_address(),
+                    location_ref=l['location_id']
+                ).to_mongo_document()
+            )
+        
+
             devices.append(
                 TrafficLight(
                     device_id=f'SEM-{l['location_id'].replace("LOC-","")}-0{i}',
@@ -241,7 +230,7 @@ def generateDevices(locations):
                     status=generateStatus(),
                     last_check_in=generateRandomTimestamp(START_DATE, END_DATE),
                     phase_id=phase,
-                    lane_description=lane,
+                    lane_ref=lane_id,
                     default_green_s=generateSeconds(),
                     default_yellow_s=generateSeconds(),
                     default_red_s=generateSeconds(),
@@ -265,7 +254,7 @@ def generateDevices(locations):
                         view_angle_degrees=generateViewAngleDegrees(),
                         ml_detection_enabled=generateBool(0.5),
                         image_storage_policy=generateImageStoragePolicy(),
-                        lane_description=lane # Mesma lane do semáforo
+                        lane_ref=lane_id, # Mesma lane do semáforo
                     ).to_mongo_document()
                 )
                 cam_count+=1
@@ -281,14 +270,14 @@ def generateDevices(locations):
                         status=generateStatus(),
                         last_check_in=generateRandomTimestamp(START_DATE,END_DATE),
                         sampling_rate_s=generateSamplingRate(),
-                        lane_description=lane, # Mesma lane do semáforo
+                        lane_ref=lane_id, # Mesma lane do semáforo
                         detection_method=generateDetectionMethod(),
                         velocity_threshold_kph=generateVelocityThresholdKph()
                     ).to_mongo_document()
                 )
                 sensor_count+=1
     
-    return devices
+    return devices,lanes
         
 def generateReadings(devices):
     readings = []
@@ -305,7 +294,8 @@ def generateReadings(devices):
             reading["timestamp"] = generateRandomTimestamp(START_DATE,END_DATE)
             metadata = {
                 'device_ref': d['device_id'],
-                'location_ref': d['location_ref']
+                'location_ref': d['location_ref'],
+                'lane_ref': d['lane_ref']
             }
 
             type = d['device_type']
@@ -328,7 +318,7 @@ def generateReadings(devices):
                 reading['status'] = random.choice(['open','resolved'])
                 reading['image_url'] = (
                     f"s://incidents/INC-{d['location_ref'].replace('LOC-', '')}-"
-                    f"{incident_count[d['location_ref']] + 1}.{random.choice(['png', 'mp4'])}"
+                    f"{incident_count[d['location_ref']] + 1}.png"
                 )
                 incident_count[d['location_ref']]+=1
             
@@ -346,18 +336,16 @@ if __name__ == "__main__":
     random.seed(SEED)
 
     locations = generateLocations(LOCATIONS)
-    devices = generateDevices(locations)
+    devices,lanes = generateDevicesAndLanes(locations)
     readings = generateReadings(devices)
 
     saveData('locations',locations)
+    saveData('lanes',lanes)
     saveData('devices',devices)
     saveData('readings',readings)
 
     print(f'📥 Locations Gerados: {len(locations)}.')
+    print(f'📥 Lanes Gerados: {len(lanes)}.')
     print(f'📥 Devices Gerados: {len(devices)}.')
     print(f'📥 Readings Gerados: {len(readings)}.')
     print(f'💾 Total Documentos Gerados: {len(locations)+len(devices)+len(readings)}')
-
-    #print(locations)
-    #print(devices)
-    #print(readings)

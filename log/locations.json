@@ -178,7 +178,7 @@
             "latitude": -80.24846424369429
         },
         "intersection_type": "four_way_perpendicular",
-        "num_lanes": 6,
+        "num_lanes": 4,
         "traffic_volume_category": "low"
     },
     {
