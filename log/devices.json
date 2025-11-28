@@ -8,7 +8,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.6.9",
         "status": "maintenance",
-        "last_check_in": "2025-11-21T22:59:59.306526+00:00",
+        "last_check_in": "2025-11-22T01:41:32.063954+00:00",
         "config": {
             "default_green_s": 27,
             "default_yellow_s": 39,
@@ -26,7 +26,7 @@
         "model": "Radar 4D",
         "firmware_version": "4.5.19",
         "status": "offline",
-        "last_check_in": "2025-11-27T05:54:55.306526+00:00",
+        "last_check_in": "2025-11-27T08:36:28.063954+00:00",
         "config": {
             "sampling_rate_s": 5,
             "detection_method": "camera_based",
@@ -42,7 +42,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.1.6",
         "status": "offline",
-        "last_check_in": "2025-11-26T18:18:03.306526+00:00",
+        "last_check_in": "2025-11-26T20:59:36.063954+00:00",
         "config": {
             "default_green_s": 20,
             "default_yellow_s": 72,
@@ -60,7 +60,7 @@
         "model": "Radar 4D",
         "firmware_version": "1.2.19",
         "status": "offline",
-        "last_check_in": "2025-11-23T08:23:30.306526+00:00",
+        "last_check_in": "2025-11-23T11:05:03.063954+00:00",
         "config": {
             "sampling_rate_s": 60,
             "detection_method": "camera_based",
@@ -76,7 +76,7 @@
         "model": "Actuator 2000",
         "firmware_version": "2.0.10",
         "status": "online",
-        "last_check_in": "2025-11-24T03:11:30.306526+00:00",
+        "last_check_in": "2025-11-24T05:53:03.063954+00:00",
         "config": {
             "default_green_s": 69,
             "default_yellow_s": 16,
@@ -94,7 +94,7 @@
         "model": "Radar 4D",
         "firmware_version": "2.1.13",
         "status": "online",
-        "last_check_in": "2025-11-27T01:08:56.306526+00:00",
+        "last_check_in": "2025-11-27T03:50:29.063954+00:00",
         "config": {
             "sampling_rate_s": 45,
             "detection_method": "radar",
@@ -110,7 +110,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.4.2",
         "status": "offline",
-        "last_check_in": "2025-11-27T22:55:38.306526+00:00",
+        "last_check_in": "2025-11-28T01:37:11.063954+00:00",
         "config": {
             "default_green_s": 24,
             "default_yellow_s": 68,
@@ -128,7 +128,7 @@
         "model": "Cam-Traffic G18",
         "firmware_version": "2.8.3",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T10:02:08.306526+00:00",
+        "last_check_in": "2025-11-25T12:43:41.063954+00:00",
         "config": {
             "resolution": "720p",
             "framerate": 24,
@@ -145,7 +145,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "4.6.11",
         "status": "online",
-        "last_check_in": "2025-11-26T02:19:20.306526+00:00",
+        "last_check_in": "2025-11-26T05:00:53.063954+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "camera_based",
@@ -161,7 +161,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.6.13",
         "status": "maintenance",
-        "last_check_in": "2025-11-24T19:53:47.306526+00:00",
+        "last_check_in": "2025-11-24T22:35:20.063954+00:00",
         "config": {
             "default_green_s": 72,
             "default_yellow_s": 19,
@@ -179,7 +179,7 @@
         "model": "Radar 4D",
         "firmware_version": "4.3.16",
         "status": "online",
-        "last_check_in": "2025-11-26T02:07:48.306526+00:00",
+        "last_check_in": "2025-11-26T04:49:21.063954+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "radar",
@@ -195,7 +195,7 @@
         "model": "Actuator 2000",
         "firmware_version": "4.7.6",
         "status": "offline",
-        "last_check_in": "2025-11-27T06:30:21.306526+00:00",
+        "last_check_in": "2025-11-27T09:11:54.063954+00:00",
         "config": {
             "default_green_s": 25,
             "default_yellow_s": 41,
@@ -213,7 +213,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "4.7.1",
         "status": "maintenance",
-        "last_check_in": "2025-11-27T03:34:22.306526+00:00",
+        "last_check_in": "2025-11-27T06:15:55.063954+00:00",
         "config": {
             "sampling_rate_s": 55,
             "detection_method": "radar",
@@ -229,7 +229,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.9.11",
         "status": "offline",
-        "last_check_in": "2025-11-24T23:39:24.306526+00:00",
+        "last_check_in": "2025-11-25T02:20:57.063954+00:00",
         "config": {
             "default_green_s": 43,
             "default_yellow_s": 79,
@@ -247,7 +247,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "2.5.17",
         "status": "offline",
-        "last_check_in": "2025-11-25T08:48:19.306526+00:00",
+        "last_check_in": "2025-11-25T11:29:52.063954+00:00",
         "config": {
             "sampling_rate_s": 40,
             "detection_method": "camera_based",
@@ -263,7 +263,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.2.1",
         "status": "offline",
-        "last_check_in": "2025-11-21T22:10:10.306526+00:00",
+        "last_check_in": "2025-11-22T00:51:43.063954+00:00",
         "config": {
             "default_green_s": 90,
             "default_yellow_s": 10,
@@ -281,7 +281,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "1.4.9",
         "status": "maintenance",
-        "last_check_in": "2025-11-27T08:43:18.306526+00:00",
+        "last_check_in": "2025-11-27T11:24:51.063954+00:00",
         "config": {
             "sampling_rate_s": 50,
             "detection_method": "radar",
@@ -297,7 +297,7 @@
         "model": "LED Light Hub",
         "firmware_version": "3.9.8",
         "status": "online",
-        "last_check_in": "2025-11-27T06:30:41.306526+00:00",
+        "last_check_in": "2025-11-27T09:12:14.063954+00:00",
         "config": {
             "default_green_s": 68,
             "default_yellow_s": 22,
@@ -315,7 +315,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.8.17",
         "status": "maintenance",
-        "last_check_in": "2025-11-26T05:48:13.306526+00:00",
+        "last_check_in": "2025-11-26T08:29:46.063954+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "radar",
@@ -331,7 +331,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.5.14",
         "status": "online",
-        "last_check_in": "2025-11-22T07:56:28.306526+00:00",
+        "last_check_in": "2025-11-22T10:38:01.063954+00:00",
         "config": {
             "default_green_s": 45,
             "default_yellow_s": 34,
@@ -349,7 +349,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "4.0.1",
         "status": "offline",
-        "last_check_in": "2025-11-22T10:38:34.306526+00:00",
+        "last_check_in": "2025-11-22T13:20:07.063954+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "camera_based",
@@ -365,7 +365,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.0.12",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T23:28:15.306526+00:00",
+        "last_check_in": "2025-11-26T02:09:48.063954+00:00",
         "config": {
             "default_green_s": 58,
             "default_yellow_s": 27,
@@ -383,7 +383,7 @@
         "model": "SONY G95 PRO",
         "firmware_version": "2.8.5",
         "status": "maintenance",
-        "last_check_in": "2025-11-24T13:29:04.306526+00:00",
+        "last_check_in": "2025-11-24T16:10:37.063954+00:00",
         "config": {
             "resolution": "480p",
             "framerate": 60,
@@ -400,7 +400,7 @@
         "model": "Radar 4D",
         "firmware_version": "3.3.10",
         "status": "online",
-        "last_check_in": "2025-11-25T06:23:03.306526+00:00",
+        "last_check_in": "2025-11-25T09:04:36.063954+00:00",
         "config": {
             "sampling_rate_s": 50,
             "detection_method": "camera_based",
@@ -416,7 +416,7 @@
         "model": "LED Light Hub",
         "firmware_version": "3.8.6",
         "status": "offline",
-        "last_check_in": "2025-11-25T00:36:35.306526+00:00",
+        "last_check_in": "2025-11-25T03:18:08.063954+00:00",
         "config": {
             "default_green_s": 51,
             "default_yellow_s": 39,
@@ -434,7 +434,7 @@
         "model": "Cam-Traffic G18",
         "firmware_version": "4.3.7",
         "status": "offline",
-        "last_check_in": "2025-11-24T18:55:26.306526+00:00",
+        "last_check_in": "2025-11-24T21:36:59.063954+00:00",
         "config": {
             "resolution": "720p",
             "framerate": 45,
@@ -451,7 +451,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "4.7.17",
         "status": "offline",
-        "last_check_in": "2025-11-25T23:56:31.306526+00:00",
+        "last_check_in": "2025-11-26T02:38:04.063954+00:00",
         "config": {
             "sampling_rate_s": 50,
             "detection_method": "radar",
@@ -467,7 +467,7 @@
         "model": "Actuator 2000",
         "firmware_version": "4.1.18",
         "status": "maintenance",
-        "last_check_in": "2025-11-23T01:41:24.306526+00:00",
+        "last_check_in": "2025-11-23T04:22:57.063954+00:00",
         "config": {
             "default_green_s": 37,
             "default_yellow_s": 35,
@@ -485,7 +485,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.9.16",
         "status": "maintenance",
-        "last_check_in": "2025-11-27T02:55:47.306526+00:00",
+        "last_check_in": "2025-11-27T05:37:20.063954+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "camera_based",
@@ -501,7 +501,7 @@
         "model": "PhaseController M1",
         "firmware_version": "1.3.6",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T13:07:31.306526+00:00",
+        "last_check_in": "2025-11-25T15:49:04.063954+00:00",
         "config": {
             "default_green_s": 27,
             "default_yellow_s": 53,
@@ -519,7 +519,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.0.9",
         "status": "offline",
-        "last_check_in": "2025-11-25T09:25:23.306526+00:00",
+        "last_check_in": "2025-11-25T12:06:56.063954+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "camera_based",
@@ -535,7 +535,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.4.20",
         "status": "maintenance",
-        "last_check_in": "2025-11-24T21:55:25.306526+00:00",
+        "last_check_in": "2025-11-25T00:36:58.063954+00:00",
         "config": {
             "default_green_s": 45,
             "default_yellow_s": 83,
@@ -553,7 +553,7 @@
         "model": "Radar 4D",
         "firmware_version": "3.6.13",
         "status": "offline",
-        "last_check_in": "2025-11-28T10:36:31.306526+00:00",
+        "last_check_in": "2025-11-28T13:18:04.063954+00:00",
         "config": {
             "sampling_rate_s": 40,
             "detection_method": "camera_based",
@@ -569,7 +569,7 @@
         "model": "PhaseController M1",
         "firmware_version": "4.2.2",
         "status": "online",
-        "last_check_in": "2025-11-28T11:09:02.306526+00:00",
+        "last_check_in": "2025-11-28T13:50:35.063954+00:00",
         "config": {
             "default_green_s": 74,
             "default_yellow_s": 50,
@@ -587,7 +587,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.1.8",
         "status": "maintenance",
-        "last_check_in": "2025-11-26T02:18:06.306526+00:00",
+        "last_check_in": "2025-11-26T04:59:39.063954+00:00",
         "config": {
             "sampling_rate_s": 60,
             "detection_method": "camera_based",
@@ -603,7 +603,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.1.10",
         "status": "online",
-        "last_check_in": "2025-11-27T13:14:06.306526+00:00",
+        "last_check_in": "2025-11-27T15:55:39.063954+00:00",
         "config": {
             "default_green_s": 28,
             "default_yellow_s": 23,
@@ -621,7 +621,7 @@
         "model": "Vision Sensor V2",
         "firmware_version": "1.7.18",
         "status": "offline",
-        "last_check_in": "2025-11-23T02:11:25.306526+00:00",
+        "last_check_in": "2025-11-23T04:52:58.063954+00:00",
         "config": {
             "resolution": "1080p",
             "framerate": 50,
@@ -638,7 +638,7 @@
         "model": "Radar 4D",
         "firmware_version": "2.7.8",
         "status": "online",
-        "last_check_in": "2025-11-24T16:57:24.306526+00:00",
+        "last_check_in": "2025-11-24T19:38:57.063954+00:00",
         "config": {
             "sampling_rate_s": 15,
             "detection_method": "camera_based",
@@ -654,7 +654,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.3.11",
         "status": "maintenance",
-        "last_check_in": "2025-11-26T11:38:00.306526+00:00",
+        "last_check_in": "2025-11-26T14:19:33.063954+00:00",
         "config": {
             "default_green_s": 5,
             "default_yellow_s": 71,
@@ -672,7 +672,7 @@
         "model": "Radar 4D",
         "firmware_version": "4.3.1",
         "status": "offline",
-        "last_check_in": "2025-11-26T14:18:27.306526+00:00",
+        "last_check_in": "2025-11-26T17:00:00.063954+00:00",
         "config": {
             "sampling_rate_s": 40,
             "detection_method": "camera_based",
@@ -688,7 +688,7 @@
         "model": "Actuator 2000",
         "firmware_version": "4.9.1",
         "status": "online",
-        "last_check_in": "2025-11-25T00:21:52.306526+00:00",
+        "last_check_in": "2025-11-25T03:03:25.063954+00:00",
         "config": {
             "default_green_s": 77,
             "default_yellow_s": 20,
@@ -706,7 +706,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "4.2.6",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T08:21:52.306526+00:00",
+        "last_check_in": "2025-11-22T11:03:25.063954+00:00",
         "config": {
             "sampling_rate_s": 60,
             "detection_method": "camera_based",
@@ -722,7 +722,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.4.17",
         "status": "online",
-        "last_check_in": "2025-11-25T15:48:08.306526+00:00",
+        "last_check_in": "2025-11-25T18:29:41.063954+00:00",
         "config": {
             "default_green_s": 70,
             "default_yellow_s": 12,
@@ -740,7 +740,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.2.8",
         "status": "maintenance",
-        "last_check_in": "2025-11-27T10:00:19.306526+00:00",
+        "last_check_in": "2025-11-27T12:41:52.063954+00:00",
         "config": {
             "sampling_rate_s": 50,
             "detection_method": "radar",
@@ -756,7 +756,7 @@
         "model": "Actuator 2000",
         "firmware_version": "2.4.6",
         "status": "offline",
-        "last_check_in": "2025-11-25T06:05:02.306526+00:00",
+        "last_check_in": "2025-11-25T08:46:35.063954+00:00",
         "config": {
             "default_green_s": 71,
             "default_yellow_s": 6,
@@ -774,7 +774,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "1.4.20",
         "status": "offline",
-        "last_check_in": "2025-11-21T16:32:48.306526+00:00",
+        "last_check_in": "2025-11-21T19:14:21.063954+00:00",
         "config": {
             "sampling_rate_s": 35,
             "detection_method": "radar",
@@ -790,7 +790,7 @@
         "model": "PhaseController M1",
         "firmware_version": "1.9.14",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T12:59:02.306526+00:00",
+        "last_check_in": "2025-11-25T15:40:35.063954+00:00",
         "config": {
             "default_green_s": 72,
             "default_yellow_s": 82,
@@ -808,7 +808,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.9.17",
         "status": "maintenance",
-        "last_check_in": "2025-11-23T18:39:55.306526+00:00",
+        "last_check_in": "2025-11-23T21:21:28.063954+00:00",
         "config": {
             "sampling_rate_s": 55,
             "detection_method": "radar",
@@ -824,7 +824,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.1.11",
         "status": "maintenance",
-        "last_check_in": "2025-11-27T07:39:38.306526+00:00",
+        "last_check_in": "2025-11-27T10:21:11.063954+00:00",
         "config": {
             "default_green_s": 38,
             "default_yellow_s": 14,
@@ -842,7 +842,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.1.15",
         "status": "maintenance",
-        "last_check_in": "2025-11-28T03:56:04.306526+00:00",
+        "last_check_in": "2025-11-28T06:37:37.063954+00:00",
         "config": {
             "sampling_rate_s": 15,
             "detection_method": "radar",
@@ -858,7 +858,7 @@
         "model": "LED Light Hub",
         "firmware_version": "1.9.11",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T15:06:59.306526+00:00",
+        "last_check_in": "2025-11-25T17:48:32.063954+00:00",
         "config": {
             "default_green_s": 32,
             "default_yellow_s": 16,
@@ -876,7 +876,7 @@
         "model": "Cam-Traffic G18",
         "firmware_version": "1.4.18",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T15:54:29.306526+00:00",
+        "last_check_in": "2025-11-25T18:36:02.063954+00:00",
         "config": {
             "resolution": "4K",
             "framerate": 50,
@@ -893,7 +893,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.5.11",
         "status": "offline",
-        "last_check_in": "2025-11-26T04:22:37.306526+00:00",
+        "last_check_in": "2025-11-26T07:04:10.063954+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "radar",
@@ -909,7 +909,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.2.4",
         "status": "online",
-        "last_check_in": "2025-11-24T16:50:21.306526+00:00",
+        "last_check_in": "2025-11-24T19:31:54.063954+00:00",
         "config": {
             "default_green_s": 77,
             "default_yellow_s": 25,
@@ -927,7 +927,7 @@
         "model": "Radar 4D",
         "firmware_version": "3.0.14",
         "status": "offline",
-        "last_check_in": "2025-11-23T19:12:26.306526+00:00",
+        "last_check_in": "2025-11-23T21:53:59.063954+00:00",
         "config": {
             "sampling_rate_s": 45,
             "detection_method": "radar",
@@ -943,7 +943,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.7.5",
         "status": "offline",
-        "last_check_in": "2025-11-27T13:10:53.306526+00:00",
+        "last_check_in": "2025-11-27T15:52:26.063954+00:00",
         "config": {
             "default_green_s": 90,
             "default_yellow_s": 65,
@@ -961,7 +961,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.9.10",
         "status": "online",
-        "last_check_in": "2025-11-25T01:17:54.306526+00:00",
+        "last_check_in": "2025-11-25T03:59:27.063954+00:00",
         "config": {
             "sampling_rate_s": 15,
             "detection_method": "radar",
@@ -977,7 +977,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.0.12",
         "status": "maintenance",
-        "last_check_in": "2025-11-21T13:50:40.306526+00:00",
+        "last_check_in": "2025-11-21T16:32:13.063954+00:00",
         "config": {
             "default_green_s": 69,
             "default_yellow_s": 9,
@@ -995,7 +995,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.5.18",
         "status": "offline",
-        "last_check_in": "2025-11-26T12:21:31.306526+00:00",
+        "last_check_in": "2025-11-26T15:03:04.063954+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "camera_based",
@@ -1011,7 +1011,7 @@
         "model": "PhaseController M1",
         "firmware_version": "3.1.13",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T21:37:50.306526+00:00",
+        "last_check_in": "2025-11-26T00:19:23.063954+00:00",
         "config": {
             "default_green_s": 51,
             "default_yellow_s": 59,
@@ -1029,7 +1029,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.7.19",
         "status": "offline",
-        "last_check_in": "2025-11-23T21:48:27.306526+00:00",
+        "last_check_in": "2025-11-24T00:30:00.063954+00:00",
         "config": {
             "sampling_rate_s": 45,
             "detection_method": "radar",
@@ -1045,7 +1045,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.3.13",
         "status": "offline",
-        "last_check_in": "2025-11-25T23:38:57.306526+00:00",
+        "last_check_in": "2025-11-26T02:20:30.063954+00:00",
         "config": {
             "default_green_s": 57,
             "default_yellow_s": 82,
@@ -1063,7 +1063,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "2.8.9",
         "status": "online",
-        "last_check_in": "2025-11-26T09:04:56.306526+00:00",
+        "last_check_in": "2025-11-26T11:46:29.063954+00:00",
         "config": {
             "sampling_rate_s": 40,
             "detection_method": "camera_based",
@@ -1079,7 +1079,7 @@
         "model": "PhaseController M1",
         "firmware_version": "4.7.2",
         "status": "online",
-        "last_check_in": "2025-11-25T02:57:17.306526+00:00",
+        "last_check_in": "2025-11-25T05:38:50.063954+00:00",
         "config": {
             "default_green_s": 32,
             "default_yellow_s": 53,
@@ -1097,7 +1097,7 @@
         "model": "Vision Sensor V2",
         "firmware_version": "3.4.6",
         "status": "maintenance",
-        "last_check_in": "2025-11-28T00:10:26.306526+00:00",
+        "last_check_in": "2025-11-28T02:51:59.063954+00:00",
         "config": {
             "resolution": "1440p",
             "framerate": 50,
@@ -1114,7 +1114,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "2.9.2",
         "status": "online",
-        "last_check_in": "2025-11-22T15:40:32.306526+00:00",
+        "last_check_in": "2025-11-22T18:22:05.063954+00:00",
         "config": {
             "sampling_rate_s": 15,
             "detection_method": "radar",
@@ -1130,7 +1130,7 @@
         "model": "PhaseController M1",
         "firmware_version": "1.1.7",
         "status": "online",
-        "last_check_in": "2025-11-25T06:37:59.306526+00:00",
+        "last_check_in": "2025-11-25T09:19:32.063954+00:00",
         "config": {
             "default_green_s": 53,
             "default_yellow_s": 37,
@@ -1148,7 +1148,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "2.4.13",
         "status": "maintenance",
-        "last_check_in": "2025-11-26T00:29:56.306526+00:00",
+        "last_check_in": "2025-11-26T03:11:29.063954+00:00",
         "config": {
             "sampling_rate_s": 55,
             "detection_method": "camera_based",
@@ -1164,7 +1164,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.0.11",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T10:59:46.306526+00:00",
+        "last_check_in": "2025-11-25T13:41:19.063954+00:00",
         "config": {
             "default_green_s": 83,
             "default_yellow_s": 51,
@@ -1182,7 +1182,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "1.5.5",
         "status": "offline",
-        "last_check_in": "2025-11-24T17:27:37.306526+00:00",
+        "last_check_in": "2025-11-24T20:09:10.063954+00:00",
         "config": {
             "sampling_rate_s": 40,
             "detection_method": "radar",
@@ -1198,7 +1198,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.8.19",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T05:46:52.306526+00:00",
+        "last_check_in": "2025-11-22T08:28:25.063954+00:00",
         "config": {
             "default_green_s": 79,
             "default_yellow_s": 13,
@@ -1216,7 +1216,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.9.18",
         "status": "maintenance",
-        "last_check_in": "2025-11-24T03:24:23.306526+00:00",
+        "last_check_in": "2025-11-24T06:05:56.063954+00:00",
         "config": {
             "sampling_rate_s": 50,
             "detection_method": "radar",
@@ -1232,7 +1232,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.1.3",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T00:05:13.306526+00:00",
+        "last_check_in": "2025-11-25T02:46:46.063954+00:00",
         "config": {
             "default_green_s": 47,
             "default_yellow_s": 90,
@@ -1250,7 +1250,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "3.3.7",
         "status": "maintenance",
-        "last_check_in": "2025-11-23T21:29:58.306526+00:00",
+        "last_check_in": "2025-11-24T00:11:31.063954+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "radar",
@@ -1266,7 +1266,7 @@
         "model": "PhaseController M1",
         "firmware_version": "3.6.1",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T03:04:35.306526+00:00",
+        "last_check_in": "2025-11-22T05:46:08.063954+00:00",
         "config": {
             "default_green_s": 81,
             "default_yellow_s": 82,
@@ -1284,7 +1284,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "1.3.4",
         "status": "offline",
-        "last_check_in": "2025-11-21T13:46:24.306526+00:00",
+        "last_check_in": "2025-11-21T16:27:57.063954+00:00",
         "config": {
             "sampling_rate_s": 20,
             "detection_method": "camera_based",
@@ -1300,7 +1300,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.1.11",
         "status": "online",
-        "last_check_in": "2025-11-27T23:08:39.306526+00:00",
+        "last_check_in": "2025-11-28T01:50:12.063954+00:00",
         "config": {
             "default_green_s": 15,
             "default_yellow_s": 16,
@@ -1318,7 +1318,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "3.9.11",
         "status": "online",
-        "last_check_in": "2025-11-22T05:12:41.306526+00:00",
+        "last_check_in": "2025-11-22T07:54:14.063954+00:00",
         "config": {
             "sampling_rate_s": 35,
             "detection_method": "camera_based",
@@ -1334,7 +1334,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.8.12",
         "status": "maintenance",
-        "last_check_in": "2025-11-28T10:14:49.306526+00:00",
+        "last_check_in": "2025-11-28T12:56:22.063954+00:00",
         "config": {
             "default_green_s": 89,
             "default_yellow_s": 46,
@@ -1352,7 +1352,7 @@
         "model": "Radar 4D",
         "firmware_version": "3.1.5",
         "status": "online",
-        "last_check_in": "2025-11-22T18:18:24.306526+00:00",
+        "last_check_in": "2025-11-22T20:59:57.063954+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "camera_based",
@@ -1368,7 +1368,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.8.19",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T00:51:51.306526+00:00",
+        "last_check_in": "2025-11-22T03:33:24.063954+00:00",
         "config": {
             "default_green_s": 66,
             "default_yellow_s": 46,
@@ -1386,7 +1386,7 @@
         "model": "Cam-Traffic G18",
         "firmware_version": "2.1.4",
         "status": "offline",
-        "last_check_in": "2025-11-26T07:03:16.306526+00:00",
+        "last_check_in": "2025-11-26T09:44:49.063954+00:00",
         "config": {
             "resolution": "1080p",
             "framerate": 45,
@@ -1403,7 +1403,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.5.12",
         "status": "offline",
-        "last_check_in": "2025-11-27T16:59:15.306526+00:00",
+        "last_check_in": "2025-11-27T19:40:48.063954+00:00",
         "config": {
             "sampling_rate_s": 55,
             "detection_method": "camera_based",
@@ -1419,7 +1419,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.3.4",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T02:06:10.306526+00:00",
+        "last_check_in": "2025-11-25T04:47:43.063954+00:00",
         "config": {
             "default_green_s": 28,
             "default_yellow_s": 38,
@@ -1437,7 +1437,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.3.11",
         "status": "offline",
-        "last_check_in": "2025-11-22T15:17:00.306526+00:00",
+        "last_check_in": "2025-11-22T17:58:33.063954+00:00",
         "config": {
             "sampling_rate_s": 40,
             "detection_method": "radar",
@@ -1453,7 +1453,7 @@
         "model": "Actuator 2000",
         "firmware_version": "1.6.8",
         "status": "online",
-        "last_check_in": "2025-11-27T18:35:22.306526+00:00",
+        "last_check_in": "2025-11-27T21:16:55.063954+00:00",
         "config": {
             "default_green_s": 72,
             "default_yellow_s": 70,
@@ -1471,7 +1471,7 @@
         "model": "Radar 4D",
         "firmware_version": "2.3.15",
         "status": "maintenance",
-        "last_check_in": "2025-11-28T00:42:11.306526+00:00",
+        "last_check_in": "2025-11-28T03:23:44.063954+00:00",
         "config": {
             "sampling_rate_s": 10,
             "detection_method": "camera_based",
@@ -1487,7 +1487,7 @@
         "model": "PhaseController M1",
         "firmware_version": "4.4.8",
         "status": "offline",
-        "last_check_in": "2025-11-23T17:00:07.306526+00:00",
+        "last_check_in": "2025-11-23T19:41:40.063954+00:00",
         "config": {
             "default_green_s": 29,
             "default_yellow_s": 29,
@@ -1505,7 +1505,7 @@
         "model": "Vision Sensor V2",
         "firmware_version": "3.8.7",
         "status": "online",
-        "last_check_in": "2025-11-22T05:14:03.306526+00:00",
+        "last_check_in": "2025-11-22T07:55:36.063954+00:00",
         "config": {
             "resolution": "4K",
             "framerate": 60,
@@ -1522,7 +1522,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "2.8.14",
         "status": "offline",
-        "last_check_in": "2025-11-23T02:17:39.306526+00:00",
+        "last_check_in": "2025-11-23T04:59:12.063954+00:00",
         "config": {
             "sampling_rate_s": 55,
             "detection_method": "camera_based",
@@ -1538,7 +1538,7 @@
         "model": "Actuator 2000",
         "firmware_version": "3.5.6",
         "status": "online",
-        "last_check_in": "2025-11-24T00:14:13.306526+00:00",
+        "last_check_in": "2025-11-24T02:55:46.063954+00:00",
         "config": {
             "default_green_s": 19,
             "default_yellow_s": 38,
@@ -1556,7 +1556,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "4.1.12",
         "status": "offline",
-        "last_check_in": "2025-11-26T07:04:13.306526+00:00",
+        "last_check_in": "2025-11-26T09:45:46.063954+00:00",
         "config": {
             "sampling_rate_s": 35,
             "detection_method": "radar",
@@ -1572,7 +1572,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.6.9",
         "status": "maintenance",
-        "last_check_in": "2025-11-27T00:23:38.306526+00:00",
+        "last_check_in": "2025-11-27T03:05:11.063954+00:00",
         "config": {
             "default_green_s": 39,
             "default_yellow_s": 60,
@@ -1590,7 +1590,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "1.0.4",
         "status": "maintenance",
-        "last_check_in": "2025-11-21T17:50:31.306526+00:00",
+        "last_check_in": "2025-11-21T20:32:04.063954+00:00",
         "config": {
             "sampling_rate_s": 10,
             "detection_method": "camera_based",
@@ -1606,7 +1606,7 @@
         "model": "PhaseController M1",
         "firmware_version": "1.9.3",
         "status": "online",
-        "last_check_in": "2025-11-25T14:30:29.306526+00:00",
+        "last_check_in": "2025-11-25T17:12:02.063954+00:00",
         "config": {
             "default_green_s": 79,
             "default_yellow_s": 8,
@@ -1624,7 +1624,7 @@
         "model": "Radar 4D",
         "firmware_version": "4.1.16",
         "status": "online",
-        "last_check_in": "2025-11-26T21:24:08.306526+00:00",
+        "last_check_in": "2025-11-27T00:05:41.063954+00:00",
         "config": {
             "sampling_rate_s": 60,
             "detection_method": "radar",
@@ -1640,7 +1640,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.9.1",
         "status": "online",
-        "last_check_in": "2025-11-25T16:01:23.306526+00:00",
+        "last_check_in": "2025-11-25T18:42:56.063954+00:00",
         "config": {
             "default_green_s": 50,
             "default_yellow_s": 25,
@@ -1658,7 +1658,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.1.10",
         "status": "offline",
-        "last_check_in": "2025-11-26T05:29:03.306526+00:00",
+        "last_check_in": "2025-11-26T08:10:36.063954+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "radar",
@@ -1674,7 +1674,7 @@
         "model": "Actuator 2000",
         "firmware_version": "2.1.2",
         "status": "online",
-        "last_check_in": "2025-11-24T12:02:54.306526+00:00",
+        "last_check_in": "2025-11-24T14:44:27.063954+00:00",
         "config": {
             "default_green_s": 73,
             "default_yellow_s": 9,
@@ -1692,7 +1692,7 @@
         "model": "Radar 4D",
         "firmware_version": "3.9.13",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T01:49:54.306526+00:00",
+        "last_check_in": "2025-11-22T04:31:27.063954+00:00",
         "config": {
             "sampling_rate_s": 35,
             "detection_method": "camera_based",
@@ -1708,7 +1708,7 @@
         "model": "LED Light Hub",
         "firmware_version": "3.9.15",
         "status": "online",
-        "last_check_in": "2025-11-24T21:15:31.306526+00:00",
+        "last_check_in": "2025-11-24T23:57:04.063954+00:00",
         "config": {
             "default_green_s": 72,
             "default_yellow_s": 59,
@@ -1726,7 +1726,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "2.6.15",
         "status": "maintenance",
-        "last_check_in": "2025-11-24T19:06:35.306526+00:00",
+        "last_check_in": "2025-11-24T21:48:08.063954+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "radar",
@@ -1742,7 +1742,7 @@
         "model": "PhaseController M1",
         "firmware_version": "3.7.12",
         "status": "offline",
-        "last_check_in": "2025-11-22T14:39:05.306526+00:00",
+        "last_check_in": "2025-11-22T17:20:38.063954+00:00",
         "config": {
             "default_green_s": 61,
             "default_yellow_s": 19,
@@ -1760,7 +1760,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.6.12",
         "status": "offline",
-        "last_check_in": "2025-11-21T23:13:44.306526+00:00",
+        "last_check_in": "2025-11-22T01:55:17.063954+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "camera_based",
@@ -1776,7 +1776,7 @@
         "model": "PhaseController M1",
         "firmware_version": "1.7.4",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T08:34:04.306526+00:00",
+        "last_check_in": "2025-11-25T11:15:37.063954+00:00",
         "config": {
             "default_green_s": 20,
             "default_yellow_s": 32,
@@ -1794,7 +1794,7 @@
         "model": "SONY G95 PRO",
         "firmware_version": "3.9.9",
         "status": "offline",
-        "last_check_in": "2025-11-27T19:24:06.306526+00:00",
+        "last_check_in": "2025-11-27T22:05:39.063954+00:00",
         "config": {
             "resolution": "1440p",
             "framerate": 50,
@@ -1811,7 +1811,7 @@
         "model": "Radar 4D",
         "firmware_version": "4.4.17",
         "status": "offline",
-        "last_check_in": "2025-11-28T10:55:42.306526+00:00",
+        "last_check_in": "2025-11-28T13:37:15.063954+00:00",
         "config": {
             "sampling_rate_s": 50,
             "detection_method": "camera_based",
@@ -1827,7 +1827,7 @@
         "model": "PhaseController M1",
         "firmware_version": "3.9.17",
         "status": "online",
-        "last_check_in": "2025-11-22T15:46:09.306526+00:00",
+        "last_check_in": "2025-11-22T18:27:42.063954+00:00",
         "config": {
             "default_green_s": 22,
             "default_yellow_s": 8,
@@ -1845,7 +1845,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "4.8.11",
         "status": "offline",
-        "last_check_in": "2025-11-26T14:57:27.306526+00:00",
+        "last_check_in": "2025-11-26T17:39:00.063954+00:00",
         "config": {
             "sampling_rate_s": 20,
             "detection_method": "radar",
@@ -1861,7 +1861,7 @@
         "model": "LED Light Hub",
         "firmware_version": "4.4.20",
         "status": "offline",
-        "last_check_in": "2025-11-27T21:26:11.306526+00:00",
+        "last_check_in": "2025-11-28T00:07:44.063954+00:00",
         "config": {
             "default_green_s": 19,
             "default_yellow_s": 59,
@@ -1879,7 +1879,7 @@
         "model": "SONY G95 PRO",
         "firmware_version": "4.1.9",
         "status": "online",
-        "last_check_in": "2025-11-27T12:54:36.306526+00:00",
+        "last_check_in": "2025-11-27T15:36:09.063954+00:00",
         "config": {
             "resolution": "1080p",
             "framerate": 30,
@@ -1896,7 +1896,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.5.11",
         "status": "online",
-        "last_check_in": "2025-11-25T01:32:20.306526+00:00",
+        "last_check_in": "2025-11-25T04:13:53.063954+00:00",
         "config": {
             "sampling_rate_s": 60,
             "detection_method": "camera_based",
@@ -1912,7 +1912,7 @@
         "model": "LED Light Hub",
         "firmware_version": "2.9.14",
         "status": "maintenance",
-        "last_check_in": "2025-11-23T20:49:04.306526+00:00",
+        "last_check_in": "2025-11-23T23:30:37.063954+00:00",
         "config": {
             "default_green_s": 59,
             "default_yellow_s": 83,
@@ -1930,7 +1930,7 @@
         "model": "Radar 4D",
         "firmware_version": "1.7.5",
         "status": "online",
-        "last_check_in": "2025-11-24T13:59:05.306526+00:00",
+        "last_check_in": "2025-11-24T16:40:38.063954+00:00",
         "config": {
             "sampling_rate_s": 20,
             "detection_method": "camera_based",
@@ -1946,7 +1946,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.2.7",
         "status": "offline",
-        "last_check_in": "2025-11-27T22:00:52.306526+00:00",
+        "last_check_in": "2025-11-28T00:42:25.063954+00:00",
         "config": {
             "default_green_s": 42,
             "default_yellow_s": 90,
@@ -1964,7 +1964,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "3.0.19",
         "status": "offline",
-        "last_check_in": "2025-11-22T15:51:56.306526+00:00",
+        "last_check_in": "2025-11-22T18:33:29.063954+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "radar",
@@ -1980,7 +1980,7 @@
         "model": "PhaseController M1",
         "firmware_version": "2.0.1",
         "status": "offline",
-        "last_check_in": "2025-11-27T10:18:30.306526+00:00",
+        "last_check_in": "2025-11-27T13:00:03.063954+00:00",
         "config": {
             "default_green_s": 47,
             "default_yellow_s": 88,
@@ -1998,7 +1998,7 @@
         "model": "Radar 4D",
         "firmware_version": "4.4.4",
         "status": "offline",
-        "last_check_in": "2025-11-24T16:56:16.306526+00:00",
+        "last_check_in": "2025-11-24T19:37:49.063954+00:00",
         "config": {
             "sampling_rate_s": 5,
             "detection_method": "radar",
@@ -2014,7 +2014,7 @@
         "model": "PhaseController M1",
         "firmware_version": "3.8.9",
         "status": "maintenance",
-        "last_check_in": "2025-11-24T07:48:56.306526+00:00",
+        "last_check_in": "2025-11-24T10:30:29.063954+00:00",
         "config": {
             "default_green_s": 66,
             "default_yellow_s": 53,
@@ -2032,7 +2032,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "1.1.4",
         "status": "offline",
-        "last_check_in": "2025-11-28T01:14:01.306526+00:00",
+        "last_check_in": "2025-11-28T03:55:34.063954+00:00",
         "config": {
             "sampling_rate_s": 5,
             "detection_method": "camera_based",
@@ -2048,7 +2048,7 @@
         "model": "LED Light Hub",
         "firmware_version": "3.3.17",
         "status": "maintenance",
-        "last_check_in": "2025-11-26T04:59:37.306526+00:00",
+        "last_check_in": "2025-11-26T07:41:10.063954+00:00",
         "config": {
             "default_green_s": 74,
             "default_yellow_s": 12,
@@ -2066,7 +2066,7 @@
         "model": "IR Sensor E1",
         "firmware_version": "4.5.5",
         "status": "online",
-        "last_check_in": "2025-11-28T06:08:01.306526+00:00",
+        "last_check_in": "2025-11-28T08:49:34.063954+00:00",
         "config": {
             "sampling_rate_s": 55,
             "detection_method": "radar",
@@ -2082,7 +2082,7 @@
         "model": "Actuator 2000",
         "firmware_version": "2.8.7",
         "status": "online",
-        "last_check_in": "2025-11-24T22:56:19.306526+00:00",
+        "last_check_in": "2025-11-25T01:37:52.063954+00:00",
         "config": {
             "default_green_s": 38,
             "default_yellow_s": 34,
@@ -2100,7 +2100,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "4.6.8",
         "status": "online",
-        "last_check_in": "2025-11-24T12:30:00.306526+00:00",
+        "last_check_in": "2025-11-24T15:11:33.063954+00:00",
         "config": {
             "sampling_rate_s": 35,
             "detection_method": "camera_based",

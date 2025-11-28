@@ -3,6 +3,7 @@ import json
 import mongo_connector
 import time
 import random
+import mysql_connector
 
 SEED = 4321
 
@@ -21,20 +22,22 @@ def load_data(filedir):
         print(f"❌ Erro de decodificação JSON no arquivo {filedir}.json: {e}")
         return None
         
-def clear_database(db):
+def clear_database(db_mongo):
     print('\n⚙️  Limpando collections...')
-    mongo_connector.clean_collection(db,'locations')
-    mongo_connector.clean_collection(db,'devices')
-    mongo_connector.clean_collection(db,'readings')
+    mongo_connector.clean_collection(db_mongo,'locations')
+    mongo_connector.clean_collection(db_mongo,'lanes')
+    mongo_connector.clean_collection(db_mongo,'devices')
+    mongo_connector.clean_collection(db_mongo,'readings')
 
-def populate_database(db,locations,devices,readings):
+def populate_database(db_mongo,locations,lanes,devices,readings):
     print('\n⚙️  Povoando base de dados...')
-    t1 = mongo_connector.insert_many(db,'locations',locations)
-    t2 = mongo_connector.insert_many(db,'devices',devices)
-    t3 = mongo_connector.insert_many(db,'readings',readings)
+    t1 = mongo_connector.insert_many(db_mongo,'locations',locations)
+    t2 = mongo_connector.insert_many(db_mongo,'lanes',lanes)
+    t3 = mongo_connector.insert_many(db_mongo,'devices',devices)
+    t4 = mongo_connector.insert_many(db_mongo,'readings',readings)
     
-    if t1 is not None and t2 is not None and t3 is not None:
-        return t1+t2+t3
+    if t1 is not None and t2 is not None and t3 is not None and t4 is not None:
+        return t1+t2+t3+t4
 
 def print_time(text,value):
     print(f'⏱️  {text}: {value:.4f} segundos.')
@@ -45,64 +48,70 @@ def eval():
     #user = os.environ['mongodb_user']
     #password = os.environ['mongodb_password']
 
+
     local_uri = "mongodb://localhost:27017/"
     #uri = f"mongodb+srv://{user}:{password}@cluster0.drkxjcd.mongodb.net/?appName=Cluster0"
 
-    print('⚙️  Conecntando com banco de dados...')
-    db = mongo_connector.connect_to_mongodb(local_uri)
-    if db is None:
+    print('⚙️  Conectando com banco de dados...')
+    db_mongo = mongo_connector.connect_to_mongodb(local_uri)
+    db_mysql = mysql_connector.connect_to_mysql()
+    if db_mongo is None or db_mysql is None:
         return
     
-    db = db["iot_monitoring"]
-    print(f'🔗 Conentado com iot_monitoring.')
+    db_mongo = db_mongo["iot_monitoring"]
+    print(f'\n🔗 Conectado com iot_monitoring.\n')
     
     # Extraindo dados dos arquivos json
     locations = load_data('log/locations.json')
+    lanes = load_data('log/lanes.json')
     devices = load_data('log/devices.json')
     readings = load_data('log/readings.json')
 
     # Limpa as collections antes de povoar o banco
-    clear_database(db)
+    clear_database(db_mongo)
 
     # Popula o banco de dados
-    temp = populate_database(db,locations,devices,readings)
+    temp = populate_database(db_mongo,locations,lanes,devices,readings)
 
     print("\n⚙️  Testes de tempo:")
     print_time("T-POV",temp)
     
+    '''
+
     # Tempo médio de inserção
     samples = random.sample(readings,100)
     temp = 0
     for s in samples:
-        temp += mongo_connector.insert_one(db,"readings",s)
+        temp += mongo_connector.insert_one(db_mongo,"readings",s)
 
     print_time("T-INSERT-READING",temp/100)
 
     temp = 0
     for s in samples:
-        temp += mongo_connector.delete_one(db,"readings",s)
+        temp += mongo_connector.delete_one(db_mongo,"readings",s)
     print_time("T-DELETE-READING",temp/100)
     
     samples = random.sample(devices,100)
     temp = 0
     for s in samples:
-        temp += mongo_connector.findReadings(db,s["device_id"])
+        temp += mongo_connector.findReadings(db_mongo,s["device_id"])
     print_time("T-FIND-READINGS",temp/100)
 
     temp = 0
     for l in locations:
         filtro = {"location_ref": l['location_id'],"device_type":"traffic_light"}
         update = {"$set": {"phase_id": "PHASE_TEST"}}
-        temp += mongo_connector.update_many(db,"location",filtro,update)
+        temp += mongo_connector.update_many(db_mongo,"location",filtro,update)
     
     print_time("T-UPDATE-PHASE",temp/len(locations))
 
-    print_time("TQ1 - Tempo para obter fluxo de semaforo",mongo_connector.fluxo(db))
-    print_time("TQ2 - Tempo para obter historico de excesso de velocidade",mongo_connector.historico(db))
-    print_time("TQ3 - Tempo para obter leituras de congestionamentos",mongo_connector.ultimas_leituras(db))
-    print_time("TQ4 - Tempo para obter acidentes em aberto",mongo_connector.acidentes_abertos(db))
-    print_time("TQ5 - Tempo para obter local mais perigoso",mongo_connector.local_mais_acidentes(db))
-    
+    print_time("TQ1 - Tempo para obter fluxo de semaforo",mongo_connector.fluxo(db_mongo))
+    print_time("TQ2 - Tempo para obter historico de excesso de velocidade",mongo_connector.historico(db_mongo))
+    print_time("TQ3 - Tempo para obter leituras de congestionamentos",mongo_connector.ultimas_leituras(db_mongo))
+    print_time("TQ4 - Tempo para obter acidentes em aberto",mongo_connector.acidentes_abertos(db_mongo))
+    print_time("TQ5 - Tempo para obter local mais perigoso",mongo_connector.local_mais_acidentes(db_mongo))
+    '''
+
 if __name__ == "__main__":
     eval()
 

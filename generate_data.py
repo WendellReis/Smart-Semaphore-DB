@@ -285,8 +285,6 @@ def generateReadings(devices):
     for d in devices:
         incident_count = {}
         for i in range(1,READINGS_PER_DEVICE+1):
-            if d['device_type'] == "edge_gateway":
-                continue
             if d['location_ref'] not in incident_count:
                 incident_count[d['location_ref']] = 0
 
@@ -299,8 +297,6 @@ def generateReadings(devices):
             }
 
             type = d['device_type']
-            if type == 'edge_gateway':
-                continue
             if type == 'traffic_light':
                 reading['reading_type'] = 'status_change'
                 reading['current_state'] = generateColor()
@@ -312,6 +308,7 @@ def generateReadings(devices):
                     reading['avg_speed_kph'] = 0
                 else:
                     reading['avg_speed_kph'] = random.randint(1,140)
+                reading['velocity_threshold_kph'] = d['config']['velocity_threshold_kph']
             elif type == 'camera':
                 reading['reading_type'] = 'incident_report'
                 reading['incident_type'] = generateIncident()
