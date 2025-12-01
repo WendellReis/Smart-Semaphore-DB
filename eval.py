@@ -21,23 +21,6 @@ def load_data(filedir):
     except json.JSONDecodeError as e:
         print(f"❌ Erro de decodificação JSON no arquivo {filedir}.json: {e}")
         return None
-        
-def clear_database(db_mongo):
-    print('\n🗑️  Limpando collections...')
-    tempo_execucao = 0
-    for c in ['locations','lanes','devices','readings']:
-        tempo_execucao+=mongo_connector.clean_collection(db_mongo,c)
-    return tempo_execucao
-
-def populate_database(db_mongo,locations,lanes,devices,readings):
-    print('\n🍃 Povoando base de dados...')
-    t1 = mongo_connector.insert_many(db_mongo,'locations',locations)
-    t2 = mongo_connector.insert_many(db_mongo,'lanes',lanes)
-    t3 = mongo_connector.insert_many(db_mongo,'devices',devices)
-    t4 = mongo_connector.insert_many(db_mongo,'readings',readings)
-    
-    if t1 is not None and t2 is not None and t3 is not None and t4 is not None:
-        return t1+t2+t3+t4
 
 def print_time(text,value):
     print(f'{text}: {value:.4f} segundos.')
@@ -71,12 +54,12 @@ def eval():
     time_mysql = {}
 
     # Limpa as collections antes de povoar o banco
-    time_mongo['clear']=clear_database(db_mongo)
+    time_mongo['clear']=mongo_connector.clear_database(db_mongo)
     print()
     time_mysql['clear']=mysql_connector.clear_database(conn,cursor)
 
     # Popula o banco de dados
-    time_mongo['pov'] = populate_database(db_mongo,locations,lanes,devices,readings)
+    time_mongo['pov'] = mongo_connector.populate_database(db_mongo,locations,lanes,devices,readings)
     print()
     time_mysql['pov'] = mysql_connector.populate_database(conn,cursor,locations,lanes,devices,readings)
 

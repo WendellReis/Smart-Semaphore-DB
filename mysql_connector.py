@@ -4,6 +4,7 @@ import time
 from mysql.connector import Error
 
 EMOJI = '🐘'
+DATABASE = 'iot_monitoring'
 
 def connect_to_mysql():
     try:
@@ -15,7 +16,7 @@ def connect_to_mysql():
 
         if conn.is_connected():
             print("✅ Conectado com sucesso ao MySQL!")
-            return conn, conn.cursor()
+            return conn, conn.cursor(dictionary=True)
 
     except Error as e:
         print("❌ Erro ao conectar ao MySQL:", e)
@@ -53,9 +54,8 @@ def insert_locations(cursor, locations):
     cursor.executemany(query, values)
     tempo_execucao = time.time() - inicio
 
-    print(f'🐘 Inseridos {len(locations)} registros na tabela LOCATIONS em {tempo_execucao:.4f} segundos.')
+    print(f'🐘 Inseridos {len(locations)} ({table_size(cursor,'LOCATION')[0]['size_mb']} MB) registros na tabela LOCATIONS em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
-
 
 def insert_lanes(cursor, lanes):
     query = """
@@ -83,7 +83,7 @@ def insert_lanes(cursor, lanes):
     cursor.executemany(query, values)
     tempo_execucao = time.time() - inicio
 
-    print(f'🐘 Inseridos {len(lanes)} registros na tabela LANE em {tempo_execucao:.4f} segundos.')
+    print(f'🐘 Inseridos {len(lanes)} ({table_size(cursor,'LANE')[0]['size_mb']} MB) registros na tabela LANE em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
 
 def insert_cameras(cursor, cameras):
@@ -123,8 +123,7 @@ def insert_cameras(cursor, cameras):
     inicio = time.time()
     cursor.executemany(query, values)
     tempo_execucao = time.time() - inicio
-
-    print(f'{EMOJI} Inseridos {len(cameras)} registros na tabela CAMERA em {tempo_execucao:.4f} segundos.')
+    print(f'{EMOJI} Inseridos {len(cameras)} ({table_size(cursor,'CAMERA')[0]['size_mb']} MB) registros na tabela CAMERA em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
 
 def insert_traffic_sensors(cursor,traffic_sensors):
@@ -161,7 +160,7 @@ def insert_traffic_sensors(cursor,traffic_sensors):
     cursor.executemany(query, values)
     tempo_execucao = time.time() - inicio
 
-    print(f'{EMOJI} Inseridos {len(traffic_sensors)} registros na tabela TRAFFIC_SENSOR em {tempo_execucao:.4f} segundos.')
+    print(f'{EMOJI} Inseridos {len(traffic_sensors)} ({table_size(cursor,'TRAFFIC_SENSOR')[0]['size_mb']} MB) registros na tabela TRAFFIC_SENSOR em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
 
 def insert_traffic_lights(cursor,traffic_lights):
@@ -204,7 +203,7 @@ def insert_traffic_lights(cursor,traffic_lights):
     cursor.executemany(query, values)
     tempo_execucao = time.time() - inicio
 
-    print(f'{EMOJI} Inseridos {len(traffic_lights)} registros na tabela TRAFFIC_LIGHT em {tempo_execucao:.4f} segundos.')
+    print(f'{EMOJI} Inseridos {len(traffic_lights)} ({table_size(cursor,'TRAFFIC_LIGHT')[0]['size_mb']} MB) registros na tabela TRAFFIC_LIGHT em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
 
 def insert_incident_reports(cursor,incidents):
@@ -233,7 +232,7 @@ def insert_incident_reports(cursor,incidents):
     cursor.executemany(query, values)
     tempo_execucao = time.time() - inicio
 
-    print(f'{EMOJI} Inseridos {len(incidents)} registros na tabela INCIDENT_REPORT em {tempo_execucao:.4f} segundos.')
+    print(f'{EMOJI} Inseridos {len(incidents)} ({table_size(cursor,'INCIDENT_REPORT')[0]['size_mb']} MB) registros na tabela INCIDENT_REPORT em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
 
 def insert_status_changes(cursor,status):
@@ -262,7 +261,7 @@ def insert_status_changes(cursor,status):
     cursor.executemany(query, values)
     tempo_execucao = time.time() - inicio
 
-    print(f'{EMOJI} Inseridos {len(status)} registros na tabela STATUS_CHANGE em {tempo_execucao:.4f} segundos.')
+    print(f'{EMOJI} Inseridos {len(status)} ({table_size(cursor,'STATUS_CHANGE')[0]['size_mb']} MB) registros na tabela STATUS_CHANGE em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
 
 def insert_traffic_counts(cursor,counts):
@@ -289,7 +288,7 @@ def insert_traffic_counts(cursor,counts):
     cursor.executemany(query, values)
     tempo_execucao = time.time() - inicio
 
-    print(f'{EMOJI} Inseridos {len(counts)} registros na tabela TRAFFIC_COUNT em {tempo_execucao:.4f} segundos.')
+    print(f'{EMOJI} Inseridos {len(counts)} ({table_size(cursor,'TRAFFIC_COUNT')[0]['size_mb']} MB) registros na tabela TRAFFIC_COUNT em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
 
 def clear_table(cursor, table):
@@ -319,6 +318,20 @@ def clear_database(conn,cursor):
         tempo_execucao+=clear_table(cursor,t)
     conn.commit()
     return tempo_execucao
+
+def table_size(cursor,name):
+    query = """
+        SELECT 
+            table_name,
+            ROUND((data_length + index_length) / 1024 / 1024, 2) AS size_mb
+        FROM information_schema.tables
+        WHERE table_schema = %s AND table_name = %s
+        ORDER BY size_mb DESC;
+    """
+
+    cursor.execute(query,(DATABASE,name))
+    size = cursor.fetchall()
+    return size
 
 def populate_database(conn,cursor,locations,lanes,devices,readings):
     print(f'{EMOJI} Povoando base de dados...')

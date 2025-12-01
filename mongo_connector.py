@@ -27,6 +27,10 @@ def clean_collection(db,collection):
     print(f"🍃  Removidos {delete_result.deleted_count} documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
     return tempo_execucao
 
+def collection_size(db, collection_name):
+    stats = db.command("collStats", collection_name)
+    return stats["storageSize"] / 1024 / 1024
+
 def insert_many(db,collection,data):
     for d in data:
         d["_id"] = ObjectId()
@@ -34,7 +38,7 @@ def insert_many(db,collection,data):
     inicio = time.time()
     db[collection].insert_many(data)
     tempo_execucao = time.time() - inicio
-    print(f"🍃 Inseridos {len(data)} documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
+    print(f"🍃 Inseridos {len(data)} ({collection_size(db,collection):.2f} MB) documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
     return tempo_execucao
 
 def insert_one(db,collection,data):
@@ -67,6 +71,23 @@ def findReadings(db,device_id):
     inicio = time.time()
     db['readings'].find(filtro)
     tempo_execucao = time.time() - inicio
+    return tempo_execucao
+
+def populate_database(db_mongo,locations,lanes,devices,readings):
+    print('\n🍃 Povoando base de dados...')
+    t1 = insert_many(db_mongo,'locations',locations)
+    t2 = insert_many(db_mongo,'lanes',lanes)
+    t3 = insert_many(db_mongo,'devices',devices)
+    t4 = insert_many(db_mongo,'readings',readings)
+    
+    if t1 is not None and t2 is not None and t3 is not None and t4 is not None:
+        return t1+t2+t3+t4
+
+def clear_database(db_mongo):
+    print('\n🗑️  Limpando collections...')
+    tempo_execucao = 0
+    for c in ['locations','lanes','devices','readings']:
+        tempo_execucao+=clean_collection(db_mongo,c)
     return tempo_execucao
 
 def historico(db):
