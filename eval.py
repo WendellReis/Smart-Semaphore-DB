@@ -53,29 +53,33 @@ def eval():
     time_mongo = {}
     time_mysql = {}
 
+    tests = ['T-POV','T-INSERT-READING']
     # Limpa as collections antes de povoar o banco
-    time_mongo['clear']=mongo_connector.clear_database(db_mongo)
+    time_mongo['T-CLEAR']=mongo_connector.clear_database(db_mongo)
     print()
-    time_mysql['clear']=mysql_connector.clear_database(conn,cursor)
+    time_mysql['T-CLEAR']=mysql_connector.clear_database(conn,cursor)
 
     # Popula o banco de dados
-    time_mongo['pov'] = mongo_connector.populate_database(db_mongo,locations,lanes,devices,readings)
+    time_mongo['T-POV'] = mongo_connector.populate_database(db_mongo,locations,lanes,devices,readings)
     print()
-    time_mysql['pov'] = mysql_connector.populate_database(conn,cursor,locations,lanes,devices,readings)
+    time_mysql['T-POV'] = mysql_connector.populate_database(conn,cursor,locations,lanes,devices,readings)
+    
+    # Tempo Médio de Inserção
+    samples = random.sample(readings,100)
+    time_mongo['T-INSERT-READING'] = 0
+    time_mysql['T-INSERT-READING'] = 0
+    for s in samples:
+        time_mongo['T-INSERT-READING'] += mongo_connector.insert_one(db_mongo,"readings",s)
+        time_mysql['T-INSERT-READING'] += mysql_connector.insert_reading(conn,cursor,s)
+    time_mongo['T-INSERT-READING']/=100
+    time_mysql['T-INSERT-READING']/=100
 
     print("\n⏱️  Testes de tempo:")
-    print_time("🍃 T-POV",time_mongo['clear'])
-    print_time("🐘 T-POV",time_mysql['clear'])
+    for t in tests:
+        print_time(f"🍃 {t}",time_mongo[t])
+        print_time(f"🐘 {t}",time_mysql[t])
     
     '''
-
-    # Tempo médio de inserção
-    samples = random.sample(readings,100)
-    temp = 0
-    for s in samples:
-        temp += mongo_connector.insert_one(db_mongo,"readings",s)
-
-    print_time("T-INSERT-READING",temp/100)
 
     temp = 0
     for s in samples:
