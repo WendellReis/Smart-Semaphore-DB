@@ -34,7 +34,7 @@ def insert_many(db,collection,data):
     inicio = time.time()
     db[collection].insert_many(data)
     tempo_execucao = time.time() - inicio
-    print(f"💾 Inseridos {len(data)} documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
+    print(f"🍃 Inseridos {len(data)} documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
     return tempo_execucao
 
 def insert_one(db,collection,data):

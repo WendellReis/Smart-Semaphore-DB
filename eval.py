@@ -23,14 +23,14 @@ def load_data(filedir):
         return None
         
 def clear_database(db_mongo):
-    print('\n⚙️  Limpando collections...')
-    mongo_connector.clean_collection(db_mongo,'locations')
-    mongo_connector.clean_collection(db_mongo,'lanes')
-    mongo_connector.clean_collection(db_mongo,'devices')
-    mongo_connector.clean_collection(db_mongo,'readings')
+    print('\n🍃  Limpando collections...')
+    tempo_execucao = 0
+    for c in ['locations','lanes','devices','readings']:
+        tempo_execucao+=mongo_connector.clean_collection(db_mongo,c)
+    return tempo_execucao
 
 def populate_database(db_mongo,locations,lanes,devices,readings):
-    print('\n⚙️  Povoando base de dados...')
+    print('\n🍃 Povoando base de dados...')
     t1 = mongo_connector.insert_many(db_mongo,'locations',locations)
     t2 = mongo_connector.insert_many(db_mongo,'lanes',lanes)
     t3 = mongo_connector.insert_many(db_mongo,'devices',devices)
@@ -40,7 +40,7 @@ def populate_database(db_mongo,locations,lanes,devices,readings):
         return t1+t2+t3+t4
 
 def print_time(text,value):
-    print(f'⏱️  {text}: {value:.4f} segundos.')
+    print(f'{text}: {value:.4f} segundos.')
 
 def eval():
     # Conectando ao banco de dados
@@ -54,11 +54,11 @@ def eval():
 
     print('⚙️  Conectando com banco de dados...')
     db_mongo = mongo_connector.connect_to_mongodb(local_uri)
-    db_mysql = mysql_connector.connect_to_mysql()
-    if db_mongo is None or db_mysql is None:
-        return
+    conn, cursor = mysql_connector.connect_to_mysql()
     
     db_mongo = db_mongo["iot_monitoring"]
+    cursor.execute('USE iot_monitoring')
+    conn.commit()
     print(f'\n🔗 Conectado com iot_monitoring.\n')
     
     # Extraindo dados dos arquivos json
@@ -67,14 +67,22 @@ def eval():
     devices = load_data('log/devices.json')
     readings = load_data('log/readings.json')
 
+    time_mongo = {}
+    time_mysql = {}
+
     # Limpa as collections antes de povoar o banco
-    clear_database(db_mongo)
+    time_mongo['clear']=clear_database(db_mongo)
+    print()
+    time_mysql['clear']=mysql_connector.clear_database(conn,cursor)
 
     # Popula o banco de dados
-    temp = populate_database(db_mongo,locations,lanes,devices,readings)
+    time_mongo['pov'] = populate_database(db_mongo,locations,lanes,devices,readings)
+    print()
+    time_mysql['pov'] = mysql_connector.populate_database(conn,cursor,locations,lanes,devices,readings)
 
-    print("\n⚙️  Testes de tempo:")
-    print_time("T-POV",temp)
+    print("\n⏱️  Testes de tempo:")
+    print_time("🍃 T-POV",time_mongo['clear'])
+    print_time("🐘 T-POV",time_mysql['clear'])
     
     '''
 

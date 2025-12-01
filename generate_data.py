@@ -207,7 +207,6 @@ def generateDevicesAndLanes(locations):
         
         cam_count = 1
         sensor_count = 1
-        phase = generateTrafficPhase() # Todos os semáforos de um mesmo cruzamento estão na mesma fase
         for i in range(1,quant+1):
             lane_id = f'LNE-{l['location_id'].replace("LOC-","")}-0{i}'
             lanes.append(
@@ -229,7 +228,6 @@ def generateDevicesAndLanes(locations):
                     firmware_version=generateFirmwareVersion(),
                     status=generateStatus(),
                     last_check_in=generateRandomTimestamp(START_DATE, END_DATE),
-                    phase_id=phase,
                     lane_ref=lane_id,
                     default_green_s=generateSeconds(),
                     default_yellow_s=generateSeconds(),
@@ -301,6 +299,7 @@ def generateReadings(devices):
                 reading['reading_type'] = 'status_change'
                 reading['current_state'] = generateColor()
                 reading['phase_duration'] = generateSeconds()
+                reading['phase_id'] = generateTrafficPhase()
             elif type == 'traffic_sensor':
                 reading['reading_type'] = 'traffic_count'
                 reading['count'] = random.randint(0,50)

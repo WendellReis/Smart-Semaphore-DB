@@ -29,70 +29,70 @@
     },
     {
         "lane_id": "LNE-002-01",
-        "direction": "Sentido Sul",
-        "lane_type": "Fluxo Principal",
+        "direction": "Sentido Leste",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Avenida da Paz, 4",
         "location_ref": "LOC-002"
     },
     {
         "lane_id": "LNE-002-02",
-        "direction": "Sentido Oeste",
-        "lane_type": "Acesso",
+        "direction": "Sentido Norte",
+        "lane_type": "Fluxo Principal",
         "description": "Vila Dias, 27",
         "location_ref": "LOC-002"
     },
     {
         "lane_id": "LNE-002-03",
-        "direction": "Sentido Leste",
-        "lane_type": "Acesso",
+        "direction": "Sentido Norte",
+        "lane_type": "Fluxo Principal",
         "description": "Campo Letícia Costa, 7",
         "location_ref": "LOC-002"
     },
     {
         "lane_id": "LNE-002-04",
-        "direction": "Sentido Norte",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "direction": "Sentido Oeste",
+        "lane_type": "Faixa de Ônibus",
         "description": "Quadra de Montenegro, 45",
         "location_ref": "LOC-002"
     },
     {
         "lane_id": "LNE-003-01",
-        "direction": "Sentido Norte",
+        "direction": "Sentido Leste",
         "lane_type": "Fluxo Principal",
         "description": "Pátio de Cavalcanti, 134",
         "location_ref": "LOC-003"
     },
     {
         "lane_id": "LNE-003-02",
-        "direction": "Sentido Oeste",
-        "lane_type": "Fluxo Principal",
+        "direction": "Sentido Leste",
+        "lane_type": "Acesso",
         "description": "Setor Leandro Monteiro, 375",
         "location_ref": "LOC-003"
     },
     {
         "lane_id": "LNE-003-03",
         "direction": "Sentido Sul",
-        "lane_type": "Acesso",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Vale Cavalcante, 28",
         "location_ref": "LOC-003"
     },
     {
         "lane_id": "LNE-003-04",
-        "direction": "Sentido Norte",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "direction": "Sentido Sul",
+        "lane_type": "Faixa de Ônibus",
         "description": "Esplanada Alexandre Rios, 2",
         "location_ref": "LOC-003"
     },
     {
         "lane_id": "LNE-004-01",
-        "direction": "Sentido Sul",
-        "lane_type": "Fluxo Principal",
+        "direction": "Sentido Norte",
+        "lane_type": "Acesso",
         "description": "Favela Aparecida, 66",
         "location_ref": "LOC-004"
     },
     {
         "lane_id": "LNE-004-02",
-        "direction": "Sentido Norte",
+        "direction": "Sentido Sul",
         "lane_type": "Acesso",
         "description": "Parque de da Mota, 646",
         "location_ref": "LOC-004"
@@ -100,55 +100,55 @@
     {
         "lane_id": "LNE-004-03",
         "direction": "Sentido Sul",
-        "lane_type": "Acesso",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Distrito de Nascimento, 5",
         "location_ref": "LOC-004"
     },
     {
         "lane_id": "LNE-004-04",
-        "direction": "Sentido Leste",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "direction": "Sentido Sul",
+        "lane_type": "Acesso",
         "description": "Passarela Yuri Moura, 7",
         "location_ref": "LOC-004"
     },
     {
         "lane_id": "LNE-005-01",
-        "direction": "Sentido Leste",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Sul",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Lagoa Silva, 660",
         "location_ref": "LOC-005"
     },
     {
         "lane_id": "LNE-005-02",
-        "direction": "Sentido Oeste",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "direction": "Sentido Sul",
+        "lane_type": "Fluxo Principal",
         "description": "Fazenda Mariane Cavalcante, 14",
         "location_ref": "LOC-005"
     },
     {
         "lane_id": "LNE-005-03",
-        "direction": "Sentido Sul",
+        "direction": "Sentido Leste",
         "lane_type": "Acesso",
         "description": "Passarela Ana Cecília Lima",
         "location_ref": "LOC-005"
     },
     {
         "lane_id": "LNE-006-01",
-        "direction": "Sentido Norte",
-        "lane_type": "Acesso",
+        "direction": "Sentido Oeste",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Recanto de Cirino, 37",
         "location_ref": "LOC-006"
     },
     {
         "lane_id": "LNE-006-02",
-        "direction": "Sentido Sul",
-        "lane_type": "Acesso",
+        "direction": "Sentido Norte",
+        "lane_type": "Faixa de Ônibus",
         "description": "Núcleo de Rezende, 353",
         "location_ref": "LOC-006"
     },
     {
         "lane_id": "LNE-006-03",
-        "direction": "Sentido Leste",
+        "direction": "Sentido Norte",
         "lane_type": "Faixa de Ônibus",
         "description": "Quadra de Rios, 80",
         "location_ref": "LOC-006"
@@ -156,181 +156,181 @@
     {
         "lane_id": "LNE-006-04",
         "direction": "Sentido Norte",
-        "lane_type": "Faixa de Ônibus",
+        "lane_type": "Acesso",
         "description": "Alameda Fonseca, 31",
         "location_ref": "LOC-006"
     },
     {
         "lane_id": "LNE-007-01",
         "direction": "Sentido Oeste",
-        "lane_type": "Faixa de Ônibus",
+        "lane_type": "Fluxo Principal",
         "description": "Morro Amanda da Rosa, 559",
         "location_ref": "LOC-007"
     },
     {
         "lane_id": "LNE-007-02",
-        "direction": "Sentido Sul",
+        "direction": "Sentido Leste",
         "lane_type": "Faixa de Giro à Esquerda",
         "description": "Rodovia Souza, 91",
         "location_ref": "LOC-007"
     },
     {
         "lane_id": "LNE-007-03",
-        "direction": "Sentido Oeste",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "direction": "Sentido Leste",
+        "lane_type": "Acesso",
         "description": "Favela de Fernandes, 855",
         "location_ref": "LOC-007"
     },
     {
         "lane_id": "LNE-007-04",
-        "direction": "Sentido Norte",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Oeste",
+        "lane_type": "Acesso",
         "description": "Rua Pastor, 481",
         "location_ref": "LOC-007"
     },
     {
         "lane_id": "LNE-008-01",
-        "direction": "Sentido Leste",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Norte",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Conjunto Benjamin Gonçalves, 1",
         "location_ref": "LOC-008"
     },
     {
         "lane_id": "LNE-008-02",
         "direction": "Sentido Oeste",
-        "lane_type": "Acesso",
+        "lane_type": "Faixa de Ônibus",
         "description": "Distrito de Dias, 956",
         "location_ref": "LOC-008"
     },
     {
         "lane_id": "LNE-008-03",
-        "direction": "Sentido Oeste",
-        "lane_type": "Fluxo Principal",
+        "direction": "Sentido Leste",
+        "lane_type": "Acesso",
         "description": "Jardim Maria Vitória Pacheco",
         "location_ref": "LOC-008"
     },
     {
         "lane_id": "LNE-008-04",
-        "direction": "Sentido Oeste",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Norte",
+        "lane_type": "Fluxo Principal",
         "description": "Rodovia Enzo Rezende, 6",
         "location_ref": "LOC-008"
     },
     {
         "lane_id": "LNE-009-01",
-        "direction": "Sentido Sul",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "direction": "Sentido Oeste",
+        "lane_type": "Fluxo Principal",
         "description": "Fazenda de Castro, 37",
         "location_ref": "LOC-009"
     },
     {
         "lane_id": "LNE-009-02",
-        "direction": "Sentido Norte",
-        "lane_type": "Acesso",
+        "direction": "Sentido Oeste",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Vale de Azevedo, 48",
         "location_ref": "LOC-009"
     },
     {
         "lane_id": "LNE-009-03",
         "direction": "Sentido Leste",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "lane_type": "Faixa de Ônibus",
         "description": "Rodovia Sá, 365",
         "location_ref": "LOC-009"
     },
     {
         "lane_id": "LNE-009-04",
-        "direction": "Sentido Norte",
-        "lane_type": "Acesso",
+        "direction": "Sentido Leste",
+        "lane_type": "Faixa de Ônibus",
         "description": "Travessa de Nascimento, 197",
         "location_ref": "LOC-009"
     },
     {
         "lane_id": "LNE-010-01",
-        "direction": "Sentido Norte",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "direction": "Sentido Oeste",
+        "lane_type": "Fluxo Principal",
         "description": "Núcleo Teixeira, 20",
         "location_ref": "LOC-010"
     },
     {
         "lane_id": "LNE-010-02",
-        "direction": "Sentido Sul",
-        "lane_type": "Acesso",
+        "direction": "Sentido Oeste",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Vale Costa, 78",
         "location_ref": "LOC-010"
     },
     {
         "lane_id": "LNE-010-03",
-        "direction": "Sentido Oeste",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Norte",
+        "lane_type": "Fluxo Principal",
         "description": "Avenida Bento Machado, 5",
         "location_ref": "LOC-010"
     },
     {
         "lane_id": "LNE-010-04",
-        "direction": "Sentido Oeste",
-        "lane_type": "Fluxo Principal",
+        "direction": "Sentido Leste",
+        "lane_type": "Faixa de Ônibus",
         "description": "Distrito Maria Vitória Rocha, 60",
         "location_ref": "LOC-010"
     },
     {
         "lane_id": "LNE-011-01",
-        "direction": "Sentido Oeste",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Norte",
+        "lane_type": "Acesso",
         "description": "Pátio Luiz Fernando Barbosa, 4",
         "location_ref": "LOC-011"
     },
     {
         "lane_id": "LNE-011-02",
-        "direction": "Sentido Norte",
-        "lane_type": "Faixa de Giro à Esquerda",
+        "direction": "Sentido Leste",
+        "lane_type": "Faixa de Ônibus",
         "description": "Trevo Pinto, 328",
         "location_ref": "LOC-011"
     },
     {
         "lane_id": "LNE-011-03",
         "direction": "Sentido Sul",
-        "lane_type": "Acesso",
+        "lane_type": "Fluxo Principal",
         "description": "Via Carlos Eduardo Peixoto, 65",
         "location_ref": "LOC-011"
     },
     {
         "lane_id": "LNE-012-01",
-        "direction": "Sentido Leste",
+        "direction": "Sentido Sul",
         "lane_type": "Faixa de Giro à Esquerda",
         "description": "Pátio Emilly da Conceição, 60",
         "location_ref": "LOC-012"
     },
     {
         "lane_id": "LNE-012-02",
-        "direction": "Sentido Sul",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Leste",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Condomínio Yasmin Peixoto, 4",
         "location_ref": "LOC-012"
     },
     {
         "lane_id": "LNE-012-03",
-        "direction": "Sentido Norte",
+        "direction": "Sentido Oeste",
         "lane_type": "Faixa de Giro à Esquerda",
         "description": "Trecho de Freitas, 525",
         "location_ref": "LOC-012"
     },
     {
         "lane_id": "LNE-012-04",
-        "direction": "Sentido Leste",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Norte",
+        "lane_type": "Acesso",
         "description": "Vila Luiz Gustavo Marques, 90",
         "location_ref": "LOC-012"
     },
     {
         "lane_id": "LNE-013-01",
         "direction": "Sentido Sul",
-        "lane_type": "Fluxo Principal",
+        "lane_type": "Faixa de Ônibus",
         "description": "Feira Matheus Macedo, 62",
         "location_ref": "LOC-013"
     },
     {
         "lane_id": "LNE-013-02",
-        "direction": "Sentido Oeste",
+        "direction": "Sentido Leste",
         "lane_type": "Faixa de Ônibus",
         "description": "Pátio de Moura, 89",
         "location_ref": "LOC-013"
@@ -338,35 +338,35 @@
     {
         "lane_id": "LNE-013-03",
         "direction": "Sentido Sul",
-        "lane_type": "Acesso",
+        "lane_type": "Fluxo Principal",
         "description": "Rodovia Lívia Silveira, 29",
         "location_ref": "LOC-013"
     },
     {
         "lane_id": "LNE-014-01",
-        "direction": "Sentido Leste",
-        "lane_type": "Acesso",
+        "direction": "Sentido Oeste",
+        "lane_type": "Faixa de Ônibus",
         "description": "Rua de Guerra, 821",
         "location_ref": "LOC-014"
     },
     {
         "lane_id": "LNE-014-02",
-        "direction": "Sentido Oeste",
+        "direction": "Sentido Sul",
         "lane_type": "Acesso",
         "description": "Setor Novais, 44",
         "location_ref": "LOC-014"
     },
     {
         "lane_id": "LNE-014-03",
-        "direction": "Sentido Norte",
-        "lane_type": "Acesso",
+        "direction": "Sentido Leste",
+        "lane_type": "Faixa de Ônibus",
         "description": "Loteamento Gonçalves, 68",
         "location_ref": "LOC-014"
     },
     {
         "lane_id": "LNE-014-04",
-        "direction": "Sentido Oeste",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Norte",
+        "lane_type": "Faixa de Giro à Esquerda",
         "description": "Estrada de Pereira, 67",
         "location_ref": "LOC-014"
     },
@@ -379,22 +379,22 @@
     },
     {
         "lane_id": "LNE-015-02",
-        "direction": "Sentido Oeste",
+        "direction": "Sentido Norte",
         "lane_type": "Faixa de Ônibus",
         "description": "Trevo Farias, 56",
         "location_ref": "LOC-015"
     },
     {
         "lane_id": "LNE-015-03",
-        "direction": "Sentido Leste",
-        "lane_type": "Acesso",
+        "direction": "Sentido Norte",
+        "lane_type": "Faixa de Ônibus",
         "description": "Jardim Alves, 25",
         "location_ref": "LOC-015"
     },
     {
         "lane_id": "LNE-015-04",
-        "direction": "Sentido Oeste",
-        "lane_type": "Faixa de Ônibus",
+        "direction": "Sentido Leste",
+        "lane_type": "Acesso",
         "description": "Viela da Luz",
         "location_ref": "LOC-015"
     }

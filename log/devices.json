@@ -1,14 +1,13 @@
 [
     {
         "location_ref": "LOC-001",
-        "phase_id": "P5",
         "lane_ref": "LNE-001-01",
         "device_id": "SEM-001-01",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
         "firmware_version": "1.6.9",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T01:41:32.063954+00:00",
+        "last_check_in": "2025-11-24T22:21:30.292504+00:00",
         "config": {
             "default_green_s": 27,
             "default_yellow_s": 39,
@@ -26,7 +25,7 @@
         "model": "Radar 4D",
         "firmware_version": "4.5.19",
         "status": "offline",
-        "last_check_in": "2025-11-27T08:36:28.063954+00:00",
+        "last_check_in": "2025-11-30T05:16:26.292504+00:00",
         "config": {
             "sampling_rate_s": 5,
             "detection_method": "camera_based",
@@ -35,14 +34,13 @@
     },
     {
         "location_ref": "LOC-001",
-        "phase_id": "P5",
         "lane_ref": "LNE-001-02",
         "device_id": "SEM-001-02",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
         "firmware_version": "3.1.6",
         "status": "offline",
-        "last_check_in": "2025-11-26T20:59:36.063954+00:00",
+        "last_check_in": "2025-11-29T17:39:34.292504+00:00",
         "config": {
             "default_green_s": 20,
             "default_yellow_s": 72,
@@ -60,7 +58,7 @@
         "model": "Radar 4D",
         "firmware_version": "1.2.19",
         "status": "offline",
-        "last_check_in": "2025-11-23T11:05:03.063954+00:00",
+        "last_check_in": "2025-11-26T07:45:01.292504+00:00",
         "config": {
             "sampling_rate_s": 60,
             "detection_method": "camera_based",
@@ -69,14 +67,13 @@
     },
     {
         "location_ref": "LOC-001",
-        "phase_id": "P5",
         "lane_ref": "LNE-001-03",
         "device_id": "SEM-001-03",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
         "firmware_version": "2.0.10",
         "status": "online",
-        "last_check_in": "2025-11-24T05:53:03.063954+00:00",
+        "last_check_in": "2025-11-27T02:33:01.292504+00:00",
         "config": {
             "default_green_s": 69,
             "default_yellow_s": 16,
@@ -94,7 +91,7 @@
         "model": "Radar 4D",
         "firmware_version": "2.1.13",
         "status": "online",
-        "last_check_in": "2025-11-27T03:50:29.063954+00:00",
+        "last_check_in": "2025-11-30T00:30:27.292504+00:00",
         "config": {
             "sampling_rate_s": 45,
             "detection_method": "radar",
@@ -103,14 +100,13 @@
     },
     {
         "location_ref": "LOC-001",
-        "phase_id": "P5",
         "lane_ref": "LNE-001-04",
         "device_id": "SEM-001-04",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
         "firmware_version": "2.4.2",
         "status": "offline",
-        "last_check_in": "2025-11-28T01:37:11.063954+00:00",
+        "last_check_in": "2025-11-30T22:17:09.292504+00:00",
         "config": {
             "default_green_s": 24,
             "default_yellow_s": 68,
@@ -128,7 +124,7 @@
         "model": "Cam-Traffic G18",
         "firmware_version": "2.8.3",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T12:43:41.063954+00:00",
+        "last_check_in": "2025-11-28T09:23:39.292504+00:00",
         "config": {
             "resolution": "720p",
             "framerate": 24,
@@ -145,7 +141,7 @@
         "model": "Loop Detector v3",
         "firmware_version": "4.6.11",
         "status": "online",
-        "last_check_in": "2025-11-26T05:00:53.063954+00:00",
+        "last_check_in": "2025-11-29T01:40:51.292504+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "camera_based",
@@ -154,20 +150,19 @@
     },
     {
         "location_ref": "LOC-002",
-        "phase_id": "P3",
         "lane_ref": "LNE-002-01",
         "device_id": "SEM-002-01",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.6.13",
-        "status": "maintenance",
-        "last_check_in": "2025-11-24T22:35:20.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "1.4.9",
+        "status": "offline",
+        "last_check_in": "2025-11-29T07:10:33.292504+00:00",
         "config": {
-            "default_green_s": 72,
-            "default_yellow_s": 19,
-            "default_red_s": 53,
-            "min_green_s": 40,
-            "min_red_s": 32,
+            "default_green_s": 77,
+            "default_yellow_s": 40,
+            "default_red_s": 72,
+            "min_green_s": 19,
+            "min_red_s": 53,
             "pedestrian_button_active": true
         }
     },
@@ -177,32 +172,31 @@
         "device_id": "TRS-002-01",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "4.3.16",
+        "firmware_version": "1.5.15",
         "status": "online",
-        "last_check_in": "2025-11-26T04:49:21.063954+00:00",
+        "last_check_in": "2025-11-30T09:31:00.292504+00:00",
         "config": {
-            "sampling_rate_s": 25,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 40
+            "sampling_rate_s": 15,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 80
         }
     },
     {
         "location_ref": "LOC-002",
-        "phase_id": "P3",
         "lane_ref": "LNE-002-02",
         "device_id": "SEM-002-02",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
-        "firmware_version": "4.7.6",
-        "status": "offline",
-        "last_check_in": "2025-11-27T09:11:54.063954+00:00",
+        "firmware_version": "4.4.14",
+        "status": "maintenance",
+        "last_check_in": "2025-11-30T06:20:17.292504+00:00",
         "config": {
-            "default_green_s": 25,
-            "default_yellow_s": 41,
-            "default_red_s": 80,
-            "min_green_s": 52,
-            "min_red_s": 88,
-            "pedestrian_button_active": false
+            "default_green_s": 28,
+            "default_yellow_s": 56,
+            "default_red_s": 85,
+            "min_green_s": 66,
+            "min_red_s": 25,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -210,32 +204,31 @@
         "lane_ref": "LNE-002-02",
         "device_id": "TRS-002-02",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "4.7.1",
-        "status": "maintenance",
-        "last_check_in": "2025-11-27T06:15:55.063954+00:00",
+        "model": "Loop Detector v3",
+        "firmware_version": "2.8.19",
+        "status": "offline",
+        "last_check_in": "2025-11-30T04:50:05.292504+00:00",
         "config": {
             "sampling_rate_s": 55,
             "detection_method": "radar",
-            "velocity_threshold_kph": 30
+            "velocity_threshold_kph": 110
         }
     },
     {
         "location_ref": "LOC-002",
-        "phase_id": "P3",
         "lane_ref": "LNE-002-03",
         "device_id": "SEM-002-03",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "2.9.11",
-        "status": "offline",
-        "last_check_in": "2025-11-25T02:20:57.063954+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "4.1.5",
+        "status": "maintenance",
+        "last_check_in": "2025-11-28T11:17:08.292504+00:00",
         "config": {
-            "default_green_s": 43,
-            "default_yellow_s": 79,
-            "default_red_s": 47,
-            "min_green_s": 77,
-            "min_red_s": 42,
+            "default_green_s": 49,
+            "default_yellow_s": 42,
+            "default_red_s": 43,
+            "min_green_s": 79,
+            "min_red_s": 47,
             "pedestrian_button_active": false
         }
     },
@@ -244,32 +237,31 @@
         "lane_ref": "LNE-002-03",
         "device_id": "TRS-002-03",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "2.5.17",
-        "status": "offline",
-        "last_check_in": "2025-11-25T11:29:52.063954+00:00",
+        "model": "IR Sensor E1",
+        "firmware_version": "3.1.18",
+        "status": "maintenance",
+        "last_check_in": "2025-11-26T22:04:03.292504+00:00",
         "config": {
-            "sampling_rate_s": 40,
+            "sampling_rate_s": 30,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 40
+            "velocity_threshold_kph": 90
         }
     },
     {
         "location_ref": "LOC-002",
-        "phase_id": "P3",
         "lane_ref": "LNE-002-04",
         "device_id": "SEM-002-04",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.2.1",
+        "model": "PhaseController M1",
+        "firmware_version": "1.3.9",
         "status": "offline",
-        "last_check_in": "2025-11-22T00:51:43.063954+00:00",
+        "last_check_in": "2025-11-26T02:34:35.292504+00:00",
         "config": {
-            "default_green_s": 90,
-            "default_yellow_s": 10,
-            "default_red_s": 31,
+            "default_green_s": 8,
+            "default_yellow_s": 55,
+            "default_red_s": 9,
             "min_green_s": 90,
-            "min_red_s": 24,
+            "min_red_s": 10,
             "pedestrian_button_active": false
         }
     },
@@ -279,32 +271,48 @@
         "device_id": "TRS-002-04",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "1.4.9",
-        "status": "maintenance",
-        "last_check_in": "2025-11-27T11:24:51.063954+00:00",
+        "firmware_version": "3.6.17",
+        "status": "online",
+        "last_check_in": "2025-11-28T03:31:58.292504+00:00",
         "config": {
-            "sampling_rate_s": 50,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 90
+            "sampling_rate_s": 25,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 60
         }
     },
     {
         "location_ref": "LOC-003",
-        "phase_id": "P5",
         "lane_ref": "LNE-003-01",
         "device_id": "SEM-003-01",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
-        "firmware_version": "3.9.8",
-        "status": "online",
-        "last_check_in": "2025-11-27T09:12:14.063954+00:00",
+        "firmware_version": "1.9.11",
+        "status": "maintenance",
+        "last_check_in": "2025-11-27T05:31:32.292504+00:00",
         "config": {
-            "default_green_s": 68,
-            "default_yellow_s": 22,
-            "default_red_s": 73,
-            "min_green_s": 84,
-            "min_red_s": 84,
-            "pedestrian_button_active": true
+            "default_green_s": 25,
+            "default_yellow_s": 66,
+            "default_red_s": 68,
+            "min_green_s": 22,
+            "min_red_s": 73,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-003",
+        "lane_ref": "LNE-003-01",
+        "device_id": "CAM-003-01",
+        "device_type": "camera",
+        "model": "SONY G95 PRO",
+        "firmware_version": "2.2.17",
+        "status": "maintenance",
+        "last_check_in": "2025-11-29T05:09:44.292504+00:00",
+        "config": {
+            "resolution": "1080p",
+            "framerate": 30,
+            "view_angle_degrees": 240,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "local_cache"
         }
     },
     {
@@ -312,32 +320,31 @@
         "lane_ref": "LNE-003-01",
         "device_id": "TRS-003-01",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "2.8.17",
+        "model": "Loop Detector v3",
+        "firmware_version": "3.6.2",
         "status": "maintenance",
-        "last_check_in": "2025-11-26T08:29:46.063954+00:00",
+        "last_check_in": "2025-11-25T07:17:59.292504+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "radar",
-            "velocity_threshold_kph": 120
+            "velocity_threshold_kph": 60
         }
     },
     {
         "location_ref": "LOC-003",
-        "phase_id": "P5",
         "lane_ref": "LNE-003-02",
         "device_id": "SEM-003-02",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.5.14",
-        "status": "online",
-        "last_check_in": "2025-11-22T10:38:01.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "4.0.1",
+        "status": "offline",
+        "last_check_in": "2025-11-25T10:00:05.292504+00:00",
         "config": {
-            "default_green_s": 45,
-            "default_yellow_s": 34,
-            "default_red_s": 84,
-            "min_green_s": 30,
-            "min_red_s": 49,
+            "default_green_s": 42,
+            "default_yellow_s": 59,
+            "default_red_s": 48,
+            "min_green_s": 23,
+            "min_red_s": 67,
             "pedestrian_button_active": false
         }
     },
@@ -346,50 +353,32 @@
         "lane_ref": "LNE-003-02",
         "device_id": "TRS-003-02",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "4.0.1",
+        "model": "Loop Detector v3",
+        "firmware_version": "3.9.12",
         "status": "offline",
-        "last_check_in": "2025-11-22T13:20:07.063954+00:00",
+        "last_check_in": "2025-11-26T13:20:37.292504+00:00",
         "config": {
-            "sampling_rate_s": 25,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 90
+            "sampling_rate_s": 10,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 60
         }
     },
     {
         "location_ref": "LOC-003",
-        "phase_id": "P5",
         "lane_ref": "LNE-003-03",
         "device_id": "SEM-003-03",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
-        "firmware_version": "2.0.12",
+        "firmware_version": "2.4.2",
         "status": "maintenance",
-        "last_check_in": "2025-11-26T02:09:48.063954+00:00",
+        "last_check_in": "2025-11-30T02:58:36.292504+00:00",
         "config": {
-            "default_green_s": 58,
-            "default_yellow_s": 27,
-            "default_red_s": 14,
-            "min_green_s": 86,
-            "min_red_s": 7,
+            "default_green_s": 51,
+            "default_yellow_s": 81,
+            "default_red_s": 52,
+            "min_green_s": 41,
+            "min_red_s": 55,
             "pedestrian_button_active": true
-        }
-    },
-    {
-        "location_ref": "LOC-003",
-        "lane_ref": "LNE-003-03",
-        "device_id": "CAM-003-01",
-        "device_type": "camera",
-        "model": "SONY G95 PRO",
-        "firmware_version": "2.8.5",
-        "status": "maintenance",
-        "last_check_in": "2025-11-24T16:10:37.063954+00:00",
-        "config": {
-            "resolution": "480p",
-            "framerate": 60,
-            "view_angle_degrees": 180,
-            "ml_detection_enabled": true,
-            "image_storage_policy": "local_cache"
         }
     },
     {
@@ -398,49 +387,31 @@
         "device_id": "TRS-003-03",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "3.3.10",
-        "status": "online",
-        "last_check_in": "2025-11-25T09:04:36.063954+00:00",
+        "firmware_version": "3.1.18",
+        "status": "maintenance",
+        "last_check_in": "2025-11-24T20:57:39.292504+00:00",
         "config": {
-            "sampling_rate_s": 50,
+            "sampling_rate_s": 20,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 40
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-003",
-        "phase_id": "P5",
         "lane_ref": "LNE-003-04",
         "device_id": "SEM-003-04",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "3.8.6",
+        "model": "Actuator 2000",
+        "firmware_version": "3.4.6",
         "status": "offline",
-        "last_check_in": "2025-11-25T03:18:08.063954+00:00",
+        "last_check_in": "2025-11-26T11:55:55.292504+00:00",
         "config": {
-            "default_green_s": 51,
-            "default_yellow_s": 39,
-            "default_red_s": 87,
-            "min_green_s": 27,
-            "min_red_s": 63,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "location_ref": "LOC-003",
-        "lane_ref": "LNE-003-04",
-        "device_id": "CAM-003-02",
-        "device_type": "camera",
-        "model": "Cam-Traffic G18",
-        "firmware_version": "4.3.7",
-        "status": "offline",
-        "last_check_in": "2025-11-24T21:36:59.063954+00:00",
-        "config": {
-            "resolution": "720p",
-            "framerate": 45,
-            "view_angle_degrees": 360,
-            "ml_detection_enabled": false,
-            "image_storage_policy": "local_cache"
+            "default_green_s": 5,
+            "default_yellow_s": 74,
+            "default_red_s": 57,
+            "min_green_s": 35,
+            "min_red_s": 29,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -448,33 +419,49 @@
         "lane_ref": "LNE-003-04",
         "device_id": "TRS-003-04",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "4.7.17",
-        "status": "offline",
-        "last_check_in": "2025-11-26T02:38:04.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "4.8.16",
+        "status": "maintenance",
+        "last_check_in": "2025-11-30T06:46:49.292504+00:00",
         "config": {
-            "sampling_rate_s": 50,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 120
+            "sampling_rate_s": 40,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 90
         }
     },
     {
         "location_ref": "LOC-004",
-        "phase_id": "P4",
         "lane_ref": "LNE-004-01",
         "device_id": "SEM-004-01",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "4.1.18",
-        "status": "maintenance",
-        "last_check_in": "2025-11-23T04:22:57.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "2.1.16",
+        "status": "offline",
+        "last_check_in": "2025-11-25T14:49:54.292504+00:00",
         "config": {
-            "default_green_s": 37,
-            "default_yellow_s": 35,
-            "default_red_s": 14,
-            "min_green_s": 47,
-            "min_red_s": 55,
+            "default_green_s": 74,
+            "default_yellow_s": 76,
+            "default_red_s": 21,
+            "min_green_s": 37,
+            "min_red_s": 35,
             "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-004",
+        "lane_ref": "LNE-004-01",
+        "device_id": "CAM-004-01",
+        "device_type": "camera",
+        "model": "Vision Sensor V2",
+        "firmware_version": "3.8.12",
+        "status": "offline",
+        "last_check_in": "2025-12-01T02:16:43.292504+00:00",
+        "config": {
+            "resolution": "720p",
+            "framerate": 60,
+            "view_angle_degrees": 180,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "local_cache"
         }
     },
     {
@@ -482,31 +469,30 @@
         "lane_ref": "LNE-004-01",
         "device_id": "TRS-004-01",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "2.9.16",
-        "status": "maintenance",
-        "last_check_in": "2025-11-27T05:37:20.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "1.8.15",
+        "status": "online",
+        "last_check_in": "2025-11-25T08:48:04.292504+00:00",
         "config": {
-            "sampling_rate_s": 30,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 120
+            "sampling_rate_s": 20,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 90
         }
     },
     {
         "location_ref": "LOC-004",
-        "phase_id": "P4",
         "lane_ref": "LNE-004-02",
         "device_id": "SEM-004-02",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "1.3.6",
-        "status": "maintenance",
-        "last_check_in": "2025-11-25T15:49:04.063954+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "2.4.1",
+        "status": "online",
+        "last_check_in": "2025-11-28T06:42:01.292504+00:00",
         "config": {
-            "default_green_s": 27,
-            "default_yellow_s": 53,
-            "default_red_s": 39,
-            "min_green_s": 30,
+            "default_green_s": 82,
+            "default_yellow_s": 17,
+            "default_red_s": 10,
+            "min_green_s": 12,
             "min_red_s": 38,
             "pedestrian_button_active": true
         }
@@ -516,33 +502,32 @@
         "lane_ref": "LNE-004-02",
         "device_id": "TRS-004-02",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.0.9",
-        "status": "offline",
-        "last_check_in": "2025-11-25T12:06:56.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "2.6.13",
+        "status": "online",
+        "last_check_in": "2025-11-27T22:51:09.292504+00:00",
         "config": {
-            "sampling_rate_s": 30,
+            "sampling_rate_s": 50,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 100
+            "velocity_threshold_kph": 90
         }
     },
     {
         "location_ref": "LOC-004",
-        "phase_id": "P4",
         "lane_ref": "LNE-004-03",
         "device_id": "SEM-004-03",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.4.20",
-        "status": "maintenance",
-        "last_check_in": "2025-11-25T00:36:58.063954+00:00",
+        "model": "PhaseController M1",
+        "firmware_version": "4.9.15",
+        "status": "offline",
+        "last_check_in": "2025-11-30T12:49:12.292504+00:00",
         "config": {
-            "default_green_s": 45,
-            "default_yellow_s": 83,
-            "default_red_s": 36,
-            "min_green_s": 24,
-            "min_red_s": 29,
-            "pedestrian_button_active": false
+            "default_green_s": 48,
+            "default_yellow_s": 71,
+            "default_red_s": 39,
+            "min_green_s": 60,
+            "min_red_s": 55,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -551,31 +536,30 @@
         "device_id": "TRS-004-03",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "3.6.13",
-        "status": "offline",
-        "last_check_in": "2025-11-28T13:18:04.063954+00:00",
+        "firmware_version": "2.2.14",
+        "status": "online",
+        "last_check_in": "2025-11-24T20:40:48.292504+00:00",
         "config": {
-            "sampling_rate_s": 40,
+            "sampling_rate_s": 20,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 60
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-004",
-        "phase_id": "P4",
         "lane_ref": "LNE-004-04",
         "device_id": "SEM-004-04",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "4.2.2",
+        "model": "Actuator 2000",
+        "firmware_version": "1.8.13",
         "status": "online",
-        "last_check_in": "2025-11-28T13:50:35.063954+00:00",
+        "last_check_in": "2025-11-25T05:01:20.292504+00:00",
         "config": {
-            "default_green_s": 74,
-            "default_yellow_s": 50,
-            "default_red_s": 85,
-            "min_green_s": 74,
-            "min_red_s": 31,
+            "default_green_s": 14,
+            "default_yellow_s": 36,
+            "default_red_s": 87,
+            "min_green_s": 53,
+            "min_red_s": 67,
             "pedestrian_button_active": true
         }
     },
@@ -584,50 +568,32 @@
         "lane_ref": "LNE-004-04",
         "device_id": "TRS-004-04",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.1.8",
-        "status": "maintenance",
-        "last_check_in": "2025-11-26T04:59:39.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "3.8.17",
+        "status": "offline",
+        "last_check_in": "2025-11-25T05:21:37.292504+00:00",
         "config": {
-            "sampling_rate_s": 60,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 100
+            "sampling_rate_s": 25,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-005",
-        "phase_id": "P2",
         "lane_ref": "LNE-005-01",
         "device_id": "SEM-005-01",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "4.1.10",
-        "status": "online",
-        "last_check_in": "2025-11-27T15:55:39.063954+00:00",
+        "model": "PhaseController M1",
+        "firmware_version": "4.6.6",
+        "status": "maintenance",
+        "last_check_in": "2025-11-26T02:32:13.292504+00:00",
         "config": {
-            "default_green_s": 28,
-            "default_yellow_s": 23,
-            "default_red_s": 23,
-            "min_green_s": 53,
-            "min_red_s": 59,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "location_ref": "LOC-005",
-        "lane_ref": "LNE-005-01",
-        "device_id": "CAM-005-01",
-        "device_type": "camera",
-        "model": "Vision Sensor V2",
-        "firmware_version": "1.7.18",
-        "status": "offline",
-        "last_check_in": "2025-11-23T04:52:58.063954+00:00",
-        "config": {
-            "resolution": "1080p",
-            "framerate": 50,
-            "view_angle_degrees": 180,
-            "ml_detection_enabled": true,
-            "image_storage_policy": "local_cache"
+            "default_green_s": 43,
+            "default_yellow_s": 17,
+            "default_red_s": 67,
+            "min_green_s": 74,
+            "min_red_s": 47,
+            "pedestrian_button_active": false
         }
     },
     {
@@ -636,32 +602,31 @@
         "device_id": "TRS-005-01",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "2.7.8",
+        "firmware_version": "4.4.11",
         "status": "online",
-        "last_check_in": "2025-11-24T19:38:57.063954+00:00",
+        "last_check_in": "2025-11-25T05:51:05.292504+00:00",
         "config": {
-            "sampling_rate_s": 15,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 50
+            "sampling_rate_s": 40,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 110
         }
     },
     {
         "location_ref": "LOC-005",
-        "phase_id": "P2",
         "lane_ref": "LNE-005-02",
         "device_id": "SEM-005-02",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "2.3.11",
-        "status": "maintenance",
-        "last_check_in": "2025-11-26T14:19:33.063954+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "2.8.9",
+        "status": "online",
+        "last_check_in": "2025-11-29T05:25:41.292504+00:00",
         "config": {
-            "default_green_s": 5,
-            "default_yellow_s": 71,
-            "default_red_s": 49,
-            "min_green_s": 29,
-            "min_red_s": 87,
-            "pedestrian_button_active": true
+            "default_green_s": 32,
+            "default_yellow_s": 30,
+            "default_red_s": 76,
+            "min_green_s": 71,
+            "min_red_s": 23,
+            "pedestrian_button_active": false
         }
     },
     {
@@ -670,32 +635,31 @@
         "device_id": "TRS-005-02",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "4.3.1",
-        "status": "offline",
-        "last_check_in": "2025-11-26T17:00:00.063954+00:00",
+        "firmware_version": "1.8.12",
+        "status": "online",
+        "last_check_in": "2025-11-27T03:47:24.292504+00:00",
         "config": {
-            "sampling_rate_s": 40,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 90
+            "sampling_rate_s": 45,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 30
         }
     },
     {
         "location_ref": "LOC-005",
-        "phase_id": "P2",
         "lane_ref": "LNE-005-03",
         "device_id": "SEM-005-03",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "4.9.1",
-        "status": "online",
-        "last_check_in": "2025-11-25T03:03:25.063954+00:00",
+        "model": "PhaseController M1",
+        "firmware_version": "1.6.14",
+        "status": "offline",
+        "last_check_in": "2025-11-29T13:28:58.292504+00:00",
         "config": {
-            "default_green_s": 77,
-            "default_yellow_s": 20,
-            "default_red_s": 62,
-            "min_green_s": 78,
+            "default_green_s": 47,
+            "default_yellow_s": 88,
+            "default_red_s": 79,
+            "min_green_s": 71,
             "min_red_s": 36,
-            "pedestrian_button_active": true
+            "pedestrian_button_active": false
         }
     },
     {
@@ -703,33 +667,32 @@
         "lane_ref": "LNE-005-03",
         "device_id": "TRS-005-03",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "4.2.6",
+        "model": "IR Sensor E1",
+        "firmware_version": "4.4.16",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T11:03:25.063954+00:00",
+        "last_check_in": "2025-11-24T15:37:07.292504+00:00",
         "config": {
-            "sampling_rate_s": 60,
+            "sampling_rate_s": 5,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 50
+            "velocity_threshold_kph": 40
         }
     },
     {
         "location_ref": "LOC-006",
-        "phase_id": "P2",
         "lane_ref": "LNE-006-01",
         "device_id": "SEM-006-01",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "2.4.17",
-        "status": "online",
-        "last_check_in": "2025-11-25T18:29:41.063954+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "4.3.2",
+        "status": "offline",
+        "last_check_in": "2025-11-29T04:43:10.292504+00:00",
         "config": {
-            "default_green_s": 70,
-            "default_yellow_s": 12,
-            "default_red_s": 40,
-            "min_green_s": 71,
-            "min_red_s": 7,
-            "pedestrian_button_active": false
+            "default_green_s": 19,
+            "default_yellow_s": 57,
+            "default_red_s": 27,
+            "min_green_s": 27,
+            "min_red_s": 83,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -737,33 +700,32 @@
         "lane_ref": "LNE-006-01",
         "device_id": "TRS-006-01",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "3.2.8",
-        "status": "maintenance",
-        "last_check_in": "2025-11-27T12:41:52.063954+00:00",
+        "model": "Loop Detector v3",
+        "firmware_version": "2.1.17",
+        "status": "offline",
+        "last_check_in": "2025-11-24T20:16:09.292504+00:00",
         "config": {
-            "sampling_rate_s": 50,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 80
+            "sampling_rate_s": 15,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-006",
-        "phase_id": "P2",
         "lane_ref": "LNE-006-02",
         "device_id": "SEM-006-02",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "2.4.6",
-        "status": "offline",
-        "last_check_in": "2025-11-25T08:46:35.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "1.4.17",
+        "status": "online",
+        "last_check_in": "2025-11-24T23:48:31.292504+00:00",
         "config": {
-            "default_green_s": 71,
-            "default_yellow_s": 6,
-            "default_red_s": 42,
-            "min_green_s": 88,
-            "min_red_s": 46,
-            "pedestrian_button_active": false
+            "default_green_s": 57,
+            "default_yellow_s": 66,
+            "default_red_s": 8,
+            "min_green_s": 41,
+            "min_red_s": 28,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -771,32 +733,31 @@
         "lane_ref": "LNE-006-02",
         "device_id": "TRS-006-02",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "1.4.20",
-        "status": "offline",
-        "last_check_in": "2025-11-21T19:14:21.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "2.7.15",
+        "status": "online",
+        "last_check_in": "2025-11-27T15:21:13.292504+00:00",
         "config": {
-            "sampling_rate_s": 35,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 100
+            "sampling_rate_s": 15,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 80
         }
     },
     {
         "location_ref": "LOC-006",
-        "phase_id": "P2",
         "lane_ref": "LNE-006-03",
         "device_id": "SEM-006-03",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "1.9.14",
-        "status": "maintenance",
-        "last_check_in": "2025-11-25T15:40:35.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "3.9.7",
+        "status": "online",
+        "last_check_in": "2025-11-24T20:06:57.292504+00:00",
         "config": {
-            "default_green_s": 72,
-            "default_yellow_s": 82,
-            "default_red_s": 9,
-            "min_green_s": 89,
-            "min_red_s": 57,
+            "default_green_s": 88,
+            "default_yellow_s": 44,
+            "default_red_s": 85,
+            "min_green_s": 82,
+            "min_red_s": 68,
             "pedestrian_button_active": false
         }
     },
@@ -805,33 +766,32 @@
         "lane_ref": "LNE-006-03",
         "device_id": "TRS-006-03",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "3.9.17",
+        "model": "Radar 4D",
+        "firmware_version": "3.1.3",
         "status": "maintenance",
-        "last_check_in": "2025-11-23T21:21:28.063954+00:00",
+        "last_check_in": "2025-11-29T12:41:15.292504+00:00",
         "config": {
-            "sampling_rate_s": 55,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 100
+            "sampling_rate_s": 50,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-006",
-        "phase_id": "P2",
         "lane_ref": "LNE-006-04",
         "device_id": "SEM-006-04",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "2.1.11",
+        "model": "Actuator 2000",
+        "firmware_version": "2.6.4",
         "status": "maintenance",
-        "last_check_in": "2025-11-27T10:21:11.063954+00:00",
+        "last_check_in": "2025-11-30T17:23:50.292504+00:00",
         "config": {
-            "default_green_s": 38,
-            "default_yellow_s": 14,
-            "default_red_s": 13,
-            "min_green_s": 82,
-            "min_red_s": 62,
-            "pedestrian_button_active": false
+            "default_green_s": 47,
+            "default_yellow_s": 88,
+            "default_red_s": 80,
+            "min_green_s": 71,
+            "min_red_s": 73,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -839,50 +799,32 @@
         "lane_ref": "LNE-006-04",
         "device_id": "TRS-006-04",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "2.1.15",
+        "model": "Radar 4D",
+        "firmware_version": "2.1.11",
         "status": "maintenance",
-        "last_check_in": "2025-11-28T06:37:37.063954+00:00",
+        "last_check_in": "2025-11-30T07:01:09.292504+00:00",
         "config": {
-            "sampling_rate_s": 15,
+            "sampling_rate_s": 25,
             "detection_method": "radar",
-            "velocity_threshold_kph": 80
+            "velocity_threshold_kph": 40
         }
     },
     {
         "location_ref": "LOC-007",
-        "phase_id": "P5",
         "lane_ref": "LNE-007-01",
         "device_id": "SEM-007-01",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "1.9.11",
-        "status": "maintenance",
-        "last_check_in": "2025-11-25T17:48:32.063954+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "1.9.20",
+        "status": "online",
+        "last_check_in": "2025-11-25T18:04:52.292504+00:00",
         "config": {
-            "default_green_s": 32,
-            "default_yellow_s": 16,
-            "default_red_s": 71,
-            "min_green_s": 36,
-            "min_red_s": 17,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "location_ref": "LOC-007",
-        "lane_ref": "LNE-007-01",
-        "device_id": "CAM-007-01",
-        "device_type": "camera",
-        "model": "Cam-Traffic G18",
-        "firmware_version": "1.4.18",
-        "status": "maintenance",
-        "last_check_in": "2025-11-25T18:36:02.063954+00:00",
-        "config": {
-            "resolution": "4K",
-            "framerate": 50,
-            "view_angle_degrees": 360,
-            "ml_detection_enabled": false,
-            "image_storage_policy": "local_cache"
+            "default_green_s": 90,
+            "default_yellow_s": 62,
+            "default_red_s": 75,
+            "min_green_s": 27,
+            "min_red_s": 78,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -890,33 +832,32 @@
         "lane_ref": "LNE-007-01",
         "device_id": "TRS-007-01",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.5.11",
-        "status": "offline",
-        "last_check_in": "2025-11-26T07:04:10.063954+00:00",
+        "model": "IR Sensor E1",
+        "firmware_version": "4.4.19",
+        "status": "maintenance",
+        "last_check_in": "2025-11-24T20:03:10.292504+00:00",
         "config": {
-            "sampling_rate_s": 30,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 30
+            "sampling_rate_s": 55,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-007",
-        "phase_id": "P5",
         "lane_ref": "LNE-007-02",
         "device_id": "SEM-007-02",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.2.4",
+        "model": "PhaseController M1",
+        "firmware_version": "2.1.10",
         "status": "online",
-        "last_check_in": "2025-11-24T19:31:54.063954+00:00",
+        "last_check_in": "2025-11-25T06:32:35.292504+00:00",
         "config": {
-            "default_green_s": 77,
-            "default_yellow_s": 25,
-            "default_red_s": 9,
-            "min_green_s": 84,
-            "min_red_s": 48,
-            "pedestrian_button_active": false
+            "default_green_s": 15,
+            "default_yellow_s": 8,
+            "default_red_s": 43,
+            "min_green_s": 76,
+            "min_red_s": 83,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -924,33 +865,49 @@
         "lane_ref": "LNE-007-02",
         "device_id": "TRS-007-02",
         "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "3.0.14",
-        "status": "offline",
-        "last_check_in": "2025-11-23T21:53:59.063954+00:00",
+        "model": "IR Sensor E1",
+        "firmware_version": "1.6.15",
+        "status": "online",
+        "last_check_in": "2025-11-27T02:10:26.292504+00:00",
         "config": {
-            "sampling_rate_s": 45,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 60
+            "sampling_rate_s": 10,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 90
         }
     },
     {
         "location_ref": "LOC-007",
-        "phase_id": "P5",
         "lane_ref": "LNE-007-03",
         "device_id": "SEM-007-03",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "4.7.5",
-        "status": "offline",
-        "last_check_in": "2025-11-27T15:52:26.063954+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "1.0.5",
+        "status": "online",
+        "last_check_in": "2025-11-29T22:03:34.292504+00:00",
         "config": {
-            "default_green_s": 90,
-            "default_yellow_s": 65,
-            "default_red_s": 78,
-            "min_green_s": 54,
-            "min_red_s": 44,
+            "default_green_s": 50,
+            "default_yellow_s": 21,
+            "default_red_s": 17,
+            "min_green_s": 12,
+            "min_red_s": 39,
             "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-007",
+        "lane_ref": "LNE-007-03",
+        "device_id": "CAM-007-01",
+        "device_type": "camera",
+        "model": "Vision Sensor V2",
+        "firmware_version": "4.9.3",
+        "status": "maintenance",
+        "last_check_in": "2025-11-29T17:27:56.292504+00:00",
+        "config": {
+            "resolution": "1080p",
+            "framerate": 24,
+            "view_angle_degrees": 150,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "cloud_only"
         }
     },
     {
@@ -959,32 +916,31 @@
         "device_id": "TRS-007-03",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "3.9.10",
-        "status": "online",
-        "last_check_in": "2025-11-25T03:59:27.063954+00:00",
+        "firmware_version": "2.6.6",
+        "status": "maintenance",
+        "last_check_in": "2025-11-29T16:38:01.292504+00:00",
         "config": {
-            "sampling_rate_s": 15,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 110
+            "sampling_rate_s": 60,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 50
         }
     },
     {
         "location_ref": "LOC-007",
-        "phase_id": "P5",
         "lane_ref": "LNE-007-04",
         "device_id": "SEM-007-04",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.0.12",
-        "status": "maintenance",
-        "last_check_in": "2025-11-21T16:32:13.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "4.4.19",
+        "status": "offline",
+        "last_check_in": "2025-11-27T14:18:17.292504+00:00",
         "config": {
-            "default_green_s": 69,
-            "default_yellow_s": 9,
-            "default_red_s": 30,
-            "min_green_s": 83,
-            "min_red_s": 44,
-            "pedestrian_button_active": true
+            "default_green_s": 23,
+            "default_yellow_s": 50,
+            "default_red_s": 21,
+            "min_green_s": 89,
+            "min_red_s": 38,
+            "pedestrian_button_active": false
         }
     },
     {
@@ -993,32 +949,31 @@
         "device_id": "TRS-007-04",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "3.5.18",
+        "firmware_version": "4.0.9",
         "status": "offline",
-        "last_check_in": "2025-11-26T15:03:04.063954+00:00",
+        "last_check_in": "2025-11-28T22:02:25.292504+00:00",
         "config": {
-            "sampling_rate_s": 25,
+            "sampling_rate_s": 5,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 120
+            "velocity_threshold_kph": 30
         }
     },
     {
         "location_ref": "LOC-008",
-        "phase_id": "P1",
         "lane_ref": "LNE-008-01",
         "device_id": "SEM-008-01",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "3.1.13",
+        "model": "LED Light Hub",
+        "firmware_version": "3.3.16",
         "status": "maintenance",
-        "last_check_in": "2025-11-26T00:19:23.063954+00:00",
+        "last_check_in": "2025-11-29T03:36:50.292504+00:00",
         "config": {
-            "default_green_s": 51,
-            "default_yellow_s": 59,
-            "default_red_s": 42,
-            "min_green_s": 54,
-            "min_red_s": 57,
-            "pedestrian_button_active": false
+            "default_green_s": 88,
+            "default_yellow_s": 41,
+            "default_red_s": 45,
+            "min_green_s": 76,
+            "min_red_s": 54,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -1027,32 +982,31 @@
         "device_id": "TRS-008-01",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "2.7.19",
+        "firmware_version": "1.9.20",
         "status": "offline",
-        "last_check_in": "2025-11-24T00:30:00.063954+00:00",
+        "last_check_in": "2025-11-27T13:29:33.292504+00:00",
         "config": {
-            "sampling_rate_s": 45,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 30
+            "sampling_rate_s": 20,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 40
         }
     },
     {
         "location_ref": "LOC-008",
-        "phase_id": "P1",
         "lane_ref": "LNE-008-02",
         "device_id": "SEM-008-02",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "2.3.13",
+        "model": "Actuator 2000",
+        "firmware_version": "4.4.13",
         "status": "offline",
-        "last_check_in": "2025-11-26T02:20:30.063954+00:00",
+        "last_check_in": "2025-11-27T20:43:51.292504+00:00",
         "config": {
-            "default_green_s": 57,
+            "default_green_s": 37,
             "default_yellow_s": 82,
-            "default_red_s": 37,
-            "min_green_s": 33,
-            "min_red_s": 46,
-            "pedestrian_button_active": false
+            "default_red_s": 26,
+            "min_green_s": 63,
+            "min_red_s": 77,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -1061,49 +1015,31 @@
         "device_id": "TRS-008-02",
         "device_type": "traffic_sensor",
         "model": "Loop Detector v3",
-        "firmware_version": "2.8.9",
-        "status": "online",
-        "last_check_in": "2025-11-26T11:46:29.063954+00:00",
+        "firmware_version": "1.6.19",
+        "status": "offline",
+        "last_check_in": "2025-11-26T01:16:44.292504+00:00",
         "config": {
-            "sampling_rate_s": 40,
+            "sampling_rate_s": 20,
             "detection_method": "camera_based",
             "velocity_threshold_kph": 80
         }
     },
     {
         "location_ref": "LOC-008",
-        "phase_id": "P1",
         "lane_ref": "LNE-008-03",
         "device_id": "SEM-008-03",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "4.7.2",
-        "status": "online",
-        "last_check_in": "2025-11-25T05:38:50.063954+00:00",
-        "config": {
-            "default_green_s": 32,
-            "default_yellow_s": 53,
-            "default_red_s": 21,
-            "min_green_s": 57,
-            "min_red_s": 84,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "location_ref": "LOC-008",
-        "lane_ref": "LNE-008-03",
-        "device_id": "CAM-008-01",
-        "device_type": "camera",
-        "model": "Vision Sensor V2",
-        "firmware_version": "3.4.6",
+        "model": "LED Light Hub",
+        "firmware_version": "3.3.11",
         "status": "maintenance",
-        "last_check_in": "2025-11-28T02:51:59.063954+00:00",
+        "last_check_in": "2025-11-29T19:23:28.292504+00:00",
         "config": {
-            "resolution": "1440p",
-            "framerate": 50,
-            "view_angle_degrees": 30,
-            "ml_detection_enabled": false,
-            "image_storage_policy": "local_cache"
+            "default_green_s": 45,
+            "default_yellow_s": 89,
+            "default_red_s": 20,
+            "min_green_s": 85,
+            "min_red_s": 26,
+            "pedestrian_button_active": false
         }
     },
     {
@@ -1111,32 +1047,31 @@
         "lane_ref": "LNE-008-03",
         "device_id": "TRS-008-03",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "2.9.2",
+        "model": "Radar 4D",
+        "firmware_version": "3.4.15",
         "status": "online",
-        "last_check_in": "2025-11-22T18:22:05.063954+00:00",
+        "last_check_in": "2025-11-26T10:26:34.292504+00:00",
         "config": {
-            "sampling_rate_s": 15,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 40
+            "sampling_rate_s": 45,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 110
         }
     },
     {
         "location_ref": "LOC-008",
-        "phase_id": "P1",
         "lane_ref": "LNE-008-04",
         "device_id": "SEM-008-04",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "1.1.7",
+        "model": "LED Light Hub",
+        "firmware_version": "3.3.13",
         "status": "online",
-        "last_check_in": "2025-11-25T09:19:32.063954+00:00",
+        "last_check_in": "2025-11-29T10:25:07.292504+00:00",
         "config": {
-            "default_green_s": 53,
-            "default_yellow_s": 37,
-            "default_red_s": 83,
-            "min_green_s": 59,
-            "min_red_s": 42,
+            "default_green_s": 84,
+            "default_yellow_s": 79,
+            "default_red_s": 14,
+            "min_green_s": 29,
+            "min_red_s": 24,
             "pedestrian_button_active": false
         }
     },
@@ -1145,32 +1080,31 @@
         "lane_ref": "LNE-008-04",
         "device_id": "TRS-008-04",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "2.4.13",
-        "status": "maintenance",
-        "last_check_in": "2025-11-26T03:11:29.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "2.9.18",
+        "status": "offline",
+        "last_check_in": "2025-11-30T03:25:58.292504+00:00",
         "config": {
-            "sampling_rate_s": 55,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 80
+            "sampling_rate_s": 5,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 110
         }
     },
     {
         "location_ref": "LOC-009",
-        "phase_id": "P3",
         "lane_ref": "LNE-009-01",
         "device_id": "SEM-009-01",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.0.11",
-        "status": "maintenance",
-        "last_check_in": "2025-11-25T13:41:19.063954+00:00",
+        "model": "PhaseController M1",
+        "firmware_version": "1.1.4",
+        "status": "online",
+        "last_check_in": "2025-11-26T00:24:49.292504+00:00",
         "config": {
-            "default_green_s": 83,
-            "default_yellow_s": 51,
-            "default_red_s": 63,
-            "min_green_s": 20,
-            "min_red_s": 60,
+            "default_green_s": 20,
+            "default_yellow_s": 65,
+            "default_red_s": 52,
+            "min_green_s": 18,
+            "min_red_s": 76,
             "pedestrian_button_active": true
         }
     },
@@ -1179,32 +1113,31 @@
         "lane_ref": "LNE-009-01",
         "device_id": "TRS-009-01",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "1.5.5",
-        "status": "offline",
-        "last_check_in": "2025-11-24T20:09:10.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "4.4.20",
+        "status": "maintenance",
+        "last_check_in": "2025-11-29T14:05:10.292504+00:00",
         "config": {
-            "sampling_rate_s": 40,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 100
+            "sampling_rate_s": 55,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 90
         }
     },
     {
         "location_ref": "LOC-009",
-        "phase_id": "P3",
         "lane_ref": "LNE-009-02",
         "device_id": "SEM-009-02",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "2.8.19",
+        "firmware_version": "3.0.7",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T08:28:25.063954+00:00",
+        "last_check_in": "2025-11-28T02:13:51.292504+00:00",
         "config": {
-            "default_green_s": 79,
-            "default_yellow_s": 13,
-            "default_red_s": 71,
+            "default_green_s": 85,
+            "default_yellow_s": 56,
+            "default_red_s": 72,
             "min_green_s": 52,
-            "min_red_s": 51,
+            "min_red_s": 90,
             "pedestrian_button_active": false
         }
     },
@@ -1213,33 +1146,32 @@
         "lane_ref": "LNE-009-02",
         "device_id": "TRS-009-02",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.9.18",
+        "model": "IR Sensor E1",
+        "firmware_version": "2.2.11",
         "status": "maintenance",
-        "last_check_in": "2025-11-24T06:05:56.063954+00:00",
+        "last_check_in": "2025-11-24T16:43:23.292504+00:00",
         "config": {
-            "sampling_rate_s": 50,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 100
+            "sampling_rate_s": 5,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-009",
-        "phase_id": "P3",
         "lane_ref": "LNE-009-03",
         "device_id": "SEM-009-03",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
-        "firmware_version": "3.1.3",
+        "firmware_version": "1.6.3",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T02:46:46.063954+00:00",
+        "last_check_in": "2025-11-28T00:31:11.292504+00:00",
         "config": {
-            "default_green_s": 47,
-            "default_yellow_s": 90,
-            "default_red_s": 48,
-            "min_green_s": 59,
-            "min_red_s": 65,
-            "pedestrian_button_active": false
+            "default_green_s": 86,
+            "default_yellow_s": 58,
+            "default_red_s": 71,
+            "min_green_s": 18,
+            "min_red_s": 46,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -1247,33 +1179,32 @@
         "lane_ref": "LNE-009-03",
         "device_id": "TRS-009-03",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "3.3.7",
-        "status": "maintenance",
-        "last_check_in": "2025-11-24T00:11:31.063954+00:00",
+        "model": "Loop Detector v3",
+        "firmware_version": "4.0.14",
+        "status": "online",
+        "last_check_in": "2025-11-27T03:17:48.292504+00:00",
         "config": {
-            "sampling_rate_s": 25,
+            "sampling_rate_s": 60,
             "detection_method": "radar",
-            "velocity_threshold_kph": 100
+            "velocity_threshold_kph": 40
         }
     },
     {
         "location_ref": "LOC-009",
-        "phase_id": "P3",
         "lane_ref": "LNE-009-04",
         "device_id": "SEM-009-04",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "3.6.1",
-        "status": "maintenance",
-        "last_check_in": "2025-11-22T05:46:08.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "4.0.2",
+        "status": "online",
+        "last_check_in": "2025-11-24T16:16:57.292504+00:00",
         "config": {
-            "default_green_s": 81,
-            "default_yellow_s": 82,
-            "default_red_s": 57,
-            "min_green_s": 59,
-            "min_red_s": 26,
-            "pedestrian_button_active": false
+            "default_green_s": 84,
+            "default_yellow_s": 73,
+            "default_red_s": 33,
+            "min_green_s": 80,
+            "min_red_s": 20,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -1281,33 +1212,32 @@
         "lane_ref": "LNE-009-04",
         "device_id": "TRS-009-04",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "1.3.4",
-        "status": "offline",
-        "last_check_in": "2025-11-21T16:27:57.063954+00:00",
+        "model": "Loop Detector v3",
+        "firmware_version": "3.4.3",
+        "status": "online",
+        "last_check_in": "2025-11-27T23:26:44.292504+00:00",
         "config": {
-            "sampling_rate_s": 20,
+            "sampling_rate_s": 30,
             "detection_method": "camera_based",
             "velocity_threshold_kph": 100
         }
     },
     {
         "location_ref": "LOC-010",
-        "phase_id": "P5",
         "lane_ref": "LNE-010-01",
         "device_id": "SEM-010-01",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "2.1.11",
-        "status": "online",
-        "last_check_in": "2025-11-28T01:50:12.063954+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "4.8.11",
+        "status": "maintenance",
+        "last_check_in": "2025-11-27T00:19:29.292504+00:00",
         "config": {
-            "default_green_s": 15,
-            "default_yellow_s": 16,
-            "default_red_s": 19,
-            "min_green_s": 62,
-            "min_red_s": 9,
-            "pedestrian_button_active": true
+            "default_green_s": 31,
+            "default_yellow_s": 30,
+            "default_red_s": 39,
+            "min_green_s": 6,
+            "min_red_s": 88,
+            "pedestrian_button_active": false
         }
     },
     {
@@ -1315,33 +1245,32 @@
         "lane_ref": "LNE-010-01",
         "device_id": "TRS-010-01",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "3.9.11",
-        "status": "online",
-        "last_check_in": "2025-11-22T07:54:14.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "1.4.14",
+        "status": "maintenance",
+        "last_check_in": "2025-11-24T14:58:31.292504+00:00",
         "config": {
-            "sampling_rate_s": 35,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 110
+            "sampling_rate_s": 50,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 100
         }
     },
     {
         "location_ref": "LOC-010",
-        "phase_id": "P5",
         "lane_ref": "LNE-010-02",
         "device_id": "SEM-010-02",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "4.8.12",
-        "status": "maintenance",
-        "last_check_in": "2025-11-28T12:56:22.063954+00:00",
+        "model": "PhaseController M1",
+        "firmware_version": "4.3.19",
+        "status": "online",
+        "last_check_in": "2025-11-27T04:39:00.292504+00:00",
         "config": {
-            "default_green_s": 89,
-            "default_yellow_s": 46,
-            "default_red_s": 77,
-            "min_green_s": 41,
-            "min_red_s": 67,
-            "pedestrian_button_active": true
+            "default_green_s": 85,
+            "default_yellow_s": 17,
+            "default_red_s": 38,
+            "min_green_s": 6,
+            "min_red_s": 31,
+            "pedestrian_button_active": false
         }
     },
     {
@@ -1349,50 +1278,32 @@
         "lane_ref": "LNE-010-02",
         "device_id": "TRS-010-02",
         "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "3.1.5",
-        "status": "online",
-        "last_check_in": "2025-11-22T20:59:57.063954+00:00",
+        "model": "IR Sensor E1",
+        "firmware_version": "1.3.5",
+        "status": "maintenance",
+        "last_check_in": "2025-11-25T14:55:09.292504+00:00",
         "config": {
-            "sampling_rate_s": 25,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 80
+            "sampling_rate_s": 30,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-010",
-        "phase_id": "P5",
         "lane_ref": "LNE-010-03",
         "device_id": "SEM-010-03",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.8.19",
-        "status": "maintenance",
-        "last_check_in": "2025-11-22T03:33:24.063954+00:00",
-        "config": {
-            "default_green_s": 66,
-            "default_yellow_s": 46,
-            "default_red_s": 61,
-            "min_green_s": 72,
-            "min_red_s": 17,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "location_ref": "LOC-010",
-        "lane_ref": "LNE-010-03",
-        "device_id": "CAM-010-01",
-        "device_type": "camera",
-        "model": "Cam-Traffic G18",
-        "firmware_version": "2.1.4",
+        "model": "PhaseController M1",
+        "firmware_version": "4.0.7",
         "status": "offline",
-        "last_check_in": "2025-11-26T09:44:49.063954+00:00",
+        "last_check_in": "2025-11-29T06:18:16.292504+00:00",
         "config": {
-            "resolution": "1080p",
-            "framerate": 45,
-            "view_angle_degrees": 45,
-            "ml_detection_enabled": false,
-            "image_storage_policy": "cloud_only"
+            "default_green_s": 30,
+            "default_yellow_s": 47,
+            "default_red_s": 89,
+            "min_green_s": 80,
+            "min_red_s": 48,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -1400,32 +1311,31 @@
         "lane_ref": "LNE-010-03",
         "device_id": "TRS-010-03",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "2.5.12",
-        "status": "offline",
-        "last_check_in": "2025-11-27T19:40:48.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "2.7.19",
+        "status": "maintenance",
+        "last_check_in": "2025-11-29T22:20:43.292504+00:00",
         "config": {
-            "sampling_rate_s": 55,
+            "sampling_rate_s": 45,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 30
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-010",
-        "phase_id": "P5",
         "lane_ref": "LNE-010-04",
         "device_id": "SEM-010-04",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
-        "firmware_version": "1.3.4",
-        "status": "maintenance",
-        "last_check_in": "2025-11-25T04:47:43.063954+00:00",
+        "firmware_version": "1.8.9",
+        "status": "offline",
+        "last_check_in": "2025-11-28T19:20:56.292504+00:00",
         "config": {
-            "default_green_s": 28,
-            "default_yellow_s": 38,
-            "default_red_s": 71,
-            "min_green_s": 59,
-            "min_red_s": 81,
+            "default_green_s": 64,
+            "default_yellow_s": 46,
+            "default_red_s": 18,
+            "min_green_s": 23,
+            "min_red_s": 28,
             "pedestrian_button_active": false
         }
     },
@@ -1434,32 +1344,31 @@
         "lane_ref": "LNE-010-04",
         "device_id": "TRS-010-04",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.3.11",
-        "status": "offline",
-        "last_check_in": "2025-11-22T17:58:33.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "4.8.19",
+        "status": "maintenance",
+        "last_check_in": "2025-11-27T16:53:26.292504+00:00",
         "config": {
-            "sampling_rate_s": 40,
+            "sampling_rate_s": 25,
             "detection_method": "radar",
-            "velocity_threshold_kph": 110
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-011",
-        "phase_id": "P4",
         "lane_ref": "LNE-011-01",
         "device_id": "SEM-011-01",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "1.6.8",
+        "model": "LED Light Hub",
+        "firmware_version": "3.7.17",
         "status": "online",
-        "last_check_in": "2025-11-27T21:16:55.063954+00:00",
+        "last_check_in": "2025-11-30T23:46:21.292504+00:00",
         "config": {
-            "default_green_s": 72,
-            "default_yellow_s": 70,
-            "default_red_s": 44,
-            "min_green_s": 87,
-            "min_red_s": 24,
+            "default_green_s": 12,
+            "default_yellow_s": 36,
+            "default_red_s": 9,
+            "min_green_s": 31,
+            "min_red_s": 16,
             "pedestrian_button_active": true
         }
     },
@@ -1468,32 +1377,31 @@
         "lane_ref": "LNE-011-01",
         "device_id": "TRS-011-01",
         "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "2.3.15",
+        "model": "IR Sensor E1",
+        "firmware_version": "3.1.9",
         "status": "maintenance",
-        "last_check_in": "2025-11-28T03:23:44.063954+00:00",
+        "last_check_in": "2025-11-26T19:57:04.292504+00:00",
         "config": {
-            "sampling_rate_s": 10,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 40
+            "sampling_rate_s": 50,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 90
         }
     },
     {
         "location_ref": "LOC-011",
-        "phase_id": "P4",
         "lane_ref": "LNE-011-02",
         "device_id": "SEM-011-02",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "4.4.8",
+        "model": "LED Light Hub",
+        "firmware_version": "4.0.17",
         "status": "offline",
-        "last_check_in": "2025-11-23T19:41:40.063954+00:00",
+        "last_check_in": "2025-11-24T22:40:37.292504+00:00",
         "config": {
-            "default_green_s": 29,
-            "default_yellow_s": 29,
-            "default_red_s": 22,
-            "min_green_s": 36,
-            "min_red_s": 20,
+            "default_green_s": 59,
+            "default_yellow_s": 8,
+            "default_red_s": 30,
+            "min_green_s": 19,
+            "min_red_s": 88,
             "pedestrian_button_active": false
         }
     },
@@ -1502,15 +1410,15 @@
         "lane_ref": "LNE-011-02",
         "device_id": "CAM-011-01",
         "device_type": "camera",
-        "model": "Vision Sensor V2",
-        "firmware_version": "3.8.7",
-        "status": "online",
-        "last_check_in": "2025-11-22T07:55:36.063954+00:00",
+        "model": "SONY G95 PRO",
+        "firmware_version": "4.9.6",
+        "status": "offline",
+        "last_check_in": "2025-11-30T10:08:59.292504+00:00",
         "config": {
-            "resolution": "4K",
+            "resolution": "480p",
             "framerate": 60,
-            "view_angle_degrees": 90,
-            "ml_detection_enabled": true,
+            "view_angle_degrees": 45,
+            "ml_detection_enabled": false,
             "image_storage_policy": "local_cache"
         }
     },
@@ -1519,32 +1427,31 @@
         "lane_ref": "LNE-011-02",
         "device_id": "TRS-011-02",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "2.8.14",
+        "model": "Radar 4D",
+        "firmware_version": "1.7.16",
         "status": "offline",
-        "last_check_in": "2025-11-23T04:59:12.063954+00:00",
+        "last_check_in": "2025-11-27T20:35:20.292504+00:00",
         "config": {
-            "sampling_rate_s": 55,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 50
+            "sampling_rate_s": 25,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 100
         }
     },
     {
         "location_ref": "LOC-011",
-        "phase_id": "P4",
         "lane_ref": "LNE-011-03",
         "device_id": "SEM-011-03",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "3.5.6",
-        "status": "online",
-        "last_check_in": "2025-11-24T02:55:46.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "3.2.16",
+        "status": "offline",
+        "last_check_in": "2025-11-30T11:46:02.292504+00:00",
         "config": {
-            "default_green_s": 19,
-            "default_yellow_s": 38,
-            "default_red_s": 72,
-            "min_green_s": 51,
-            "min_red_s": 66,
+            "default_green_s": 72,
+            "default_yellow_s": 46,
+            "default_red_s": 35,
+            "min_green_s": 36,
+            "min_red_s": 62,
             "pedestrian_button_active": false
         }
     },
@@ -1553,32 +1460,31 @@
         "lane_ref": "LNE-011-03",
         "device_id": "TRS-011-03",
         "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "4.1.12",
-        "status": "offline",
-        "last_check_in": "2025-11-26T09:45:46.063954+00:00",
+        "model": "Loop Detector v3",
+        "firmware_version": "1.3.2",
+        "status": "maintenance",
+        "last_check_in": "2025-11-29T03:28:59.292504+00:00",
         "config": {
-            "sampling_rate_s": 35,
+            "sampling_rate_s": 25,
             "detection_method": "radar",
-            "velocity_threshold_kph": 60
+            "velocity_threshold_kph": 100
         }
     },
     {
         "location_ref": "LOC-012",
-        "phase_id": "P3",
         "lane_ref": "LNE-012-01",
         "device_id": "SEM-012-01",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "2.6.9",
+        "firmware_version": "2.3.4",
         "status": "maintenance",
-        "last_check_in": "2025-11-27T03:05:11.063954+00:00",
+        "last_check_in": "2025-11-24T14:42:51.292504+00:00",
         "config": {
-            "default_green_s": 39,
-            "default_yellow_s": 60,
-            "default_red_s": 36,
-            "min_green_s": 55,
-            "min_red_s": 55,
+            "default_green_s": 43,
+            "default_yellow_s": 40,
+            "default_red_s": 71,
+            "min_green_s": 31,
+            "min_red_s": 21,
             "pedestrian_button_active": true
         }
     },
@@ -1588,31 +1494,30 @@
         "device_id": "TRS-012-01",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "1.0.4",
-        "status": "maintenance",
-        "last_check_in": "2025-11-21T20:32:04.063954+00:00",
+        "firmware_version": "4.3.6",
+        "status": "online",
+        "last_check_in": "2025-12-01T01:26:54.292504+00:00",
         "config": {
-            "sampling_rate_s": 10,
+            "sampling_rate_s": 35,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 80
+            "velocity_threshold_kph": 50
         }
     },
     {
         "location_ref": "LOC-012",
-        "phase_id": "P3",
         "lane_ref": "LNE-012-02",
         "device_id": "SEM-012-02",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "1.9.3",
-        "status": "online",
-        "last_check_in": "2025-11-25T17:12:02.063954+00:00",
+        "firmware_version": "4.7.11",
+        "status": "offline",
+        "last_check_in": "2025-11-26T13:21:09.292504+00:00",
         "config": {
-            "default_green_s": 79,
-            "default_yellow_s": 8,
-            "default_red_s": 51,
-            "min_green_s": 43,
-            "min_red_s": 22,
+            "default_green_s": 34,
+            "default_yellow_s": 31,
+            "default_red_s": 19,
+            "min_green_s": 38,
+            "min_red_s": 72,
             "pedestrian_button_active": true
         }
     },
@@ -1622,32 +1527,31 @@
         "device_id": "TRS-012-02",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "4.1.16",
-        "status": "online",
-        "last_check_in": "2025-11-27T00:05:41.063954+00:00",
+        "firmware_version": "2.9.18",
+        "status": "offline",
+        "last_check_in": "2025-11-25T10:08:07.292504+00:00",
         "config": {
-            "sampling_rate_s": 60,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 90
+            "sampling_rate_s": 30,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 100
         }
     },
     {
         "location_ref": "LOC-012",
-        "phase_id": "P3",
         "lane_ref": "LNE-012-03",
         "device_id": "SEM-012-03",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "2.9.1",
+        "model": "PhaseController M1",
+        "firmware_version": "3.4.6",
         "status": "online",
-        "last_check_in": "2025-11-25T18:42:56.063954+00:00",
+        "last_check_in": "2025-11-26T02:29:13.292504+00:00",
         "config": {
-            "default_green_s": 50,
-            "default_yellow_s": 25,
-            "default_red_s": 5,
-            "min_green_s": 35,
-            "min_red_s": 10,
-            "pedestrian_button_active": false
+            "default_green_s": 60,
+            "default_yellow_s": 37,
+            "default_red_s": 74,
+            "min_green_s": 63,
+            "min_red_s": 39,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -1655,10 +1559,76 @@
         "lane_ref": "LNE-012-03",
         "device_id": "TRS-012-03",
         "device_type": "traffic_sensor",
+        "model": "Loop Detector v3",
+        "firmware_version": "3.4.20",
+        "status": "maintenance",
+        "last_check_in": "2025-11-25T02:33:29.292504+00:00",
+        "config": {
+            "sampling_rate_s": 5,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 30
+        }
+    },
+    {
+        "location_ref": "LOC-012",
+        "lane_ref": "LNE-012-04",
+        "device_id": "SEM-012-04",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "3.3.9",
+        "status": "online",
+        "last_check_in": "2025-11-25T14:56:27.292504+00:00",
+        "config": {
+            "default_green_s": 84,
+            "default_yellow_s": 14,
+            "default_red_s": 19,
+            "min_green_s": 48,
+            "min_red_s": 79,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-012",
+        "lane_ref": "LNE-012-04",
+        "device_id": "TRS-012-04",
+        "device_type": "traffic_sensor",
+        "model": "IR Sensor E1",
+        "firmware_version": "1.6.15",
+        "status": "online",
+        "last_check_in": "2025-11-30T05:36:34.292504+00:00",
+        "config": {
+            "sampling_rate_s": 15,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 120
+        }
+    },
+    {
+        "location_ref": "LOC-013",
+        "lane_ref": "LNE-013-01",
+        "device_id": "SEM-013-01",
+        "device_type": "traffic_light",
+        "model": "LED Light Hub",
+        "firmware_version": "1.3.17",
+        "status": "online",
+        "last_check_in": "2025-11-24T17:56:17.292504+00:00",
+        "config": {
+            "default_green_s": 21,
+            "default_yellow_s": 49,
+            "default_red_s": 50,
+            "min_green_s": 25,
+            "min_red_s": 5,
+            "pedestrian_button_active": false
+        }
+    },
+    {
+        "location_ref": "LOC-013",
+        "lane_ref": "LNE-013-01",
+        "device_id": "TRS-013-01",
+        "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
         "firmware_version": "2.1.10",
         "status": "offline",
-        "last_check_in": "2025-11-26T08:10:36.063954+00:00",
+        "last_check_in": "2025-11-29T04:50:34.292504+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "radar",
@@ -1666,15 +1636,14 @@
         }
     },
     {
-        "location_ref": "LOC-012",
-        "phase_id": "P3",
-        "lane_ref": "LNE-012-04",
-        "device_id": "SEM-012-04",
+        "location_ref": "LOC-013",
+        "lane_ref": "LNE-013-02",
+        "device_id": "SEM-013-02",
         "device_type": "traffic_light",
         "model": "Actuator 2000",
         "firmware_version": "2.1.2",
         "status": "online",
-        "last_check_in": "2025-11-24T14:44:27.063954+00:00",
+        "last_check_in": "2025-11-27T11:24:25.292504+00:00",
         "config": {
             "default_green_s": 73,
             "default_yellow_s": 9,
@@ -1685,14 +1654,14 @@
         }
     },
     {
-        "location_ref": "LOC-012",
-        "lane_ref": "LNE-012-04",
-        "device_id": "TRS-012-04",
+        "location_ref": "LOC-013",
+        "lane_ref": "LNE-013-02",
+        "device_id": "TRS-013-02",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
         "firmware_version": "3.9.13",
         "status": "maintenance",
-        "last_check_in": "2025-11-22T04:31:27.063954+00:00",
+        "last_check_in": "2025-11-25T01:11:25.292504+00:00",
         "config": {
             "sampling_rate_s": 35,
             "detection_method": "camera_based",
@@ -1701,14 +1670,13 @@
     },
     {
         "location_ref": "LOC-013",
-        "phase_id": "P5",
-        "lane_ref": "LNE-013-01",
-        "device_id": "SEM-013-01",
+        "lane_ref": "LNE-013-03",
+        "device_id": "SEM-013-03",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
         "firmware_version": "3.9.15",
         "status": "online",
-        "last_check_in": "2025-11-24T23:57:04.063954+00:00",
+        "last_check_in": "2025-11-27T20:37:02.292504+00:00",
         "config": {
             "default_green_s": 72,
             "default_yellow_s": 59,
@@ -1720,13 +1688,13 @@
     },
     {
         "location_ref": "LOC-013",
-        "lane_ref": "LNE-013-01",
-        "device_id": "TRS-013-01",
+        "lane_ref": "LNE-013-03",
+        "device_id": "TRS-013-03",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
         "firmware_version": "2.6.15",
         "status": "maintenance",
-        "last_check_in": "2025-11-24T21:48:08.063954+00:00",
+        "last_check_in": "2025-11-27T18:28:06.292504+00:00",
         "config": {
             "sampling_rate_s": 25,
             "detection_method": "radar",
@@ -1734,15 +1702,14 @@
         }
     },
     {
-        "location_ref": "LOC-013",
-        "phase_id": "P5",
-        "lane_ref": "LNE-013-02",
-        "device_id": "SEM-013-02",
+        "location_ref": "LOC-014",
+        "lane_ref": "LNE-014-01",
+        "device_id": "SEM-014-01",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
         "firmware_version": "3.7.12",
         "status": "offline",
-        "last_check_in": "2025-11-22T17:20:38.063954+00:00",
+        "last_check_in": "2025-11-25T14:00:36.292504+00:00",
         "config": {
             "default_green_s": 61,
             "default_yellow_s": 19,
@@ -1753,14 +1720,14 @@
         }
     },
     {
-        "location_ref": "LOC-013",
-        "lane_ref": "LNE-013-02",
-        "device_id": "TRS-013-02",
+        "location_ref": "LOC-014",
+        "lane_ref": "LNE-014-01",
+        "device_id": "TRS-014-01",
         "device_type": "traffic_sensor",
         "model": "Loop Detector v3",
         "firmware_version": "1.6.12",
         "status": "offline",
-        "last_check_in": "2025-11-22T01:55:17.063954+00:00",
+        "last_check_in": "2025-11-24T22:35:15.292504+00:00",
         "config": {
             "sampling_rate_s": 30,
             "detection_method": "camera_based",
@@ -1768,15 +1735,14 @@
         }
     },
     {
-        "location_ref": "LOC-013",
-        "phase_id": "P5",
-        "lane_ref": "LNE-013-03",
-        "device_id": "SEM-013-03",
+        "location_ref": "LOC-014",
+        "lane_ref": "LNE-014-02",
+        "device_id": "SEM-014-02",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
         "firmware_version": "1.7.4",
         "status": "maintenance",
-        "last_check_in": "2025-11-25T11:15:37.063954+00:00",
+        "last_check_in": "2025-11-28T07:55:35.292504+00:00",
         "config": {
             "default_green_s": 20,
             "default_yellow_s": 32,
@@ -1787,14 +1753,14 @@
         }
     },
     {
-        "location_ref": "LOC-013",
-        "lane_ref": "LNE-013-03",
-        "device_id": "CAM-013-01",
+        "location_ref": "LOC-014",
+        "lane_ref": "LNE-014-02",
+        "device_id": "CAM-014-01",
         "device_type": "camera",
         "model": "SONY G95 PRO",
         "firmware_version": "3.9.9",
         "status": "offline",
-        "last_check_in": "2025-11-27T22:05:39.063954+00:00",
+        "last_check_in": "2025-11-30T18:45:37.292504+00:00",
         "config": {
             "resolution": "1440p",
             "framerate": 50,
@@ -1804,14 +1770,14 @@
         }
     },
     {
-        "location_ref": "LOC-013",
-        "lane_ref": "LNE-013-03",
-        "device_id": "TRS-013-03",
+        "location_ref": "LOC-014",
+        "lane_ref": "LNE-014-02",
+        "device_id": "TRS-014-02",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
         "firmware_version": "4.4.17",
         "status": "offline",
-        "last_check_in": "2025-11-28T13:37:15.063954+00:00",
+        "last_check_in": "2025-12-01T10:17:13.292504+00:00",
         "config": {
             "sampling_rate_s": 50,
             "detection_method": "camera_based",
@@ -1820,105 +1786,19 @@
     },
     {
         "location_ref": "LOC-014",
-        "phase_id": "P3",
-        "lane_ref": "LNE-014-01",
-        "device_id": "SEM-014-01",
-        "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "3.9.17",
-        "status": "online",
-        "last_check_in": "2025-11-22T18:27:42.063954+00:00",
-        "config": {
-            "default_green_s": 22,
-            "default_yellow_s": 8,
-            "default_red_s": 13,
-            "min_green_s": 48,
-            "min_red_s": 45,
-            "pedestrian_button_active": false
-        }
-    },
-    {
-        "location_ref": "LOC-014",
-        "lane_ref": "LNE-014-01",
-        "device_id": "TRS-014-01",
-        "device_type": "traffic_sensor",
-        "model": "IR Sensor E1",
-        "firmware_version": "4.8.11",
-        "status": "offline",
-        "last_check_in": "2025-11-26T17:39:00.063954+00:00",
-        "config": {
-            "sampling_rate_s": 20,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 50
-        }
-    },
-    {
-        "location_ref": "LOC-014",
-        "phase_id": "P3",
-        "lane_ref": "LNE-014-02",
-        "device_id": "SEM-014-02",
-        "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "4.4.20",
-        "status": "offline",
-        "last_check_in": "2025-11-28T00:07:44.063954+00:00",
-        "config": {
-            "default_green_s": 19,
-            "default_yellow_s": 59,
-            "default_red_s": 28,
-            "min_green_s": 7,
-            "min_red_s": 41,
-            "pedestrian_button_active": true
-        }
-    },
-    {
-        "location_ref": "LOC-014",
-        "lane_ref": "LNE-014-02",
-        "device_id": "CAM-014-01",
-        "device_type": "camera",
-        "model": "SONY G95 PRO",
-        "firmware_version": "4.1.9",
-        "status": "online",
-        "last_check_in": "2025-11-27T15:36:09.063954+00:00",
-        "config": {
-            "resolution": "1080p",
-            "framerate": 30,
-            "view_angle_degrees": 30,
-            "ml_detection_enabled": false,
-            "image_storage_policy": "local_cache"
-        }
-    },
-    {
-        "location_ref": "LOC-014",
-        "lane_ref": "LNE-014-02",
-        "device_id": "TRS-014-02",
-        "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.5.11",
-        "status": "online",
-        "last_check_in": "2025-11-25T04:13:53.063954+00:00",
-        "config": {
-            "sampling_rate_s": 60,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 60
-        }
-    },
-    {
-        "location_ref": "LOC-014",
-        "phase_id": "P3",
         "lane_ref": "LNE-014-03",
         "device_id": "SEM-014-03",
         "device_type": "traffic_light",
         "model": "LED Light Hub",
-        "firmware_version": "2.9.14",
+        "firmware_version": "4.2.10",
         "status": "maintenance",
-        "last_check_in": "2025-11-23T23:30:37.063954+00:00",
+        "last_check_in": "2025-11-30T21:09:13.292504+00:00",
         "config": {
-            "default_green_s": 59,
-            "default_yellow_s": 83,
-            "default_red_s": 67,
-            "min_green_s": 38,
-            "min_red_s": 10,
+            "default_green_s": 25,
+            "default_yellow_s": 17,
+            "default_red_s": 22,
+            "min_green_s": 8,
+            "min_red_s": 13,
             "pedestrian_button_active": true
         }
     },
@@ -1927,33 +1807,49 @@
         "lane_ref": "LNE-014-03",
         "device_id": "TRS-014-03",
         "device_type": "traffic_sensor",
-        "model": "Radar 4D",
-        "firmware_version": "1.7.5",
-        "status": "online",
-        "last_check_in": "2025-11-24T16:40:38.063954+00:00",
+        "model": "Loop Detector v3",
+        "firmware_version": "3.9.16",
+        "status": "maintenance",
+        "last_check_in": "2025-11-28T10:59:34.292504+00:00",
         "config": {
-            "sampling_rate_s": 20,
+            "sampling_rate_s": 40,
             "detection_method": "camera_based",
             "velocity_threshold_kph": 60
         }
     },
     {
         "location_ref": "LOC-014",
-        "phase_id": "P3",
         "lane_ref": "LNE-014-04",
         "device_id": "SEM-014-04",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "2.2.7",
-        "status": "offline",
-        "last_check_in": "2025-11-28T00:42:25.063954+00:00",
+        "model": "Actuator 2000",
+        "firmware_version": "4.8.14",
+        "status": "maintenance",
+        "last_check_in": "2025-11-27T14:27:08.292504+00:00",
         "config": {
-            "default_green_s": 42,
-            "default_yellow_s": 90,
-            "default_red_s": 49,
-            "min_green_s": 89,
-            "min_red_s": 52,
+            "default_green_s": 89,
+            "default_yellow_s": 82,
+            "default_red_s": 47,
+            "min_green_s": 72,
+            "min_red_s": 19,
             "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-014",
+        "lane_ref": "LNE-014-04",
+        "device_id": "CAM-014-02",
+        "device_type": "camera",
+        "model": "Vision Sensor V2",
+        "firmware_version": "4.0.18",
+        "status": "maintenance",
+        "last_check_in": "2025-11-30T06:53:02.292504+00:00",
+        "config": {
+            "resolution": "480p",
+            "framerate": 45,
+            "view_angle_degrees": 60,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "local_cache"
         }
     },
     {
@@ -1961,32 +1857,31 @@
         "lane_ref": "LNE-014-04",
         "device_id": "TRS-014-04",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "3.0.19",
+        "model": "IR Sensor E1",
+        "firmware_version": "2.0.13",
         "status": "offline",
-        "last_check_in": "2025-11-22T18:33:29.063954+00:00",
+        "last_check_in": "2025-11-25T04:42:15.292504+00:00",
         "config": {
-            "sampling_rate_s": 25,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 40
+            "sampling_rate_s": 5,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 90
         }
     },
     {
         "location_ref": "LOC-015",
-        "phase_id": "P1",
         "lane_ref": "LNE-015-01",
         "device_id": "SEM-015-01",
         "device_type": "traffic_light",
-        "model": "PhaseController M1",
-        "firmware_version": "2.0.1",
+        "model": "LED Light Hub",
+        "firmware_version": "3.3.4",
         "status": "offline",
-        "last_check_in": "2025-11-27T13:00:03.063954+00:00",
+        "last_check_in": "2025-11-30T12:29:01.292504+00:00",
         "config": {
-            "default_green_s": 47,
-            "default_yellow_s": 88,
-            "default_red_s": 49,
-            "min_green_s": 24,
-            "min_red_s": 68,
+            "default_green_s": 84,
+            "default_yellow_s": 23,
+            "default_red_s": 81,
+            "min_green_s": 57,
+            "min_red_s": 87,
             "pedestrian_button_active": true
         }
     },
@@ -1996,32 +1891,31 @@
         "device_id": "TRS-015-01",
         "device_type": "traffic_sensor",
         "model": "Radar 4D",
-        "firmware_version": "4.4.4",
-        "status": "offline",
-        "last_check_in": "2025-11-24T19:37:49.063954+00:00",
+        "firmware_version": "4.9.6",
+        "status": "online",
+        "last_check_in": "2025-11-29T06:38:54.292504+00:00",
         "config": {
-            "sampling_rate_s": 5,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 110
+            "sampling_rate_s": 10,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 50
         }
     },
     {
         "location_ref": "LOC-015",
-        "phase_id": "P1",
         "lane_ref": "LNE-015-02",
         "device_id": "SEM-015-02",
         "device_type": "traffic_light",
         "model": "PhaseController M1",
-        "firmware_version": "3.8.9",
-        "status": "maintenance",
-        "last_check_in": "2025-11-24T10:30:29.063954+00:00",
+        "firmware_version": "4.9.8",
+        "status": "offline",
+        "last_check_in": "2025-11-28T08:55:07.292504+00:00",
         "config": {
-            "default_green_s": 66,
-            "default_yellow_s": 53,
-            "default_red_s": 40,
-            "min_green_s": 44,
-            "min_red_s": 75,
-            "pedestrian_button_active": false
+            "default_green_s": 8,
+            "default_yellow_s": 74,
+            "default_red_s": 31,
+            "min_green_s": 21,
+            "min_red_s": 30,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -2029,33 +1923,32 @@
         "lane_ref": "LNE-015-02",
         "device_id": "TRS-015-02",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "1.1.4",
-        "status": "offline",
-        "last_check_in": "2025-11-28T03:55:34.063954+00:00",
+        "model": "Radar 4D",
+        "firmware_version": "3.3.18",
+        "status": "maintenance",
+        "last_check_in": "2025-12-01T02:04:44.292504+00:00",
         "config": {
-            "sampling_rate_s": 5,
-            "detection_method": "camera_based",
-            "velocity_threshold_kph": 90
+            "sampling_rate_s": 45,
+            "detection_method": "radar",
+            "velocity_threshold_kph": 80
         }
     },
     {
         "location_ref": "LOC-015",
-        "phase_id": "P1",
         "lane_ref": "LNE-015-03",
         "device_id": "SEM-015-03",
         "device_type": "traffic_light",
-        "model": "LED Light Hub",
-        "firmware_version": "3.3.17",
-        "status": "maintenance",
-        "last_check_in": "2025-11-26T07:41:10.063954+00:00",
+        "model": "PhaseController M1",
+        "firmware_version": "3.9.5",
+        "status": "online",
+        "last_check_in": "2025-11-24T19:25:20.292504+00:00",
         "config": {
-            "default_green_s": 74,
-            "default_yellow_s": 12,
-            "default_red_s": 68,
-            "min_green_s": 51,
-            "min_red_s": 74,
-            "pedestrian_button_active": false
+            "default_green_s": 10,
+            "default_yellow_s": 49,
+            "default_red_s": 33,
+            "min_green_s": 22,
+            "min_red_s": 8,
+            "pedestrian_button_active": true
         }
     },
     {
@@ -2064,32 +1957,48 @@
         "device_id": "TRS-015-03",
         "device_type": "traffic_sensor",
         "model": "IR Sensor E1",
-        "firmware_version": "4.5.5",
+        "firmware_version": "3.2.16",
         "status": "online",
-        "last_check_in": "2025-11-28T08:49:34.063954+00:00",
+        "last_check_in": "2025-11-30T01:34:10.292504+00:00",
         "config": {
-            "sampling_rate_s": 55,
-            "detection_method": "radar",
-            "velocity_threshold_kph": 40
+            "sampling_rate_s": 25,
+            "detection_method": "camera_based",
+            "velocity_threshold_kph": 120
         }
     },
     {
         "location_ref": "LOC-015",
-        "phase_id": "P1",
         "lane_ref": "LNE-015-04",
         "device_id": "SEM-015-04",
         "device_type": "traffic_light",
-        "model": "Actuator 2000",
-        "firmware_version": "2.8.7",
-        "status": "online",
-        "last_check_in": "2025-11-25T01:37:52.063954+00:00",
+        "model": "LED Light Hub",
+        "firmware_version": "3.1.15",
+        "status": "maintenance",
+        "last_check_in": "2025-11-27T16:17:47.292504+00:00",
         "config": {
-            "default_green_s": 38,
-            "default_yellow_s": 34,
-            "default_red_s": 25,
-            "min_green_s": 22,
-            "min_red_s": 22,
-            "pedestrian_button_active": false
+            "default_green_s": 7,
+            "default_yellow_s": 33,
+            "default_red_s": 64,
+            "min_green_s": 70,
+            "min_red_s": 61,
+            "pedestrian_button_active": true
+        }
+    },
+    {
+        "location_ref": "LOC-015",
+        "lane_ref": "LNE-015-04",
+        "device_id": "CAM-015-01",
+        "device_type": "camera",
+        "model": "Vision Sensor V2",
+        "firmware_version": "3.9.8",
+        "status": "offline",
+        "last_check_in": "2025-11-29T00:19:53.292504+00:00",
+        "config": {
+            "resolution": "1080p",
+            "framerate": 45,
+            "view_angle_degrees": 240,
+            "ml_detection_enabled": false,
+            "image_storage_policy": "cloud_only"
         }
     },
     {
@@ -2097,14 +2006,14 @@
         "lane_ref": "LNE-015-04",
         "device_id": "TRS-015-04",
         "device_type": "traffic_sensor",
-        "model": "Loop Detector v3",
-        "firmware_version": "4.6.8",
-        "status": "online",
-        "last_check_in": "2025-11-24T15:11:33.063954+00:00",
+        "model": "IR Sensor E1",
+        "firmware_version": "1.1.11",
+        "status": "maintenance",
+        "last_check_in": "2025-11-24T22:49:40.292504+00:00",
         "config": {
-            "sampling_rate_s": 35,
+            "sampling_rate_s": 60,
             "detection_method": "camera_based",
-            "velocity_threshold_kph": 40
+            "velocity_threshold_kph": 90
         }
     }
 ]

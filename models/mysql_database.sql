@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS iot_monitoring;
+
+USE iot_monitoring;
+
 CREATE TABLE LOCATION (
     location_id VARCHAR(50) PRIMARY KEY,
     description VARCHAR(100),
@@ -6,35 +10,35 @@ CREATE TABLE LOCATION (
     longitude DOUBLE,
     intersection_type VARCHAR(50),
     traffic_volume_category VARCHAR(20),
-    estado VARCHAR(50)
+    state VARCHAR(50)
 );
 
 CREATE TABLE CAMERA (
-    camera_id VARCHAR(10) PRIMARY KEY,
+    camera_id VARCHAR(50) PRIMARY KEY,
     model VARCHAR(50),
-    firmware_version VARCHAR(10),
-    staus VARCHAR(10),
+    firmware_version VARCHAR(50),
+    status VARCHAR(50),
     last_check_in TIMESTAMP,
-    resolution VARCHAR(10),
+    resolution VARCHAR(50),
     framerate INTEGER,
     view_angle_dregrees INTEGER,
-    ml_detection_model BIT,
+    ml_detection_enabled BIT,
     image_storage_policy VARCHAR(100),
-    lane_ref INTEGER
+    lane_ref VARCHAR(50)
 );
 
 CREATE TABLE LANE (
     lane_id VARCHAR(50) PRIMARY KEY,
     description VARCHAR(100),
-    location_ref VARCHAR(10),
+    location_ref VARCHAR(50),
     lane_type VARCHAR(100),
     direction VARCHAR(100)
 );
 
 CREATE TABLE TRAFFIC_LIGHT (
-    firmware_version VARCHAR(10),
+    firmware_version VARCHAR(50),
     traffic_light_id VARCHAR(50) PRIMARY KEY,
-    staus VARCHAR(10),
+    status VARCHAR(50),
     model VARCHAR(50),
     last_check_in TIMESTAMP,
     default_green_s INTEGER,
@@ -43,19 +47,19 @@ CREATE TABLE TRAFFIC_LIGHT (
     min_green_s INTEGER,
     min_red_s INTEGER,
     pedestrian_button_active BIT,
-    lane_ref INTEGER
+    lane_ref VARCHAR(50)
 );
 
 CREATE TABLE TRAFFIC_SENSOR (
     last_check_in TIMESTAMP,
     traffic_sensor_id VARCHAR(50) PRIMARY KEY,
-    firmware_version VARCHAR(10),
-    staus VARCHAR(10),
+    firmware_version VARCHAR(50),
+    status VARCHAR(50),
     model VARCHAR(50),
     sampling_rate_s INTEGER,
     detection_method VARCHAR(50),
     velocity_threshold_kph INTEGER,
-    lane_ref INTEGER
+    lane_ref VARCHAR(50)
 );
 
 CREATE TABLE INCIDENT_REPORT (
@@ -64,15 +68,16 @@ CREATE TABLE INCIDENT_REPORT (
     incident_type VARCHAR(50),
     status VARCHAR(50),
     image_url VARCHAR(100),
-    camera_ref VARCHAR(10)
+    camera_ref VARCHAR(50)
 );
 
 CREATE TABLE STATUS_CHANGE (
     timestamp TIMESTAMP,
     status_change_id INTEGER PRIMARY KEY,
     phase_duration_s INTEGER,
-    current_state VARCHAR(10),
-    traffic_light_ref VARCHAR(10)
+    current_state VARCHAR(50),
+    traffic_light_ref VARCHAR(50),
+    phase_id VARCHAR(50)
 );
 
 CREATE TABLE TRAFFIC_COUNT (
@@ -80,7 +85,7 @@ CREATE TABLE TRAFFIC_COUNT (
     timestamp TIMESTAMP,
     avg_speed_kph DOUBLE,
     count INTEGER,
-    traffic_sensor_ref VARCHAR(10)
+    traffic_sensor_ref VARCHAR(50)
 );
  
 ALTER TABLE CAMERA ADD CONSTRAINT FK_CAMERA_2

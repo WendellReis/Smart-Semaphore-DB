@@ -199,7 +199,7 @@ cython_debug/
 
 .json
 
-./log
+/log
 
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to

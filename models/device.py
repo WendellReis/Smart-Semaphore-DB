@@ -77,7 +77,6 @@ class TrafficLight(Device):
                  firmware_version,
                  status,
                  last_check_in,
-                 phase_id,
                  lane_ref,
                  default_green_s,
                  default_yellow_s,
@@ -88,7 +87,6 @@ class TrafficLight(Device):
         
         self.document = {}
         self.document["location_ref"] =  location_ref
-        self.document["phase_id"] = phase_id
         self.document["lane_ref"] = lane_ref
         config_data = {
             "default_green_s": default_green_s,
