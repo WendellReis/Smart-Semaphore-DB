@@ -301,10 +301,10 @@ def insert_traffic_counts(cursor,counts,debug=True):
 
 def clear_table(cursor, table):
     inicio = time.time()
-    cursor.execute(f"DELETE FROM `{table}`")
+    cursor.execute(f"DELETE FROM {table}")
     quantidade = cursor.rowcount
     tempo_execucao = time.time() - inicio
-    print(f"{EMOJI}  Removidos {quantidade} registros da tabela {table} em {tempo_execucao:.4f} segundos.")
+    print(f"{EMOJI} Removidos {quantidade} registros da tabela {table} em {tempo_execucao:.4f} segundos.")
 
     return tempo_execucao
 
@@ -393,3 +393,22 @@ def populate_database(conn,cursor,locations,lanes,devices,readings):
     conn.commit()
     return tempo_execucao
 
+def find_readings(cursor, sensor_id):
+    query = "SELECT * FROM TRAFFIC_COUNT WHERE traffic_sensor_ref = %s"
+
+    inicio = time.time()
+    cursor.execute(query, (sensor_id,))
+    cursor.fetchall() 
+    tempo_execucao = time.time() - inicio
+
+    return tempo_execucao
+
+def delete_device(cursor,sensor_id): 
+    query = "DELETE FROM TRAFFIC_SENSOR WHERE traffic_sensor_id = %s"
+
+    inicio = time.time()
+    cursor.execute(query, (sensor_id,))
+    cursor.fetchall() 
+    tempo_execucao = time.time() - inicio
+
+    return tempo_execucao

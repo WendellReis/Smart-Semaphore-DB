@@ -50,37 +50,76 @@ def eval():
     devices = load_data('log/devices.json')
     readings = load_data('log/readings.json')
 
-    time_mongo = {}
-    time_mysql = {}
 
-    tests = ['T-POV','T-INSERT-READING']
-    # Limpa as collections antes de povoar o banco
+    # Mongodb
+
+    time_mongo = {}
+    print(" Mongodb ".center(31,'-'))
     time_mongo['T-CLEAR']=mongo_connector.clear_database(db_mongo)
     print()
-    time_mysql['T-CLEAR']=mysql_connector.clear_database(conn,cursor)
 
-    # Popula o banco de dados
-    time_mongo['T-POV'] = mongo_connector.populate_database(db_mongo,locations,lanes,devices,readings)
-    print()
-    time_mysql['T-POV'] = mysql_connector.populate_database(conn,cursor,locations,lanes,devices,readings)
-    
-    # Tempo Médio de Inserção
     samples = random.sample(readings,100)
+    time_mongo['T-POV'] = mongo_connector.populate_database(db_mongo,locations,lanes,devices,readings) 
+    print("\n⏱️  Testes de tempo:")
+
+
+    print_time(f"🍃 T-POV",time_mongo['T-POV'])
+
     time_mongo['T-INSERT-READING'] = 0
-    time_mysql['T-INSERT-READING'] = 0
     for s in samples:
         time_mongo['T-INSERT-READING'] += mongo_connector.insert_one(db_mongo,"readings",s)
-        time_mysql['T-INSERT-READING'] += mysql_connector.insert_reading(conn,cursor,s)
     time_mongo['T-INSERT-READING']/=100
-    time_mysql['T-INSERT-READING']/=100
+    print_time(f"🍃 T-INSERT-READING",time_mongo['T-INSERT-READING'])
+
+    time_mongo['T-FIND-READINGS'] = 0
+    
+    sensors = []
+    for d in devices:
+        if d['device_type'] == 'traffic_sensor':
+            sensors.append(d)
+    
+    for s in sensors:
+        time_mongo['T-FIND-READINGS']+=mongo_connector.findReadings(db_mongo,s['device_id'])
+    time_mongo['T-FIND-READINGS']/=len(sensors)
+    print_time(f"🍃 T-FIND-READINGS",time_mongo['T-FIND-READINGS'])
+
+    traffic_sensor_id = 'TRS-005-01'
+    filter = {"metada.device": traffic_sensor_id}
+    time_mongo['T-DELETE-DEVICE-CASCATE'] = mongo_connector.delete_one(db_mongo,'readings',filter)
+    filter = {"device_id": traffic_sensor_id}
+    time_mongo['T-DELETE-DEVICE-CASCATE'] += mongo_connector.delete_one(db_mongo,'devices',filter)
+    print_time(f"🍃 T-DELETE-DEVICE-CASCATE",time_mongo['T-DELETE-DEVICE-CASCATE'])
+
+    # Mysql
+    time_mysql = {}
+    print()
+    print(" MySql ".center(31,'-'))
+    time_mysql['T-CLEAR']=mysql_connector.clear_database(conn,cursor)
+
+
+    time_mysql['T-POV'] = mysql_connector.populate_database(conn,cursor,locations,lanes,devices,readings)
 
     print("\n⏱️  Testes de tempo:")
-    for t in tests:
-        print_time(f"🍃 {t}",time_mongo[t])
-        print_time(f"🐘 {t}",time_mysql[t])
+    print_time(f"🐘 T-POV",time_mysql['T-POV'])
     
-    '''
+    time_mysql['T-INSERT-READING'] = 0
+    for s in samples:
+        time_mysql['T-INSERT-READING'] += mysql_connector.insert_reading(conn,cursor,s)
 
+    time_mysql['T-INSERT-READING']/=100
+    print_time(f'🐘 T-INSERT-READING',time_mysql['T-INSERT-READING'])
+
+    time_mysql['T-FIND-READINGS'] = 0
+    
+    for s in sensors:
+        time_mysql['T-FIND-READINGS']+=mysql_connector.find_readings(cursor,s['device_id'])
+    time_mysql['T-FIND-READINGS']/=len(sensors)
+    print_time(f"🐘 T-FIND-READINGS",time_mysql['T-FIND-READINGS'])
+
+    time_mysql['T-DELETE-DEVICE-CASCATE'] = mysql_connector.delete_device(cursor,traffic_sensor_id)
+    print_time(f"🐘 T-DELETE-DEVICE-CASCATE",time_mysql['T-DELETE-DEVICE-CASCATE'])
+
+    '''
     temp = 0
     for s in samples:
         temp += mongo_connector.delete_one(db_mongo,"readings",s)
