@@ -90,12 +90,17 @@ def eval():
     time_mongo['T-DELETE-DEVICE-CASCATE'] += mongo_connector.delete_one(db_mongo,'devices',filter)
     print_time(f"🍃 T-DELETE-DEVICE-CASCATE",time_mongo['T-DELETE-DEVICE-CASCATE'])
 
+    traffic_light_id = 'SEM-001-01'
+    filter = {"device_id":traffic_light_id}
+    update = {"$set": {"firmware_version": "3.0"}}
+    time_mongo['T-UPDATE-FIRMWARE'] = mongo_connector.update_one(db_mongo,'devices',filter,update)
+    print_time(f"🍃 T-UPDATE-FIRMWARE",time_mongo['T-UPDATE-FIRMWARE'])
+
     # Mysql
     time_mysql = {}
     print()
     print(" MySql ".center(31,'-'))
     time_mysql['T-CLEAR']=mysql_connector.clear_database(conn,cursor)
-
 
     time_mysql['T-POV'] = mysql_connector.populate_database(conn,cursor,locations,lanes,devices,readings)
 
@@ -119,6 +124,9 @@ def eval():
     time_mysql['T-DELETE-DEVICE-CASCATE'] = mysql_connector.delete_device(cursor,traffic_sensor_id)
     print_time(f"🐘 T-DELETE-DEVICE-CASCATE",time_mysql['T-DELETE-DEVICE-CASCATE'])
 
+
+    time_mysql['T-UPDATE-FIRMWARE'] = mysql_connector.update_firmware_version(conn,cursor,traffic_light_id,'3.0')
+    print_time(f"🐘 T-UPDATE-FIRMWARE",time_mysql['T-UPDATE-FIRMWARE'])
     '''
     temp = 0
     for s in samples:

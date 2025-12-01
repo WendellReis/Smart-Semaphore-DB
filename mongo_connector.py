@@ -72,6 +72,12 @@ def update_many(db,collection,filter,update):
     tempo_execucao = time.time() - inicio
     return tempo_execucao
 
+def update_one(db,collection,filter,update):
+    inicio = time.time()
+    db[collection].update_many(filter,update)
+    tempo_execucao = time.time() - inicio
+    return tempo_execucao
+
 def findReadings(db,device_id):
     filtro = {"metadata.device_ref": device_id}
     inicio = time.time()

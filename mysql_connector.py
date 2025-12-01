@@ -412,3 +412,16 @@ def delete_device(cursor,sensor_id):
     tempo_execucao = time.time() - inicio
 
     return tempo_execucao
+
+def update_firmware_version(conn,cursor,sensor_id,version):
+    query = """ UPDATE TRAFFIC_LIGHT  
+                SET firmware_version = %s
+                WHERE traffic_light_id = %s
+            """
+    
+    inicio = time.time()
+    cursor.execute(query, (version,sensor_id))
+    conn.commit()
+    tempo_execucao = time.time() - inicio
+
+    return tempo_execucao
