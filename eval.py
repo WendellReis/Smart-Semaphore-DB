@@ -23,7 +23,7 @@ def load_data(filedir):
         return None
         
 def clear_database(db_mongo):
-    print('\n🍃  Limpando collections...')
+    print('\n🗑️  Limpando collections...')
     tempo_execucao = 0
     for c in ['locations','lanes','devices','readings']:
         tempo_execucao+=mongo_connector.clean_collection(db_mongo,c)

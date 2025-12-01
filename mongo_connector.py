@@ -24,7 +24,7 @@ def clean_collection(db,collection):
     delete_result = col.delete_many({})
     tempo_execucao = time.time() - inicio
 
-    print(f"🗑️  Removidos {delete_result.deleted_count} documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
+    print(f"🍃  Removidos {delete_result.deleted_count} documentos da collection {collection} em {tempo_execucao:.4f} segundos.")
     return tempo_execucao
 
 def insert_many(db,collection,data):

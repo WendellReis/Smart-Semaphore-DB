@@ -298,7 +298,7 @@ def generateReadings(devices):
             if type == 'traffic_light':
                 reading['reading_type'] = 'status_change'
                 reading['current_state'] = generateColor()
-                reading['phase_duration'] = generateSeconds()
+                reading['phase_duration_s'] = generateSeconds()
                 reading['phase_id'] = generateTrafficPhase()
             elif type == 'traffic_sensor':
                 reading['reading_type'] = 'traffic_count'

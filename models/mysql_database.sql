@@ -63,7 +63,7 @@ CREATE TABLE TRAFFIC_SENSOR (
 );
 
 CREATE TABLE INCIDENT_REPORT (
-    incident_report_id INTEGER PRIMARY KEY,
+    incident_report_id INTEGER AUTO_INCREMENT PRIMARY KEY,
     timestamp TIMESTAMP,
     incident_type VARCHAR(50),
     status VARCHAR(50),
@@ -73,7 +73,7 @@ CREATE TABLE INCIDENT_REPORT (
 
 CREATE TABLE STATUS_CHANGE (
     timestamp TIMESTAMP,
-    status_change_id INTEGER PRIMARY KEY,
+    status_change_id INTEGER AUTO_INCREMENT PRIMARY KEY,
     phase_duration_s INTEGER,
     current_state VARCHAR(50),
     traffic_light_ref VARCHAR(50),
@@ -81,7 +81,7 @@ CREATE TABLE STATUS_CHANGE (
 );
 
 CREATE TABLE TRAFFIC_COUNT (
-    traffic_count_id INTEGER PRIMARY KEY,
+    traffic_count_id INTEGER AUTO_INCREMENT PRIMARY KEY,
     timestamp TIMESTAMP,
     avg_speed_kph DOUBLE,
     count INTEGER,

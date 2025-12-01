@@ -21,7 +21,6 @@ def connect_to_mysql():
         print("❌ Erro ao conectar ao MySQL:", e)
         return None, None
 
-
 def insert_locations(cursor, locations):
     query = """
         INSERT INTO LOCATION (
@@ -208,18 +207,102 @@ def insert_traffic_lights(cursor,traffic_lights):
     print(f'{EMOJI} Inseridos {len(traffic_lights)} registros na tabela TRAFFIC_LIGHT em {tempo_execucao:.4f} segundos.')
     return tempo_execucao
 
+def insert_incident_reports(cursor,incidents):
+    query = """
+        INSERT INTO INCIDENT_REPORT (
+            timestamp,
+            incident_type,
+            status,
+            image_url,
+            camera_ref
+        ) VALUES (%s, %s, %s, %s, %s)
+    """
+
+    values = [
+        (
+            i['timestamp'],
+            i['incident_type'],
+            i['status'],
+            i['image_url'],
+            i['metadata']['device_ref']
+        )
+        for i in incidents
+    ]
+
+    inicio = time.time()
+    cursor.executemany(query, values)
+    tempo_execucao = time.time() - inicio
+
+    print(f'{EMOJI} Inseridos {len(incidents)} registros na tabela INCIDENT_REPORT em {tempo_execucao:.4f} segundos.')
+    return tempo_execucao
+
+def insert_status_changes(cursor,status):
+    query = """
+        INSERT INTO STATUS_CHANGE (
+            timestamp,
+            current_state,
+            phase_duration_s,
+            traffic_light_ref,
+            phase_id
+        ) VALUES (%s, %s, %s, %s, %s)
+    """
+
+    values = [
+        (
+            s['timestamp'],
+            s['current_state'],
+            s['phase_duration_s'],
+            s['metadata']['device_ref'],
+            s['phase_id']
+        )
+        for s in status
+    ]
+
+    inicio = time.time()
+    cursor.executemany(query, values)
+    tempo_execucao = time.time() - inicio
+
+    print(f'{EMOJI} Inseridos {len(status)} registros na tabela STATUS_CHANGE em {tempo_execucao:.4f} segundos.')
+    return tempo_execucao
+
+def insert_traffic_counts(cursor,counts):
+    query = """
+        INSERT INTO TRAFFIC_COUNT (
+            timestamp,
+            avg_speed_kph,
+            count,
+            traffic_sensor_ref
+        ) VALUES (%s, %s, %s, %s)
+    """
+
+    values = [
+        (
+            c['timestamp'],
+            c['avg_speed_kph'],
+            c['count'],
+            c['metadata']['device_ref']
+        )
+        for c in counts
+    ]
+
+    inicio = time.time()
+    cursor.executemany(query, values)
+    tempo_execucao = time.time() - inicio
+
+    print(f'{EMOJI} Inseridos {len(counts)} registros na tabela TRAFFIC_COUNT em {tempo_execucao:.4f} segundos.')
+    return tempo_execucao
+
 def clear_table(cursor, table):
     inicio = time.time()
     cursor.execute(f"DELETE FROM `{table}`")
     quantidade = cursor.rowcount
     tempo_execucao = time.time() - inicio
-    print(f"🗑️  Removidos {quantidade} registros da tabela {table} em {tempo_execucao:.4f} segundos.")
+    print(f"{EMOJI}  Removidos {quantidade} registros da tabela {table} em {tempo_execucao:.4f} segundos.")
 
     return tempo_execucao
 
-
 def clear_database(conn,cursor):
-    print(f'{EMOJI} Limpando tabelas...')
+    print(f'🗑️ Limpando tabelas...')
     tables = [
         "INCIDENT_REPORT",
         "STATUS_CHANGE",
@@ -250,12 +333,23 @@ def populate_database(conn,cursor,locations,lanes,devices,readings):
         elif tipo == "camera":
             cameras.append(d)
 
+    rd = {}
+    rd['incident_report'] = []
+    rd['status_change'] = []
+    rd['traffic_count'] = []
+
+    for r in readings:
+        rd[r['reading_type']].append(r)
+
     tempo_execucao = insert_locations(cursor,locations)
     tempo_execucao+=insert_lanes(cursor,lanes)
     tempo_execucao+=insert_cameras(cursor,cameras)
     tempo_execucao+=insert_traffic_lights(cursor,traffic_lights)
     tempo_execucao+=insert_traffic_sensors(cursor,traffic_sensors)
+    tempo_execucao+=insert_incident_reports(cursor,rd['incident_report'])
+    tempo_execucao+=insert_status_changes(cursor,rd['status_change'])
+    tempo_execucao+=insert_traffic_counts(cursor,rd['traffic_count'])
 
     conn.commit()
-    
+    return tempo_execucao
 
