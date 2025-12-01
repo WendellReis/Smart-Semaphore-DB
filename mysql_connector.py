@@ -425,3 +425,26 @@ def update_firmware_version(conn,cursor,sensor_id,version):
     tempo_execucao = time.time() - inicio
 
     return tempo_execucao
+
+def get_traffic_light_flow(cursor,traffic_light_id):
+    query = """ SELECT 
+                    tl.traffic_light_id,
+                    ts.traffic_sensor_id,
+                    tc.timestamp,
+                    tc.count,
+                    tc.avg_speed_kph
+                FROM TRAFFIC_LIGHT tl
+                JOIN TRAFFIC_SENSOR ts
+                    ON ts.lane_ref = tl.lane_ref
+                LEFT JOIN TRAFFIC_COUNT tc
+                    ON tc.traffic_sensor_ref = ts.traffic_sensor_id
+                WHERE tl.traffic_light_id = %s
+                ORDER BY tc.timestamp DESC;
+        """
+    
+    inicio = time.time()
+    cursor.execute(query, (traffic_light_id,))
+    cursor.fetchall()
+    tempo_execucao = time.time() - inicio
+
+    return tempo_execucao

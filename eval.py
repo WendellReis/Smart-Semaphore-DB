@@ -56,7 +56,6 @@ def eval():
     time_mongo = {}
     print(" Mongodb ".center(31,'-'))
     time_mongo['T-CLEAR']=mongo_connector.clear_database(db_mongo)
-    print()
 
     samples = random.sample(readings,100)
     time_mongo['T-POV'] = mongo_connector.populate_database(db_mongo,locations,lanes,devices,readings) 
@@ -79,7 +78,7 @@ def eval():
             sensors.append(d)
     
     for s in sensors:
-        time_mongo['T-FIND-READINGS']+=mongo_connector.findReadings(db_mongo,s['device_id'])
+        time_mongo['T-FIND-READINGS']+=mongo_connector.find_readings(db_mongo,s['device_id'])
     time_mongo['T-FIND-READINGS']/=len(sensors)
     print_time(f"🍃 T-FIND-READINGS",time_mongo['T-FIND-READINGS'])
 
@@ -96,12 +95,16 @@ def eval():
     time_mongo['T-UPDATE-FIRMWARE'] = mongo_connector.update_one(db_mongo,'devices',filter,update)
     print_time(f"🍃 T-UPDATE-FIRMWARE",time_mongo['T-UPDATE-FIRMWARE'])
 
+    time_mongo['T-FLOW'] = mongo_connector.get_traffic_light_flow(db_mongo,traffic_light_id)
+    print_time(f"🍃 T-FLOW",time_mongo['T-FLOW'])
+
     # Mysql
     time_mysql = {}
     print()
     print(" MySql ".center(31,'-'))
     time_mysql['T-CLEAR']=mysql_connector.clear_database(conn,cursor)
 
+    print()
     time_mysql['T-POV'] = mysql_connector.populate_database(conn,cursor,locations,lanes,devices,readings)
 
     print("\n⏱️  Testes de tempo:")
@@ -124,35 +127,11 @@ def eval():
     time_mysql['T-DELETE-DEVICE-CASCATE'] = mysql_connector.delete_device(cursor,traffic_sensor_id)
     print_time(f"🐘 T-DELETE-DEVICE-CASCATE",time_mysql['T-DELETE-DEVICE-CASCATE'])
 
-
     time_mysql['T-UPDATE-FIRMWARE'] = mysql_connector.update_firmware_version(conn,cursor,traffic_light_id,'3.0')
     print_time(f"🐘 T-UPDATE-FIRMWARE",time_mysql['T-UPDATE-FIRMWARE'])
-    '''
-    temp = 0
-    for s in samples:
-        temp += mongo_connector.delete_one(db_mongo,"readings",s)
-    print_time("T-DELETE-READING",temp/100)
-    
-    samples = random.sample(devices,100)
-    temp = 0
-    for s in samples:
-        temp += mongo_connector.findReadings(db_mongo,s["device_id"])
-    print_time("T-FIND-READINGS",temp/100)
 
-    temp = 0
-    for l in locations:
-        filtro = {"location_ref": l['location_id'],"device_type":"traffic_light"}
-        update = {"$set": {"phase_id": "PHASE_TEST"}}
-        temp += mongo_connector.update_many(db_mongo,"location",filtro,update)
-    
-    print_time("T-UPDATE-PHASE",temp/len(locations))
-
-    print_time("TQ1 - Tempo para obter fluxo de semaforo",mongo_connector.fluxo(db_mongo))
-    print_time("TQ2 - Tempo para obter historico de excesso de velocidade",mongo_connector.historico(db_mongo))
-    print_time("TQ3 - Tempo para obter leituras de congestionamentos",mongo_connector.ultimas_leituras(db_mongo))
-    print_time("TQ4 - Tempo para obter acidentes em aberto",mongo_connector.acidentes_abertos(db_mongo))
-    print_time("TQ5 - Tempo para obter local mais perigoso",mongo_connector.local_mais_acidentes(db_mongo))
-    '''
+    time_mysql['T-FLOW'] = mysql_connector.get_traffic_light_flow(cursor,traffic_light_id)
+    print_time(f"🐘 T-FLOW",time_mysql['T-FLOW'])
 
 if __name__ == "__main__":
     eval()
