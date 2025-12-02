@@ -163,3 +163,250 @@ def get_traffic_light_flow(db_mongo,traffic_light_id):
     db_mongo["devices"].aggregate(pipeline, maxTimeMS=60000,allowDiskUse=True)
     tempo_execucao = time.time() - tempo_execucao
     return tempo_execucao
+
+def get_overspeed_overspeed(db_mongo):
+    tempo_execucao = time.time()
+    pipeline = [
+        {
+            '$match': {
+                'reading_type': 'traffic_count', 
+                '$expr': {
+                    '$gt': [
+                        '$avg_speed_kph', '$velocity_threshold_kph'
+                    ]
+                }
+            }
+        }, {
+            '$sort': {
+                'timestamp': -1
+            }
+        }, {
+            '$lookup': {
+                'from': 'locations', 
+                'localField': 'metadata.location_ref', 
+                'foreignField': 'location_id', 
+                'as': 'location'
+            }
+        }, {
+            '$lookup': {
+                'from': 'lanes', 
+                'localField': 'metadata.lane_ref', 
+                'foreignField': 'lane_id', 
+                'as': 'lane'
+            }
+        }, {
+            '$project': {
+                '_id': 0, 
+                'timestamp': '$timestamp', 
+                'avg_speed_kph': '$avg_speed_kph', 
+                'velocity_limit_kph': '$velocity_threshold_kph', 
+                'traffic_sensor_id': '$metadata.device_ref', 
+                'location': {
+                    '$arrayElemAt': [
+                        '$location.description', 0
+                    ]
+                }, 
+                'lane': {
+                    '$arrayElemAt': [
+                        '$lane.description', 0
+                    ]
+                }, 
+                'direction': {
+                    '$arrayElemAt': [
+                        '$lane.direction', 0
+                    ]
+                }
+            }
+        }
+    ]
+    db_mongo["readings"].aggregate(pipeline, maxTimeMS=60000,allowDiskUse=True)
+    tempo_execucao = time.time() - tempo_execucao
+    return tempo_execucao
+
+def get_possible_congestions(db_mongo):
+    tempo_execucao = time.time()
+    pipeline = [
+        {
+            '$match': {
+                'reading_type': 'traffic_count', 
+                'count': {
+                    '$ne': 0
+                }, 
+                '$expr': {
+                    '$lt': [
+                        '$avg_speed_kph', {
+                            '$divide': [
+                                '$velocity_threshold_kph', 2
+                            ]
+                        }
+                    ]
+                }
+            }
+        }, {
+            '$sort': {
+                'timestamp': -1
+            }
+        }, {
+            '$group': {
+                '_id': '$metadata.device_ref', 
+                'last_reading': {
+                    '$first': '$$ROOT'
+                }
+            }
+        }, {
+            '$lookup': {
+                'from': 'locations', 
+                'localField': 'last_reading.metadata.location_ref', 
+                'foreignField': 'location_id', 
+                'as': 'location'
+            }
+        }, {
+            '$lookup': {
+                'from': 'lanes', 
+                'localField': 'last_reading.metadata.lane_ref', 
+                'foreignField': 'lane_id', 
+                'as': 'lane'
+            }
+        }, {
+            '$project': {
+                '_id': 0, 
+                'traffic_sensor_id': '$_id', 
+                'timestamp': '$last_reading.timestamp', 
+                'count': '$count', 
+                'avg_speed_kph': '$last_reading.avg_speed_kph', 
+                'velocity_limit_kph': '$last_reading.velocity_threshold_kph', 
+                'location': {
+                    '$arrayElemAt': [
+                        '$location.description', 0
+                    ]
+                }, 
+                'lane': {
+                    '$arrayElemAt': [
+                        '$lane.lane_type', 0
+                    ]
+                }, 
+                'direction': {
+                    '$arrayElemAt': [
+                        '$lane.direction', 0
+                    ]
+                }
+            }
+        }, {
+            '$sort': {
+                'traffic_sensor_id': 1
+            }
+        }
+    ]
+    db_mongo["readings"].aggregate(pipeline, maxTimeMS=60000,allowDiskUse=True)
+    tempo_execucao = time.time() - tempo_execucao
+    return tempo_execucao
+
+def get_open_accidents(db_mongo):
+    tempo_execucao = time.time()
+    pipeline = [
+        {
+            '$match': {
+                'incident_type': 'accident', 
+                'status': 'open'
+            }
+        }, {
+            '$lookup': {
+                'from': 'locations', 
+                'localField': 'metadata.location_ref', 
+                'foreignField': 'location_id', 
+                'as': 'location'
+            }
+        }, {
+            '$lookup': {
+                'from': 'lanes', 
+                'localField': 'metadata.lane_ref', 
+                'foreignField': 'lane_id', 
+                'as': 'lane'
+            }
+        }, {
+            '$project': {
+                '_id': 0, 
+                'incident_type': 1, 
+                'timestamp': '$timestamp', 
+                'location': {
+                    '$arrayElemAt': [
+                        '$location.description', 0
+                    ]
+                }, 
+                'lane': {
+                    '$arrayElemAt': [
+                        '$lane.description', 0
+                    ]
+                }, 
+                'direction': {
+                    '$arrayElemAt': [
+                        '$lane.direction', 0
+                    ]
+                }, 
+                'city': {
+                    '$arrayElemAt': [
+                        '$location.city', 0
+                    ]
+                }, 
+                'state': {
+                    '$arrayElemAt': [
+                        '$location.state', 0
+                    ]
+                }, 
+                'device_id': '$metadata.device_ref', 
+                'image_url': '$image_url', 
+                'status': '$status'
+            }
+        }
+    ]
+    db_mongo["readings"].aggregate(pipeline, maxTimeMS=60000,allowDiskUse=True)
+    tempo_execucao = time.time() - tempo_execucao
+    return tempo_execucao
+
+def get_most_dangerous_location(db_mongo):
+    tempo_execucao = time.time()
+    pipeline = [
+        {
+            '$match': {
+                'incident_type': 'accident'
+            }
+        }, {
+            '$group': {
+                '_id': '$metadata.location_ref', 
+                'count': {
+                    '$sum': 1
+                }
+            }
+        }, {
+            '$sort': {
+                'count': -1
+            }
+        }, {
+            '$limit': 1
+        }, {
+            '$lookup': {
+                'from': 'locations', 
+                'localField': '_id', 
+                'foreignField': 'location_id', 
+                'as': 'location_info'
+            }
+        }, {
+            '$unwind': {
+                'path': '$location_info'
+            }
+        }, {
+            '$project': {
+                '_id': 0, 
+                'location_id': '$_id', 
+                'accidents_count': '$count', 
+                'description': '$location_info.description', 
+                'city': '$location_info.city', 
+                'state': '$location_info.state', 
+                'intersection_type': '$location_info.intersection_type', 
+                'traffic_volume_category': '$location_info.traffic_volume_category'
+            }
+        }
+    ]
+    db_mongo["readings"].aggregate(pipeline, maxTimeMS=60000,allowDiskUse=True)
+    tempo_execucao = time.time() - tempo_execucao
+    return tempo_execucao

@@ -9,7 +9,6 @@
             "latitude": 83.96163642458498
         },
         "intersection_type": "T-junction",
-        "num_lanes": 4,
         "traffic_volume_category": "low"
     },
     {
@@ -22,7 +21,6 @@
             "latitude": 73.97567324084235
         },
         "intersection_type": "pedestrian_priority",
-        "num_lanes": 4,
         "traffic_volume_category": "low"
     },
     {
@@ -35,7 +33,6 @@
             "latitude": 30.881426667837317
         },
         "intersection_type": "rotary_with_signal",
-        "num_lanes": 5,
         "traffic_volume_category": "low"
     },
     {
@@ -48,7 +45,6 @@
             "latitude": -86.86295132676868
         },
         "intersection_type": "T-junction",
-        "num_lanes": 4,
         "traffic_volume_category": "medium"
     },
     {
@@ -61,7 +57,6 @@
             "latitude": 26.696885467996182
         },
         "intersection_type": "y_junction",
-        "num_lanes": 3,
         "traffic_volume_category": "low"
     },
     {
@@ -74,7 +69,6 @@
             "latitude": -73.56830184939268
         },
         "intersection_type": "T-junction",
-        "num_lanes": 4,
         "traffic_volume_category": "high"
     },
     {
@@ -87,7 +81,6 @@
             "latitude": -2.3847226911434944
         },
         "intersection_type": "T-junction",
-        "num_lanes": 4,
         "traffic_volume_category": "high"
     },
     {
@@ -100,7 +93,6 @@
             "latitude": 7.395873399203452
         },
         "intersection_type": "pedestrian_priority",
-        "num_lanes": 4,
         "traffic_volume_category": "high"
     },
     {
@@ -113,7 +105,6 @@
             "latitude": -73.99281060168079
         },
         "intersection_type": "rotary_with_signal",
-        "num_lanes": 5,
         "traffic_volume_category": "high"
     },
     {
@@ -126,7 +117,6 @@
             "latitude": -78.64601659749327
         },
         "intersection_type": "rotary_with_signal",
-        "num_lanes": 5,
         "traffic_volume_category": "medium"
     },
     {
@@ -139,7 +129,6 @@
             "latitude": -45.15261815498238
         },
         "intersection_type": "y_junction",
-        "num_lanes": 3,
         "traffic_volume_category": "high"
     },
     {
@@ -152,7 +141,6 @@
             "latitude": 29.774078454627983
         },
         "intersection_type": "T-junction",
-        "num_lanes": 4,
         "traffic_volume_category": "low"
     },
     {
@@ -165,7 +153,6 @@
             "latitude": -29.968185679031052
         },
         "intersection_type": "y_junction",
-        "num_lanes": 3,
         "traffic_volume_category": "low"
     },
     {
@@ -178,7 +165,6 @@
             "latitude": -80.24846424369429
         },
         "intersection_type": "four_way_perpendicular",
-        "num_lanes": 4,
         "traffic_volume_category": "low"
     },
     {
@@ -191,7 +177,6 @@
             "latitude": 10.319442739464264
         },
         "intersection_type": "rotary_with_signal",
-        "num_lanes": 5,
         "traffic_volume_category": "low"
     }
 ]

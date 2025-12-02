@@ -174,7 +174,6 @@ def generateLocations(size):
 
         intersection = random.choice(INTERSECTION_REFERENCE_DATA)
         intersection_type = intersection['intersection_type']
-        num_lanes = intersection['num_lanes']
         traffic_volume_category = random.choice(TRAFFIC_REFERENCE_LEVELS)
 
         locations.append(
@@ -186,7 +185,6 @@ def generateLocations(size):
                 longitude=longitude,
                 latitude=latitude,
                 intersection_type=intersection_type,
-                num_lanes=num_lanes,
                 traffic_volume_category=traffic_volume_category
             ).to_mongo_document()
         )
@@ -214,7 +212,7 @@ def generateDevicesAndLanes(locations):
                     lane_id=lane_id,
                     direction=random.choice(DIRECTIONS),
                     lane_type=random.choice(LANE_TYPES),
-                    description=fake.street_address(),
+                    description=fake.street_name(),
                     location_ref=l['location_id']
                 ).to_mongo_document()
             )

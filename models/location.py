@@ -10,7 +10,6 @@ class Location:
                  longitude,
                  latitude,
                  intersection_type,
-                 num_lanes,
                  traffic_volume_category):
         """
         :param location_id: Chave primária do cruzamento (ex: LOC-001).
@@ -31,7 +30,6 @@ class Location:
             "latitude": latitude
         }
         self.intersection_type = intersection_type
-        self.num_lanes = num_lanes
         self.traffic_volume_category = traffic_volume_category
 
     def to_mongo_document(self):
@@ -42,6 +40,5 @@ class Location:
             "state": self.state,
             "coordinates": self.coordinates,
             "intersection_type": self.intersection_type,
-            "num_lanes": self.num_lanes,
             "traffic_volume_category": self.traffic_volume_category
         }

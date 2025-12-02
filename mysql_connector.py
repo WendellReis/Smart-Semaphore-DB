@@ -448,3 +448,131 @@ def get_traffic_light_flow(cursor,traffic_light_id):
     tempo_execucao = time.time() - inicio
 
     return tempo_execucao
+
+def get_overspeed_readings(cursor):
+    query = """ SELECT 
+                    c.timestamp, 
+                    c.avg_speed_kph,
+                    t.velocity_threshold_kph AS velocity_limit_kph,
+                    t.traffic_sensor_id,
+                    loc.description AS location,
+                    l.description AS lane,
+                    l.direction AS direction
+                FROM TRAFFIC_COUNT c
+                JOIN TRAFFIC_SENSOR t
+                    ON t.traffic_sensor_id = c.traffic_sensor_ref
+                JOIN LANE l
+                    ON l.lane_id = t.lane_ref
+                JOIN LOCATION loc
+                    ON loc.location_id = l.location_ref
+                WHERE
+                    c.avg_speed_kph > t.velocity_threshold_kph
+                ORDER BY c.timestamp DESC;
+        """
+    
+    inicio = time.time()
+    cursor.execute(query)
+    cursor.fetchall()
+    tempo_execucao = time.time() - inicio
+
+    return tempo_execucao
+
+def get_possible_congestions(cursor):
+    query = """ SELECT
+                    t.traffic_sensor_id,
+                    c.timestamp,
+                    c.avg_speed_kph,
+                    t.velocity_threshold_kph AS velocity_limit_kph,
+                    loc.description AS location,
+                    l.description AS lane,
+                    l.direction
+                FROM TRAFFIC_COUNT c
+                JOIN TRAFFIC_SENSOR t
+                    ON t.traffic_sensor_id = c.traffic_sensor_ref
+                JOIN LANE l
+                    ON l.lane_id = t.lane_ref
+                JOIN LOCATION loc
+                    ON loc.location_id = l.location_ref
+                JOIN (
+                    SELECT 
+                        c.traffic_sensor_ref,
+                        MAX(c.timestamp) AS last_timestamp
+                    FROM TRAFFIC_COUNT c
+                    JOIN TRAFFIC_SENSOR t
+                        ON t.traffic_sensor_id = c.traffic_sensor_ref
+                    WHERE c.avg_speed_kph < t.velocity_threshold_kph / 2
+                    GROUP BY c.traffic_sensor_ref
+                ) AS last_low_speed
+                    ON last_low_speed.traffic_sensor_ref = c.traffic_sensor_ref
+                    AND last_low_speed.last_timestamp = c.timestamp
+
+                ORDER BY t.traffic_sensor_id ASC;
+        """
+    
+    inicio = time.time()
+    cursor.execute(query)
+    cursor.fetchall()
+    tempo_execucao = time.time() - inicio
+
+    return tempo_execucao
+
+def get_open_accidents(cursor):
+    query = """SELECT
+                i.incident_report_id,
+                i.timestamp,
+                loc.description AS location,
+                l.description AS lane,
+                l.direction AS direction,
+                loc.city AS city,
+                loc.state AS state,
+                i.camera_ref AS camera_id,
+                i.image_url,
+                i.status
+            FROM INCIDENT_REPORT i
+            JOIN CAMERA c
+                ON c.camera_id = i.camera_ref
+            JOIN LANE l
+                ON l.lane_id = c.lane_ref
+            JOIN LOCATION loc
+                ON loc.location_id = l.location_ref
+            WHERE 
+                i.incident_type = 'accident' AND
+                i.status = 'open';
+        """
+    
+    inicio = time.time()
+    cursor.execute(query)
+    cursor.fetchall()
+    tempo_execucao = time.time() - inicio
+
+    return tempo_execucao
+
+def get_most_dangerous_location(cursor):
+    query = """SELECT 
+                loc.location_id,
+                COUNT(*) AS accidents_count,
+                loc.description,
+                loc.city,
+                loc.state,
+                loc.intersection_type,
+                loc.traffic_volume_category
+            FROM INCIDENT_REPORT i
+            JOIN CAMERA c
+                ON c.camera_id = i.camera_ref
+            JOIN LANE l
+                ON l.lane_id = c.lane_ref
+            JOIN LOCATION loc
+                ON loc.location_id = l.location_ref
+            WHERE i.incident_type = 'accident'
+            GROUP BY 
+                loc.location_id
+            ORDER BY accidents_count DESC
+            LIMIT 1;
+        """
+    
+    inicio = time.time()
+    cursor.execute(query)
+    cursor.fetchall()
+    tempo_execucao = time.time() - inicio
+
+    return tempo_execucao

@@ -98,6 +98,18 @@ def eval():
     time_mongo['T-FLOW'] = mongo_connector.get_traffic_light_flow(db_mongo,traffic_light_id)
     print_time(f"🍃 T-FLOW",time_mongo['T-FLOW'])
 
+    time_mongo['T-GET-OVERSPEED-READINGS'] = mongo_connector.get_overspeed_overspeed(db_mongo)
+    print_time(f"🍃 T-GET-OVERSPEED-READINGS",time_mongo['T-GET-OVERSPEED-READINGS'])
+
+    time_mongo['T-GET-POSSIBLE-CONGESTIONS'] = mongo_connector.get_possible_congestions(db_mongo)
+    print_time(f"🍃 T-GET-POSSIBLE-CONGESTIONS",time_mongo['T-GET-POSSIBLE-CONGESTIONS'])
+
+    time_mongo['T-GET-OPEN-ACCIDENTS'] = mongo_connector.get_open_accidents(db_mongo)
+    print_time("🍃 T-GET-OPEN-ACCIDENTS", time_mongo['T-GET-OPEN-ACCIDENTS'])
+
+    time_mongo['T-GET-MOST-DANGEROUS-LOCATION'] = mongo_connector.get_most_dangerous_location(db_mongo)
+    print_time("🍃 T-GET-MOST-DANGEROUS-LOCATION", time_mongo['T-GET-MOST-DANGEROUS-LOCATION'])
+
     # Mysql
     time_mysql = {}
     print()
@@ -132,6 +144,18 @@ def eval():
 
     time_mysql['T-FLOW'] = mysql_connector.get_traffic_light_flow(cursor,traffic_light_id)
     print_time(f"🐘 T-FLOW",time_mysql['T-FLOW'])
+
+    time_mysql['T-GET-OVERSPEED-READINGS'] = mysql_connector.get_overspeed_readings(cursor)
+    print_time(f"🐘 T-GET-OVERSPEED-READINGS",time_mysql['T-GET-OVERSPEED-READINGS'])
+
+    time_mysql['T-GET-POSSIBLE-CONGESTIONS'] = mysql_connector.get_possible_congestions(cursor)
+    print_time("🐘 T-GET-POSSIBLE-CONGESTIONS", time_mysql['T-GET-POSSIBLE-CONGESTIONS'])
+
+    time_mysql['T-GET-OPEN-ACCIDENTS'] = mysql_connector.get_open_accidents(cursor)
+    print_time("🐘 T-GET-OPEN-ACCIDENTS", time_mysql['T-GET-OPEN-ACCIDENTS'])
+
+    time_mysql['T-GET-MOST-DANGEROUS-LOCATION'] = mysql_connector.get_most_dangerous_location(cursor)
+    print_time("🐘 T-GET-MOST-DANGEROUS-LOCATION", time_mysql['T-GET-MOST-DANGEROUS-LOCATION'])
 
 if __name__ == "__main__":
     eval()
