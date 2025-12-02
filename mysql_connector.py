@@ -576,3 +576,38 @@ def get_most_dangerous_location(cursor):
     tempo_execucao = time.time() - inicio
 
     return tempo_execucao
+
+def get_traffic_lights_states(cursor,traffic_light_id):
+        query = """ SELECT
+                    t.traffic_light_id,
+                    s.timestamp,
+                    s.phase_id,
+                    s.phase_duration_s,
+                    s.current_state,
+                    l.description AS lane,
+                    l.direction
+                FROM TRAFFIC_LIGHT t
+                JOIN STATUS_CHANGE s
+                    ON s.traffic_light_ref = t.traffic_light_id
+                JOIN LANE l
+                    ON l.lane_id = t.lane_ref
+                JOIN (
+                    SELECT 
+                        s.traffic_light_ref,
+                        MAX(s.timestamp) AS last_timestamp
+                    FROM STATUS_CHANGE s
+                    JOIN TRAFFIC_LIGHT t
+                        ON t.traffic_light_id = s.traffic_light_ref
+                    GROUP BY t.traffic_light_id
+                ) AS last_status
+                    ON last_status.traffic_light_ref = t.traffic_light_id
+                    AND last_status.last_timestamp = s.timestamp
+                WHERE
+                    l.location_ref = %s;
+        """
+        inicio = time.time()
+        cursor.execute(query, (traffic_light_id,))
+        cursor.fetchall()
+        tempo_execucao = time.time() - inicio
+
+        return tempo_execucao

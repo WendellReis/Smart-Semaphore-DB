@@ -410,3 +410,54 @@ def get_most_dangerous_location(db_mongo):
     db_mongo["readings"].aggregate(pipeline, maxTimeMS=60000,allowDiskUse=True)
     tempo_execucao = time.time() - tempo_execucao
     return tempo_execucao
+
+def get_traffic_lights_states(db_mongo,location_id):
+    tempo_execucao = time.time()
+    pipeline = [
+        {
+            '$match': {
+                'reading_type': 'status_change', 
+                'metadata.location_ref': location_id
+            }
+        }, {
+            '$sort': {
+                'timestamp': -1
+            }
+        }, {
+            '$group': {
+                '_id': '$metadata.device_ref', 
+                'last_status': {
+                    '$first': '$$ROOT'
+                }
+            }
+        }, {
+            '$lookup': {
+                'from': 'lanes', 
+                'localField': 'last_status.metadata.lane_ref', 
+                'foreignField': 'lane_id', 
+                'as': 'lane'
+            }
+        }, {
+            '$project': {
+                '_id': 0, 
+                'traffic_light_id': '$_id', 
+                'timestamp': '$last_status.timestamp', 
+                'phase_id': '$last_status.phase_id', 
+                'phase_duration_s': '$last_status.phase_duration_s', 
+                'current_state': '$last_status.current_state', 
+                'lane': {
+                    '$arrayElemAt': [
+                        '$lane.description', 0
+                    ]
+                }, 
+                'direction': {
+                    '$arrayElemAt': [
+                        '$lane.direction', 0
+                    ]
+                }
+            }
+        }
+    ]
+    db_mongo["readings"].aggregate(pipeline, maxTimeMS=60000,allowDiskUse=True)
+    tempo_execucao = time.time() - tempo_execucao
+    return tempo_execucao
